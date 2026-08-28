@@ -270,8 +270,80 @@ Principalmente su página web y alianzas con instituciones locales. </td>
 </table>
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
+
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
+
+Preguntas en general: 
+¿Cual es tu nombre?
+¿Cuantos años tienes
+¿Qué estudias o que estudiaste? 
+¿En qué distrito vives?
+
+Segmento 1 -  Jóvenes universitarios:
+
+- ¿Qué tan importante es para ti realizar actividades de voluntariado durante tu etapa universitaria?
+
+
+- ¿Prefieres voluntariados presenciales, virtuales o una combinación de ambos?
+
+
+- ¿Qué tipo de causas sociales te motivan más (educación, medio ambiente, salud, inclusión, etc.)?
+
+
+- ¿Qué tan relevante es para ti recibir certificados digitales o créditos sociales por tus horas de voluntariado?
+
+
+- ¿Qué barreras encuentras actualmente para participar en voluntariados (tiempo, información, confianza)?
+
+
+- ¿Qué características debería tener una app de voluntariado para que la uses frecuentemente?
+
+
+- ¿Te motiva más un voluntariado de corta duración (microtareas) o de largo plazo? ¿Por qué?
+
+
+- ¿Qué tanto influye en tu decisión de voluntariado el impacto en tu CV o perfil profesional?
+
+
+- ¿Qué tan útil sería recibir notificaciones en tiempo real de oportunidades de voluntariado cerca de ti?
+
+
+- ¿Qué te motivaría a recomendar la plataforma a tus amigos o compañeros de universidad?
+
+Segmento 2 - ONG’S y fundaciones sociales:
+
+- ¿Qué desafíos enfrentan actualmente para encontrar y gestionar voluntarios?s 
+
+
+- ¿Prefieren voluntarios en modalidad presencial, virtual o híbrida?
+
+
+- ¿Qué tareas consideran más difíciles de cubrir con voluntarios (campañas, capacitación)?
+
+
+- ¿Qué tan importante es para ustedes contar con un sistema que permita verificar y dar seguimiento al historial de los voluntarios?
+
+
+- ¿Qué herramientas digitales utilizan actualmente para coordinar voluntarios?
+
+
+- ¿Qué tipo de apoyo esperan de una plataforma: reclutamiento, visibilidad, capacitación, gestión, medición de impacto?
+
+
+- ¿Qué limitaciones económicas enfrentan al momento de acceder a servicios digitales para captar voluntarios?
+
+
+- ¿Qué tan valioso sería contar con reportes sobre el impacto generado por los voluntarios en sus proyectos?
+
+
+- ¿Qué elementos los harían confiar más en una nueva plataforma de voluntariado (referencias, certificaciones, seguridad)?
+
+
+- ¿Qué servicios adicionales estarían dispuestos a pagar para mejorar la gestión de voluntarios (mayor visibilidad, informes de impacto, acceso prioritario)?
+
+
 ### 2.2.2. Registro de entrevistas
 ### 2.2.3. Análisis de entrevistas
 ## 2.3. Needfinding
