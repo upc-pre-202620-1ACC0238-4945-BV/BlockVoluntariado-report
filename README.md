@@ -59,6 +59,61 @@ Proyecto<br>
 
 ## Contenido
 
+- [Student Outcome](#student-outcome)
+- [Objetivos SMART](#objetivos-smart)
+- [Capítulo I: Presentación](#capítulo-i-presentación)
+  - [1.1. Startup Profile](#11-startup-profile)
+    - [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+    - [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+  - [1.2. Solution Profile](#12-solution-profile)
+    - [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+    - [1.2.2. Lean UX Process](#122-lean-ux-process)
+  - [1.3. Segmentos objetivo](#13-segmentos-objetivo)
+- [Capítulo II: Requirements Development and Software Solution Design](#capítulo-ii-requirements-development-and-software-solution-design)
+  - [2.1. Competidores](#21-competidores)
+    - [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+    - [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+  - [2.2. Entrevistas](#22-entrevistas)
+    - [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+    - [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+    - [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+  - [2.3. Needfinding](#23-needfinding)
+    - [2.3.1. User Personas](#231-user-personas)
+    - [2.3.2. User Task Matrix](#232-user-task-matrix)
+    - [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+    - [2.3.4. Empathy Mapping](#234-empathy-mapping)
+    - [2.3.5. Big Picture EventStorming](#235-big-picture-eventstorming)
+    - [2.3.6. Ubiquitous Language](#236-ubiquitous-language)
+  - [2.4. Requirements specification](#24-requirements-specification)
+    - [2.4.1. User Stories](#241-user-stories)
+    - [2.4.2. Impact Mapping](#242-impact-mapping)
+    - [2.4.3. Product Backlog](#243-product-backlog)
+  - [2.5. Strategic-Level Domain-Driven Design](#25-strategic-level-domain-driven-design)
+    - [2.5.1. EventStorming](#251-eventstorming)
+    - [2.5.2. Context Mapping](#252-context-mapping)
+    - [2.5.3. Software Architecture](#253-software-architecture)
+  - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
+    - [2.6.x. Bounded Context: <Bounded Context Name>](#26x-bounded-context-bounded-context-name)
+- [Capítulo III: Solution UI/UX Design](#capítulo-iii-solution-uiux-design)
+  - [3.1. Product design](#31-product-design)
+    - [3.1.1. Style Guidelines](#311-style-guidelines)
+    - [3.1.2. Information Architecture](#312-information-architecture)
+    - [3.1.3. Landing Page UI Design](#313-landing-page-ui-design)
+    - [3.1.4. Mobile Applications UX/UI Design](#314-mobile-applications-uxui-design)
+- [Capítulo IV: Product Implementation & Validation](#capítulo-iv-product-implementation--validation)
+  - [4. Product Implementation & Validation](#4-product-implementation--validation)
+    - [4.1. Software Configuration Management](#41-software-configuration-management)
+    - [4.2. Landing Page & Mobile Application Implementation](#42-landing-page--mobile-application-implementation)
+    - [4.3. Validation Interviews](#43-validation-interviews)
+- [Conclusiones](#conclusiones)
+  - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
+- [Video App Validation](#video-app-validation)
+- [Video About the product](#video-about-the-product)
+- [Video About the team](#video-about-the-team)
+- [Glosario](#glosario)
+- [Bibliografía](#bibliografía)
+- [Anexos](#anexos)
+
 ## Student Outcome
 
 ## Objetivos SMART
@@ -66,9 +121,21 @@ Proyecto<br>
 # Capítulo I: Presentación
 ## 1.1. Startup Profile
 ### 1.1.1. Descripción de la Startup
+
+Es una plataforma en donde los ciudadanos puedan tener la oportunidad de participar en un voluntariado, estos voluntarios son ofrecidos por ONG 's, instituciones o empresas. El objetivo de esta plataforma es facilitar el acceso a voluntariados.
+
 ### 1.1.2. Perfiles de integrantes del equipo
+
+| **Nombre Completo del integrante**    | 	**Descripcion de la carrera**                                   | **Fotografia**                                                         | **Conocimientos y habilidades**
+| :------------------------------------ |:-----------------------------------------------------------------|:-----------------------------------------------------------------------|:------------------------------------ |
+| Tavara Correa, Sebastian Oswaldo      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-chapter1/sebastian-tavara.jpg"> | Soy Sebastian Oswaldo Tavara Correa estudiante de la carrera de ingeniería de software, actualmente cursando el 6to ciclo, me considero una persona estudiosa y muy colaborativa al trabajar en grupo. Me adapto rápidamente a cualquier entorno. Me interesa desarrollar soluciones tecnológicas que tengan un impacto positivo. Creo que el desarrollo de software no debe limitarse en buscar la mayor funcionalidad, sino que también en generar bienestar en la sociedad.
+| Tuncar Vila, Ghorghet Saul      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-chapter1/ghorghet-tuncar.png">               | Soy Ghorghet Saul Tuncar Vila, estudiante de 6to ciclo de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
+| Cabrejos Chocco, Diego Alexander      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-chapter1/diego-cabrejos.jpg">               | Soy Diego Alexander Cabrejos Chocco estudiante de la carrera de ingeniería de software, actualmente cursando el 6to ciclo, soy una persona sociable, creativa, que trabaja bien en equipo y busco que todo el equipo participe en las actividades activamente. Me adapto rapidamente a la modalidad de trabajo. Mi meta es poder crear y desarrollar proyectos tecnologicos que tenga un impacto positivo y que sea entretenido. Lo mas interesante de la Software es que cada vez se va expandiendo, y las opciones para poder desarrollar algun proyecto por mas interesante o loco que paresca el tema, no es impedimento para desarrollar lo que desees. (claro que siempre siguiendo el tema legal)
+
+
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
+
 ### 1.2.2. Lean UX Process
 #### 1.2.2.1. Lean UX Problem Statements
 #### 1.2.2.2. Lean UX Assumptions
