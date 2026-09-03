@@ -43,7 +43,7 @@ Proyecto<br>
   </tbody>
 </table>
 
-<strong>Período 202610</strong><br><br>
+<strong>Período 202620</strong><br><br>
 
 <strong>Julio 2026</strong>
 </div>
@@ -350,6 +350,23 @@ Segmento 2 - ONG’S y fundaciones sociales:
 
 
 ### 2.2.2. Registro de entrevistas
+
+#### Segmento 1: Jovenes Universitarios
+
+| N | Datos |Descripción |Imagen referencial
+|--|--|--|--|
+|1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate| |<img src="assets/md-images-chapter1/s1-e1.png"> <br> link provicional: https://www.youtube.com/watch?v=lcTBFkdGlVA
+|2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao| |<img src="assets/md-images-chapter1/s1-e2.png">
+|3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito:  ||<img src="">
+
+### Segmento 2: ONG’S y fundaciones sociales
+
+| N | Datos |Descripción |Imagen referencial
+|--|--|--|--|
+|1  | Nombre: <br>Apellido: <br>Edad:  <br>Distrito: | |<img src="">
+|2  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
+|3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
+
 ### 2.2.3. Análisis de entrevistas
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
