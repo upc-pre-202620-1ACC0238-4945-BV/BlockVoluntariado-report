@@ -43,7 +43,7 @@ Proyecto<br>
   </tbody>
 </table>
 
-<strong>Período 202610</strong><br><br>
+<strong>Período 202620</strong><br><br>
 
 <strong>Julio 2026</strong>
 </div>
@@ -154,13 +154,219 @@ La problemática fue detectada en el sector de voluntarios, nos enfocaremos prin
 #### 1.2.2.4. Lean UX Canvas
 ## 1.3. Segmentos objetivo
 
+- Jóvenes universitarios
+
+En esta sección se describe al segmento conformado por estudiantes de educación superior, principalmente de entre 18 y 30 años, con alta familiaridad tecnológica y disposición para participar en actividades de voluntariado de corta duración. Los cuales representan una parte importante de la población joven conectada del país, interesada en generar impacto social, fortalecer su perfil académico y profesional, y obtener reconocimiento a través de créditos sociales y certificaciones digitales.
+
+- ONG’S y fundaciones sociales
+
+Este segmento incluye a organizaciones sin fines de lucro que operan en distintas regiones y que requieren voluntarios confiables para tareas específicas como campañas de sensibilización, traducciones, reportes comunitarios o capacitaciones. Muchas de estas entidades trabajan con recursos limitados y necesitan optimizar su alcance y medir su impacto de forma transparente, encontrando en la plataforma una solución para acceder a voluntarios trazables y comprometidos.
+
 # Capítulo II: Requirements Development and Software Solution Design
 ## 2.1. Competidores
 ### 2.1.1. Análisis competitivo
+
+Nos enfrentamos a varios competidores de plataformas de voluntariado digital y presencial. Por un lado, Idealist que opera globalmente conectando personas con oportunidades en ONG’s, empleo y voluntariado (Idealist, s. f.). De igual modo, Hacesfalta facilita que organizaciones sin fines de lucro difundan vacantes de voluntariado y empleo social (Hacesfalta s. f.). Por otro lado, iniciativas como GoVolunteer se destacan en el ámbito local al facilitar la participación ciudadana a través de programas comunitarios, colaboraciones con empresas y gobiernos. Asimismo, plataformas especializadas como Catchafire compiten directamente en el nicho del voluntariado por habilidades, brindando a las organizaciones acceso a profesionales que ofrecen servicios específicos en áreas como diseño, finanzas o comunicación (Catchfire, s. f.). Además, emergen otras propuestas digitales que promueven el microvoluntariado o tareas virtuales de corta duración, las cuales responden a la demanda de nuevas generaciones que buscan experiencias más flexibles y rápidas. 
+
+<table border="1" cellpadding="5" cellspacing="0">
+  <tr>
+    <th colspan="6"><b>Competitive Analysis Landscape</b></th>
+  </tr>
+  <tr>
+    <td>¿Por qué llevar a cabo este análisis?</td>
+    <td colspan="5"> Llevar a cabo este análisis nos permite entender mejor el entorno competitivo de BlockVoluntariado. Ayuda a identificar las fortalezas y debilidades de nuestra aplicación en comparación   con   otras,   lo   que   nos   permite   desarrollar   estrategias   efectivas   para destacar en el mercado. Nos ayuda a tomar decisiones informadas y a mejorar continuamente para satisfacer las necesidades de nuestros usuarios. </td>
+  </tr>
+  <tr>
+    <td colspan="2">Nombre y logo de competidor</td>
+    <td><b>Idealist <img src="assets/md-images-chapter1/logo-idealist.jpg" alt="idealist" width="120" height="120" /> </b></td>
+    <td><b> HacesFalta</b> <img src="assets/md-images-chapter1/logo-hacesfalta.jpg" width="120" height="120" /> </td>
+    <td><b>GoVolunteer</b> <img src="assets/md-images-chapter1/logo-govolunteer.png" width="120" height="120" /> </td>
+    <td><b>CatchaFire</b> <img src="assets/md-images-chapter1/logo-catchafire.avif" width="120" height="120" /> </td>
+  </tr>
+  <tr>
+    <td rowspan="2"><b>Perfil</b></td>
+    <td><b>Overview</b></td>
+    <td>Es una de las plataformas más grandes y antiguas a nivel mundial para conectar a las personas con oportunidades de impacto social. Allí se pueden encontrar voluntariado,empleos en ONG, tanto presenciales como virtuales </td>
+    <td>Es una plataforma española, gestionada por la Fundación Hazloposible, que conecta voluntarios, ONG y profesionales. Además de voluntariado, también ofrece empleos y tiene presencia en España y en México. </td>
+    <td>EEs una plataforma creada en Alemania que conecta a voluntarios, ONG y empresas. Tiene un fuerte enfoque local: permite encontrar proyectos de voluntariado según ciudad o región, y colabora con gobiernos y centros comunitarios..</td>
+    <td>Es una plataforma global especializada en voluntariado por habilidades profesionales. Conecta a profesionales  con ONG que necesitan ayuda en proyectos específicos, mayormente se realizan de forma virtual.</td>
+  </tr>
+  <tr>
+    <td><b>Ventaja competitiva ¿Qué valor ofrece a los clientes?</b></td>
+    <td> Su ventaja competitiva es  que reúne en un solo lugar miles de oportunidades sociales de todo el mundo. Esto lo convierte en un punto de encuentro global para personas interesadas en ayudar y organizaciones que buscan voluntarios o profesionales. </td>
+    <td> Su ventaja competitiva es que  permite encontrar voluntarios según causas específicas medioambiente, infancia, salud, etc. Lo que la hace cercana y especializada para el público local.</td>
+    <td>Su ventaja competitiva es el matching local que  ayuda a los usuarios a encontrar proyectos cerca de ellos, y a las empresas a gestionar programas de voluntariado corporativo.</td>
+    <td> Su ventaja competitiva es que ofrece voluntariados estructurados y de alto impacto ya que cada proyecto tiene objetivos claros, plantillas y entregables.</td>
+  </tr>
+  <tr>
+    <td rowspan="2"><b>Perfil de Marketing</b></td>
+    <td><b>Mercado objetivo</b></td>
+    <td>Los jóvenes, estudiantes, profesionales con interés social y ONG de distintos países.</td>
+    <td>Voluntarios como jóvenes y adultos en España y Latinoamérica, ONG que buscan apoyo, y personas interesadas en trabajar profesionalmente en proyectos sociales..</td>
+    <td>Voluntarios en ciudades alemanas y europeas, ONG locales, y empresas que buscan programas de Responsabilidad Social Corporativa. </td>
+    <td>Profesionales con experiencia que quieren donar su tiempo y empresas que buscan programas de voluntariado corporativo. </td>
+  </tr>
+  <tr>
+    <td><b>Estrategias de marketing</b></td>
+    <td>Se posiciona como un portal de referencia en Google (SEO), publica artículos y guías en su blog, mantiene presencia activa en redes sociales como Facebook  y hace alianzas con universidades y organizaciones internacionales.</td>
+    <td>Difunde oportunidades en redes sociales, utiliza SEO local para aparecer en búsquedas en español, y trabaja en colaboración con ministerios, fundaciones y organizaciones.</td>
+    <td>Realizan campañas comunitarias, alianzas con gobiernos locales y con centros de voluntariado y colaboraciones con empresas</td>
+    <td>
+Se apoya en alianzas con corporaciones para ofrecer voluntariado a empleados y un mayor alcance en lo digital.</td>
+  </tr>
+  <tr>
+    <td rowspan="3"><b>Perfil de Producto</b></td>
+    <td><b>Productos y Servicios</b></td>
+    <td>Buscador de oportunidades de voluntariado y empleo social, espacios para que ONG publiquen sus ofertas, recursos y artículos sobre cómo involucrarse en causas sociales </td>
+    <td>Buscador de voluntariados, ofertas de empleo en ONG, foros y noticias sobre el sector, recursos para procesos de selección en ONG.</td>
+    <td>Buscador de oportunidades según la ciudad,recursos para ONG y programas de voluntariado para empresas.</td>
+    <td>Matching de voluntarios por habilidades, proyectos estructurados, programas de voluntariado corporativo.</td>
+  </tr>
+  <tr>
+    <td><b>Precios y Costos</b></td>
+    <td> Es gratuito para voluntarios y hay cobros a ONG en empleo o servicios de publicidad. </td>
+    <td> Es gratuito para voluntarios y hay cobros a ONG en empleo o servicios de publicidad. </td>
+    <td>Es gratuito para voluntarios y ONG, y hay cobros para las empresas  por organizar y gestionar proyectos de voluntariado para sus empleados. </td>
+    <td>Cobra a las  ONG y empresas, con foco en membresías y voluntariado corporativo.</td>
+  </tr>
+  <tr>
+    <td><b>Canales de distribución (Web y/o móvil)</b></td>
+    <td>Principalmente su página web y su página de Facebook.  </td>
+    <td>Su web es el canal principal, portales regionales de  México y España, y sus redes sociales.</td>
+    <td>
+Principalmente su página web y alianzas con instituciones locales. </td>
+    <td>Su web es su canal principal con portales específicos para empresas. </td>
+  </tr>
+  <tr>
+    <td rowspan="5"><b>Análisis SWOT</b></td>
+  </tr>
+  <tr>
+    <td><b>Fortalezas</b></td>
+    <td> Reconocimiento mundial, mucha cantidad de ofertas y usuarios, variedad de  empleos y  voluntariados. </td>
+    <td>Reconocimiento y reputación en el sector social español. Especialización en causas y accesibilidad para voluntarios locales.</td>
+    <td>Apoyo total en las localidades con apoyo del gobierno y empresas. </td>
+    <td>Enfoque único en voluntariado profesional, fuerte relación con empresas y proyectos. 
+
+</td>
+  </tr>
+  <tr>
+    <td><b>Debilidades</b></td>
+    <td>El enfoque está más en voluntariados tradicionales y empleos largos, tampoco destaca por tener funciones innovadoras.</td>
+    <td>No tiene  alcance global  y depende mucho de su sitio web. Tampoco ha innovado mucho en apps móviles o experiencias de voluntariado digital moderno</td>
+    <td>No tiene alcance global y depende mucho de sus socios locales. </td>
+    <td>No es útil para voluntarios que no tengan habilidades técnicas o que solo busquen tareas cortas y presenciales.</td>
+  </tr>
+  <tr>
+    <td><b>Oportunidades</b></td>
+    <td>Incluir voluntariados  cortos y sencillos, desarrollar aplicaciones móviles atractivas y ofrecer certificados por la participación.</td>
+    <td>Podría atraer a los jóvenes con microvoluntariado, gamificación y apps móviles más interactivas.
+
+</td>
+    <td>Tener un mejor alcance global y adoptar voluntariados digitales. </td>
+  <td>Podría ampliar su modelo hacia voluntariado más sencillo y gamificado para llamar más la atención de los voluntarios. </td>
+  </tr>
+  <tr>
+    <td><b>Amenazas</b></td>
+    <td>Plataformas y apps más modernas y centradas en microvoluntariado que resulten más atractivas para nuevas generaciones.</td>
+    <td>Plataformas globales que entren al mercado hispano con mejor innovación. </td>
+    <td>Plataformas globales y con mayor alcance tecnológico. </td>
+    <td>Competidores que combinen microvoluntariado con voluntariado profesional en una misma plataforma. </td>
+  </tr>
+</table>
+
 ### 2.1.2. Estrategias y tácticas frente a competidores
+
+
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
+
+Preguntas en general: 
+¿Cual es tu nombre?
+¿Cuantos años tienes
+¿Qué estudias o que estudiaste? 
+¿En qué distrito vives?
+
+Segmento 1 -  Jóvenes universitarios:
+
+- ¿Qué tan importante es para ti realizar actividades de voluntariado durante tu etapa universitaria?
+
+
+- ¿Prefieres voluntariados presenciales, virtuales o una combinación de ambos?
+
+
+- ¿Qué tipo de causas sociales te motivan más (educación, medio ambiente, salud, inclusión, etc.)?
+
+
+- ¿Qué tan relevante es para ti recibir certificados digitales o créditos sociales por tus horas de voluntariado?
+
+
+- ¿Qué barreras encuentras actualmente para participar en voluntariados (tiempo, información, confianza)?
+
+
+- ¿Qué características debería tener una app de voluntariado para que la uses frecuentemente?
+
+
+- ¿Te motiva más un voluntariado de corta duración (microtareas) o de largo plazo? ¿Por qué?
+
+
+- ¿Qué tanto influye en tu decisión de voluntariado el impacto en tu CV o perfil profesional?
+
+
+- ¿Qué tan útil sería recibir notificaciones en tiempo real de oportunidades de voluntariado cerca de ti?
+
+
+- ¿Qué te motivaría a recomendar la plataforma a tus amigos o compañeros de universidad?
+
+Segmento 2 - ONG’S y fundaciones sociales:
+
+- ¿Qué desafíos enfrentan actualmente para encontrar y gestionar voluntarios?s 
+
+
+- ¿Prefieren voluntarios en modalidad presencial, virtual o híbrida?
+
+
+- ¿Qué tareas consideran más difíciles de cubrir con voluntarios (campañas, capacitación)?
+
+
+- ¿Qué tan importante es para ustedes contar con un sistema que permita verificar y dar seguimiento al historial de los voluntarios?
+
+
+- ¿Qué herramientas digitales utilizan actualmente para coordinar voluntarios?
+
+
+- ¿Qué tipo de apoyo esperan de una plataforma: reclutamiento, visibilidad, capacitación, gestión, medición de impacto?
+
+
+- ¿Qué limitaciones económicas enfrentan al momento de acceder a servicios digitales para captar voluntarios?
+
+
+- ¿Qué tan valioso sería contar con reportes sobre el impacto generado por los voluntarios en sus proyectos?
+
+
+- ¿Qué elementos los harían confiar más en una nueva plataforma de voluntariado (referencias, certificaciones, seguridad)?
+
+
+- ¿Qué servicios adicionales estarían dispuestos a pagar para mejorar la gestión de voluntarios (mayor visibilidad, informes de impacto, acceso prioritario)?
+
+
 ### 2.2.2. Registro de entrevistas
+
+#### Segmento 1: Jovenes Universitarios
+
+| N | Datos |Descripción |Imagen referencial
+|--|--|--|--|
+|1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate| |<img src="assets/md-images-chapter1/s1-e1.png"> <br> link provicional: https://www.youtube.com/watch?v=lcTBFkdGlVA
+|2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao| |<img src="assets/md-images-chapter1/s1-e2.png">
+|3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito:  ||<img src="">
+
+### Segmento 2: ONG’S y fundaciones sociales
+
+| N | Datos |Descripción |Imagen referencial
+|--|--|--|--|
+|1  | Nombre: <br>Apellido: <br>Edad:  <br>Distrito: | |<img src="">
+|2  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
+|3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
+
 ### 2.2.3. Análisis de entrevistas
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
@@ -251,5 +457,15 @@ La problemática fue detectada en el sector de voluntarios, nos enfocaremos prin
 - Comisión Económica para América Latina y el Caribe (CEPAL). (2021). *El rol del voluntariado y la participación juvenil en la recuperación y el desarrollo en América Latina*. Naciones Unidas.
 
 - Programa de los Voluntarios de las Naciones Unidas (VNU). (2022). *Informe sobre el estado del voluntariado en el mundo 2022: Crear sociedades igualitarias e inclusivas*. Naciones Unidas.
+
+- Idealist. (s. f.). Tiempo de Cambios.
+             https://www.idealist.org
+
+- Hacesfalta. (s. f.). Voluntariado y Empleo en ONG.
+            https://www.hacesfalta.org
+
+- Catchafire. (s. f.). ¿Que es Catchafire y como puedo unirme?.
+             https://help.catchafire.org
+
 
 # Anexos
