@@ -356,7 +356,7 @@ Segmento 2 - ONG’S y fundaciones sociales:
 | N | Datos |Descripción |Imagen referencial
 |--|--|--|--|
 |1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate| |<img src="assets/md-images-chapter1/s1-e1.png"> <br> link provicional: https://www.youtube.com/watch?v=lcTBFkdGlVA
-|2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao| |<img src="assets/md-images-chapter1/s1-e2.png">
+|2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao|  |<img src="assets/md-images-chapter1/s1-e2.png"><br>link del video:<br>https://youtu.be/x08H55_hld8
 |3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito:  ||<img src="">
 
 ### Segmento 2: ONG’S y fundaciones sociales
