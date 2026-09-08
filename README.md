@@ -43,7 +43,7 @@ Proyecto<br>
   </tbody>
 </table>
 
-<strong>Período 202610</strong><br><br>
+<strong>Período 202620</strong><br><br>
 
 <strong>Julio 2026</strong>
 </div>
@@ -143,7 +143,12 @@ Falta de centralización: No existe una plataforma unificada y de fácil acceso 
 Gestión de tiempos y reconocimiento: Los estudiantes tienen horarios académicos rígidos y necesitan que sus horas de voluntariado sean certificadas formalmente para sus currículums o créditos universitarios. Actualmente, el proceso de seguimiento de horas y emisión de constancias es manual, burocrático y propenso a errores (VNU, 2022).
 
 ### 1.2.2. Lean UX Process
+
 #### 1.2.2.1. Lean UX Problem Statements
+
+
+La problemática fue detectada en el sector de voluntarios, nos enfocaremos principalmente en estudiantes universitarios que buscan voluntariados de forma manual por redes sociales o paneles publicitarios y ONGs que realizan convocatorias de voluntariados, nuestro enfoque inicial serán estudiantes universitarios que necesitan créditos extracurriculares para graduarse de la universidad y no cuentan con una aplicación que facilite la búsqueda de voluntarios basándose a sus preferencias y nesecidades, block voluntariado es una aplicación móvil donde después de registrarte podrás filtrar un voluntariado según tus preferencias y matricularte. Sabremos que tendremos éxito cuando veamos que el 50% de los estudiantes registrados logren matricularse en la aplicación en la primera semana de uso.
+
 #### 1.2.2.2. Lean UX Assumptions
 #### 1.2.2.3. Lean UX Hypothesis Statements
 #### 1.2.2.4. Lean UX Canvas
@@ -345,6 +350,23 @@ Segmento 2 - ONG’S y fundaciones sociales:
 
 
 ### 2.2.2. Registro de entrevistas
+
+#### Segmento 1: Jovenes Universitarios
+
+| N | Datos |Descripción |Imagen referencial
+|--|--|--|--|
+|1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate| |<img src="assets/md-images-chapter1/s1-e1.png"> <br> link provicional: https://www.youtube.com/watch?v=lcTBFkdGlVA
+|2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao| |<img src="assets/md-images-chapter1/s1-e2.png">
+|3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito:  ||<img src="">
+
+### Segmento 2: ONG’S y fundaciones sociales
+
+| N | Datos |Descripción |Imagen referencial
+|--|--|--|--|
+|1  | Nombre: <br>Apellido: <br>Edad:  <br>Distrito: | |<img src="">
+|2  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
+|3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
+
 ### 2.2.3. Análisis de entrevistas
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
