@@ -52,8 +52,10 @@ Proyecto<br>
 
 ## Registro de Versiones del Informe
 | Versión | Fecha | Autor | Descripción de modificación |
-|---|---|---|---|
-| | | | |
+|   AV1   |---|---|---|
+|   TB1   |---|---|---|
+|   AV2   |---|---|---|
+|   TB2   |---|---|---|
 
 ## Project Report Collaboration Insights
 
