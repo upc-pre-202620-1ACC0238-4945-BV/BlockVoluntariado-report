@@ -165,6 +165,30 @@ La problemática fue detectada en el sector de voluntarios, nos enfocaremos prin
 - Creemos que entregar insignias, puntos o certificados por completar correctamente un voluntariado aumentará la motivación y la responsabilidad de los usuarios. Lo mediremos mediante la cantidad de logros obtenidos y reclamados después de finalizar una actividad.
 
 #### 1.2.2.4. Lean UX Canvas
+El Lean UX Canvas de BlockVoluntariado resume el problema de negocio, los usuarios, los resultados esperados y las principales hipótesis de la solución.
+
+**Business Problem.** Las ONG y otras organizaciones tienen dificultades para convocar y gestionar voluntarios de forma rápida y confiable. Al mismo tiempo, muchos jóvenes desean ayudar, pero no encuentran oportunidades que se adapten a sus horarios y disponibilidad.
+
+**Business Outcomes.**
+- Incrementar la participación de voluntarios activos durante los primeros meses de uso de la plataforma.
+- Reducir el esfuerzo y costo que las ONG destinan a la convocatoria y gestión de voluntarios.
+- Aumentar la visibilidad de las convocatorias publicadas por las organizaciones.
+
+**Users.**
+- Jóvenes universitarios que desean participar en voluntariados flexibles y compatibles con sus actividades académicas.
+- ONG y fundaciones sociales que necesitan captar, organizar y dar seguimiento a voluntarios.
+
+**User Outcomes & Benefits.**
+- Los jóvenes podrán encontrar oportunidades presenciales o virtuales de forma rápida, aplicando filtros según sus necesidades.
+- Las ONG podrán publicar convocatorias y gestionar postulantes desde un mismo espacio, mejorando el seguimiento y la confiabilidad del proceso.
+
+**Solutions.**
+- Aplicación móvil con listado de voluntariados y filtros por tiempo, ubicación, modalidad y categoría.
+- Herramientas para publicar y administrar convocatorias.
+- Gestión del historial y participación de los voluntarios.
+- Mecanismos de reconocimiento, como certificados, puntos o insignias.
+
+**Aprendizajes prioritarios.** Se necesita validar qué factores hacen que un voluntario abandone una actividad, en qué periodos existe mayor riesgo de inasistencia y qué elementos de la experiencia digital generan mayor motivación y confianza.
 
 
 ## 1.3. Segmentos objetivo
