@@ -408,8 +408,40 @@ Otro hallazgo relevante es que muchas organizaciones todavía utilizan herramien
 En conjunto, los resultados respaldan la necesidad de una solución que centralice oportunidades de voluntariado, facilite la búsqueda según las necesidades del estudiante y proporcione a las ONG herramientas de gestión y seguimiento más organizadas.
 
 ## 2.3. Needfinding
+Con el objetivo de comprender mejor a los usuarios y el contexto en el que participan en actividades de voluntariado, se utilizaron técnicas de investigación y análisis centradas en sus necesidades. Inicialmente, el análisis del problema permitió identificar dificultades relacionadas con la falta de información centralizada, la disponibilidad de tiempo y la gestión de voluntarios.
+
+Posteriormente, el proceso Lean UX permitió formular supuestos e hipótesis sobre la solución y contrastarlos mediante entrevistas. A partir de los resultados obtenidos se consolidaron dos segmentos principales para esta versión del proyecto: jóvenes universitarios y ONG o fundaciones sociales.
+
+Los hallazgos obtenidos permiten concluir que existe la necesidad de una plataforma que facilite el acceso a oportunidades de voluntariado compatibles con el estilo de vida de los estudiantes y, al mismo tiempo, permita a las organizaciones gestionar convocatorias y voluntarios de manera más ordenada y confiable.
+
 ### 2.3.1. User Personas
 ### 2.3.2. User Task Matrix
+
+La matriz de tareas permite priorizar las acciones que cada segmento necesita realizar dentro de BlockVoluntariado.
+
+**Jóvenes universitarios**
+
+| Tarea del usuario | Frecuencia | Importancia |
+|---|---|---|
+| Filtrar voluntariados por horario | A menudo | Alta |
+| Filtrar voluntariados por duración | A menudo | Alta |
+| Recibir reconocimiento por su participación | Siempre | Alta |
+| Filtrar por modalidad presencial o virtual | Siempre | Alta |
+| Registrarse o postular a un voluntariado | Siempre | Alta |
+| Buscar voluntariados por nombre | Siempre | Alta |
+| Buscar por organización | A veces | Media |
+
+**ONG y fundaciones sociales**
+
+| Tarea del usuario | Frecuencia | Importancia |
+|---|---|---|
+| Hacer seguimiento al desempeño e historial de voluntarios | Ocasional | Alta |
+| Registrar y gestionar perfiles de voluntarios | Frecuente | Alta |
+| Asignar voluntarios a proyectos específicos | Ocasional | Alta |
+| Capacitar a voluntarios | Ocasional | Alta |
+| Comunicar novedades y actividades | Muy frecuente | Alta |
+| Administrar modalidades de voluntariado | Ocasional | Alta |
+| Publicar convocatorias | Frecuente | Alta |
 ### 2.3.3. User Journey Mapping
 ### 2.3.4. Empathy Mapping
 ### 2.3.5. Big Picture EventStorming
