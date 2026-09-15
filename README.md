@@ -192,7 +192,6 @@ El Lean UX Canvas de BlockVoluntariado resume el problema de negocio, los usuari
 
 
 ## 1.3. Segmentos objetivo
-
 - Jóvenes universitarios
 
 En esta sección se describe al segmento conformado por estudiantes de educación superior, principalmente de entre 18 y 30 años, con alta familiaridad tecnológica y disposición para participar en actividades de voluntariado de corta duración. Los cuales representan una parte importante de la población joven conectada del país, interesada en generar impacto social, fortalecer su perfil académico y profesional, y obtener reconocimiento a través de créditos sociales y certificaciones digitales.
@@ -337,61 +336,44 @@ Segmento 1 -  Jóvenes universitarios:
 
 - ¿Qué tan importante es para ti realizar actividades de voluntariado durante tu etapa universitaria?
 
-
 - ¿Prefieres voluntariados presenciales, virtuales o una combinación de ambos?
-
 
 - ¿Qué tipo de causas sociales te motivan más (educación, medio ambiente, salud, inclusión, etc.)?
 
-
 - ¿Qué tan relevante es para ti recibir certificados digitales o créditos sociales por tus horas de voluntariado?
-
 
 - ¿Qué barreras encuentras actualmente para participar en voluntariados (tiempo, información, confianza)?
 
-
 - ¿Qué características debería tener una app de voluntariado para que la uses frecuentemente?
-
 
 - ¿Te motiva más un voluntariado de corta duración (microtareas) o de largo plazo? ¿Por qué?
 
-
 - ¿Qué tanto influye en tu decisión de voluntariado el impacto en tu CV o perfil profesional?
-
 
 - ¿Qué tan útil sería recibir notificaciones en tiempo real de oportunidades de voluntariado cerca de ti?
 
-
 - ¿Qué te motivaría a recomendar la plataforma a tus amigos o compañeros de universidad?
+
 
 Segmento 2 - ONG’S y fundaciones sociales:
 
 - ¿Qué desafíos enfrentan actualmente para encontrar y gestionar voluntarios?s 
 
-
 - ¿Prefieren voluntarios en modalidad presencial, virtual o híbrida?
-
 
 - ¿Qué tareas consideran más difíciles de cubrir con voluntarios (campañas, capacitación)?
 
-
 - ¿Qué tan importante es para ustedes contar con un sistema que permita verificar y dar seguimiento al historial de los voluntarios?
-
 
 - ¿Qué herramientas digitales utilizan actualmente para coordinar voluntarios?
 
-
 - ¿Qué tipo de apoyo esperan de una plataforma: reclutamiento, visibilidad, capacitación, gestión, medición de impacto?
-
 
 - ¿Qué limitaciones económicas enfrentan al momento de acceder a servicios digitales para captar voluntarios?
 
-
 - ¿Qué tan valioso sería contar con reportes sobre el impacto generado por los voluntarios en sus proyectos?
 
-
 - ¿Qué elementos los harían confiar más en una nueva plataforma de voluntariado (referencias, certificaciones, seguridad)?
-
 
 - ¿Qué servicios adicionales estarían dispuestos a pagar para mejorar la gestión de voluntarios (mayor visibilidad, informes de impacto, acceso prioritario)?
 
@@ -415,6 +397,16 @@ Segmento 2 - ONG’S y fundaciones sociales:
 |3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
 
 ### 2.2.3. Análisis de entrevistas
+Las entrevistas permitieron identificar patrones comunes entre los jóvenes universitarios. El principal obstáculo mencionado fue la falta de tiempo debido a la carga académica. Por ello, los entrevistados valoran especialmente que los voluntariados cuenten con horarios claros, opciones flexibles y filtros que permitan encontrar actividades compatibles con su disponibilidad.
+
+También se observó una preferencia importante por recibir certificados digitales, créditos u otros reconocimientos que puedan servir como evidencia de la experiencia adquirida. Aunque las preferencias entre voluntariados presenciales, virtuales y de corta o larga duración varían según cada estudiante, existe coincidencia en que la plataforma debe ser fácil de usar, brindar información confiable y permitir conocer con claridad la ubicación, duración y características de cada oportunidad.
+
+En el segmento de ONG y fundaciones sociales, las entrevistas mostraron que uno de los principales retos consiste en mantener el compromiso de los voluntarios y evitar que abandonen las actividades después de inscribirse. Las organizaciones también señalaron dificultades para cubrir tareas que requieren perfiles específicos o mayor especialización.
+
+Otro hallazgo relevante es que muchas organizaciones todavía utilizan herramientas separadas como WhatsApp, correo electrónico y hojas de cálculo para coordinar a sus voluntarios. Esto genera un proceso poco centralizado y dificulta el seguimiento del historial, la asistencia y el desempeño. Por ello, se considera valioso contar con una plataforma que permita publicar convocatorias, revisar perfiles, gestionar postulantes y generar información sobre la participación e impacto de los voluntarios.
+
+En conjunto, los resultados respaldan la necesidad de una solución que centralice oportunidades de voluntariado, facilite la búsqueda según las necesidades del estudiante y proporcione a las ONG herramientas de gestión y seguimiento más organizadas.
+
 ## 2.3. Needfinding
 ### 2.3.1. User Personas
 ### 2.3.2. User Task Matrix
