@@ -385,8 +385,8 @@ Segmento 2 - ONG’S y fundaciones sociales:
 | N | Datos |Descripción |Imagen referencial
 |--|--|--|--|
 |1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate| |<img src="assets/md-images-chapter1/s1-e1.png"> <br> link provicional: https://www.youtube.com/watch?v=lcTBFkdGlVA
-|2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao| |<img src="assets/md-images-chapter1/s1-e2.png">
-|3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito:  ||<img src="">
+|2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao| |<img src="assets/md-images-chapter1/s1-e2.png"> <br> link provicional:
+|3  | Nombre: Richrad <br>Apellido: Lozano <br>Edad: 20<br>Distrito: San Martin de Porres ||<img src="assets/md-images-chapter1/s1-e2.png"> <br> link provicional:
 
 ### Segmento 2: ONG’S y fundaciones sociales
 
@@ -394,7 +394,8 @@ Segmento 2 - ONG’S y fundaciones sociales:
 |--|--|--|--|
 |1  | Nombre: <br>Apellido: <br>Edad:  <br>Distrito: | |<img src="">
 |2  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
-|3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
+|3  | Nombre: Aldo Jesus <br>Apellido: Huaman <br>Edad: 25 <br>Distrito: Manchay ||<img src="assets/md-images-chapter1/s1-e2.png"> <br> link provicional:
+
 
 ### 2.2.3. Análisis de entrevistas
 Las entrevistas permitieron identificar patrones comunes entre los jóvenes universitarios. El principal obstáculo mencionado fue la falta de tiempo debido a la carga académica. Por ello, los entrevistados valoran especialmente que los voluntariados cuenten con horarios claros, opciones flexibles y filtros que permitan encontrar actividades compatibles con su disponibilidad.
