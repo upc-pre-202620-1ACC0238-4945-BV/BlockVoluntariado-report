@@ -146,10 +146,6 @@ Gestión de tiempos y reconocimiento: Los estudiantes tienen horarios académico
 
 #### 1.2.2.1. Lean UX Problem Statements
 
-<<<<<<< HEAD
-
-=======
->>>>>>> dev/diego
 La problemática fue detectada en el sector de voluntarios, nos enfocaremos principalmente en estudiantes universitarios que buscan voluntariados de forma manual por redes sociales o paneles publicitarios y ONGs que realizan convocatorias de voluntariados, nuestro enfoque inicial serán estudiantes universitarios que necesitan créditos extracurriculares para graduarse de la universidad y no cuentan con una aplicación que facilite la búsqueda de voluntarios basándose a sus preferencias y nesecidades, block voluntariado es una aplicación móvil donde después de registrarte podrás filtrar un voluntariado según tus preferencias y matricularte. Sabremos que tendremos éxito cuando veamos que el 50% de los estudiantes registrados logren matricularse en la aplicación en la primera semana de uso.
 
 #### 1.2.2.2. Lean UX Assumptions
@@ -327,8 +323,6 @@ Principalmente su página web y alianzas con instituciones locales. </td>
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
-<<<<<<< HEAD
-=======
 BlockVoluntariado busca diferenciarse de competidores consolidados como Idealist, Hacesfalta, GoVolunteer y Catchafire mediante una propuesta enfocada en voluntariados flexibles y accesibles para jóvenes universitarios. Una de las principales tácticas consiste en facilitar la búsqueda de oportunidades según disponibilidad, ubicación, modalidad y tipo de causa, reduciendo el tiempo necesario para encontrar una actividad compatible con la rutina académica.
 
 Como elemento adicional de diferenciación, la plataforma contempla mecanismos de reconocimiento como certificados digitales, puntos e insignias, que permiten hacer visible el esfuerzo de los voluntarios y reforzar su motivación. También se plantea mostrar el historial de participación y el impacto acumulado, de modo que el usuario pueda evidenciar su experiencia en futuras oportunidades académicas o profesionales.
@@ -337,18 +331,13 @@ Otra estrategia importante es establecer alianzas con universidades, ONG y empre
 
 Asimismo, se prioriza la cercanía con el usuario mediante notificaciones y opciones de búsqueda que permitan encontrar oportunidades relevantes de manera rápida. De esta forma, BlockVoluntariado busca competir no solo por la cantidad de convocatorias disponibles, sino también por ofrecer una experiencia organizada, sencilla y orientada a las necesidades específicas de los voluntarios y de las organizaciones sociales.
 
->>>>>>> dev/diego
 
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
 
 Preguntas en general: 
 ¿Cual es tu nombre?
-<<<<<<< HEAD
-¿Cuantos años tienes
-=======
 ¿Cuantos años tienes?
->>>>>>> dev/diego
 ¿Qué estudias o que estudiaste? 
 ¿En qué distrito vives?
 
@@ -356,35 +345,6 @@ Segmento 1 -  Jóvenes universitarios:
 
 - ¿Qué tan importante es para ti realizar actividades de voluntariado durante tu etapa universitaria?
 
-<<<<<<< HEAD
-
-- ¿Prefieres voluntariados presenciales, virtuales o una combinación de ambos?
-
-
-- ¿Qué tipo de causas sociales te motivan más (educación, medio ambiente, salud, inclusión, etc.)?
-
-
-- ¿Qué tan relevante es para ti recibir certificados digitales o créditos sociales por tus horas de voluntariado?
-
-
-- ¿Qué barreras encuentras actualmente para participar en voluntariados (tiempo, información, confianza)?
-
-
-- ¿Qué características debería tener una app de voluntariado para que la uses frecuentemente?
-
-
-- ¿Te motiva más un voluntariado de corta duración (microtareas) o de largo plazo? ¿Por qué?
-
-
-- ¿Qué tanto influye en tu decisión de voluntariado el impacto en tu CV o perfil profesional?
-
-
-- ¿Qué tan útil sería recibir notificaciones en tiempo real de oportunidades de voluntariado cerca de ti?
-
-
-- ¿Qué te motivaría a recomendar la plataforma a tus amigos o compañeros de universidad?
-
-=======
 - ¿Prefieres voluntariados presenciales, virtuales o una combinación de ambos?
 
 - ¿Qué tipo de causas sociales te motivan más (educación, medio ambiente, salud, inclusión, etc.)?
@@ -404,38 +364,10 @@ Segmento 1 -  Jóvenes universitarios:
 - ¿Qué te motivaría a recomendar la plataforma a tus amigos o compañeros de universidad?
 
 
->>>>>>> dev/diego
 Segmento 2 - ONG’S y fundaciones sociales:
 
 - ¿Qué desafíos enfrentan actualmente para encontrar y gestionar voluntarios?s 
 
-<<<<<<< HEAD
-
-- ¿Prefieren voluntarios en modalidad presencial, virtual o híbrida?
-
-
-- ¿Qué tareas consideran más difíciles de cubrir con voluntarios (campañas, capacitación)?
-
-
-- ¿Qué tan importante es para ustedes contar con un sistema que permita verificar y dar seguimiento al historial de los voluntarios?
-
-
-- ¿Qué herramientas digitales utilizan actualmente para coordinar voluntarios?
-
-
-- ¿Qué tipo de apoyo esperan de una plataforma: reclutamiento, visibilidad, capacitación, gestión, medición de impacto?
-
-
-- ¿Qué limitaciones económicas enfrentan al momento de acceder a servicios digitales para captar voluntarios?
-
-
-- ¿Qué tan valioso sería contar con reportes sobre el impacto generado por los voluntarios en sus proyectos?
-
-
-- ¿Qué elementos los harían confiar más en una nueva plataforma de voluntariado (referencias, certificaciones, seguridad)?
-
-
-=======
 - ¿Prefieren voluntarios en modalidad presencial, virtual o híbrida?
 
 - ¿Qué tareas consideran más difíciles de cubrir con voluntarios (campañas, capacitación)?
@@ -452,7 +384,6 @@ Segmento 2 - ONG’S y fundaciones sociales:
 
 - ¿Qué elementos los harían confiar más en una nueva plataforma de voluntariado (referencias, certificaciones, seguridad)?
 
->>>>>>> dev/diego
 - ¿Qué servicios adicionales estarían dispuestos a pagar para mejorar la gestión de voluntarios (mayor visibilidad, informes de impacto, acceso prioritario)?
 
 
@@ -460,21 +391,6 @@ Segmento 2 - ONG’S y fundaciones sociales:
 
 #### Segmento 1: Jovenes Universitarios
 
-<<<<<<< HEAD
-| N | Datos |Descripción |Imagen referencial
-|--|--|--|--|
-|1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate| |<img src="assets/md-images-chapter1/s1-e1.png"> <br> link provicional: https://www.youtube.com/watch?v=lcTBFkdGlVA
-|2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao| |<img src="assets/md-images-chapter1/s1-e2.png">
-|3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito:  ||<img src="">
-
-### Segmento 2: ONG’S y fundaciones sociales
-
-| N | Datos |Descripción |Imagen referencial
-|--|--|--|--|
-|1  | Nombre: <br>Apellido: <br>Edad:  <br>Distrito: | |<img src="">
-|2  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
-|3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
-=======
 | N | Datos                                                                                | Descripción | Imagen referencial                                                                                                 
 |--|--------------------------------------------------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------------------|
 |1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate                               |             | <img src="assets/md-images-chapter1/s1-e1.png"> <br> link provicional: https://www.youtube.com/watch?v=lcTBFkdGlVA 
@@ -489,7 +405,6 @@ Segmento 2 - ONG’S y fundaciones sociales:
 |2  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito:                               |             |<img src="">
 |3  | Nombre: Aldo Jesus <br>Apellido: Huaman <br>Edad: 25 <br>Distrito: Manchay  | Aldo Jesús Huamán es un trabajador con experiencia en ONG y fundaciones sociales, acostumbrado a participar en actividades orientadas al apoyo comunitario y la organización de iniciativas sociales. Debido a su experiencia, conoce de cerca las dificultades para coordinar voluntarios, mantener su compromiso y gestionar adecuadamente las actividades, por lo que valora herramientas que faciliten la comunicación, el seguimiento y la organización de los proyectos. |<img src="assets/md-images-chapter1/s2-e3.png"> <br> link provicional: https://youtu.be/o8zG31C2IJI
 
->>>>>>> dev/diego
 
 ### 2.2.3. Análisis de entrevistas
 Las entrevistas permitieron identificar patrones comunes entre los jóvenes universitarios. El principal obstáculo mencionado fue la falta de tiempo debido a la carga académica. Por ello, los entrevistados valoran especialmente que los voluntariados cuenten con horarios claros, opciones flexibles y filtros que permitan encontrar actividades compatibles con su disponibilidad.
