@@ -363,9 +363,9 @@ Segmento 2 - ONG’S y fundaciones sociales:
 
 | N | Datos |Descripción |Imagen referencial
 |--|--|--|--|
-|1  | Nombre: Eduardo <br>Apellido: Sullon <br>Edad: 22 <br>Distrito: Pachacamac | Eduardo, de una ONG, busca voluntarios presenciales o híbridos, siendo su mayor reto la falta de información para llegar a más gente y las capacitaciones iniciales. Necesita un sistema con historial y busca en una plataforma visibilidad y gestión, estando dispuesto a pagar por ello y por reportes de impacto. |<img src="assets/md-images-chapter1/EntrevistaUnoONG.jpeg"><br>Link del video: https://youtu.be/vFKFP6NsK4U
+|1  | Nombre: Eduardo <br>Apellido: Sullon <br>Edad: 22 <br>Distrito: Pachacamac | Eduardo, de una ONG, busca voluntarios presenciales o híbridos, siendo su mayor reto la falta de información para llegar a más gente y las capacitaciones iniciales. Necesita un sistema con historial y busca en una plataforma visibilidad y gestión, estando dispuesto a pagar por ello y por reportes de impacto.  |<img src="assets/md-images-chapter1/EntrevistaUnoONG.jpeg"><br>Link del video: https://youtu.be/vFKFP6NsK4U
 |2  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
-|3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
+|3  | Nombre: <br>Apellido:  <br>Edad:sss <br>Distrito: | |<img src="">
 
 ### 2.2.3. Análisis de entrevistas
 ## 2.3. Needfinding
