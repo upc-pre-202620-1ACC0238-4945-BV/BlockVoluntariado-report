@@ -416,6 +416,111 @@ Posteriormente, el proceso Lean UX permitió formular supuestos e hipótesis sob
 Los hallazgos obtenidos permiten concluir que existe la necesidad de una plataforma que facilite el acceso a oportunidades de voluntariado compatibles con el estilo de vida de los estudiantes y, al mismo tiempo, permita a las organizaciones gestionar convocatorias y voluntarios de manera más ordenada y confiable.
 
 ### 2.3.1. User Personas
+
+### 2.3.2. User Task Matrix
+
+La matriz de tareas permite priorizar las acciones que cada segmento necesita realizar dentro de BlockVoluntariado.
+
+**Jóvenes universitarios**
+
+| Tarea del usuario | Frecuencia | Importancia |
+|---|---|---|
+| Filtrar voluntariados por horario | A menudo | Alta |
+| Filtrar voluntariados por duración | A menudo | Alta |
+| Recibir reconocimiento por su participación | Siempre | Alta |
+| Filtrar por modalidad presencial o virtual | Siempre | Alta |
+| Registrarse o postular a un voluntariado | Siempre | Alta |
+| Buscar voluntariados por nombre | Siempre | Alta |
+| Buscar por organización | A veces | Media |
+
+**ONG y fundaciones sociales**
+
+| Tarea del usuario | Frecuencia | Importancia |
+|---|---|---|
+| Hacer seguimiento al desempeño e historial de voluntarios | Ocasional | Alta |
+| Registrar y gestionar perfiles de voluntarios | Frecuente | Alta |
+| Asignar voluntarios a proyectos específicos | Ocasional | Alta |
+| Capacitar a voluntarios | Ocasional | Alta |
+| Comunicar novedades y actividades | Muy frecuente | Alta |
+| Administrar modalidades de voluntariado | Ocasional | Alta |
+| Publicar convocatorias | Frecuente | Alta |
+### 2.3.3. User Journey Mapping
+
+El User Journey Mapping permite representar el recorrido que siguen los usuarios desde que identifican una necesidad hasta que participan en una actividad de voluntariado y evalúan posteriormente su experiencia.
+
+Para BlockVoluntariado se analizaron los recorridos correspondientes a los principales segmentos identificados durante el proceso de entrevistas y Needfinding.
+
+#### a. Jóvenes universitarios
+
+| Aspecto | Stage 1: Descubrimiento del problema | Stage 2: Búsqueda de información | Stage 3: Diagnóstico y análisis | Stage 4: Implementación | Stage 5: Seguimiento y evaluación |
+|---|---|---|---|---|---|
+| **Objectives** | Reconocer la falta de espacios donde organizar y encontrar oportunidades de voluntariado. | Investigar qué voluntariados existen y cómo puede participar. | Evaluar qué voluntariado encaja mejor con sus intereses, horarios y disponibilidad. | Inscribirse y empezar a colaborar en el voluntariado seleccionado. | Ver los resultados de su participación y decidir si desea continuar participando en nuevos voluntariados. |
+| **Needs** | Identificar voluntariados cercanos en los cuales pueda participar. | Encontrar plataformas claras y confiables que centralicen las oportunidades. | Comparar de manera sencilla diferentes proyectos, horarios y beneficios. | Contar con un proceso de registro rápido, simple y con información clara. | Recibir feedback de su participación, constancias, reconocimientos y certificados. |
+| **Feelings** | Desea ayudar, pero siente confusión al no saber por dónde comenzar. | Siente motivación y curiosidad al descubrir diferentes oportunidades. | Siente expectativa, entusiasmo y algunas dudas antes de tomar una decisión. | Siente emoción y orgullo al comenzar su primera experiencia de voluntariado. | Siente satisfacción y motivación al observar los resultados de su participación. |
+| **Barriers** | Falta de información sobre oportunidades disponibles. | Información dispersa y poco organizada en redes sociales u otros medios. | Falta de tiempo debido a los estudios y poca flexibilidad en los horarios. | Falta de seguimiento por parte de las organizaciones y dificultad para conciliar el voluntariado con sus actividades académicas. | Falta de reconocimiento formal por la participación realizada. |
+
+
+---
+
+#### b. ONG y fundaciones sociales
+
+| Aspecto | Stage 1: Descubrimiento del problema | Stage 2: Búsqueda de información | Stage 3: Diagnóstico y análisis | Stage 4: Implementación | Stage 5: Seguimiento y evaluación |
+|---|---|---|---|---|---|
+| **Objectives** | Identificar las dificultades para captar y retener voluntarios. | Explorar plataformas y canales donde puedan encontrar voluntarios de manera más rápida. | Evaluar si BlockVoluntariado puede convertirse en una alternativa adecuada para captar voluntarios. | Publicar convocatorias y gestionar voluntarios utilizando la plataforma. | Medir el impacto generado mediante la participación de los voluntarios. |
+| **Needs** | Acceder a una base de voluntarios motivados y confiables. | Encontrar información clara sobre el funcionamiento de la plataforma. | Contar con evidencias de éxito como casos de uso, métricas o experiencias de otras organizaciones. | Utilizar herramientas de publicación, gestión y comunicación con los voluntarios. | Obtener reportes de participación, estadísticas de impacto social y datos relacionados con la permanencia de los voluntarios. |
+| **Feelings** | Siente frustración y desconfianza debido a las dificultades para encontrar voluntarios constantes. | Siente expectativa y curiosidad frente a nuevas herramientas digitales. | Siente interés, aunque mantiene cierta cautela antes de adoptar una nueva plataforma. | Siente alivio al reducir parte de la carga operativa relacionada con la gestión de voluntarios. | Siente orgullo y motivación al observar resultados positivos en sus proyectos. |
+| **Barriers** | Escasez de recursos para realizar campañas de captación de voluntarios. | Desconfianza hacia nuevas herramientas tecnológicas. | Presupuesto limitado para adoptar nuevas soluciones. | Resistencia al cambio por parte de algunos miembros de la organización. | Falta de indicadores claros y poca personalización en los reportes. |
+
+
+### 2.3.4. Empathy Mapping
+### 2.3.5. Big Picture EventStorming
+El Big Picture EventStorming permite representar los principales eventos que ocurren dentro del dominio de BlockVoluntariado y entender la interacción general entre usuarios, procesos y resultados.
+
+Para el proyecto se identificaron eventos relacionados con el registro de usuarios, publicación de voluntariados, postulaciones, selección de participantes, seguimiento y finalización de actividades.
+
+Algunos eventos relevantes son:
+
+- Usuario registrado.
+- Perfil actualizado.
+- ONG registrada.
+- Voluntariado publicado.
+- Voluntariado actualizado.
+- Estudiante postulado.
+- Postulación aceptada.
+- Postulación rechazada.
+- Voluntario inscrito.
+- Actividad iniciada.
+- Asistencia registrada.
+- Voluntariado completado.
+- Certificado generado.
+- Organización calificada.
+- Voluntario evaluado.
+
+
+### 2.3.6. Ubiquitous Language
+
+El Ubiquitous Language establece un vocabulario común entre los integrantes del equipo para evitar ambigüedades durante el diseño y desarrollo del sistema.
+
+| Término | Definición |
+|---|---|
+| Voluntario | Usuario universitario que participa en oportunidades de voluntariado. |
+| ONG | Organización que publica y administra oportunidades de voluntariado. |
+| Voluntariado | Actividad social publicada por una organización y disponible para postulantes. |
+| Convocatoria | Publicación mediante la cual una ONG solicita voluntarios. |
+| Postulación | Solicitud realizada por un voluntario para participar en una convocatoria. |
+| Postulante | Voluntario que ha enviado una solicitud a una convocatoria. |
+| Participante | Voluntario cuya postulación ha sido aceptada. |
+| Perfil | Información personal, académica y relacionada con intereses del usuario. |
+| Certificado | Documento generado o proporcionado después de completar una actividad. |
+| Historial | Registro de voluntariados realizados por el usuario. |
+| Asistencia | Registro que indica la participación de un voluntario en una actividad. |
+| Organización | Entidad responsable de publicar y gestionar voluntariados. |
+| Evaluación | Calificación realizada al finalizar una experiencia de voluntariado. |
+| Insignia | Reconocimiento digital obtenido por participación o cumplimiento de objetivos. |
+| Notificación | Aviso enviado al usuario sobre cambios, recordatorios o nuevas oportunidades. |
+
+## 2.4. Requirements specification
+### 2.4.1. User Stories
 Para especificar los requerimientos funcionales de BlockVoluntariado se emplearon User Stories, las cuales permiten representar las necesidades principales de los usuarios desde su propia perspectiva. Estas historias fueron planteadas tomando en consideración los dos segmentos objetivo definidos para el proyecto: jóvenes universitarios interesados en participar en actividades de voluntariado y ONG o fundaciones sociales que requieren publicar, organizar y gestionar dichas actividades.
 
 Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o necesidad], para [beneficio esperado]**.
@@ -473,39 +578,6 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 | HU49 | EP12 | Estadísticas de voluntariado | Como organización, quiero consultar estadísticas de mis actividades publicadas, para conocer la cantidad de postulantes, participantes y actividades completadas. |
 | HU50 | EP12 | Medición de impacto | Como organización, quiero visualizar indicadores relacionados con el impacto generado por mis proyectos, para evaluar los resultados obtenidos mediante los voluntarios. |
 
-### 2.3.2. User Task Matrix
-
-La matriz de tareas permite priorizar las acciones que cada segmento necesita realizar dentro de BlockVoluntariado.
-
-**Jóvenes universitarios**
-
-| Tarea del usuario | Frecuencia | Importancia |
-|---|---|---|
-| Filtrar voluntariados por horario | A menudo | Alta |
-| Filtrar voluntariados por duración | A menudo | Alta |
-| Recibir reconocimiento por su participación | Siempre | Alta |
-| Filtrar por modalidad presencial o virtual | Siempre | Alta |
-| Registrarse o postular a un voluntariado | Siempre | Alta |
-| Buscar voluntariados por nombre | Siempre | Alta |
-| Buscar por organización | A veces | Media |
-
-**ONG y fundaciones sociales**
-
-| Tarea del usuario | Frecuencia | Importancia |
-|---|---|---|
-| Hacer seguimiento al desempeño e historial de voluntarios | Ocasional | Alta |
-| Registrar y gestionar perfiles de voluntarios | Frecuente | Alta |
-| Asignar voluntarios a proyectos específicos | Ocasional | Alta |
-| Capacitar a voluntarios | Ocasional | Alta |
-| Comunicar novedades y actividades | Muy frecuente | Alta |
-| Administrar modalidades de voluntariado | Ocasional | Alta |
-| Publicar convocatorias | Frecuente | Alta |
-### 2.3.3. User Journey Mapping
-### 2.3.4. Empathy Mapping
-### 2.3.5. Big Picture EventStorming
-### 2.3.6. Ubiquitous Language
-## 2.4. Requirements specification
-### 2.4.1. User Stories
 ### 2.4.2. Impact Mapping
 ### 2.4.3. Product Backlog
 ## 2.5. Strategic-Level Domain-Driven Design
