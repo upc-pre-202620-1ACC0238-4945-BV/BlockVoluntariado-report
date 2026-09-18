@@ -328,7 +328,7 @@ Asimismo, se prioriza la cercanía con el usuario mediante notificaciones y opci
 
 Preguntas en general: 
 ¿Cual es tu nombre?
-¿Cuantos años tienes
+¿Cuantos años tienes?
 ¿Qué estudias o que estudiaste? 
 ¿En qué distrito vives?
 
@@ -382,19 +382,19 @@ Segmento 2 - ONG’S y fundaciones sociales:
 
 #### Segmento 1: Jovenes Universitarios
 
-| N | Datos |Descripción |Imagen referencial
-|--|--|--|--|
-|1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate| |<img src="assets/md-images-chapter1/s1-e1.png"> <br> link provicional: https://www.youtube.com/watch?v=lcTBFkdGlVA
-|2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao| |<img src="assets/md-images-chapter1/s1-e2.png"> <br> link provicional:
-|3  | Nombre: Richrad <br>Apellido: Lozano <br>Edad: 20<br>Distrito: San Martin de Porres ||<img src="assets/md-images-chapter1/s1-e3.png"> <br> link provicional: https://youtu.be/wQHt7u7u8ME
+| N | Datos                                                                                | Descripción | Imagen referencial                                                                                                 
+|--|--------------------------------------------------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------------------|
+|1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate                               |             | <img src="assets/md-images-chapter1/s1-e1.png"> <br> link provicional: https://www.youtube.com/watch?v=lcTBFkdGlVA 
+|2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao              |             | <img src="assets/md-images-chapter1/s1-e2.png"> <br> link provicional:                                             
+|3  | Nombre: Richrad <br>Apellido: Lozano <br>Edad: 20<br>Distrito: San Martin de Porres | Richard Lozano es un joven interesado en participar en actividades de voluntariado que le permitan ayudar a otras personas y, al mismo tiempo, adquirir nuevas experiencias. Busca una plataforma sencilla donde pueda encontrar oportunidades de acuerdo con sus intereses, disponibilidad de tiempo y ubicación, para así elegir un voluntariado que se adapte a sus necesidades.| <img src="assets/md-images-chapter1/s1-e3.png"> <br> link provicional: https://youtu.be/wQHt7u7u8ME|
 
 ### Segmento 2: ONG’S y fundaciones sociales
 
-| N | Datos |Descripción |Imagen referencial
-|--|--|--|--|
-|1  | Nombre: <br>Apellido: <br>Edad:  <br>Distrito: | |<img src="">
-|2  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
-|3  | Nombre: Aldo Jesus <br>Apellido: Huaman <br>Edad: 25 <br>Distrito: Manchay ||<img src="assets/md-images-chapter1/s2-e3.png"> <br> link provicional: https://youtu.be/o8zG31C2IJI
+| N | Datos                                                                        | Descripción |Imagen referencial
+|--|------------------------------------------------------------------------------|-------------|--|
+|1  | Nombre: <br>Apellido: <br>Edad:  <br>Distrito:                               |             |<img src="">
+|2  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito:                               |             |<img src="">
+|3  | Nombre: Aldo Jesus <br>Apellido: Huaman <br>Edad: 25 <br>Distrito: Manchay  | Aldo Jesús Huamán es un trabajador con experiencia en ONG y fundaciones sociales, acostumbrado a participar en actividades orientadas al apoyo comunitario y la organización de iniciativas sociales. Debido a su experiencia, conoce de cerca las dificultades para coordinar voluntarios, mantener su compromiso y gestionar adecuadamente las actividades, por lo que valora herramientas que faciliten la comunicación, el seguimiento y la organización de los proyectos. |<img src="assets/md-images-chapter1/s2-e3.png"> <br> link provicional: https://youtu.be/o8zG31C2IJI
 
 
 ### 2.2.3. Análisis de entrevistas
