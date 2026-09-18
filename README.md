@@ -355,15 +355,15 @@ Segmento 2 - ONG’S y fundaciones sociales:
 
 | N | Datos |Descripción |Imagen referencial
 |--|--|--|--|
-|1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate| |<img src="assets/md-images-chapter1/s1-e1.png"> <br> link provicional: https://www.youtube.com/watch?v=lcTBFkdGlVA
-|2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao|  |<img src="assets/md-images-chapter1/s1-e2.png"><br>link del video:<br>https://youtu.be/x08H55_hld8
+|1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate| Justin, estudiante de ingeniería de software de 19 años, prefiere voluntariados presenciales y de largo plazo enfocados en el medio ambiente y la educación. Le motivan ayudar a los demás y conseguir créditos extracurriculares y certificados para su CV. Su principal obstáculo es la falta de tiempo, por lo que busca una app con filtros horarios y alertas en tiempo real, y la recomendaría justamente por facilitar estos beneficios académicos y sociales. |<img src="assets/md-images-chapter1/s1-e1.png"> <br> link provicional: https://www.youtube.com/watch?v=lcTBFkdGlVA
+|2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao| Rosalía, estudiante de 21 años, prefiere voluntariados virtuales y de largo plazo enfocados en educación e inclusión para mejorar su CV y conseguir becas. Considera clave recibir certificados y que la app sea fácil de usar, incluya testimonios y filtre oportunidades por tiempo y lugar, ya que le frena la falta de información y confianza. |<img src="assets/md-images-chapter1/s1-e2.png"><br>link del video:<br>https://youtu.be/x08H55_hld8
 |3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito:  ||<img src="">
 
 ### Segmento 2: ONG’S y fundaciones sociales
 
 | N | Datos |Descripción |Imagen referencial
 |--|--|--|--|
-|1  | Nombre: <br>Apellido: <br>Edad:  <br>Distrito: | |<img src="">
+|1  | Nombre: Eduardo <br>Apellido: Sullon <br>Edad: 22 <br>Distrito: Pachacamac | Eduardo, de una ONG, busca voluntarios presenciales o híbridos, siendo su mayor reto la falta de información para llegar a más gente y las capacitaciones iniciales. Necesita un sistema con historial y busca en una plataforma visibilidad y gestión, estando dispuesto a pagar por ello y por reportes de impacto. |<img src="assets/md-images-chapter1/EntrevistaUnoONG.jpeg"><br>Link del video: https://youtu.be/vFKFP6NsK4U
 |2  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
 |3  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito: | |<img src="">
 
