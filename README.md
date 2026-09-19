@@ -495,6 +495,8 @@ Los hallazgos obtenidos permiten concluir que existe la necesidad de una platafo
 
 ### 2.3.1. User Personas
 
+<img src="assets/md-images-chapter1/userPersonaS1.jpeg">
+
 ### 2.3.2. User Task Matrix
 
 La matriz de tareas permite priorizar las acciones que cada segmento necesita realizar dentro de BlockVoluntariado.
@@ -665,8 +667,24 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 
 #### 2.5.1.1. Candidate Context Discovery
 #### 2.5.1.2. Domain Message Flows Modeling
+A partir del contexto y la problemática analizada, los flujos del sistema de Block Voluntariado se modelan paso a paso mediante la técnica de Domain Storytelling utilizando la plataforma Miro, de la siguiente manera:<br><br>
+-Primero el estudiante universitario se registra e ingresa a la aplicación móvil de Block Voluntariado para buscar oportunidades que se ajusten a sus preferencias y necesidades, evitando la búsqueda manual en redes sociales o paneles publicitarios.<br>
+-Tras interactuar con la plataforma, el estudiante utiliza los filtros de búsqueda para explorar las opciones disponibles y selecciona una alternativa de su interés.<br>
+-El sistema le permite visualizar la información y descripción detallada de la ONG, lo que le ayuda a conocer a fondo la organización antes de tomar una decisión.<br>
+-Finalmente, el proceso concluye de forma exitosa cuando el estudiante realiza la matriculación de manera centralizada en la aplicación, facilitando el cumplimiento de sus créditos extracurriculares durante su primera semana de uso.<br><br>
+<img src="assets/md-images-chapter1/domain Storytelling.jpeg">
+
+
 #### 2.5.1.3. Bounded Context Canvases
+En la siguiente tabla se muestran los lienzos de diseño (Bounded Context Canvases) para Block Voluntariado. Aquí organizamos los cuatro contextos principales del sistema, desde las convocatorias hasta los reconocimientos, detallando de forma clara qué hace cada uno, sus reglas basadas en nuestro lenguaje ubicuo, con quién se conectan y por qué se diseñaron de esa manera para mantener la aplicación estable
+<br><br>
+<img src="assets/md-images-chapter1/boundend context canvases.jpeg">
+
+
 ### 2.5.2. Context Mapping
+En el siguiente diagrama se muestra el mapa de contextos (Context Map) de Block Voluntariado. Aquí se puede ver cómo se relacionan e intercomunican nuestros cuatro contextos: utilizando el patrón Customer/Supplier para conectar el flujo de datos entre las evaluaciones, matrículas y convocatorias, y el patrón Shared Kernel (núcleo compartido) para que el módulo de perfil y autenticación sirva como la base segura que consultan todos los demás módulos.<br><br>
+<img src="assets/md-images-chapter1/contextMap.jpeg">
+
 ### 2.5.3. Software Architecture
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 
