@@ -424,6 +424,8 @@ Los hallazgos obtenidos permiten concluir que existe la necesidad de una platafo
 
 ### 2.3.1. User Personas
 
+<img src="assets/md-images-chapter1/userPersonaS1.jpeg">
+
 ### 2.3.2. User Task Matrix
 
 La matriz de tareas permite priorizar las acciones que cada segmento necesita realizar dentro de BlockVoluntariado.
