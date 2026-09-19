@@ -606,6 +606,9 @@ En la siguiente tabla se muestran los lienzos de diseño (Bounded Context Canvas
 
 
 ### 2.5.2. Context Mapping
+En el siguiente diagrama se muestra el mapa de contextos (Context Map) de Block Voluntariado. Aquí se puede ver cómo se relacionan e intercomunican nuestros cuatro contextos: utilizando el patrón Customer/Supplier para conectar el flujo de datos entre las evaluaciones, matrículas y convocatorias, y el patrón Shared Kernel (núcleo compartido) para que el módulo de perfil y autenticación sirva como la base segura que consultan todos los demás módulos.<br><br>
+<img src="assets/md-images-chapter1/contextMap.jpeg">
+
 ### 2.5.3. Software Architecture
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 #### 2.5.3.2. Software Architecture Container Level Diagrams
