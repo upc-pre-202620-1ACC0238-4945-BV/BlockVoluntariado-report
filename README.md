@@ -143,6 +143,7 @@ Falta de centralización: No existe una plataforma unificada y de fácil acceso 
 Gestión de tiempos y reconocimiento: Los estudiantes tienen horarios académicos rígidos y necesitan que sus horas de voluntariado sean certificadas formalmente para sus currículums o créditos universitarios. Actualmente, el proceso de seguimiento de horas y emisión de constancias es manual, burocrático y propenso a errores (VNU, 2022).
 
 ### 1.2.2. Lean UX Process
+
 #### 1.2.2.1. Lean UX Problem Statements
 
 La problemática fue detectada en el sector de voluntarios, nos enfocaremos principalmente en estudiantes universitarios que buscan voluntariados de forma manual por redes sociales o paneles publicitarios y ONGs que realizan convocatorias de voluntariados, nuestro enfoque inicial serán estudiantes universitarios que necesitan créditos extracurriculares para graduarse de la universidad y no cuentan con una aplicación que facilite la búsqueda de voluntarios basándose a sus preferencias y nesecidades, block voluntariado es una aplicación móvil donde después de registrarte podrás filtrar un voluntariado según tus preferencias y matricularte. Sabremos que tendremos éxito cuando veamos que el 50% de los estudiantes registrados logren matricularse en la aplicación en la primera semana de uso.
@@ -192,6 +193,14 @@ El Lean UX Canvas de BlockVoluntariado resume el problema de negocio, los usuari
 
 
 ## 1.3. Segmentos objetivo
+- Jóvenes universitarios
+
+En esta sección se describe al segmento conformado por estudiantes de educación superior, principalmente de entre 18 y 30 años, con alta familiaridad tecnológica y disposición para participar en actividades de voluntariado de corta duración. Los cuales representan una parte importante de la población joven conectada del país, interesada en generar impacto social, fortalecer su perfil académico y profesional, y obtener reconocimiento a través de créditos sociales y certificaciones digitales.
+
+- ONG’S y fundaciones sociales
+
+Este segmento incluye a organizaciones sin fines de lucro que operan en distintas regiones y que requieren voluntarios confiables para tareas específicas como campañas de sensibilización, traducciones, reportes comunitarios o capacitaciones. Muchas de estas entidades trabajan con recursos limitados y necesitan optimizar su alcance y medir su impacto de forma transparente, encontrando en la plataforma una solución para acceder a voluntarios trazables y comprometidos.
+
 - Jóvenes universitarios
 
 En esta sección se describe al segmento conformado por estudiantes de educación superior, principalmente de entre 18 y 30 años, con alta familiaridad tecnológica y disposición para participar en actividades de voluntariado de corta duración. Los cuales representan una parte importante de la población joven conectada del país, interesada en generar impacto social, fortalecer su perfil académico y profesional, y obtener reconocimiento a través de créditos sociales y certificaciones digitales.
@@ -382,20 +391,18 @@ Segmento 2 - ONG’S y fundaciones sociales:
 
 #### Segmento 1: Jovenes Universitarios
 
-| N | Datos                                                                                | Descripción | Imagen referencial                                                                                                 
-|--|--------------------------------------------------------------------------------------|-------------|--------------------------------------------------------------------------------------------------------------------|
-|1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate                               |             | <img src="assets/md-images-chapter1/s1-e1.png"> <br> link provicional: https://www.youtube.com/watch?v=lcTBFkdGlVA 
-|2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao              |             | <img src="assets/md-images-chapter1/s1-e2.png"> <br> link provicional:                                             
-|3  | Nombre: Richrad <br>Apellido: Lozano <br>Edad: 20<br>Distrito: San Martin de Porres | Richard Lozano es un joven interesado en participar en actividades de voluntariado que le permitan ayudar a otras personas y, al mismo tiempo, adquirir nuevas experiencias. Busca una plataforma sencilla donde pueda encontrar oportunidades de acuerdo con sus intereses, disponibilidad de tiempo y ubicación, para así elegir un voluntariado que se adapte a sus necesidades.| <img src="assets/md-images-chapter1/s1-e3.png"> <br> link provicional: https://youtu.be/wQHt7u7u8ME|
+| N | Datos |Descripción |Imagen referencial
+|--|--|--|--|
+|1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate| Justin, estudiante de ingeniería de software de 19 años, prefiere voluntariados presenciales y de largo plazo enfocados en el medio ambiente y la educación. Le motivan ayudar a los demás y conseguir créditos extracurriculares y certificados para su CV. Su principal obstáculo es la falta de tiempo, por lo que busca una app con filtros horarios y alertas en tiempo real, y la recomendaría justamente por facilitar estos beneficios académicos y sociales. |<img src="assets/md-images-chapter1/s1-e1.png"> <br> link provicional: https://www.youtube.com/watch?v=lcTBFkdGlVA
+|2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao| Rosalía, estudiante de 21 años, prefiere voluntariados virtuales y de largo plazo enfocados en educación e inclusión para mejorar su CV y conseguir becas. Considera clave recibir certificados y que la app sea fácil de usar, incluya testimonios y filtre oportunidades por tiempo y lugar, ya que le frena la falta de información y confianza. |<img src="assets/md-images-chapter1/s1-e2.png"><br>link del video:<br>https://youtu.be/x08H55_hld8
+|3  | Nombre: Richard <br>Apellido: Lozano <br>Edad: 20 <br>Distrito: San Martin de Porres |  Richard Lozano es un joven interesado en participar en actividades de voluntariado que le permitan ayudar a otras personas y, al mismo tiempo, adquirir nuevas experiencias. Busca una plataforma sencilla donde pueda encontrar oportunidades de acuerdo con sus intereses, disponibilidad de tiempo y ubicación, para así elegir un voluntariado que se adapte a sus necesidades. |<img  src="assets/md-images-chapter1/s1-e3.png"><br>Link del Video: https://youtu.be/wQHt7u7u8ME
 
 ### Segmento 2: ONG’S y fundaciones sociales
 
-| N | Datos                                                                        | Descripción |Imagen referencial
-|--|------------------------------------------------------------------------------|-------------|--|
-|1  | Nombre: <br>Apellido: <br>Edad:  <br>Distrito:                               |             |<img src="">
-|2  | Nombre: <br>Apellido:  <br>Edad: <br>Distrito:                               |             |<img src="">
-|3  | Nombre: Aldo Jesus <br>Apellido: Huaman <br>Edad: 25 <br>Distrito: Manchay  | Aldo Jesús Huamán es un trabajador con experiencia en ONG y fundaciones sociales, acostumbrado a participar en actividades orientadas al apoyo comunitario y la organización de iniciativas sociales. Debido a su experiencia, conoce de cerca las dificultades para coordinar voluntarios, mantener su compromiso y gestionar adecuadamente las actividades, por lo que valora herramientas que faciliten la comunicación, el seguimiento y la organización de los proyectos. |<img src="assets/md-images-chapter1/s2-e3.png"> <br> link provicional: https://youtu.be/o8zG31C2IJI
-
+| N | Datos |Descripción |Imagen referencial
+|--|--|--|--|
+|1  | Nombre: Eduardo <br>Apellido: Sullon <br>Edad: 22 <br>Distrito: Pachacamac | Eduardo, de una ONG, busca voluntarios presenciales o híbridos, siendo su mayor reto la falta de información para llegar a más gente y las capacitaciones iniciales. Necesita un sistema con historial y busca en una plataforma visibilidad y gestión, estando dispuesto a pagar por ello y por reportes de impacto.  |<img src="assets/md-images-chapter1/EntrevistaUnoONG.jpeg"><br>Link del video: https://youtu.be/vFKFP6NsK4U
+|2  | Nombre:  Aldo Jesus <br>Apellido: Huaman  <br>Edad: 25 <br>Distrito: Manchay|Aldo Jesús Huamán es un trabajador con experiencia en ONG y fundaciones sociales, acostumbrado a participar en actividades orientadas al apoyo comunitario y la organización de iniciativas sociales. Debido a su experiencia, conoce de cerca las dificultades para coordinar voluntarios, mantener su compromiso y gestionar adecuadamente las actividades, por lo que valora herramientas que faciliten la comunicación, el seguimiento y la organización de los proyectos.  |<img src="assets/md-images-chapter1/s2-e3.png"><br>Link del Video:<br>https://youtu.be/o8zG31C2IJI
 
 ### 2.2.3. Análisis de entrevistas
 Las entrevistas permitieron identificar patrones comunes entre los jóvenes universitarios. El principal obstáculo mencionado fue la falta de tiempo debido a la carga académica. Por ello, los entrevistados valoran especialmente que los voluntariados cuenten con horarios claros, opciones flexibles y filtros que permitan encontrar actividades compatibles con su disponibilidad.
