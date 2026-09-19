@@ -553,6 +553,9 @@ Para BlockVoluntariado se analizaron los recorridos correspondientes a los princ
 
 
 ### 2.3.4. Empathy Mapping
+
+![S1-EmpathyMap](<assets/md-images-chapter2/S1-EmpathyMap.png>)
+
 ### 2.3.5. Big Picture EventStorming
 El Big Picture EventStorming permite representar los principales eventos que ocurren dentro del dominio de BlockVoluntariado y entender la interacción general entre usuarios, procesos y resultados.
 
