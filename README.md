@@ -591,6 +591,14 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 ### 2.5.1. EventStorming
 #### 2.5.1.1. Candidate Context Discovery
 #### 2.5.1.2. Domain Message Flows Modeling
+A partir del contexto y la problemática analizada, los flujos del sistema de Block Voluntariado se modelan paso a paso mediante la técnica de Domain Storytelling utilizando la plataforma Miro, de la siguiente manera:<br><br>
+-Primero el estudiante universitario se registra e ingresa a la aplicación móvil de Block Voluntariado para buscar oportunidades que se ajusten a sus preferencias y necesidades, evitando la búsqueda manual en redes sociales o paneles publicitarios.<br>
+-Tras interactuar con la plataforma, el estudiante utiliza los filtros de búsqueda para explorar las opciones disponibles y selecciona una alternativa de su interés.<br>
+-El sistema le permite visualizar la información y descripción detallada de la ONG, lo que le ayuda a conocer a fondo la organización antes de tomar una decisión.<br>
+-Finalmente, el proceso concluye de forma exitosa cuando el estudiante realiza la matriculación de manera centralizada en la aplicación, facilitando el cumplimiento de sus créditos extracurriculares durante su primera semana de uso.<br><br>
+<img src="assets/md-images-chapter1/domain Storytelling.jpeg">
+
+
 #### 2.5.1.3. Bounded Context Canvases
 ### 2.5.2. Context Mapping
 ### 2.5.3. Software Architecture
