@@ -663,7 +663,7 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 ## 2.5. Strategic-Level Domain-Driven Design
 ### 2.5.1. EventStorming
 
-![alt text](EventStorming.png)
+![EventStorming](assets/md-images-chapter2/EventStorming.png)
 
 #### 2.5.1.1. Candidate Context Discovery
 #### 2.5.1.2. Domain Message Flows Modeling
