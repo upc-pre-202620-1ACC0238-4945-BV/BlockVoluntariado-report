@@ -45,7 +45,7 @@ Proyecto<br>
 
 <strong>Período 202620</strong><br><br>
 
-<strong>Julio 2026</strong>
+<strong>Setiembre 2026</strong>
 </div>
 <div style="page-break-after: always;"></div>
 
