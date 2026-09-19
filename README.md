@@ -600,6 +600,11 @@ A partir del contexto y la problemática analizada, los flujos del sistema de Bl
 
 
 #### 2.5.1.3. Bounded Context Canvases
+En la siguiente tabla se muestran los lienzos de diseño (Bounded Context Canvases) para Block Voluntariado. Aquí organizamos los cuatro contextos principales del sistema, desde las convocatorias hasta los reconocimientos, detallando de forma clara qué hace cada uno, sus reglas basadas en nuestro lenguaje ubicuo, con quién se conectan y por qué se diseñaron de esa manera para mantener la aplicación estable
+<br><br>
+<img src="assets/md-images-chapter1/boundend context canvases.jpeg">
+
+
 ### 2.5.2. Context Mapping
 ### 2.5.3. Software Architecture
 #### 2.5.3.1. Software Architecture Context Level Diagrams
