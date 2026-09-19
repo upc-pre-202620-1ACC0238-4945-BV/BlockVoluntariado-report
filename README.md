@@ -634,6 +634,29 @@ De esta manera, se busca evitar que todas las funcionalidades del sistema se enc
 ---
 ### 2.5.1. EventStorming
 #### 2.5.1.1. Candidate Context Discovery
+
+A partir del EventStorming realizado para BlockVoluntariado se identificaron diferentes grupos de eventos, comandos y entidades que presentan responsabilidades relacionadas entre sí.
+
+El objetivo del Candidate Context Discovery es detectar posibles límites dentro del dominio para separar las funcionalidades del sistema en áreas con responsabilidades específicas. Estos límites servirán posteriormente como base para definir los Bounded Contexts de la solución.
+
+Para BlockVoluntariado se identificaron los siguientes candidatos:
+
+| Candidate Context | Responsabilidad principal | Eventos relacionados |
+|---|---|---|
+| **Identity and Access Management** | Gestionar el registro, autenticación y acceso de los usuarios al sistema. | Estudiante registrado, ONG registrada, sesión iniciada, perfil actualizado. |
+| **Volunteer Management** | Gestionar la información, intereses, habilidades y perfil de los voluntarios. | Perfil de voluntario actualizado, preferencias registradas, historial consultado. |
+| **Volunteering Management** | Gestionar la creación, publicación, edición y cierre de oportunidades de voluntariado. | Convocatoria creada, requisitos definidos, voluntariado publicado, convocatoria actualizada, convocatoria cerrada. |
+| **Application Management** | Gestionar las postulaciones realizadas por los estudiantes y la evaluación por parte de las ONG. | Postulación enviada, postulación revisada, postulación aceptada, postulación rechazada. |
+| **Participation Management** | Gestionar la participación de los voluntarios durante el desarrollo de las actividades. | Participación confirmada, asistencia registrada, actividad iniciada, actividad finalizada. |
+| **Recognition and Evaluation** | Gestionar las evaluaciones, certificados, horas registradas y reconocimiento de los participantes. | Voluntario evaluado, ONG calificada, horas registradas, certificado generado, insignia otorgada. |
+| **Communication and Notifications** | Gestionar avisos, recordatorios y comunicaciones relacionadas con las actividades y postulaciones. | Resultado enviado al estudiante, recordatorio enviado, notificación generada. |
+
+Los candidatos identificados permiten organizar el dominio de BlockVoluntariado según las responsabilidades de cada proceso.
+
+Esta división facilita que las funcionalidades relacionadas se mantengan agrupadas y reduce el acoplamiento entre diferentes partes del sistema.
+
+Asimismo, los Candidate Contexts permiten establecer una primera aproximación a los Bounded Contexts que serán utilizados posteriormente en el diseño estratégico y táctico de la solución.
+
 #### 2.5.1.2. Domain Message Flows Modeling
 #### 2.5.1.3. Bounded Context Canvases
 ### 2.5.2. Context Mapping
