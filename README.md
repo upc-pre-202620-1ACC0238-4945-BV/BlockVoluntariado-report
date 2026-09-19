@@ -51,9 +51,10 @@ Proyecto<br>
 
 
 ## Registro de Versiones del Informe
-| Versión | Fecha | Autor | Descripción de modificación |
-|---|---|---|---|
-| | | | |
+
+| Versión | Fecha | Autor(es) | Descripción de Modificación |
+| :---: | :---: | :--- | :--- |
+| **1.0** | 18/09/2026 | Todos los integrantes | **Entrega Oficial Hito 1 (AV1):** Consolidación de Student Outcome 7, Objetivos SMART, Big Picture EventStorming (Miro), Impact Mapping, Product Backlog, Diseño Estratégico y Táctico DDD, Arquitectura C4 (Nivel 1, 2, 3 y Despliegue en PlantUML) y Diseño de Base de Datos relacional en MySQL. |
 
 ## Project Report Collaboration Insights
 
@@ -116,7 +117,77 @@ Proyecto<br>
 
 ## Student Outcome
 
+### ABET EAC - Student Outcome 7
+**Criterio:** Capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas (*An ability to acquire and apply new knowledge as needed, using appropriate learning strategies*).
+
+Para la entrega del **Avance 1 (AV1)**, identificamos los vacíos conceptuales y desafíos técnicos requeridos para diseñar una arquitectura de software móvil escalable, mantenible y fundamentada en principios de ingeniería rigurosos. A continuación se presentan las evidencias de aprendizaje autónomo y aplicación técnica individual:
+
+| Integrante | Acciones Realizadas para AV1 | Evidencia / Aporte al Proyecto |
+| :--- | :--- | :--- |
+| **Tavara Correa, Sebastian Oswaldo**<br>*(U20241e179)* | **Acción 1:** Investigó la literatura canónica de **Domain-Driven Design (DDD)** estratégico (Evans, 2003; Vernon, 2013), estudiando patrones de delimitación de subdominios y mapeo de contextos acotados (*Bounded Contexts*) para separar el núcleo del negocio (*Core Domain*) de los contextos de soporte e identidad.<br><br>**Acción 2:** Investigó la sintaxis del **C4 Model** y herramientas de *Diagram-as-Code* (PlantUML y Structurizr DSL), formulando los diagramas de Nivel 1 (Contexto) y Nivel 2 (Contenedores) garantizando un modelo puramente móvil centrado en Android (Kotlin) y backend Spring Boot. | Elaboración de las secciones de Context Mapping, C4 Model (Contexto, Contenedores, Despliegue) y diseño de la arquitectura modular del informe. |
+| **Tuncar Vila, Ghorghet Saul**<br>*(U20241e107)* | **Acción 1:** Investigó técnicas avanzadas de modelado relacional y normalización (3FN) en **MySQL 8.0**, analizando el diseño de esquemas transaccionales que garanticen la integridad referencial en entidades altamente interconectadas (organizaciones, convocatorias, postulaciones, registros de asistencia y certificados).<br><br>**Acción 2:** Estudió patrones de persistencia táctica DDD desacoplada (patrón Repository, Data Mapper y Value Objects inmutables), diseñando esquemas de índices B-Tree y restricciones foráneas para optimizar consultas de geolocalización y búsqueda de convocatorias. | Diseño del Diagrama Entidad-Relación (DER) de MySQL, elaboración del script DDL estructurado y modelado de datos de la capa de infraestructura del Core Domain. |
+| **Cabrejos Chocco, Diego Alexander**<br>*(U20241e014)* | **Acción 1:** Profundizó en metodologías de **Needfinding y Lean UX** aplicadas a soluciones móviles, investigando técnicas de entrevista semiestructurada para extraer dolores de estudiantes universitarios y coordinadores sociales, traduciéndolos a artefactos de empatía y journey mapping.<br><br>**Acción 2:** Investigó guías oficiales de Google Android Developers sobre diseño declarativo moderno en **Kotlin con Jetpack Compose** y **Material Design 3**, comprendiendo la reactividad de interfaces mediante `StateFlow` y componentes accesibles adaptados a la interacción móvil en campo. | Construcción de las fichas de User Personas, mapas de empatía, matriz de tareas y redacción de User Stories críticas con criterios de aceptación en formato Given-When-Then. |
+
+
+### Conclusiones del Student Outcome 7
+
+1. **Efectividad del Autoaprendizaje Dirigido:** Demostramos autonomía y rigor técnico al acudir a fuentes oficiales de la industria (documentación de Android, manuales de MySQL, bibliografía de Eric Evans y Simon Brown). Esta investigación permitió superar las limitaciones de partida y tomar decisiones arquitectónicas fundamentadas para un ecosistema exclusivamente móvil.
+2. **Transferencia Técnica Inmediata:** Cada conocimiento adquirido se aplicó directamente a los artefactos de ingeniería del Hito 1: los conceptos de DDD se tradujeron en límites de contexto claros y diagramas C4 en código ejecutable; los principios de bases de datos se plasmaron en un esquema SQL normalizado; y las técnicas de Lean UX sustentaron historias de usuario verificables.
+
+---
+
 ## Objetivos SMART
+
+
+### 1. Tavara Correa, Sebastian Oswaldo
+* **Objetivo SMART 1 (Certificación Cloud & Arquitectura):**
+  * **Declaración:** Obtener la certificación oficial **AWS Certified Solutions Architect – Associate** en un lapso no mayor a **6 meses** posteriores a la graduación universitaria, dedicando 10 horas semanales a cursos oficiales y laboratorios prácticos en AWS, con la finalidad de consolidar su perfil profesional en diseño de infraestructuras distribuidas y de alta disponibilidad.
+  * **S (Específico):** Aprobar la certificación AWS Certified Solutions Architect - Associate.
+  * **M (Medible):** Obtener un puntaje mínimo de 750/1000 en el examen oficial SAA-C03.
+  * **A (Alcanzable):** Asignar un horario fijo de 10 horas de autoestudio semanal y desplegar 5 arquitecturas serverless/contenedores en sandbox de AWS.
+  * **R (Relevante):** Clave para ejercer el rol de Arquitecto de Software y diseñar sistemas escalables desacoplados.
+  * **T (Temporal):** Culminar y certificar dentro de los primeros 6 meses post-titulación.
+* **Objetivo SMART 2 (Liderazgo Técnico en Proyectos Móviles):**
+  * **Declaración:** Liderar como **Mobile Tech Lead** o **Senior Software Engineer** el diseño e implementación de una aplicación móvil corporativa con Clean Architecture y DDD que logre una cobertura de pruebas unitarias superior al **80%** y cero vulnerabilidades críticas en SonarQube, durante sus primeros **12 meses** en el mercado laboral profesional.
+  * **S (Específico):** Liderar el diseño de módulos de software móvil aplicando Clean Architecture y DDD.
+  * **M (Medible):** Mantener un *code coverage* $\ge 80\%$ y cumplir con estándares de calidad de código estricto.
+  * **A (Alcanzable):** Respaldado en la experiencia adquirida en el curso y en la arquitectura de BlockVoluntariado.
+  * **R (Relevante):** Garantizar la mantenibilidad y calidad del software a escala empresarial.
+  * **T (Temporal):** En un plazo de 12 meses de ejercicio profesional continuo.
+
+### 2. Tuncar Vila, Ghorghet Saul
+* **Objetivo SMART 1 (Certificación Profesional en Bases de Datos):**
+  * **Declaración:** Aprobar la certificación internacional **Oracle Certified Professional: MySQL 8.0 Database Administrator** en un plazo máximo de **9 meses** tras graduarse de la universidad, completando un programa de preparación técnica de 8 horas semanales enfocado en indexación InnoDB, particionamiento, replicación y alta disponibilidad.
+  * **S (Específico):** Obtener la certificación OCP MySQL 8.0 Database Administrator (Examen 1Z0-908).
+  * **M (Medible):** Aprobar el examen oficial con una calificación igual o superior al 80%.
+  * **A (Alcanzable):** Cimentado en su experiencia en optimización SQL relacional y laboratorios de administración de bases de datos.
+  * **R (Relevante):** Validar internacionalmente competencias técnicas para la administración y tuning de motores de base de datos críticos.
+  * **T (Temporal):** Meta a cumplirse dentro de los primeros 9 meses post-graduación.
+* **Objetivo SMART 2 (Optimización de Rendimiento Backend y Datos):**
+  * **Declaración:** Diseñar y desplegar una arquitectura de base de datos relacional y capa de cacheo en memoria (Redis + MySQL) en un entorno productivo que logre reducir el tiempo promedio de respuesta (*latency*) de transacciones concurrentes en un **35%**, durante sus primeros **12 meses** como ingeniero backend o de datos.
+  * **S (Específico):** Optimizar la capa de persistencia y ejecución de queries complejas en producción.
+  * **M (Medible):** Disminución medible del 35% en los tiempos de respuesta según métricas de APM (New Relic / Datadog).
+  * **A (Alcanzable):** Mediante profiling de consultas lentas, normalización estratégica e indexación balanceada.
+  * **R (Relevante):** Generar eficiencia operativa y ahorro en costos de infraestructura cloud.
+  * **T (Temporal):** Durante el primer año de ejercicio laboral.
+
+### 3. Cabrejos Chocco, Diego Alexander
+* **Objetivo SMART 1 (Certificación en Desarrollo Móvil Google):**
+  * **Declaración:** Obtener la certificación oficial **Google Associate Android Developer** en un plazo de **6 meses** posteriores a la graduación universitaria, dedicando 10 horas semanales a proyectos prácticos en Kotlin, Jetpack Compose, Coroutines y arquitectura modular.
+  * **S (Específico):** Rendir y aprobar el examen oficial de Google para desarrolladores Android.
+  * **M (Medible):** Superar la prueba práctica de codificación y la entrevista de validación técnica de Google.
+  * **A (Alcanzable):** Apoyado en la experiencia de codificación nativa en Kotlin del proyecto de curso.
+  * **R (Relevante):** Acreditar formalmente competencias de desarrollo móvil moderno ante la industria global.
+  * **T (Temporal):** En un plazo de 6 meses tras culminar los estudios universitarios.
+* **Objetivo SMART 2 (Impacto en Experiencia de Usuario y Calidad Móvil):**
+  * **Declaración:** Diseñar y publicar en Google Play Store una aplicación móvil nativa con impacto social o educativo que alcance una valoración promedio mínima de **4.5 estrellas** (con al menos 150 reseñas de usuarios) y una tasa de retención a 30 días superior al **25%**, dentro de los primeros **10 meses** post-graduación.
+  * **S (Específico):** Desarrollar y lanzar al mercado una app móvil intuitiva, accesible y de alta usabilidad.
+  * **M (Medible):** Mantener $\ge 4.5$ estrellas y tasa de retención D30 $\ge 25\%$.
+  * **A (Alcanzable):** Aplicando metodologías rigurosas de Lean UX y arquitectura reactiva libre de bloqueos de interfaz.
+  * **R (Relevante):** Demostrar la capacidad de alinear el valor percibido por el usuario final con ingeniería móvil de primer nivel.
+  * **T (Temporal):** En un lapso de 10 meses tras el lanzamiento.
+
+---
 
 # Capítulo I: Presentación
 ## 1.1. Startup Profile
@@ -589,24 +660,80 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 ### 2.4.3. Product Backlog
 ## 2.5. Strategic-Level Domain-Driven Design
 ### 2.5.1. EventStorming
+
+![alt text](EventStorming.png)
+
 #### 2.5.1.1. Candidate Context Discovery
 #### 2.5.1.2. Domain Message Flows Modeling
 #### 2.5.1.3. Bounded Context Canvases
 ### 2.5.2. Context Mapping
 ### 2.5.3. Software Architecture
 #### 2.5.3.1. Software Architecture Context Level Diagrams
+
+![ContextDiagram](assets/md-images-chapter2/ContextDiagram.png)
+
 #### 2.5.3.2. Software Architecture Container Level Diagrams
+
+![ContainerDiagram](assets/md-images-chapter2/ContainerDiagram.png)
+
 #### 2.5.3.3. Software Architecture Deployment Diagrams
+
+![DeploymentDiagram](assets/md-images-chapter2/DeploymentDiagram.png)
+
 ## 2.6. Tactical-Level Domain-Driven Design
-### 2.6.x. Bounded Context: <Bounded Context Name>
-#### 2.6.x.1. Domain Layer
-#### 2.6.x.2. Interface Layer
-#### 2.6.x.3. Application Layer
-#### 2.6.x.4. Infrastructure Layer
-#### 2.6.x.5. Bounded Context Software Architecture Component Level Diagrams
-#### 2.6.x.6. Bounded Context Software Architecture Code Level Diagrams
-##### 2.6.x.6.1. Bounded Context Domain Layer Class Diagrams
+### 2.6.1. Bounded Context: Volunteering Management Core
+#### 2.6.1.1. Domain Layer
+
+* **Aggregate Root 1: `Convocatoria`**
+  * Atributos: `ConvocatoriaId` (VO), `OrganizacionId` (VO), `Titulo` (VO), `Descripcion` (VO), `LimiteVacantes` (VO), `VacantesOcupadas` (VO), `Horario` (VO con fecha inicio/fin y rango de horas), `Ubicacion` (VO con distrito y dirección), `EstadoConvocatoria` (Enum: `BORRADOR`, `PUBLICADA`, `CERRADA`).
+  * Métodos de Dominio: `publicar()`, `postular(VoluntarioId)`, `ocuparVacante()`, `cerrarPorCupos()`.
+* **Aggregate Root 2: `Postulacion`**
+  * Atributos: `PostulacionId` (VO), `ConvocatoriaId` (VO), `VoluntarioId` (VO), `FechaPostulacion` (VO), `EstadoPostulacion` (Enum: `PENDIENTE`, `ACEPTADA`, `RECHAZADA`).
+  * Métodos de Dominio: `aceptar()`, `rechazar(Motivo)`.
+* **Value Objects (VOs):** `Horario`, `Ubicacion`, `LimiteVacantes`.
+* **Domain Events:** `ConvocatoriaPublicadaEvent`, `PostulacionCreadaEvent`, `PostulanteAceptadoEvent`.
+* **Repository Interfaces:** `ConvocatoriaRepository`, `PostulacionRepository`.
+
+#### 2.6.1.2. Interface Layer
+
+* `ConvocatoriasController`:
+  * `POST /api/v1/convocatorias`: Crear convocatoria (solo rol `REPRESENTANTE_ONG`).
+  * `GET /api/v1/convocatorias`: Catálogo de convocatorias con query params de filtros (`horario`, `distrito`, `causa`).
+  * `GET /api/v1/convocatorias/{id}`: Detalle de la oportunidad.
+  * `PUT /api/v1/convocatorias/{id}/publicar`: Publicar convocatoria.
+* `PostulacionesController`:
+  * `POST /api/v1/convocatorias/{id}/postulaciones`: Registrar postulación (rol `ESTUDIANTE`).
+  * `GET /api/v1/convocatorias/{id}/postulantes`: Listar postulantes (rol `REPRESENTANTE_ONG`).
+  * `PUT /api/v1/postulaciones/{id}/aceptar`: Aceptar voluntario.
+  * `PUT /api/v1/postulaciones/{id}/rechazar`: Rechazar postulación.
+
+#### 2.6.1.3. Application Layer
+
+* **Commands:** `CreateConvocatoriaCommand`, `PublishConvocatoriaCommand`, `SubmitApplicationCommand`, `AcceptApplicantCommand`.
+* **Handlers:** `ConvocatoriaCommandHandler`, `ApplicationCommandHandler`.
+* **Queries:** `GetFilteredConvocatoriasQuery`, `GetApplicantListQuery`.
+* **Event Handlers:** `PostulanteAceptadoEventHandler` (despacha la inicialización del registro de asistencia).
+
+
+#### 2.6.1.4. Infrastructure Layer
+
+* **Entidades JPA:** `ConvocatoriaJpaEntity`, `PostulacionJpaEntity`, `OrganizacionJpaEntity`.
+* **Repositorios Spring Data:** `SpringDataConvocatoriaRepository`, `SpringDataPostulacionRepository`.
+* **Mappers:** `ConvocatoriaMapper` (convierte entre `Convocatoria` de dominio y `ConvocatoriaJpaEntity` de persistencia relacional).
+
+#### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+
+![BC1-ComponentDiagram](assets/md-images-chapter2/BC1-ComponentDiagram.png)
+
+#### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+![BC1DomainLayerClassDiagram](assets/md-images-chapter2/BC1DomainLayerClassDiagram.png)
+
 ##### 2.6.x.6.2. Bounded Context Database Design Diagram
+
+![BC1DatabaseDesignDiagram](assets/md-images-chapter2/BC1DatabaseDesignDiagram.png)
 
 # Capítulo III: Solution UI/UX Design
 ## 3.1. Product design
