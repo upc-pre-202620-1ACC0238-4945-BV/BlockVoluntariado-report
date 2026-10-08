@@ -1,4 +1,3 @@
-```
 <div align="center">
 
 <img src="assets/md-images-front-matter/upc-logo-transparente.png" width="52"></img><br>
@@ -1015,4 +1014,3 @@ Las métricas de adopción, certificación y retención del producto son hipóte
 
 # Anexos
 
-```
