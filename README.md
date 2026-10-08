@@ -1022,7 +1022,193 @@ La propuesta móvil agrupa las tareas por objetivos de usuario. Los estudiantes 
 
 ### 3.1.3. Landing Page UI Design
 #### 3.1.3.1. Landing Page Wireframe
+Los wireframes de la Landing Page de BlockVoluntariado representan la estructura preliminar de la interfaz web, definiendo la distribución de los contenidos, la jerarquía visual y los mecanismos de navegación que orientan a los visitantes hacia las principales funcionalidades de la plataforma.
+La propuesta se organiza en tres frames que, en conjunto, representan el recorrido de la Landing Page para navegadores de escritorio.
+
+### Este es el modelo del boceto de como se veria en PC, MAC, y pantalla grande
+
+![boceto](assets/landing-tb1/LandingBoceto.png)
+
+**Figura 3.5 Wireframe de escritorio de la Landing Page de BlockVoluntariado.
+*Nota. Elaboración del equipo. El diagrama representa la organización estructural de la Landing Page en PCs.*
+
+
+### Este es el modelo del boceto de como se veria en Android o celular
+
+![boceto](assets/landing-tb1/LandingBocetoPhone.png)
+**Figura 3.6 Wireframe de escritorio de la Landing Page de BlockVoluntariado.
+*Nota. Elaboración del equipo. El diagrama representa la organización estructural de la Landing Page en celulares.*
+
+
+Los wireframes de la Landing Page de BlockVoluntariado presentan la distribución estructural de sus versiones para escritorio y dispositivos móviles, priorizando una navegación intuitiva, organizada y adaptable. Ambos diseños incluyen secciones de presentación, búsqueda de oportunidades, beneficios del voluntariado, seguimiento del impacto, certificados, herramientas para ONG, testimonios y preguntas frecuentes. Mientras que la versión de escritorio utiliza una distribución horizontal con múltiples columnas, la versión móvil reorganiza los contenidos verticalmente y simplifica la navegación mediante controles adaptados a pantallas pequeñas. Esta propuesta aplica principios de jerarquía visual, consistencia, diseño inclusivo y arquitectura de información, facilitando el acceso a las funcionalidades según el dispositivo utilizado.
+
 #### 3.1.3.2. Landing Page Mock-up
+
+Es hora de mostrar los diseños de como se veria la landing Page en los distintos dispositivos
+
+### El respectivo diseño de la landing en la PC, MAC y en pantalla grande
+
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/Landing01.png"
+        alt="Mock-up de escritorio de BlockVoluntariado"
+        width="450"
+    />
+    <p><em>Figura 3.7.01 Diseño visual de escritorio de la Landing Page.</em></p>
+</div>
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/Landing02.png"
+        alt="Mock-up de escritorio de BlockVoluntariado"
+        width="450"
+    />
+    <p><em>Figura 3.7.02 Diseño visual de escritorio de la Landing Page.</em></p>
+</div>
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/Landing03.png"
+        alt="Mock-up de escritorio de BlockVoluntariado"
+        width="450"
+    />
+    <p><em>Figura 3.7.03 Diseño visual de escritorio de la Landing Page.</em></p>
+</div>
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/Landing04.png"
+        alt="Mock-up de escritorio de BlockVoluntariado"
+        width="450"
+    />
+    <p><em>Figura 3.7.04 Diseño visual de escritorio de la Landing Page.</em></p>
+</div>
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/Landing05.png"
+        alt="Mock-up de escritorio de BlockVoluntariado"
+        width="450"
+    />
+    <p><em>Figura 3.7.05 Diseño visual de escritorio de la Landing Page.</em></p>
+</div>
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/Landing06.png"
+        alt="Mock-up de escritorio de BlockVoluntariado"
+        width="450"
+    />
+    <p><em>Figura 3.7.06 Diseño visual de escritorio de la Landing Page.</em></p>
+</div>
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/Landing07.png"
+        alt="Mock-up de escritorio de BlockVoluntariado"
+        width="450"
+    />
+    <p><em>Figura 3.7.07 Diseño visual de escritorio de la Landing Page.</em></p>
+</div>
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/Landing08.png"
+        alt="Mock-up de escritorio de BlockVoluntariado"
+        width="450"
+    />
+    <p><em>Figura 3.7.08 Diseño visual de escritorio de la Landing Page.</em></p>
+</div>
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/Landing09.png"
+        alt="Mock-up de escritorio de BlockVoluntariado"
+        width="450"
+    />
+    <p><em>Figura 3.7.09 Diseño visual de escritorio de la Landing Page.</em></p>
+</div>
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/Landing10.png"
+        alt="Mock-up de escritorio de BlockVoluntariado"
+        width="450"
+    />
+    <p><em>Figura 3.7.10 Diseño visual de escritorio de la Landing Page.</em></p>
+</div>
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/Landing11.png"
+        alt="Mock-up de escritorio de BlockVoluntariado"
+        width="450"
+    />
+    <p><em>Figura 3.7.11 Diseño visual de escritorio de la Landing Page.</em></p>
+</div>
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/Landing12.png"
+        alt="Mock-up de escritorio de BlockVoluntariado"
+        width="450"
+    />
+    <p><em>Figura 3.7.12 Diseño visual de escritorio de la Landing Page.</em></p>
+</div>
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/Landing13.png"
+        alt="Mock-up de escritorio de BlockVoluntariado"
+        width="450"
+    />
+    <p><em>Figura 3.7.13 Diseño visual de escritorio de la Landing Page.</em></p>
+</div>
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/Landing14.png"
+        alt="Mock-up de escritorio de BlockVoluntariado"
+        width="450"
+    />
+    <p><em>Figura 3.7.14 Diseño visual de escritorio de la Landing Page.</em></p>
+</div>
+
+### Y El respectivo diseño de la landing en el celular
+
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/LandingPhoneIMG1.png"
+        alt="Mock-up móvil de BlockVoluntariado"
+        width="550"
+    />
+    <p><em>Figura 3.7.15 Diseño visual móvil de la Landing Page.</em></p>
+</div>
+
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/LandingPhoneIMG2.png"
+        alt="Mock-up móvil de BlockVoluntariado"
+        width="550"
+    />
+    <p><em>Figura 3.7.16 Diseño visual móvil de la Landing Page.</em></p>
+</div>
+
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/LandingPhoneIMG3.png"
+        alt="Mock-up móvil de BlockVoluntariado"
+        width="550"
+    />
+    <p><em>Figura 3.7.17 Diseño visual móvil de la Landing Page.</em></p>
+</div>
+
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/LandingPhoneIMG4.png"
+        alt="Mock-up móvil de BlockVoluntariado"
+        width="550"
+    />
+    <p><em>Figura 3.7.19 Diseño visual móvil de la Landing Page.</em></p>
+</div>
+
+<div align="center" style="break-inside: avoid;">
+    <img
+        src="assets/landing-tb1/LandingPhoneIMG5.png"
+        alt="Mock-up móvil de BlockVoluntariado"
+        width="550"
+    />
+    <p><em>Figura 3.7.20 Diseño visual móvil de la Landing Page.</em></p>
+</div>
+
+Los mock-ups de la Landing Page de BlockVoluntariado representan la propuesta visual para navegadores de escritorio y dispositivos móviles, aplicando una identidad gráfica basada en tonos azul oscuro, naranja y blanco. Ambos diseños presentan las principales secciones de la plataforma mediante una jerarquía tipográfica clara, tarjetas informativas, iconografía y botones de llamada a la acción. La versión de escritorio distribuye los contenidos en múltiples columnas, mientras que la versión móvil adapta los componentes a una disposición vertical para favorecer la lectura y navegación. Estas decisiones buscan mantener la consistencia del sistema visual, facilitar la identificación de funcionalidades y considerar principios de diseño inclusivo y arquitectura de información.
 
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
