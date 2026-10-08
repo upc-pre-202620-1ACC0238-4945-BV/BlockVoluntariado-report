@@ -1,3 +1,18 @@
+<style>
+@media print {
+  @page { size: A4 portrait; margin: 18mm 17mm 18mm 17mm; }
+  body { font-size: 10pt; line-height: 1.4; }
+  h1, h2, h3, h4, h5 { break-after: avoid; page-break-after: avoid; }
+  table { width: 100%; border-collapse: collapse; font-size: 9pt; }
+  thead { display: table-header-group; }
+  tr, td, th { break-inside: avoid; page-break-inside: avoid; }
+  img { max-width: 100%; max-height: 240mm; height: auto; object-fit: contain; break-inside: avoid; page-break-inside: avoid; }
+  figure, blockquote { break-inside: avoid; page-break-inside: avoid; }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+  .print-page-break { display: block; break-before: page; page-break-before: always; height: 0; margin: 0; padding: 0; }
+}
+</style>
+
 <div align="center">
 
 <img src="assets/md-images-front-matter/upc-logo-transparente.png" width="52"></img><br>
@@ -6,7 +21,7 @@ Universidad Peruana de Ciencias Aplicadas<br>
 Carrera de Ingeniería de Software<br><br>
 
 <strong>1ACC0238</strong><br>
-<strong>Aplicaciones para Dispositivos Moviles</strong><br>
+<strong>Aplicaciones para Dispositivos Móviles</strong><br>
 NRC<br>
 <strong>4945</strong><br>
 <strong>Informe del Trabajo Final</strong><br>
@@ -47,16 +62,19 @@ Proyecto<br>
 
 <strong>Julio 2026</strong>
 </div>
-<div style="page-break-after: always;"></div>
-
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ## Registro de Versiones del Informe
-
 | Versión | Fecha | Autor(es) | Descripción de Modificación |
 | :---: | :---: | :--- | :--- |
+| **1.1** | 08/10/2026 | Equipo BlockVoluntariado | **Revisión de observaciones AV1:** presentación, trazabilidad de historias, explicación de EventStorming, flujos de mensajes, canvas, justificación de Context Mapping, alcance del sistema C4 y descripción individual de los siete contextos candidatos y su consolidación. |
 | **1.0** | 18/09/2026 | Todos los integrantes | **Entrega Oficial Hito 1 (AV1):** Consolidación de Student Outcome 7, Objetivos SMART, Big Picture EventStorming (Miro), Impact Mapping, Product Backlog, Diseño Estratégico y Táctico DDD, Arquitectura C4 (Nivel 1, 2, 3 y Despliegue en PlantUML) y Diseño de Base de Datos relacional en MySQL. |
 
 ## Project Report Collaboration Insights
+
+El informe registra la participación del equipo a través de evidencias de investigación de usuarios, especificación de requerimientos y decisiones de arquitectura. Las contribuciones individuales se sintetizan en Student Outcome 7, mientras que los artefactos técnicos de las secciones 2.3 a 2.6 permiten verificar su aplicación.
+
+> **Nota de edición:** esta versión incluye correcciones narrativas del AV1 y figuras reordenadas para lectura e impresión. Los modelos del diseño inicial se presentan como antecedentes cuando han sido reemplazados; las decisiones que requieran validación del equipo continúan indicadas como propuestas.
 
 ## Contenido
 
@@ -91,10 +109,12 @@ Proyecto<br>
     - [2.4.3. Product Backlog](#243-product-backlog)
   - [2.5. Strategic-Level Domain-Driven Design](#25-strategic-level-domain-driven-design)
     - [2.5.1. EventStorming](#251-eventstorming)
+    - [2.5.1.1.1. Descripción de los Bounded Context candidatos](#25111-descripción-de-los-bounded-context-candidatos-identificados)
+    - [2.5.1.1.2. Consolidación de contextos](#25112-consolidación-de-los-candidatos-en-el-mapa-av1)
     - [2.5.2. Context Mapping](#252-context-mapping)
     - [2.5.3. Software Architecture](#253-software-architecture)
   - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
-    - [2.6.x. Bounded Context: <Bounded Context Name>](#26x-bounded-context-bounded-context-name)
+    - [2.6.1. Bounded Context: Volunteering Management Core](#261-bounded-context-volunteering-management-core)
 - [Capítulo III: Solution UI/UX Design](#capítulo-iii-solution-uiux-design)
   - [3.1. Product design](#31-product-design)
     - [3.1.1. Style Guidelines](#311-style-guidelines)
@@ -114,9 +134,9 @@ Proyecto<br>
 - [Glosario](#glosario)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ## Student Outcome
-
 ### ABET EAC - Student Outcome 7
 **Criterio:** Capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas (*An ability to acquire and apply new knowledge as needed, using appropriate learning strategies*).
 
@@ -124,21 +144,20 @@ Para la entrega del **Avance 1 (AV1)**, identificamos los vacíos conceptuales y
 
 | Integrante | Acciones Realizadas para AV1 | Evidencia / Aporte al Proyecto |
 | :--- | :--- | :--- |
-| **Tavara Correa, Sebastian Oswaldo**<br>*(U20241e179)* | **Acción 1:** Investigó la literatura canónica de **Domain-Driven Design (DDD)** estratégico (Evans, 2003; Vernon, 2013), estudiando patrones de delimitación de subdominios y mapeo de contextos acotados (*Bounded Contexts*) para separar el núcleo del negocio (*Core Domain*) de los contextos de soporte e identidad.<br><br>**Acción 2:** Investigó la sintaxis del **C4 Model** y herramientas de *Diagram-as-Code* (PlantUML y Structurizr DSL), formulando los diagramas de Nivel 1 (Contexto) y Nivel 2 (Contenedores) garantizando un modelo puramente móvil centrado en Android (Kotlin) y backend Spring Boot. | Elaboración de las secciones de Context Mapping, C4 Model (Contexto, Contenedores, Despliegue) y diseño de la arquitectura modular del informe. |
+| **Tavara Correa, Sebastian Oswaldo**<br>*(U20241e179)* | **Acción 1:** Investigó la literatura canónica de **Domain-Driven Design (DDD)** estratégico (Evans, 2003; Vernon, 2013), estudiando patrones de delimitación de subdominios y mapeo de contextos acotados (*Bounded Contexts*) para separar el núcleo del negocio (*Core Domain*) de los contextos de soporte e identidad.<br><br>**Acción 2:** Investigó la sintaxis del **C4 Model** y herramientas de *Diagram-as-Code* (PlantUML y Structurizr DSL), formulando los diagramas de Nivel 1 (Contexto) y Nivel 2 (Contenedores) considerando la plataforma como sistema de interés y la aplicación Android y el backend Spring Boot como contenedores. | Elaboración de las secciones de Context Mapping, C4 Model (Contexto, Contenedores, Despliegue) y diseño de la arquitectura modular del informe. |
 | **Tuncar Vila, Ghorghet Saul**<br>*(U20241e107)* | **Acción 1:** Investigó técnicas avanzadas de modelado relacional y normalización (3FN) en **MySQL 8.0**, analizando el diseño de esquemas transaccionales que garanticen la integridad referencial en entidades altamente interconectadas (organizaciones, convocatorias, postulaciones, registros de asistencia y certificados).<br><br>**Acción 2:** Estudió patrones de persistencia táctica DDD desacoplada (patrón Repository, Data Mapper y Value Objects inmutables), diseñando esquemas de índices B-Tree y restricciones foráneas para optimizar consultas de geolocalización y búsqueda de convocatorias. | Diseño del Diagrama Entidad-Relación (DER) de MySQL, elaboración del script DDL estructurado y modelado de datos de la capa de infraestructura del Core Domain. |
 | **Cabrejos Chocco, Diego Alexander**<br>*(U20241e014)* | **Acción 1:** Profundizó en metodologías de **Needfinding y Lean UX** aplicadas a soluciones móviles, investigando técnicas de entrevista semiestructurada para extraer dolores de estudiantes universitarios y coordinadores sociales, traduciéndolos a artefactos de empatía y journey mapping.<br><br>**Acción 2:** Investigó guías oficiales de Google Android Developers sobre diseño declarativo moderno en **Kotlin con Jetpack Compose** y **Material Design 3**, comprendiendo la reactividad de interfaces mediante `StateFlow` y componentes accesibles adaptados a la interacción móvil en campo. | Construcción de las fichas de User Personas, mapas de empatía, matriz de tareas y redacción de User Stories críticas con criterios de aceptación en formato Given-When-Then. |
 
 
 ### Conclusiones del Student Outcome 7
 
-1. **Efectividad del Autoaprendizaje Dirigido:** Demostramos autonomía y rigor técnico al acudir a fuentes oficiales de la industria (documentación de Android, manuales de MySQL, bibliografía de Eric Evans y Simon Brown). Esta investigación permitió superar las limitaciones de partida y tomar decisiones arquitectónicas fundamentadas para un ecosistema exclusivamente móvil.
+1. **Efectividad del Autoaprendizaje Dirigido:** Demostramos autonomía y rigor técnico al acudir a fuentes oficiales de la industria (documentación de Android, manuales de MySQL, bibliografía de Eric Evans y Simon Brown). Esta investigación permitió superar las limitaciones de partida y tomar decisiones arquitectónicas fundamentadas para una plataforma con aplicación móvil, servicios backend e integraciones.
 2. **Transferencia Técnica Inmediata:** Cada conocimiento adquirido se aplicó directamente a los artefactos de ingeniería del Hito 1: los conceptos de DDD se tradujeron en límites de contexto claros y diagramas C4 en código ejecutable; los principios de bases de datos se plasmaron en un esquema SQL normalizado; y las técnicas de Lean UX sustentaron historias de usuario verificables.
 
 ---
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ## Objetivos SMART
-
-
 ### 1. Tavara Correa, Sebastian Oswaldo
 * **Objetivo SMART 1 (Certificación Cloud & Arquitectura):**
   * **Declaración:** Obtener la certificación oficial **AWS Certified Solutions Architect – Associate** en un lapso no mayor a **6 meses** posteriores a la graduación universitaria, dedicando 10 horas semanales a cursos oficiales y laboratorios prácticos en AWS, con la finalidad de consolidar su perfil profesional en diseño de infraestructuras distribuidas y de alta disponibilidad.
@@ -188,6 +207,7 @@ Para la entrega del **Avance 1 (AV1)**, identificamos los vacíos conceptuales y
   * **T (Temporal):** En un lapso de 10 meses tras el lanzamiento.
 
 ---
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 # Capítulo I: Presentación
 ## 1.1. Startup Profile
@@ -197,11 +217,11 @@ Es una plataforma en donde los ciudadanos puedan tener la oportunidad de partici
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-| **Nombre Completo del integrante**    | 	**Descripcion de la carrera**                                   | **Fotografia**                                                         | **Conocimientos y habilidades**
+| **Nombre Completo del integrante**    |   **Descripcion de la carrera**                                   | **Fotografia**                                                         | **Conocimientos y habilidades**
 | :------------------------------------ |:-----------------------------------------------------------------|:-----------------------------------------------------------------------|:------------------------------------ |
-| Tavara Correa, Sebastian Oswaldo      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-chapter1/sebastian-tavara.jpg"> | Soy Sebastian Oswaldo Tavara Correa estudiante de la carrera de ingeniería de software, actualmente cursando el 6to ciclo, me considero una persona estudiosa y muy colaborativa al trabajar en grupo. Me adapto rápidamente a cualquier entorno. Me interesa desarrollar soluciones tecnológicas que tengan un impacto positivo. Creo que el desarrollo de software no debe limitarse en buscar la mayor funcionalidad, sino que también en generar bienestar en la sociedad.
+| Tavara Correa, Sebastian Oswaldo      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-chapter1/sebastian-tavara.jpeg"> | Soy Sebastian Oswaldo Tavara Correa estudiante de la carrera de ingeniería de software, actualmente cursando el 6to ciclo, me considero una persona estudiosa y muy colaborativa al trabajar en grupo. Me adapto rápidamente a cualquier entorno. Me interesa desarrollar soluciones tecnológicas que tengan un impacto positivo. Creo que el desarrollo de software no debe limitarse en buscar la mayor funcionalidad, sino que también en generar bienestar en la sociedad.
 | Tuncar Vila, Ghorghet Saul      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-chapter1/ghorghet-tuncar.png">               | Soy Ghorghet Saul Tuncar Vila, estudiante de 6to ciclo de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
-| Cabrejos Chocco, Diego Alexander      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-chapter1/diego-cabrejos.jpg">               | Soy Diego Alexander Cabrejos Chocco estudiante de la carrera de ingeniería de software, actualmente cursando el 6to ciclo, soy una persona sociable, creativa, que trabaja bien en equipo y busco que todo el equipo participe en las actividades activamente. Me adapto rapidamente a la modalidad de trabajo. Mi meta es poder crear y desarrollar proyectos tecnologicos que tenga un impacto positivo y que sea entretenido. Lo mas interesante de la Software es que cada vez se va expandiendo, y las opciones para poder desarrollar algun proyecto por mas interesante o loco que paresca el tema, no es impedimento para desarrollar lo que desees. (claro que siempre siguiendo el tema legal)
+| Cabrejos Chocco, Diego Alexander      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-chapter1/diego-cabrejos.jpeg">               | Soy Diego Alexander Cabrejos Chocco estudiante de la carrera de ingeniería de software, actualmente cursando el 6to ciclo, soy una persona sociable, creativa, que trabaja bien en equipo y busco que todo el equipo participe en las actividades activamente. Me adapto rapidamente a la modalidad de trabajo. Mi meta es poder crear y desarrollar proyectos tecnologicos que tenga un impacto positivo y que sea entretenido. Lo mas interesante de la Software es que cada vez se va expandiendo, y las opciones para poder desarrollar algun proyecto por mas interesante o loco que paresca el tema, no es impedimento para desarrollar lo que desees. (claro que siempre siguiendo el tema legal)
 
 
 ## 1.2. Solution Profile
@@ -268,121 +288,64 @@ El Lean UX Canvas de BlockVoluntariado resume el problema de negocio, los usuari
 
 En esta sección se describe al segmento conformado por estudiantes de educación superior, principalmente de entre 18 y 30 años, con alta familiaridad tecnológica y disposición para participar en actividades de voluntariado de corta duración. Los cuales representan una parte importante de la población joven conectada del país, interesada en generar impacto social, fortalecer su perfil académico y profesional, y obtener reconocimiento a través de créditos sociales y certificaciones digitales.
 
-- ONG’S y fundaciones sociales
+- ONG y fundaciones sociales
 
 Este segmento incluye a organizaciones sin fines de lucro que operan en distintas regiones y que requieren voluntarios confiables para tareas específicas como campañas de sensibilización, traducciones, reportes comunitarios o capacitaciones. Muchas de estas entidades trabajan con recursos limitados y necesitan optimizar su alcance y medir su impacto de forma transparente, encontrando en la plataforma una solución para acceder a voluntarios trazables y comprometidos.
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 # Capítulo II: Requirements Development and Software Solution Design
 ## 2.1. Competidores
 ### 2.1.1. Análisis competitivo
 
-Nos enfrentamos a varios competidores de plataformas de voluntariado digital y presencial. Por un lado, Idealist que opera globalmente conectando personas con oportunidades en ONG’s, empleo y voluntariado (Idealist, s. f.). De igual modo, Hacesfalta facilita que organizaciones sin fines de lucro difundan vacantes de voluntariado y empleo social (Hacesfalta s. f.). Por otro lado, iniciativas como GoVolunteer se destacan en el ámbito local al facilitar la participación ciudadana a través de programas comunitarios, colaboraciones con empresas y gobiernos. Asimismo, plataformas especializadas como Catchafire compiten directamente en el nicho del voluntariado por habilidades, brindando a las organizaciones acceso a profesionales que ofrecen servicios específicos en áreas como diseño, finanzas o comunicación (Catchfire, s. f.). Además, emergen otras propuestas digitales que promueven el microvoluntariado o tareas virtuales de corta duración, las cuales responden a la demanda de nuevas generaciones que buscan experiencias más flexibles y rápidas. 
+Nos enfrentamos a varios competidores de plataformas de voluntariado digital y presencial. Por un lado, Idealist que opera globalmente conectando personas con oportunidades en ONG’s, empleo y voluntariado (Idealist, s. f.). De igual modo, Hacesfalta facilita que organizaciones sin fines de lucro difundan vacantes de voluntariado y empleo social (Hacesfalta s. f.). Por otro lado, iniciativas como GoVolunteer se destacan en el ámbito local al facilitar la participación ciudadana a través de programas comunitarios, colaboraciones con empresas y gobiernos. Asimismo, plataformas especializadas como Catchafire compiten directamente en el nicho del voluntariado por habilidades, brindando a las organizaciones acceso a profesionales que ofrecen servicios específicos en áreas como diseño, finanzas o comunicación (Catchfire, s. f.). Además, emergen otras propuestas digitales que promueven el microvoluntariado o tareas virtuales de corta duración, las cuales responden a la demanda de nuevas generaciones que buscan experiencias más flexibles y rápidas.
 
-<table border="1" cellpadding="5" cellspacing="0">
-  <tr>
-    <th colspan="6"><b>Competitive Analysis Landscape</b></th>
-  </tr>
-  <tr>
-    <td>¿Por qué llevar a cabo este análisis?</td>
-    <td colspan="5"> Llevar a cabo este análisis nos permite entender mejor el entorno competitivo de BlockVoluntariado. Ayuda a identificar las fortalezas y debilidades de nuestra aplicación en comparación   con   otras,   lo   que   nos   permite   desarrollar   estrategias   efectivas   para destacar en el mercado. Nos ayuda a tomar decisiones informadas y a mejorar continuamente para satisfacer las necesidades de nuestros usuarios. </td>
-  </tr>
-  <tr>
-    <td colspan="2">Nombre y logo de competidor</td>
-    <td><b>Idealist <img src="assets/md-images-chapter1/logo-idealist.jpg" alt="idealist" width="120" height="120" /> </b></td>
-    <td><b> HacesFalta</b> <img src="assets/md-images-chapter1/logo-hacesfalta.jpg" width="120" height="120" /> </td>
-    <td><b>GoVolunteer</b> <img src="assets/md-images-chapter1/logo-govolunteer.png" width="120" height="120" /> </td>
-    <td><b>CatchaFire</b> <img src="assets/md-images-chapter1/logo-catchafire.avif" width="120" height="120" /> </td>
-  </tr>
-  <tr>
-    <td rowspan="2"><b>Perfil</b></td>
-    <td><b>Overview</b></td>
-    <td>Es una de las plataformas más grandes y antiguas a nivel mundial para conectar a las personas con oportunidades de impacto social. Allí se pueden encontrar voluntariado,empleos en ONG, tanto presenciales como virtuales </td>
-    <td>Es una plataforma española, gestionada por la Fundación Hazloposible, que conecta voluntarios, ONG y profesionales. Además de voluntariado, también ofrece empleos y tiene presencia en España y en México. </td>
-    <td>EEs una plataforma creada en Alemania que conecta a voluntarios, ONG y empresas. Tiene un fuerte enfoque local: permite encontrar proyectos de voluntariado según ciudad o región, y colabora con gobiernos y centros comunitarios..</td>
-    <td>Es una plataforma global especializada en voluntariado por habilidades profesionales. Conecta a profesionales  con ONG que necesitan ayuda en proyectos específicos, mayormente se realizan de forma virtual.</td>
-  </tr>
-  <tr>
-    <td><b>Ventaja competitiva ¿Qué valor ofrece a los clientes?</b></td>
-    <td> Su ventaja competitiva es  que reúne en un solo lugar miles de oportunidades sociales de todo el mundo. Esto lo convierte en un punto de encuentro global para personas interesadas en ayudar y organizaciones que buscan voluntarios o profesionales. </td>
-    <td> Su ventaja competitiva es que  permite encontrar voluntarios según causas específicas medioambiente, infancia, salud, etc. Lo que la hace cercana y especializada para el público local.</td>
-    <td>Su ventaja competitiva es el matching local que  ayuda a los usuarios a encontrar proyectos cerca de ellos, y a las empresas a gestionar programas de voluntariado corporativo.</td>
-    <td> Su ventaja competitiva es que ofrece voluntariados estructurados y de alto impacto ya que cada proyecto tiene objetivos claros, plantillas y entregables.</td>
-  </tr>
-  <tr>
-    <td rowspan="2"><b>Perfil de Marketing</b></td>
-    <td><b>Mercado objetivo</b></td>
-    <td>Los jóvenes, estudiantes, profesionales con interés social y ONG de distintos países.</td>
-    <td>Voluntarios como jóvenes y adultos en España y Latinoamérica, ONG que buscan apoyo, y personas interesadas en trabajar profesionalmente en proyectos sociales..</td>
-    <td>Voluntarios en ciudades alemanas y europeas, ONG locales, y empresas que buscan programas de Responsabilidad Social Corporativa. </td>
-    <td>Profesionales con experiencia que quieren donar su tiempo y empresas que buscan programas de voluntariado corporativo. </td>
-  </tr>
-  <tr>
-    <td><b>Estrategias de marketing</b></td>
-    <td>Se posiciona como un portal de referencia en Google (SEO), publica artículos y guías en su blog, mantiene presencia activa en redes sociales como Facebook  y hace alianzas con universidades y organizaciones internacionales.</td>
-    <td>Difunde oportunidades en redes sociales, utiliza SEO local para aparecer en búsquedas en español, y trabaja en colaboración con ministerios, fundaciones y organizaciones.</td>
-    <td>Realizan campañas comunitarias, alianzas con gobiernos locales y con centros de voluntariado y colaboraciones con empresas</td>
-    <td>
-Se apoya en alianzas con corporaciones para ofrecer voluntariado a empleados y un mayor alcance en lo digital.</td>
-  </tr>
-  <tr>
-    <td rowspan="3"><b>Perfil de Producto</b></td>
-    <td><b>Productos y Servicios</b></td>
-    <td>Buscador de oportunidades de voluntariado y empleo social, espacios para que ONG publiquen sus ofertas, recursos y artículos sobre cómo involucrarse en causas sociales </td>
-    <td>Buscador de voluntariados, ofertas de empleo en ONG, foros y noticias sobre el sector, recursos para procesos de selección en ONG.</td>
-    <td>Buscador de oportunidades según la ciudad,recursos para ONG y programas de voluntariado para empresas.</td>
-    <td>Matching de voluntarios por habilidades, proyectos estructurados, programas de voluntariado corporativo.</td>
-  </tr>
-  <tr>
-    <td><b>Precios y Costos</b></td>
-    <td> Es gratuito para voluntarios y hay cobros a ONG en empleo o servicios de publicidad. </td>
-    <td> Es gratuito para voluntarios y hay cobros a ONG en empleo o servicios de publicidad. </td>
-    <td>Es gratuito para voluntarios y ONG, y hay cobros para las empresas  por organizar y gestionar proyectos de voluntariado para sus empleados. </td>
-    <td>Cobra a las  ONG y empresas, con foco en membresías y voluntariado corporativo.</td>
-  </tr>
-  <tr>
-    <td><b>Canales de distribución (Web y/o móvil)</b></td>
-    <td>Principalmente su página web y su página de Facebook.  </td>
-    <td>Su web es el canal principal, portales regionales de  México y España, y sus redes sociales.</td>
-    <td>
-Principalmente su página web y alianzas con instituciones locales. </td>
-    <td>Su web es su canal principal con portales específicos para empresas. </td>
-  </tr>
-  <tr>
-    <td rowspan="5"><b>Análisis SWOT</b></td>
-  </tr>
-  <tr>
-    <td><b>Fortalezas</b></td>
-    <td> Reconocimiento mundial, mucha cantidad de ofertas y usuarios, variedad de  empleos y  voluntariados. </td>
-    <td>Reconocimiento y reputación en el sector social español. Especialización en causas y accesibilidad para voluntarios locales.</td>
-    <td>Apoyo total en las localidades con apoyo del gobierno y empresas. </td>
-    <td>Enfoque único en voluntariado profesional, fuerte relación con empresas y proyectos. 
+**Análisis competitivo — parte 1**
 
-</td>
-  </tr>
-  <tr>
-    <td><b>Debilidades</b></td>
-    <td>El enfoque está más en voluntariados tradicionales y empleos largos, tampoco destaca por tener funciones innovadoras.</td>
-    <td>No tiene  alcance global  y depende mucho de su sitio web. Tampoco ha innovado mucho en apps móviles o experiencias de voluntariado digital moderno</td>
-    <td>No tiene alcance global y depende mucho de sus socios locales. </td>
-    <td>No es útil para voluntarios que no tengan habilidades técnicas o que solo busquen tareas cortas y presenciales.</td>
-  </tr>
-  <tr>
-    <td><b>Oportunidades</b></td>
-    <td>Incluir voluntariados  cortos y sencillos, desarrollar aplicaciones móviles atractivas y ofrecer certificados por la participación.</td>
-    <td>Podría atraer a los jóvenes con microvoluntariado, gamificación y apps móviles más interactivas.
+<table style="width:100%; border-collapse:collapse; font-size:8.5pt; table-layout:fixed;">
+<thead><tr><th style="width:17%">Criterio</th><th>Idealist</th><th>HacesFalta</th><th>GoVolunteer</th><th>Catchafire</th></tr></thead><tbody>
+<tr style="break-inside:avoid;page-break-inside:avoid;"><td><strong>Overview</strong></td><td>Es una de las plataformas más grandes y antiguas a nivel mundial para conectar a las personas con oportunidades de impacto social. Allí se pueden encontrar voluntariado,empleos en ONG, tanto presenciales como virtuales </td><td>Es una plataforma española, gestionada por la Fundación Hazloposible, que conecta voluntarios, ONG y profesionales. Además de voluntariado, también ofrece empleos y tiene presencia en España y en México. </td><td>Es una plataforma creada en Alemania que conecta a voluntarios, ONG y empresas. Tiene un fuerte enfoque local: permite encontrar proyectos de voluntariado según ciudad o región, y colabora con gobiernos y centros comunitarios..</td><td>Es una plataforma global especializada en voluntariado por habilidades profesionales. Conecta a profesionales  con ONG que necesitan ayuda en proyectos específicos, mayormente se realizan de forma virtual.</td></tr>
+<tr style="break-inside:avoid;page-break-inside:avoid;"><td><strong>Ventaja competitiva ¿Qué valor ofrece a los clientes?</strong></td><td> Su ventaja competitiva es  que reúne en un solo lugar miles de oportunidades sociales de todo el mundo. Esto lo convierte en un punto de encuentro global para personas interesadas en ayudar y organizaciones que buscan voluntarios o profesionales. </td><td> Su ventaja competitiva es que  permite encontrar voluntarios según causas específicas medioambiente, infancia, salud, etc. Lo que la hace cercana y especializada para el público local.</td><td>Su ventaja competitiva es el matching local que  ayuda a los usuarios a encontrar proyectos cerca de ellos, y a las empresas a gestionar programas de voluntariado corporativo.</td><td> Su ventaja competitiva es que ofrece voluntariados estructurados y de alto impacto ya que cada proyecto tiene objetivos claros, plantillas y entregables.</td></tr>
+<tr style="break-inside:avoid;page-break-inside:avoid;"><td><strong>Mercado objetivo</strong></td><td>Los jóvenes, estudiantes, profesionales con interés social y ONG de distintos países.</td><td>Voluntarios como jóvenes y adultos en España y Latinoamérica, ONG que buscan apoyo, y personas interesadas en trabajar profesionalmente en proyectos sociales..</td><td>Voluntarios en ciudades alemanas y europeas, ONG locales, y empresas que buscan programas de Responsabilidad Social Corporativa. </td><td>Profesionales con experiencia que quieren donar su tiempo y empresas que buscan programas de voluntariado corporativo. </td></tr>
+</tbody></table>
 
-</td>
-    <td>Tener un mejor alcance global y adoptar voluntariados digitales. </td>
-  <td>Podría ampliar su modelo hacia voluntariado más sencillo y gamificado para llamar más la atención de los voluntarios. </td>
-  </tr>
-  <tr>
-    <td><b>Amenazas</b></td>
-    <td>Plataformas y apps más modernas y centradas en microvoluntariado que resulten más atractivas para nuevas generaciones.</td>
-    <td>Plataformas globales que entren al mercado hispano con mejor innovación. </td>
-    <td>Plataformas globales y con mayor alcance tecnológico. </td>
-    <td>Competidores que combinen microvoluntariado con voluntariado profesional en una misma plataforma. </td>
-  </tr>
-</table>
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
+**Análisis competitivo — parte 2**
+
+<table style="width:100%; border-collapse:collapse; font-size:8.5pt; table-layout:fixed;">
+<thead><tr><th style="width:17%">Criterio</th><th>Idealist</th><th>HacesFalta</th><th>GoVolunteer</th><th>Catchafire</th></tr></thead><tbody>
+<tr style="break-inside:avoid;page-break-inside:avoid;"><td><strong>Estrategias de marketing</strong></td><td>Se posiciona como un portal de referencia en Google (SEO), publica artículos y guías en su blog, mantiene presencia activa en redes sociales como Facebook  y hace alianzas con universidades y organizaciones internacionales.</td><td>Difunde oportunidades en redes sociales, utiliza SEO local para aparecer en búsquedas en español, y trabaja en colaboración con ministerios, fundaciones y organizaciones.</td><td>Realizan campañas comunitarias, alianzas con gobiernos locales y con centros de voluntariado y colaboraciones con empresas</td><td>
+Se apoya en alianzas con corporaciones para ofrecer voluntariado a empleados y un mayor alcance en lo digital.</td></tr>
+<tr style="break-inside:avoid;page-break-inside:avoid;"><td><strong>Productos y Servicios</strong></td><td>Buscador de oportunidades de voluntariado y empleo social, espacios para que ONG publiquen sus ofertas, recursos y artículos sobre cómo involucrarse en causas sociales </td><td>Buscador de voluntariados, ofertas de empleo en ONG, foros y noticias sobre el sector, recursos para procesos de selección en ONG.</td><td>Buscador de oportunidades según la ciudad,recursos para ONG y programas de voluntariado para empresas.</td><td>Matching de voluntarios por habilidades, proyectos estructurados, programas de voluntariado corporativo.</td></tr>
+<tr style="break-inside:avoid;page-break-inside:avoid;"><td><strong>Precios y Costos</strong></td><td> Es gratuito para voluntarios y hay cobros a ONG en empleo o servicios de publicidad. </td><td> Es gratuito para voluntarios y hay cobros a ONG en empleo o servicios de publicidad. </td><td>Es gratuito para voluntarios y ONG, y hay cobros para las empresas  por organizar y gestionar proyectos de voluntariado para sus empleados. </td><td>Cobra a las  ONG y empresas, con foco en membresías y voluntariado corporativo.</td></tr>
+</tbody></table>
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
+**Análisis competitivo — parte 3**
+
+<table style="width:100%; border-collapse:collapse; font-size:8.5pt; table-layout:fixed;">
+<thead><tr><th style="width:17%">Criterio</th><th>Idealist</th><th>HacesFalta</th><th>GoVolunteer</th><th>Catchafire</th></tr></thead><tbody>
+<tr style="break-inside:avoid;page-break-inside:avoid;"><td><strong>Canales de distribución (Web y/o móvil)</strong></td><td>Principalmente su página web y su página de Facebook.  </td><td>Su web es el canal principal, portales regionales de  México y España, y sus redes sociales.</td><td>
+Principalmente su página web y alianzas con instituciones locales. </td><td>Su web es su canal principal con portales específicos para empresas. </td></tr>
+<tr style="break-inside:avoid;page-break-inside:avoid;"><td><strong>Fortalezas</strong></td><td> Reconocimiento mundial, mucha cantidad de ofertas y usuarios, variedad de  empleos y  voluntariados. </td><td>Reconocimiento y reputación en el sector social español. Especialización en causas y accesibilidad para voluntarios locales.</td><td>Apoyo total en las localidades con apoyo del gobierno y empresas. </td><td>Enfoque único en voluntariado profesional, fuerte relación con empresas y proyectos. 
+
+</td></tr>
+<tr style="break-inside:avoid;page-break-inside:avoid;"><td><strong>Debilidades</strong></td><td>El enfoque está más en voluntariados tradicionales y empleos largos, tampoco destaca por tener funciones innovadoras.</td><td>No tiene  alcance global  y depende mucho de su sitio web. Tampoco ha innovado mucho en apps móviles o experiencias de voluntariado digital moderno</td><td>No tiene alcance global y depende mucho de sus socios locales. </td><td>No es útil para voluntarios que no tengan habilidades técnicas o que solo busquen tareas cortas y presenciales.</td></tr>
+</tbody></table>
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
+**Análisis competitivo — parte 4**
+
+<table style="width:100%; border-collapse:collapse; font-size:8.5pt; table-layout:fixed;">
+<thead><tr><th style="width:17%">Criterio</th><th>Idealist</th><th>HacesFalta</th><th>GoVolunteer</th><th>Catchafire</th></tr></thead><tbody>
+<tr style="break-inside:avoid;page-break-inside:avoid;"><td><strong>Oportunidades</strong></td><td>Incluir voluntariados  cortos y sencillos, desarrollar aplicaciones móviles atractivas y ofrecer certificados por la participación.</td><td>Podría atraer a los jóvenes con microvoluntariado, gamificación y apps móviles más interactivas.
+
+</td><td>Tener un mejor alcance global y adoptar voluntariados digitales. </td><td>Podría ampliar su modelo hacia voluntariado más sencillo y gamificado para llamar más la atención de los voluntarios. </td></tr>
+<tr style="break-inside:avoid;page-break-inside:avoid;"><td><strong>Amenazas</strong></td><td>Plataformas y apps más modernas y centradas en microvoluntariado que resulten más atractivas para nuevas generaciones.</td><td>Plataformas globales que entren al mercado hispano con mejor innovación. </td><td>Plataformas globales y con mayor alcance tecnológico. </td><td>Competidores que combinen microvoluntariado con voluntariado profesional en una misma plataforma. </td></tr>
+</tbody></table>
+
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
@@ -398,10 +361,10 @@ Asimismo, se prioriza la cercanía con el usuario mediante notificaciones y opci
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
 
-Preguntas en general: 
+Preguntas en general:
 ¿Cual es tu nombre?
 ¿Cuantos años tienes?
-¿Qué estudias o que estudiaste? 
+¿Qué estudias o que estudiaste?
 ¿En qué distrito vives?
 
 Segmento 1 -  Jóvenes universitarios:
@@ -427,9 +390,9 @@ Segmento 1 -  Jóvenes universitarios:
 - ¿Qué te motivaría a recomendar la plataforma a tus amigos o compañeros de universidad?
 
 
-Segmento 2 - ONG’S y fundaciones sociales:
+Segmento 2 - ONG y fundaciones sociales:
 
-- ¿Qué desafíos enfrentan actualmente para encontrar y gestionar voluntarios?s 
+- ¿Qué desafíos enfrentan actualmente para encontrar y gestionar voluntarios?
 
 - ¿Prefieren voluntarios en modalidad presencial, virtual o híbrida?
 
@@ -452,15 +415,15 @@ Segmento 2 - ONG’S y fundaciones sociales:
 
 ### 2.2.2. Registro de entrevistas
 
-#### Segmento 1: Jovenes Universitarios
+#### Segmento 1: Jóvenes universitarios
 
 | N | Datos |Descripción |Imagen referencial
 |--|--|--|--|
-|1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate| Justin, estudiante de ingeniería de software de 19 años, prefiere voluntariados presenciales y de largo plazo enfocados en el medio ambiente y la educación. Le motivan ayudar a los demás y conseguir créditos extracurriculares y certificados para su CV. Su principal obstáculo es la falta de tiempo, por lo que busca una app con filtros horarios y alertas en tiempo real, y la recomendaría justamente por facilitar estos beneficios académicos y sociales. |<img src="assets/md-images-chapter1/s1-e1.png"> <br> link provicional: https://www.youtube.com/watch?v=lcTBFkdGlVA
+|1  | Nombre: Justino Garcia  <br>Edad: 20 <br>Distrito: Ate| Justin, estudiante de ingeniería de software de 19 años, prefiere voluntariados presenciales y de largo plazo enfocados en el medio ambiente y la educación. Le motivan ayudar a los demás y conseguir créditos extracurriculares y certificados para su CV. Su principal obstáculo es la falta de tiempo, por lo que busca una app con filtros horarios y alertas en tiempo real, y la recomendaría justamente por facilitar estos beneficios académicos y sociales. |<img src="assets/md-images-chapter1/s1-e1.png"> <br> enlace del video: https://www.youtube.com/watch?v=lcTBFkdGlVA
 |2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao| Rosalía, estudiante de 21 años, prefiere voluntariados virtuales y de largo plazo enfocados en educación e inclusión para mejorar su CV y conseguir becas. Considera clave recibir certificados y que la app sea fácil de usar, incluya testimonios y filtre oportunidades por tiempo y lugar, ya que le frena la falta de información y confianza. |<img src="assets/md-images-chapter1/s1-e2.png"><br>link del video:<br>https://youtu.be/x08H55_hld8
 |3  | Nombre: Richard <br>Apellido: Lozano <br>Edad: 20 <br>Distrito: San Martin de Porres |  Richard Lozano es un joven interesado en participar en actividades de voluntariado que le permitan ayudar a otras personas y, al mismo tiempo, adquirir nuevas experiencias. Busca una plataforma sencilla donde pueda encontrar oportunidades de acuerdo con sus intereses, disponibilidad de tiempo y ubicación, para así elegir un voluntariado que se adapte a sus necesidades. |<img  src="assets/md-images-chapter1/s1-e3.png"><br>Link del Video: https://youtu.be/wQHt7u7u8ME
 
-### Segmento 2: ONG’S y fundaciones sociales
+### Segmento 2: ONG y fundaciones sociales
 
 | N | Datos |Descripción |Imagen referencial
 |--|--|--|--|
@@ -516,8 +479,9 @@ La matriz de tareas permite priorizar las acciones que cada segmento necesita re
 | Comunicar novedades y actividades | Muy frecuente | Alta |
 | Administrar modalidades de voluntariado | Ocasional | Alta |
 | Publicar convocatorias | Frecuente | Alta |
-### 2.3.3. User Journey Mapping
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
+### 2.3.3. User Journey Mapping
 El User Journey Mapping permite representar el recorrido que siguen los usuarios desde que identifican una necesidad hasta que participan en una actividad de voluntariado y evalúan posteriormente su experiencia.
 
 Para BlockVoluntariado se analizaron los recorridos correspondientes a los principales segmentos identificados durante el proceso de entrevistas y Needfinding.
@@ -534,8 +498,9 @@ Para BlockVoluntariado se analizaron los recorridos correspondientes a los princ
 
 ---
 
-#### b. ONG y fundaciones sociales
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
+#### b. ONG y fundaciones sociales
 | Aspecto | Stage 1: Descubrimiento del problema | Stage 2: Búsqueda de información | Stage 3: Diagnóstico y análisis | Stage 4: Implementación | Stage 5: Seguimiento y evaluación |
 |---|---|---|---|---|---|
 | **Objectives** | Identificar las dificultades para captar y retener voluntarios. | Explorar plataformas y canales donde puedan encontrar voluntarios de manera más rápida. | Evaluar si BlockVoluntariado puede convertirse en una alternativa adecuada para captar voluntarios. | Publicar convocatorias y gestionar voluntarios utilizando la plataforma. | Medir el impacto generado mediante la participación de los voluntarios. |
@@ -545,6 +510,29 @@ Para BlockVoluntariado se analizaron los recorridos correspondientes a los princ
 
 
 ### 2.3.4. Empathy Mapping
+El Empathy Mapping permite comprender las necesidades, motivaciones, preocupaciones y comportamientos de los segmentos objetivo de BlockVoluntariado. Para elaborar los mapas se sintetizaron los hallazgos de las entrevistas descritas en la sección 2.2 y del proceso de Needfinding. Las afirmaciones de los mapas son interpretaciones del equipo, no citas textuales de los participantes.
+
+### 2.3.4.1. Mapa de empatía: jóvenes universitarios
+Este mapa representa a estudiantes que desean participar en actividades sociales mientras compatibilizan sus horarios académicos. Los hallazgos resaltan la necesidad de convocatorias confiables, búsqueda por disponibilidad y reconocimiento de la participación.
+<div style="break-inside: avoid; page-break-inside: avoid; text-align: center;">
+  <img src="assets/md-images-chapter1/empathy-estudiantes.png" alt="Mapa de empatía de jóvenes universitarios" style="width: 100%; max-width: 900px; height: auto;" />
+  <p><em>Figura 2.3.4.1. Mapa de empatía del segmento jóvenes universitarios. Elaboración propia a partir del análisis de entrevistas.</em></p>
+</div>
+
+Hallazgos para el diseño: se priorizan filtros de horario, ubicación, modalidad y tipo de causa; información clara de las organizaciones; un proceso de postulación sencillo; y un historial de participación con reconocimientos cuando corresponda. Estas necesidades se relacionan con las historias HU01–HU04, HU19, HU21 y HU24.
+<div style="break-before: page; page-break-before: always;"></div>
+
+### 2.3.4.2. Mapa de empatía: ONG y fundaciones sociales
+Este mapa sintetiza los problemas de las organizaciones para convocar, seleccionar, coordinar y dar seguimiento a voluntarios. Se evidencia la importancia de centralizar información y reducir el trabajo manual.
+<div style="break-inside: avoid; page-break-inside: avoid; text-align: center;">
+  <img src="assets/md-images-chapter1/empathy-ong.png" alt="Mapa de empatía de ONG y fundaciones sociales" style="width: 100%; max-width: 900px; height: auto;" />
+  <p><em>Figura 2.3.4.2. Mapa de empatía del segmento ONG y fundaciones sociales. Elaboración propia a partir del análisis de entrevistas.</em></p>
+</div>
+
+Hallazgos para el diseño: las organizaciones necesitan publicar y actualizar convocatorias, revisar postulantes, registrar asistencia y consultar indicadores de participación. Estas necesidades se relacionan con las historias HU35–HU42, HU44–HU45 y HU48–HU50.
+Síntesis: ambos mapas respaldan una plataforma que conecta oportunidades con estudiantes y facilita la gestión de las organizaciones. Los hallazgos constituyen insumos para validar prioridades, no resultados de pruebas de usabilidad ni evidencia de funcionalidades ya implementadas.
+
+
 ### 2.3.5. Big Picture EventStorming
 El Big Picture EventStorming permite representar los principales eventos que ocurren dentro del dominio de BlockVoluntariado y entender la interacción general entre usuarios, procesos y resultados.
 
@@ -611,6 +599,13 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 | HU10 | EP02 | Recuperación de contraseña | Como usuario, quiero recuperar mi contraseña mediante mi correo electrónico, para recuperar el acceso a mi cuenta en caso de olvidarla. |
 | HU11 | EP02 | Validación de identidad | Como voluntario, quiero verificar mi identidad, para generar mayor confianza en las organizaciones antes de participar en sus actividades. |
 | HU12 | EP03 | Perfil del voluntario | Como estudiante voluntario, quiero editar mi perfil con mis datos, intereses y habilidades, para mostrar información relevante a las organizaciones. |
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
+**Tabla (continuación 2/5)**
+
+| User Story ID | Epic ID | Título | Descripción |
+|---|---|---|---|
 | HU13 | EP03 | Historial de voluntariados | Como estudiante, quiero visualizar mi historial de voluntariados realizados, para llevar un registro de mi participación. |
 | HU14 | EP03 | Visualización de progreso | Como estudiante, quiero visualizar mi progreso dentro de cada voluntariado, para conocer las actividades y días que he completado. |
 | HU15 | EP03 | Calendario de actividades | Como estudiante, quiero visualizar mis voluntariados programados en un calendario, para organizar mejor mi tiempo. |
@@ -623,6 +618,13 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 | HU22 | EP05 | Inscripción rápida | Como estudiante, quiero inscribirme rápidamente en un voluntariado, para evitar procedimientos innecesariamente largos. |
 | HU23 | EP05 | Horarios flexibles | Como estudiante con poca disponibilidad, quiero escoger horarios compatibles con mis actividades académicas, para evitar afectar mis estudios. |
 | HU24 | EP05 | Detalle del voluntariado | Como estudiante, quiero revisar la información detallada de un voluntariado antes de inscribirme, para conocer los requisitos, duración, ubicación y organización responsable. |
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
+**Tabla (continuación 3/5)**
+
+| User Story ID | Epic ID | Título | Descripción |
+|---|---|---|---|
 | HU25 | EP06 | Recomendaciones según perfil | Como estudiante, quiero recibir recomendaciones según mis intereses y perfil, para descubrir oportunidades que puedan resultarme relevantes. |
 | HU26 | EP06 | Recomendaciones por ubicación | Como estudiante, quiero recibir recomendaciones de voluntariados cercanos a mi ubicación, para reducir el tiempo de traslado. |
 | HU27 | EP06 | Voluntariados favoritos | Como estudiante, quiero guardar oportunidades de voluntariado que me interesan, para revisarlas posteriormente. |
@@ -635,6 +637,13 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 | HU34 | EP08 | Testimonios de participantes | Como estudiante interesado en un voluntariado, quiero visualizar experiencias de otros voluntarios, para sentir mayor confianza antes de inscribirme. |
 | HU35 | EP09 | Crear convocatoria | Como organización, quiero crear una convocatoria de voluntariado indicando título, descripción, requisitos y fechas, para encontrar personas interesadas en participar. |
 | HU36 | EP09 | Editar convocatoria | Como organización, quiero editar una convocatoria publicada, para corregir o actualizar información cuando sea necesario. |
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
+**Tabla (continuación 4/5)**
+
+| User Story ID | Epic ID | Título | Descripción |
+|---|---|---|---|
 | HU37 | EP09 | Cerrar convocatoria | Como organización, quiero cerrar una convocatoria cuando se hayan cubierto las vacantes disponibles, para evitar recibir nuevas postulaciones. |
 | HU38 | EP09 | Gestionar convocatorias | Como organización, quiero visualizar todas mis convocatorias publicadas, para administrar fácilmente mis actividades de voluntariado. |
 | HU39 | EP10 | Visualizar postulantes | Como organización, quiero consultar los perfiles de los estudiantes postulantes, para evaluar quiénes cumplen mejor con los requisitos de la actividad. |
@@ -647,13 +656,24 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 | HU46 | EP11 | Calificación de voluntarios | Como organización, quiero evaluar el desempeño de los voluntarios al finalizar una actividad, para registrar referencias sobre su participación. |
 | HU47 | EP11 | Comentario sobre voluntario | Como organización, quiero dejar comentarios sobre la participación de un voluntario, para complementar su historial dentro de la plataforma. |
 | HU48 | EP12 | Reportes de participación | Como organización, quiero visualizar reportes sobre la participación de los voluntarios, para analizar el desempeño y alcance de mis convocatorias. |
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
+**Tabla (continuación 5/5)**
+
+| User Story ID | Epic ID | Título | Descripción |
+|---|---|---|---|
 | HU49 | EP12 | Estadísticas de voluntariado | Como organización, quiero consultar estadísticas de mis actividades publicadas, para conocer la cantidad de postulantes, participantes y actividades completadas. |
 | HU50 | EP12 | Medición de impacto | Como organización, quiero visualizar indicadores relacionados con el impacto generado por mis proyectos, para evaluar los resultados obtenidos mediante los voluntarios. |
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 2.4.2. Impact Mapping
  <img src="assets/md-images-chapter1/ImpactMapping_BlockVoluntariado.png">
 
 ### 2.4.3. Product Backlog
+
+**Trazabilidad:** los identificadores de las 30 prioridades se han alineado con la tabla de User Stories de la sección 2.4.1, manteniendo la redacción y los Story Points originales del backlog. Antes de implementación deben revisarse alcance y duplicidades funcionales (por ejemplo, postulación/inscripción rápida).
 
 El Product Backlog de BlockVoluntariado reúne y prioriza las principales funcionalidades identificadas a partir de las necesidades de los usuarios, entrevistas, User Stories e Impact Mapping.
 
@@ -663,36 +683,50 @@ Los Story Points representan una estimación relativa del esfuerzo necesario par
 
 | # Orden | User Story ID | Descripción | Story Points |
 |---:|---|---|---:|
-| 1 | HU06 | Como estudiante, quiero crear una cuenta para utilizar las funcionalidades disponibles dentro de BlockVoluntariado. | 3 |
-| 2 | HU07 | Como usuario registrado, quiero iniciar sesión para acceder a mi información y actividades de voluntariado. | 3 |
-| 3 | HU09 | Como voluntario, quiero actualizar mi perfil para mantener actualizados mis datos, intereses y habilidades. | 3 |
+| 1 | HU07 | Como estudiante, quiero crear una cuenta para utilizar las funcionalidades disponibles dentro de BlockVoluntariado. | 3 |
+| 2 | HU09 | Como usuario registrado, quiero iniciar sesión para acceder a mi información y actividades de voluntariado. | 3 |
+| 3 | HU12 | Como voluntario, quiero actualizar mi perfil para mantener actualizados mis datos, intereses y habilidades. | 3 |
 | 4 | HU01 | Como estudiante, quiero buscar oportunidades de voluntariado según mi perfil para encontrar opciones relacionadas con mis intereses. | 5 |
 | 5 | HU02 | Como estudiante, quiero filtrar los voluntariados por tipo de causa para encontrar actividades que realmente me motiven. | 3 |
 | 6 | HU03 | Como estudiante, quiero filtrar los voluntariados por duración para encontrar actividades compatibles con mi disponibilidad. | 3 |
 | 7 | HU04 | Como estudiante, quiero encontrar voluntariados cercanos a mi ubicación para evitar desplazamientos innecesarios. | 5 |
 | 8 | HU05 | Como estudiante, quiero encontrar voluntariados relacionados con mi carrera universitaria para desarrollar experiencia profesional. | 3 |
-| 9 | HU15 | Como estudiante, quiero consultar los detalles de una actividad antes de inscribirme para conocer sus requisitos, horario, ubicación y organización responsable. | 3 |
-| 10 | HU14 | Como estudiante, quiero postularme rápidamente a una convocatoria para participar en un voluntariado. | 3 |
-| 11 | HU21 | Como ONG, quiero crear y publicar una convocatoria para encontrar voluntarios interesados en participar en mis actividades. | 5 |
-| 12 | HU22 | Como ONG, quiero modificar una convocatoria publicada para mantener actualizada su información. | 3 |
-| 13 | HU23 | Como ONG, quiero cerrar una convocatoria cuando ya no necesite recibir más postulantes. | 2 |
-| 14 | HU24 | Como ONG, quiero revisar los perfiles de los postulantes para seleccionar participantes adecuados. | 5 |
-| 15 | HU25 | Como ONG, quiero aceptar la postulación de un voluntario para incorporarlo oficialmente a una actividad. | 3 |
-| 16 | HU26 | Como ONG, quiero rechazar postulaciones que no cumplan con los requisitos establecidos. | 3 |
-| 17 | HU17 | Como estudiante, quiero recibir notificaciones sobre cambios importantes en mis voluntariados para mantenerme informado. | 3 |
-| 18 | HU18 | Como estudiante, quiero recibir recordatorios antes de una actividad para evitar olvidar mis compromisos. | 3 |
-| 19 | HU11 | Como estudiante, quiero visualizar mis actividades programadas en un calendario para organizar mejor mi tiempo. | 5 |
-| 20 | HU27 | Como ONG, quiero registrar la asistencia de los voluntarios para mantener evidencia de su participación. | 5 |
-| 21 | HU10 | Como voluntario, quiero consultar mi historial de voluntariados para mantener un registro de mis participaciones. | 3 |
-| 22 | HU12 | Como voluntario, quiero descargar un certificado al completar correctamente una actividad para demostrar mi participación. | 5 |
-| 23 | HU13 | Como voluntario, quiero obtener insignias por completar actividades para sentirme motivado a continuar participando. | 5 |
-| 24 | HU19 | Como estudiante, quiero calificar una organización al finalizar un voluntariado para compartir mi experiencia. | 3 |
-| 25 | HU20 | Como estudiante, quiero dejar comentarios después de completar un voluntariado para orientar a futuros participantes. | 3 |
-| 26 | HU28 | Como ONG, quiero evaluar a los voluntarios al finalizar una actividad para registrar información relacionada con su desempeño. | 3 |
-| 27 | HU29 | Como ONG, quiero consultar estadísticas de mis convocatorias para conocer su alcance y participación. | 5 |
-| 28 | HU30 | Como ONG, quiero generar reportes de participación para analizar los resultados obtenidos en mis actividades. | 5 |
-| 29 | HU16 | Como estudiante, quiero recibir recomendaciones basadas en mi perfil para descubrir oportunidades relevantes. | 5 |
-| 30 | HU08 | Como usuario, quiero recuperar mi contraseña mediante correo electrónico para recuperar el acceso a mi cuenta. | 3 |
+| 9 | HU24 | Como estudiante, quiero consultar los detalles de una actividad antes de inscribirme para conocer sus requisitos, horario, ubicación y organización responsable. | 3 |
+| 10 | HU21 | Como estudiante, quiero postularme rápidamente a una convocatoria para participar en un voluntariado. | 3 |
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
+**Tabla (continuación 2/3)**
+
+| # Orden | User Story ID | Descripción | Story Points |
+|---:|---|---|---:|
+| 11 | HU35 | Como ONG, quiero crear y publicar una convocatoria para encontrar voluntarios interesados en participar en mis actividades. | 5 |
+| 12 | HU36 | Como ONG, quiero modificar una convocatoria publicada para mantener actualizada su información. | 3 |
+| 13 | HU37 | Como ONG, quiero cerrar una convocatoria cuando ya no necesite recibir más postulantes. | 2 |
+| 14 | HU39 | Como ONG, quiero revisar los perfiles de los postulantes para seleccionar participantes adecuados. | 5 |
+| 15 | HU41 | Como ONG, quiero aceptar la postulación de un voluntario para incorporarlo oficialmente a una actividad. | 3 |
+| 16 | HU42 | Como ONG, quiero rechazar postulaciones que no cumplan con los requisitos establecidos. | 3 |
+| 17 | HU30 | Como estudiante, quiero recibir notificaciones sobre cambios importantes en mis voluntariados para mantenerme informado. | 3 |
+| 18 | HU29 | Como estudiante, quiero recibir recordatorios antes de una actividad para evitar olvidar mis compromisos. | 3 |
+| 19 | HU15 | Como estudiante, quiero visualizar mis actividades programadas en un calendario para organizar mejor mi tiempo. | 5 |
+| 20 | HU45 | Como ONG, quiero registrar la asistencia de los voluntarios para mantener evidencia de su participación. | 5 |
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
+**Tabla (continuación 3/3)**
+
+| # Orden | User Story ID | Descripción | Story Points |
+|---:|---|---|---:|
+| 21 | HU13 | Como voluntario, quiero consultar mi historial de voluntariados para mantener un registro de mis participaciones. | 3 |
+| 22 | HU19 | Como voluntario, quiero descargar un certificado al completar correctamente una actividad para demostrar mi participación. | 5 |
+| 23 | HU18 | Como voluntario, quiero obtener insignias por completar actividades para sentirme motivado a continuar participando. | 5 |
+| 24 | HU33 | Como estudiante, quiero calificar una organización al finalizar un voluntariado para compartir mi experiencia. | 3 |
+| 25 | HU32 | Como estudiante, quiero dejar comentarios después de completar un voluntariado para orientar a futuros participantes. | 3 |
+| 26 | HU46 | Como ONG, quiero evaluar a los voluntarios al finalizar una actividad para registrar información relacionada con su desempeño. | 3 |
+| 27 | HU49 | Como ONG, quiero consultar estadísticas de mis convocatorias para conocer su alcance y participación. | 5 |
+| 28 | HU48 | Como ONG, quiero generar reportes de participación para analizar los resultados obtenidos en mis actividades. | 5 |
+| 29 | HU25 | Como estudiante, quiero recibir recomendaciones basadas en mi perfil para descubrir oportunidades relevantes. | 5 |
+| 30 | HU10 | Como usuario, quiero recuperar mi contraseña mediante correo electrónico para recuperar el acceso a mi cuenta. | 3 |
 
 ## 2.5. Strategic-Level Domain-Driven Design
 El Strategic-Level Domain-Driven Design permite analizar el sistema desde una perspectiva de alto nivel, identificando las principales áreas funcionales del negocio y estableciendo límites claros entre ellas.
@@ -704,9 +738,29 @@ El objetivo es reconocer las responsabilidades principales del sistema y determi
 De esta manera, se busca evitar que todas las funcionalidades del sistema se encuentren mezcladas dentro de un único modelo, permitiendo una mejor organización del dominio y facilitando el desarrollo futuro de la solución.
 
 ---
-### 2.5.1. EventStorming
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
-![EventStorming](assets/md-images-chapter2/EventStorming.png)
+### 2.5.1. EventStorming
+#### Procedimiento aplicado para la elaboración del EventStorming
+
+El modelo recoge eventos de negocio propuestos para BlockVoluntariado. Para que el diagrama sea reproducible, el equipo debe documentar las siguientes fases y contrastarlas con el tablero original:
+
+1. **Definir el alcance y los participantes.** Delimitar el ciclo de vida de una convocatoria, desde su creación por una ONG hasta la certificación de la participación, considerando estudiantes y organizaciones.
+2. **Descubrir eventos de dominio.** Escribir hechos relevantes en tiempo pasado, por ejemplo `Convocatoria publicada`, `Postulación enviada`, `Postulación aceptada` y `Asistencia registrada`.
+3. **Ordenar los eventos temporalmente.** Organizar la secuencia principal, añadir ramificaciones como `Postulación rechazada` y detectar situaciones alternativas.
+4. **Incorporar comandos y actores.** Asociar acciones que originan los eventos: `Publicar convocatoria` (ONG), `Enviar postulación` (estudiante), `Aceptar postulante` (ONG) y `Registrar asistencia` (ONG).
+5. **Identificar reglas, políticas y agregados.** Describir restricciones, como no superar vacantes y no emitir certificados sin participación validada; asociarlas a `Convocatoria`, `Postulación` y `Participación`.
+6. **Detectar puntos críticos y preguntas abiertas.** Determinar cómo se validan horas, quién aprueba certificados y cuándo se notifica un cambio; registrar decisiones pendientes sin presentarlas como reglas implementadas.
+7. **Agrupar eventos por capacidad de negocio.** Detectar contextos candidatos y contrastar los límites con el lenguaje ubicuo y los casos de uso.
+8. **Revisar y refinar el modelo.** Verificar consistencia con entrevistas, User Stories y el mapa de contextos, documentando los cambios.
+
+**Ejemplo de secuencia de negocio:** `Convocatoria creada` → `Convocatoria publicada` → `Postulación enviada` → (`Postulación aceptada` o `Postulación rechazada`) → `Asistencia registrada` → `Voluntariado completado` → `Certificado generado`.
+
+*La secuencia representa un modelo de análisis y debe validarse con el equipo respecto del flujo real del producto.*
+
+![EventStorming: tablero del proyecto](assets/md-images-chapter2/EventStorming.png)
+
+*Figura 2.5.1. Tablero de EventStorming del proyecto (archivo original del equipo).*
 
 #### 2.5.1.1. Candidate Context Discovery
 
@@ -732,36 +786,137 @@ Esta división facilita que las funcionalidades relacionadas se mantengan agrupa
 
 Asimismo, los Candidate Contexts permiten establecer una primera aproximación a los Bounded Contexts que serán utilizados posteriormente en el diseño estratégico y táctico de la solución.
 
-#### 2.5.1.2. Domain Message Flows Modeling
-A partir del contexto y la problemática analizada, los flujos del sistema de Block Voluntariado se modelan paso a paso mediante la técnica de Domain Storytelling utilizando la plataforma Miro, de la siguiente manera:<br><br>
--Primero el estudiante universitario se registra e ingresa a la aplicación móvil de Block Voluntariado para buscar oportunidades que se ajusten a sus preferencias y necesidades, evitando la búsqueda manual en redes sociales o paneles publicitarios.<br>
--Tras interactuar con la plataforma, el estudiante utiliza los filtros de búsqueda para explorar las opciones disponibles y selecciona una alternativa de su interés.<br>
--El sistema le permite visualizar la información y descripción detallada de la ONG, lo que le ayuda a conocer a fondo la organización antes de tomar una decisión.<br>
--Finalmente, el proceso concluye de forma exitosa cuando el estudiante realiza la matriculación de manera centralizada en la aplicación, facilitando el cumplimiento de sus créditos extracurriculares durante su primera semana de uso.<br><br>
-<img src="assets/md-images-chapter1/domain Storytelling.jpeg">
+#### 2.5.1.1.1. Descripción de los Bounded Context candidatos identificados
 
+Los siete contextos que se muestran a continuación **se identificaron como candidatos durante el EventStorming**. Un candidato representa una propuesta de límite del modelo, no necesariamente un microservicio ni una unidad ya implementada. La descripción distingue los conceptos del negocio, las reglas que debe proteger y los eventos con los que colaboraría con otros contextos.
+
+**1. Identity and Access Management — Identidad y acceso (Supporting Domain).**
+
+Su propósito es reconocer a los usuarios de BlockVoluntariado y controlar su acceso a las funcionalidades autorizadas. Administra el registro, inicio de sesión, recuperación de acceso, roles (por ejemplo, estudiante y representante de ONG) y asociación entre la identidad autenticada y el identificador interno de usuario. Sus reglas incluyen impedir accesos no autorizados y no compartir credenciales con contextos consumidores. Publica información estrictamente necesaria sobre identidades y cambios de estado de cuenta. **Límite:** autenticar a una persona no equivale a gestionar toda la información de su perfil de voluntario. Se relaciona con *Volunteer Management* y con los módulos que necesitan verificar permisos.
+
+**2. Volunteer Management — Gestión de voluntarios (Supporting Domain).**
+
+Se encarga del perfil del voluntario: datos de presentación, intereses, habilidades, disponibilidad y preferencias relevantes para encontrar oportunidades. El perfil se asocia a una identidad, pero mantiene reglas propias: solo las personas autorizadas deben poder modificarlo; el contenido disponible para las ONG debe respetar los permisos del usuario. Los eventos candidatos incluyen `PerfilVoluntarioActualizado` y `PreferenciasRegistradas`. Proporciona datos de perfil a *Application Management* para apoyar la evaluación de postulantes y al catálogo para facilitar búsquedas. **Límite:** no acepta ni rechaza postulaciones y no decide la validez de certificados.
+
+**3. Volunteering Management — Gestión de convocatorias (Core Domain, propuesto).**
+
+Modela el ciclo de vida de las convocatorias: creación en borrador, definición de requisitos, cupos, modalidad, ubicación y horarios, publicación, actualización y cierre. La organización que publica es responsable de los datos de su convocatoria. Sus invariantes candidatas son no admitir convocatorias sin información obligatoria y no permitir postulaciones a una convocatoria cerrada o no publicada. Los eventos comprenden `ConvocatoriaCreada`, `ConvocatoriaPublicada`, `ConvocatoriaActualizada` y `ConvocatoriaCerrada`. Suministra datos sobre oportunidades a *Application Management*. **Límite:** la convocatoria no es la postulación individual de un estudiante.
+
+**4. Application Management — Gestión de postulaciones (Core Domain, propuesto).**
+
+Controla el envío, seguimiento y evaluación de solicitudes para una convocatoria. Se ocupa de la relación entre voluntario, convocatoria y estado de la solicitud (`PENDIENTE`, `ACEPTADA` o `RECHAZADA`). Sus reglas candidatas son evitar una postulación duplicada del mismo voluntario a la misma convocatoria y autorizar la decisión de aceptación o rechazo únicamente a la organización responsable. Debe consultar la vigencia y las condiciones de la convocatoria; la validación de cupos exige una coordinación consistente con el contexto que los administra. Emite `PostulacionEnviada`, `PostulacionAceptada` y `PostulacionRechazada`. **Límite:** una postulación aceptada no acredita por sí sola asistencia u horas realizadas.
+
+**5. Participation Management — Gestión de participación (Core o Supporting Domain, a validar).**
+
+Administra lo que ocurre después de aceptar una postulación: incorporación del participante, sesiones o actividades programadas, control de asistencia, registro de horas y finalización de la participación. Sus reglas candidatas exigen que una asistencia esté vinculada a una participación autorizada y que las horas contabilizadas se basen en registros verificables. Entre los eventos están `ParticipacionConfirmada`, `AsistenciaRegistrada`, `HorasValidadas` y `ActividadFinalizada`. Proporciona evidencia a *Recognition and Evaluation*. **Límite:** no debe emitir certificados sin pasar por las reglas del contexto de reconocimiento.
+
+**6. Recognition and Evaluation — Evaluación y reconocimiento (Supporting Domain).**
+
+Gestiona evaluaciones recíprocas, seguimiento de logros, insignias, constancias y certificados derivados de una participación completada. Debe recibir información confiable sobre asistencia y cumplimiento, y aplicar reglas para evitar reconocimientos duplicados o no sustentados. Sus eventos propuestos son `VoluntarioEvaluado`, `OrganizacionCalificada`, `CertificadoGenerado` e `InsigniaOtorgada`. Consume información de *Participation Management* y entrega resultados consultables al usuario. **Límite:** una valoración del voluntario o de la ONG no cambia retroactivamente el estado de una postulación.
+
+**7. Communication and Notifications — Comunicación y notificaciones (Generic/Supporting Domain).**
+
+Su responsabilidad consiste en enviar avisos pertinentes sobre nuevas oportunidades, resoluciones de postulaciones, cambios en actividades y recordatorios. Consume eventos de otros contextos, gestiona preferencias de recepción y prepara mensajes para proveedores externos como correo electrónico o notificaciones push. Entre sus resultados se encuentran `NotificacionGenerada`, `ResultadoNotificado` y `RecordatorioEnviado`. Una regla fundamental es respetar las preferencias y evitar envíos duplicados cuando sea posible. **Límite:** entregar una notificación no significa ejecutar la decisión de negocio que la originó; esa decisión pertenece al contexto emisor.
+
+**Criterio de clasificación:** las etiquetas *Core*, *Supporting* y *Generic* son una **propuesta de análisis**, no una clasificación ratificada por el equipo. Se consideran centrales las capacidades que diferencian a la plataforma al conectar convocatorias y postulaciones; el nivel de especialización de participación debe validarse con el alcance real del producto.
+
+#### 2.5.1.1.2. Consolidación de los candidatos en el mapa AV1
+
+El mapa y los canvas originales del AV1 muestran **cuatro áreas de mayor nivel**. Para conservar la trazabilidad con los siete candidatos del EventStorming, la siguiente tabla indica cómo se propone agruparlos. No significa que los siete límites se hayan eliminado del modelo ni que existan cuatro implementaciones independientes.
+
+| Contexto consolidado del AV1 | Contextos candidatos asociados | Razón de la agrupación y límite pendiente |
+|---|---|---|
+| **Perfil y autenticación** | Identity and Access Management; Volunteer Management | Presenta de forma conjunta la identificación y la información de los usuarios. En el diseño detallado conviene distinguir autenticación de perfil, pues poseen reglas y datos sensibles diferentes. |
+| **Publicaciones y convocatorias** | Volunteering Management | Mantiene el ciclo de vida de las oportunidades y es fuente de información sobre requisitos, fechas y cupos. |
+| **Matrículas y postulaciones** | Application Management | Gestiona las solicitudes y sus estados. El nombre «matrícula» proviene del mapa AV1, pero en el lenguaje del dominio se prefiere «postulación» y, tras la aceptación, «participación». |
+| **Evaluación y reconocimiento** | Participation Management; Recognition and Evaluation | Agrupa el seguimiento de participación, las horas validadas y los reconocimientos. La separación futura es conveniente si la gestión de asistencia gana reglas y complejidad propias. |
+
+**Contexto transversal no representado como caja independiente en el mapa AV1:** *Communication and Notifications*. Su comportamiento aparece distribuido como efecto de eventos de postulación o actividad. Se propone visualizarlo como contexto de soporte separado en una siguiente revisión del Context Map, porque tiene responsabilidades y proveedores externos propios.
+
+**Conclusión de la delimitación:** el resultado del EventStorming es una primera hipótesis de límites. El siguiente paso consiste en revisar los flujos de mensajes, las reglas de cada agregado y los canvas con el equipo para confirmar dónde conviene mantener o separar modelos. Esto evita equiparar automáticamente un módulo, una pantalla o una tabla de base de datos con un *Bounded Context*.
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
+#### 2.5.1.2. Domain Message Flow Modelling
+Esta técnica representa **mensajes entre actores y bounded contexts** para un escenario específico. A diferencia de un *user flow* de pantallas, muestra comandos, consultas y eventos de dominio, su emisor, destinatario y orden. El escenario propuesto es **postulación de un estudiante a una convocatoria y decisión de la ONG**. Se utiliza como referencia la guía de [DDD Crew – Domain Message Flow Modelling](https://github.com/ddd-crew/domain-message-flow-modelling).
+
+| N.º | Emisor | Tipo | Mensaje y datos principales | Receptor | Resultado esperado |
+|---:|---|---|---|---|---|
+| 1 | Estudiante | Consulta | `BuscarConvocatorias` (causa, ubicación, disponibilidad) | Publicaciones y convocatorias | Listado de convocatorias vigentes |
+| 2 | Estudiante | Consulta | `ConsultarConvocatoria` (convocatoriaId) | Publicaciones y convocatorias | Requisitos, fechas y vacantes |
+| 3 | Estudiante | Comando | `EnviarPostulacion` (convocatoriaId, voluntarioId) | Matrículas y postulaciones | Solicitud evaluable |
+| 4 | Matrículas y postulaciones | Evento | `PostulacionEnviada` (postulacionId, convocatoriaId) | Notificaciones / organización | Aviso de una nueva solicitud |
+| 5 | Representante ONG | Comando | `AceptarORechazarPostulacion` (postulacionId, decisión) | Matrículas y postulaciones | Estado de la solicitud actualizado |
+| 6 | Matrículas y postulaciones | Evento | `PostulacionAceptada` o `PostulacionRechazada` | Comunicaciones y notificaciones | Aviso de resolución al estudiante |
+| 7 | Estudiante | Consulta | `ConsultarEstadoPostulacion` (postulacionId) | Matrículas y postulaciones | Estado y detalle de respuesta |
+
+![Flujo de mensajes entre contextos](assets/diagramas/domain-message-flow.png)
+
+*Figura 2.5.2. Flujo de mensajes propuesto. Los números coinciden con la tabla. Las consultas requieren su respuesta correspondiente; las reglas de negocio se ejecutan dentro del contexto receptor.*
+
+El material anterior denominado *Domain Storytelling* se conserva como antecedente de recorrido de usuario, pero **no sustituye** este diagrama de intercambios entre contextos.
+
+![Recorrido de usuario previo en Miro](assets/md-images-chapter1/domain Storytelling.jpeg)
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 #### 2.5.1.3. Bounded Context Canvases
-En la siguiente tabla se muestran los lienzos de diseño (Bounded Context Canvases) para Block Voluntariado. Aquí organizamos los cuatro contextos principales del sistema, desde las convocatorias hasta los reconocimientos, detallando de forma clara qué hace cada uno, sus reglas basadas en nuestro lenguaje ubicuo, con quién se conectan y por qué se diseñaron de esa manera para mantener la aplicación estable
-<br><br>
-<img src="assets/md-images-chapter1/boundend context canvases.jpeg">
+Un *Bounded Context Canvas* describe el propósito y las fronteras de un contexto, sus responsabilidades, su lenguaje, dependencias e interfaces de comunicación. La presentación se reorganiza tomando como referencia [DDD Crew – Bounded Context Canvas](https://github.com/ddd-crew/bounded-context-canvas). El material de cuatro áreas del AV1 se interpreta como **agrupación inicial propuesta**, y no como prueba de que todos los candidatos se hayan implementado independientemente.
 
+| Contexto del mapa AV1 | Propósito y responsabilidades | Entradas | Salidas / reglas relevantes |
+|---|---|---|---|
+| **Publicaciones y convocatorias** | Administrar las convocatorias de voluntariado, requisitos, fechas y cupos | Crear, publicar, actualizar, cerrar y consultar | `ConvocatoriaPublicada`; solo se puede postular a una convocatoria vigente |
+| **Matrículas y postulaciones** | Registrar solicitudes y resoluciones de selección | `EnviarPostulacion`, `AceptarPostulacion`, `RechazarPostulacion` | `PostulacionEnviada`, `PostulacionAceptada`, `PostulacionRechazada`; evitar duplicados y respetar cupos |
+| **Perfil y autenticación** | Administrar acceso e información básica de perfiles | Registro, inicio de sesión y actualización de perfil | Identificador de usuario y datos autorizados; evitar exponer credenciales a otros contextos |
+| **Evaluación y reconocimiento** | Registrar participación evaluada, horas y certificados | Resultado de participación y validación de asistencia | `CertificadoGenerado`; no emitir reconocimiento sin validación correspondiente |
+
+**Decisiones y límites.** Los siete contextos candidatos detectados en la exploración incluyen comunicación, seguimiento y perfiles especializados. En esta versión del mapa se consolidan en cuatro áreas para simplificar la vista; sin embargo, **Comunicaciones y notificaciones** puede mantenerse como contexto de soporte independiente cuando sus reglas propias lo justifiquen. Del mismo modo, `Participación` debe separarse si la gestión de asistencias crece en complejidad.
+
+**Aspectos que se deben validar con el equipo:** responsables reales de cada modelo, eventos publicados, invariantes de las entidades, contratos expuestos y razones de integración o separación de los siete candidatos. La tabla sintetiza información documentada y propone su ampliación; no acredita la implementación completa.
+
+**Lienzos originales del AV1 (referencia histórica):**
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 2.5.2. Context Mapping
-En el siguiente diagrama se muestra el mapa de contextos (Context Map) de Block Voluntariado. Aquí se puede ver cómo se relacionan e intercomunican nuestros cuatro contextos: utilizando el patrón Customer/Supplier para conectar el flujo de datos entre las evaluaciones, matrículas y convocatorias, y el patrón Shared Kernel (núcleo compartido) para que el módulo de perfil y autenticación sirva como la base segura que consultan todos los demás módulos.<br><br>
-<img src="assets/md-images-chapter1/contextMap.jpeg">
+El *Context Mapping* establece relaciones entre modelos de dominio y permite documentar quién produce información, quién depende de ella y qué acuerdos deben existir entre equipos o módulos. Se utilizó como referencia [DDD Crew – Context Mapping](https://github.com/ddd-crew/context-mapping).
+
+| Relación propuesta | Patrón y dirección | Justificación | Riesgo / acuerdo requerido |
+|---|---|---|---|
+| Publicaciones y convocatorias → Matrículas y postulaciones | **Customer/Supplier** (Publicaciones: *upstream*; Postulaciones: *downstream*) | Postulaciones necesita identificar una convocatoria vigente, sus requisitos y cupos; el proveedor ofrece esos datos mediante un contrato explícito | Pactar cambios de campos, estados y disponibilidad sin romper la recepción de solicitudes |
+| Matrículas y postulaciones → Evaluación y reconocimiento | **Customer/Supplier** (Postulaciones: *upstream*; Reconocimiento: *downstream*) | La evaluación requiere conocer que una solicitud fue admitida y dio lugar a una participación | La aceptación no demuestra asistencia: validar horas y cumplimiento en un flujo posterior |
+| Perfil y autenticación → otros contextos | **Conformist o API/ACL, según control real de contratos** | Los demás módulos necesitan una identidad validada, pero no deben compartir indiscriminadamente el modelo interno de autenticación | Autorización, mínimo acceso a datos personales y estabilidad de interfaces |
+
+**Revisión del patrón Shared Kernel.** El informe inicial etiqueta como `Shared Kernel` las conexiones con Perfil y autenticación. No obstante, compartir un identificador de usuario, consumir un servicio de identidad o validar tokens **no basta** para justificar este patrón: Shared Kernel implica compartir deliberadamente una parte del modelo entre contextos y coordinar sus cambios. Por tanto, se recomienda **no mantener Shared Kernel como patrón confirmado** hasta encontrar evidencia de modelo compartido, propiedad conjunta y proceso coordinado de modificaciones.
+
+**Conclusión de diseño.** La propuesta minimiza el acoplamiento mediante contratos explícitos. Los patrones descritos son hipótesis arquitectónicas para validar frente a las implementaciones y acuerdos de los integrantes del equipo; el diagrama inicial se conserva para comparación.
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 2.5.3. Software Architecture
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 
-![ContextDiagram](assets/md-images-chapter2/ContextDiagram.png)
+**Alcance de la solución.** El sistema de interés del C4 Nivel 1 es la **Plataforma BlockVoluntariado**, no únicamente la aplicación móvil. La solución integra el cliente Android, la API backend, la persistencia relacional y los servicios externos de autenticación y notificaciones. En Nivel 1, Android y backend se representan dentro del sistema; en Nivel 2 se descomponen como contenedores tecnológicos.
+
+![Arquitectura C4 - plataforma completa](assets/diagramas/c4-contexto.png)
+
+*Figura 2.5.3. Propuesta corregida del diagrama de contexto C4 (Nivel 1). Los componentes internos no se detallan en este nivel.*
+
+**Nivel 2 — contenedores esperados:** aplicación Android en Kotlin/Jetpack Compose; API REST de backend Spring Boot; base de datos MySQL. Los proveedores externos se ubican fuera del límite de la plataforma. El nivel de despliegue debe reflejar la misma estructura lógica.
+
+**Diagrama previo del AV1 — pendiente de actualizar en el archivo de imagen original:**
+
+
+**Diagrama histórico del AV1 (sustituido):** la versión anterior centrada únicamente en el cliente móvil se conserva en el repositorio histórico, pero no se utiliza como arquitectura vigente.
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 #### 2.5.3.2. Software Architecture Container Level Diagrams
-
 ![ContainerDiagram](assets/md-images-chapter2/ContainerDiagram.png)
 
-#### 2.5.3.3. Software Architecture Deployment Diagrams
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
+#### 2.5.3.3. Software Architecture Deployment Diagrams
 ![DeploymentDiagram](assets/md-images-chapter2/DeploymentDiagram.png)
 
 ## 2.6. Tactical-Level Domain-Driven Design
@@ -805,21 +960,27 @@ En el siguiente diagrama se muestra el mapa de contextos (Context Map) de Block 
 * **Repositorios Spring Data:** `SpringDataConvocatoriaRepository`, `SpringDataPostulacionRepository`.
 * **Mappers:** `ConvocatoriaMapper` (convierte entre `Convocatoria` de dominio y `ConvocatoriaJpaEntity` de persistencia relacional).
 
-#### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
+#### 2.6.1.5. Bounded Context Software Architecture Component Level Diagrams
 ![BC1-ComponentDiagram](assets/md-images-chapter2/BC1-ComponentDiagram.png)
 
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
 #### 2.6.1.6. Bounded Context Software Architecture Code Level Diagrams
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ##### 2.6.1.6.1. Bounded Context Domain Layer Class Diagrams
-
 ![BC1DomainLayerClassDiagram](assets/md-images-chapter2/BC1DomainLayerClassDiagram.png)
 
-##### 2.6.x.6.2. Bounded Context Database Design Diagram
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
+##### 2.6.1.6.2. Bounded Context Database Design Diagram
 ![BC1DatabaseDesignDiagram](assets/md-images-chapter2/BC1DatabaseDesignDiagram.png)
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 # Capítulo III: Solution UI/UX Design
+> **Sección pendiente de desarrollo:** el documento AV1 proporciona la estructura de este capítulo, pero no contiene evidencias suficientes para completarlo sin nuevos materiales de diseño. Se conservan sus encabezados como guía para próximas entregas.
 ## 3.1. Product design
 ### 3.1.1. Style Guidelines
 #### 3.1.1.1. General Style Guidelines
@@ -838,8 +999,10 @@ En el siguiente diagrama se muestra el mapa de contextos (Context Map) de Block 
 #### 3.1.4.3. Mobile Applications Mock-ups
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 #### 3.1.4.5. Mobile Applications Prototyping
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 # Capítulo IV: Product Implementation & Validation
+> **Sección pendiente de desarrollo:** falta incorporar pruebas, repositorios, sprints y evidencias reales de implementación; no se han inventado resultados.
 ## 4. Product Implementation & Validation
 ### 4.1. Software Configuration Management
 #### 4.1.1. Software Development Environment Configuration
@@ -865,26 +1028,42 @@ En el siguiente diagrama se muestra el mapa de contextos (Context Map) de Block 
 # Conclusiones
 ## Conclusiones y recomendaciones
 
+El análisis de BlockVoluntariado identifica como principales necesidades la centralización de oportunidades, la búsqueda compatible con horarios de estudiantes y la gestión trazable de postulaciones por las organizaciones. Las entrevistas y el análisis de tareas fundamentan una plataforma que combine experiencia móvil, servicios de negocio y persistencia.
+
+Desde el diseño técnico, la revisión evidencia la importancia de diferenciar los contextos candidatos de los definitivos, documentar contratos entre capacidades y emplear correctamente los patrones de DDD. Se recomienda validar las reglas de negocio con los interesados, enlazar cada decisión a historias y pruebas, y mantener los modelos C4 coherentes entre niveles.
+
+Las métricas de adopción, certificación y retención del producto son hipótesis y objetivos por validar; no se presentan como resultados alcanzados.
+
 # Video App Validation
 # Video About the product
 # Video About the team
 
 # Glosario
 
+- **Bounded Context:** límite donde un modelo de dominio mantiene significado consistente.
+- **Comando:** solicitud de ejecutar una acción de negocio.
+- **Evento de dominio:** hecho relevante ocurrido en el negocio.
+- **Context Map:** representación de dependencias y acuerdos entre contextos.
+- **C4:** modelo para describir arquitectura mediante contexto, contenedores, componentes y código.
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
 # Bibliografía
+- DDD Crew. (s. f.). *Domain Message Flow Modelling*. https://github.com/ddd-crew/domain-message-flow-modelling
+- DDD Crew. (s. f.). *Bounded Context Canvas*. https://github.com/ddd-crew/bounded-context-canvas
+- DDD Crew. (s. f.). *Context Mapping*. https://github.com/ddd-crew/context-mapping
 
 - Comisión Económica para América Latina y el Caribe (CEPAL). (2021). *El rol del voluntariado y la participación juvenil en la recuperación y el desarrollo en América Latina*. Naciones Unidas.
 
 - Programa de los Voluntarios de las Naciones Unidas (VNU). (2022). *Informe sobre el estado del voluntariado en el mundo 2022: Crear sociedades igualitarias e inclusivas*. Naciones Unidas.
 
 - Idealist. (s. f.). Tiempo de Cambios.
-             https://www.idealist.org
+  https://www.idealist.org
 
 - Hacesfalta. (s. f.). Voluntariado y Empleo en ONG.
-            https://www.hacesfalta.org
+  https://www.hacesfalta.org
 
 - Catchafire. (s. f.). ¿Que es Catchafire y como puedo unirme?.
-             https://help.catchafire.org
-
+  https://help.catchafire.org
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 # Anexos
