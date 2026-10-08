@@ -1028,14 +1028,53 @@ La propuesta móvil agrupa las tareas por objetivos de usuario. Los estudiantes 
 ![Creación de convocatoria, primer paso](assets/figma-tb1/11_nueva_convocatoria_paso_1.png)
 
 *Figura 3.4. Formulario secuencial para crear una convocatoria. Fuente: diseño del equipo en Figma.*
+
 ### 3.1.3. Landing Page UI Design
 #### 3.1.3.1. Landing Page Wireframe
 #### 3.1.3.2. Landing Page Mock-up
+
 ### 3.1.4. Mobile Applications UX/UI Design
+El equipo dispone de un conjunto preliminar de 27 mock-ups de la experiencia móvil de BlockVoluntariado. Las pantallas cubren los recorridos de voluntarios y representantes de ONG, aunque la evidencia gráfica todavía debe complementarse con wireframes, wireflows, user flows y demostraciones del prototipo según el enunciado del curso.
+
 #### 3.1.4.1. Mobile Applications Wireframes
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
+
 #### 3.1.4.3. Mobile Applications Mock-ups
+
+**Inicio y acceso.** Las pantallas de bienvenida, selección del tipo de usuario e inicio de sesión distinguen el ingreso de estudiantes y representantes de organizaciones.
+
+![Selección del tipo de usuario](assets/figma-tb1/02_registro_tipo_usuario.png)
+
+*Figura 3.5. Selección del perfil de usuario.*
+
+**Descubrimiento y postulación.** Las vistas del catálogo y detalle de voluntariados muestran información de las oportunidades, requisitos y acciones de postulación.
+
+![Detalle de voluntariado](assets/figma-tb1/13_detalle_voluntariado.png)
+
+*Figura 3.6. Vista de detalle y postulación a voluntariado.*
+
+**Gestión de ONG.** Se han diseñado vistas de convocatorias, creación de una convocatoria, listado de postulantes y rechazo con confirmación.
+
+![Gestión de postulantes](assets/figma-tb1/15_gestion_postulantes.png)
+
+*Figura 3.7. Revisión de postulaciones desde el rol de organización.*
+
+**Participación.** Existen propuestas de calendario, seguimiento de actividades, asistencia y escaneo QR.
+
+![Control de asistencia](assets/figma-tb1/19_control_asistencia.png)
+
+*Figura 3.8. Registro de asistencia a una actividad.*
+
+**Reconocimientos y comunicación.** Los mock-ups incluyen portafolio de logros, certificados, valoración de voluntariados y preferencias de notificaciones.
+
+![Portafolio de logros](assets/figma-tb1/22_portafolio_logros.png)
+
+*Figura 3.9. Propuesta de portafolio de logros y certificados.*
+
+**Pendientes de validación.** Identificar qué mock-ups están aprobados, construir los diagramas de flujo y documentar videos o enlaces de prototipo interactivo. No se consideran funcionalidades implementadas hasta que se presenten evidencias de ejecución.
+
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
+
 #### 3.1.4.5. Mobile Applications Prototyping
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
