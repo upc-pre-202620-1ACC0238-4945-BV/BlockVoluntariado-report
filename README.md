@@ -76,6 +76,8 @@ El informe registra la participación del equipo a través de evidencias de inve
 
 > **Nota de edición:** esta versión incluye correcciones narrativas del AV1 y figuras reordenadas para lectura e impresión. Los modelos del diseño inicial se presentan como antecedentes cuando han sido reemplazados; las decisiones que requieran validación del equipo continúan indicadas como propuestas.
 
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
 ## Contenido
 
 - [Student Outcome](#student-outcome)
@@ -223,6 +225,7 @@ Es una plataforma en donde los ciudadanos puedan tener la oportunidad de partici
 | Tuncar Vila, Ghorghet Saul      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-chapter1/ghorghet-tuncar.png">               | Soy Ghorghet Saul Tuncar Vila, estudiante de 6to ciclo de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
 | Cabrejos Chocco, Diego Alexander      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-chapter1/diego-cabrejos.jpeg">               | Soy Diego Alexander Cabrejos Chocco estudiante de la carrera de ingeniería de software, actualmente cursando el 6to ciclo, soy una persona sociable, creativa, que trabaja bien en equipo y busco que todo el equipo participe en las actividades activamente. Me adapto rapidamente a la modalidad de trabajo. Mi meta es poder crear y desarrollar proyectos tecnologicos que tenga un impacto positivo y que sea entretenido. Lo mas interesante de la Software es que cada vez se va expandiendo, y las opciones para poder desarrollar algun proyecto por mas interesante o loco que paresca el tema, no es impedimento para desarrollar lo que desees. (claro que siempre siguiendo el tema legal)
 
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ## 1.2. Solution Profile
 ### 1.2.1. Antecedentes y problemática
@@ -282,6 +285,7 @@ El Lean UX Canvas de BlockVoluntariado resume el problema de negocio, los usuari
 
 **Aprendizajes prioritarios.** Se necesita validar qué factores hacen que un voluntario abandone una actividad, en qué periodos existe mayor riesgo de inasistencia y qué elementos de la experiencia digital generan mayor motivación y confianza.
 
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ## 1.3. Segmentos objetivo
 - Jóvenes universitarios
@@ -291,6 +295,7 @@ En esta sección se describe al segmento conformado por estudiantes de educació
 - ONG y fundaciones sociales
 
 Este segmento incluye a organizaciones sin fines de lucro que operan en distintas regiones y que requieren voluntarios confiables para tareas específicas como campañas de sensibilización, traducciones, reportes comunitarios o capacitaciones. Muchas de estas entidades trabajan con recursos limitados y necesitan optimizar su alcance y medir su impacto de forma transparente, encontrando en la plataforma una solución para acceder a voluntarios trazables y comprometidos.
+
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 # Capítulo II: Requirements Development and Software Solution Design
@@ -357,6 +362,7 @@ Otra estrategia importante es establecer alianzas con universidades, ONG y empre
 
 Asimismo, se prioriza la cercanía con el usuario mediante notificaciones y opciones de búsqueda que permitan encontrar oportunidades relevantes de manera rápida. De esta forma, BlockVoluntariado busca competir no solo por la cantidad de convocatorias disponibles, sino también por ofrecer una experiencia organizada, sencilla y orientada a las necesidades específicas de los voluntarios y de las organizaciones sociales.
 
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ## 2.2. Entrevistas
 ### 2.2.1. Diseño de entrevistas
@@ -412,6 +418,7 @@ Segmento 2 - ONG y fundaciones sociales:
 
 - ¿Qué servicios adicionales estarían dispuestos a pagar para mejorar la gestión de voluntarios (mayor visibilidad, informes de impacto, acceso prioritario)?
 
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 2.2.2. Registro de entrevistas
 
@@ -440,6 +447,8 @@ En el segmento de ONG y fundaciones sociales, las entrevistas mostraron que uno 
 Otro hallazgo relevante es que muchas organizaciones todavía utilizan herramientas separadas como WhatsApp, correo electrónico y hojas de cálculo para coordinar a sus voluntarios. Esto genera un proceso poco centralizado y dificulta el seguimiento del historial, la asistencia y el desempeño. Por ello, se considera valioso contar con una plataforma que permita publicar convocatorias, revisar perfiles, gestionar postulantes y generar información sobre la participación e impacto de los voluntarios.
 
 En conjunto, los resultados respaldan la necesidad de una solución que centralice oportunidades de voluntariado, facilite la búsqueda según las necesidades del estudiante y proporcione a las ONG herramientas de gestión y seguimiento más organizadas.
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ## 2.3. Needfinding
 Con el objetivo de comprender mejor a los usuarios y el contexto en el que participan en actividades de voluntariado, se utilizaron técnicas de investigación y análisis centradas en sus necesidades. Inicialmente, el análisis del problema permitió identificar dificultades relacionadas con la falta de información centralizada, la disponibilidad de tiempo y la gestión de voluntarios.
@@ -508,6 +517,7 @@ Para BlockVoluntariado se analizaron los recorridos correspondientes a los princ
 | **Feelings** | Siente frustración y desconfianza debido a las dificultades para encontrar voluntarios constantes. | Siente expectativa y curiosidad frente a nuevas herramientas digitales. | Siente interés, aunque mantiene cierta cautela antes de adoptar una nueva plataforma. | Siente alivio al reducir parte de la carga operativa relacionada con la gestión de voluntarios. | Siente orgullo y motivación al observar resultados positivos en sus proyectos. |
 | **Barriers** | Escasez de recursos para realizar campañas de captación de voluntarios. | Desconfianza hacia nuevas herramientas tecnológicas. | Presupuesto limitado para adoptar nuevas soluciones. | Resistencia al cambio por parte de algunos miembros de la organización. | Falta de indicadores claros y poca personalización en los reportes. |
 
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 2.3.4. Empathy Mapping
 El Empathy Mapping permite comprender las necesidades, motivaciones, preocupaciones y comportamientos de los segmentos objetivo de BlockVoluntariado. Para elaborar los mapas se sintetizaron los hallazgos de las entrevistas descritas en la sección 2.2 y del proceso de Needfinding. Las afirmaciones de los mapas son interpretaciones del equipo, no citas textuales de los participantes.
@@ -532,6 +542,7 @@ Este mapa sintetiza los problemas de las organizaciones para convocar, seleccion
 Hallazgos para el diseño: las organizaciones necesitan publicar y actualizar convocatorias, revisar postulantes, registrar asistencia y consultar indicadores de participación. Estas necesidades se relacionan con las historias HU35–HU42, HU44–HU45 y HU48–HU50.
 Síntesis: ambos mapas respaldan una plataforma que conecta oportunidades con estudiantes y facilita la gestión de las organizaciones. Los hallazgos constituyen insumos para validar prioridades, no resultados de pruebas de usabilidad ni evidencia de funcionalidades ya implementadas.
 
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 2.3.5. Big Picture EventStorming
 El Big Picture EventStorming permite representar los principales eventos que ocurren dentro del dominio de BlockVoluntariado y entender la interacción general entre usuarios, procesos y resultados.
@@ -556,6 +567,7 @@ Algunos eventos relevantes son:
 - Organización calificada.
 - Voluntario evaluado.
 
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 2.3.6. Ubiquitous Language
 
@@ -578,6 +590,8 @@ El Ubiquitous Language establece un vocabulario común entre los integrantes del
 | Evaluación | Calificación realizada al finalizar una experiencia de voluntariado. |
 | Insignia | Reconocimiento digital obtenido por participación o cumplimiento de objetivos. |
 | Notificación | Aviso enviado al usuario sobre cambios, recordatorios o nuevas oportunidades. |
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ## 2.4. Requirements specification
 ### 2.4.1. User Stories
@@ -668,8 +682,12 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
 ### 2.4.2. Impact Mapping
  <img src="assets/md-images-chapter1/ImpactMapping_BlockVoluntariado.png">
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 2.4.3. Product Backlog
 
@@ -727,6 +745,8 @@ Los Story Points representan una estimación relativa del esfuerzo necesario par
 | 28 | HU48 | Como ONG, quiero generar reportes de participación para analizar los resultados obtenidos en mis actividades. | 5 |
 | 29 | HU25 | Como estudiante, quiero recibir recomendaciones basadas en mi perfil para descubrir oportunidades relevantes. | 5 |
 | 30 | HU10 | Como usuario, quiero recuperar mi contraseña mediante correo electrónico para recuperar el acceso a mi cuenta. | 3 |
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ## 2.5. Strategic-Level Domain-Driven Design
 El Strategic-Level Domain-Driven Design permite analizar el sistema desde una perspectiva de alto nivel, identificando las principales áreas funcionales del negocio y estableciendo límites claros entre ellas.
@@ -919,6 +939,8 @@ El *Context Mapping* establece relaciones entre modelos de dominio y permite doc
 #### 2.5.3.3. Software Architecture Deployment Diagrams
 ![DeploymentDiagram](assets/md-images-chapter2/DeploymentDiagram.png)
 
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
 ## 2.6. Tactical-Level Domain-Driven Design
 ### 2.6.1. Bounded Context: Volunteering Management Core
 #### 2.6.1.1. Domain Layer
@@ -979,8 +1001,8 @@ El *Context Mapping* establece relaciones entre modelos de dominio y permite doc
 ![BC1DatabaseDesignDiagram](assets/md-images-chapter2/BC1DatabaseDesignDiagram.png)
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
-# Capítulo III: Solution UI/UX Design
-> **Sección pendiente de desarrollo:** el documento AV1 proporciona la estructura de este capítulo, pero no contiene evidencias suficientes para completarlo sin nuevos materiales de diseño. Se conservan sus encabezados como guía para próximas entregas.
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
 # Capítulo III: Solution UI/UX Design
 
 ## 3.1. Product design
@@ -1009,6 +1031,8 @@ El diseño visual de BlockVoluntariado busca facilitar la interacción de estudi
 
 **Accesibilidad y coherencia.** La versión final deberá comprobar contraste cromático, tamaño de controles táctiles, legibilidad, textos de error y estados accesibles. Se identifican variantes visuales entre los primeros diseños, con cabeceras azul oscuro y acentos naranja, y las pantallas posteriores, con controles y barras de navegación de otro estilo; el equipo debe unificar ambas antes de considerar aprobadas las General Style Guidelines.
 
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
 ### 3.1.2. Information Architecture
 
 La propuesta móvil agrupa las tareas por objetivos de usuario. Los estudiantes pueden registrarse, completar su perfil, filtrar oportunidades, revisar convocatorias, postularse, consultar solicitudes y revisar actividades. Las organizaciones cuentan con vistas para publicar convocatorias, revisar postulantes y gestionar asistencia. Otras pantallas proponen el seguimiento de logros y notificaciones.
@@ -1029,9 +1053,13 @@ La propuesta móvil agrupa las tareas por objetivos de usuario. Los estudiantes 
 
 *Figura 3.4. Formulario secuencial para crear una convocatoria. Fuente: diseño del equipo en Figma.*
 
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
 ### 3.1.3. Landing Page UI Design
 #### 3.1.3.1. Landing Page Wireframe
 #### 3.1.3.2. Landing Page Mock-up
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 3.1.4. Mobile Applications UX/UI Design
 El equipo dispone de un conjunto preliminar de 27 mock-ups de la experiencia móvil de BlockVoluntariado. Las pantallas cubren los recorridos de voluntarios y representantes de ONG, aunque la evidencia gráfica todavía debe complementarse con wireframes, wireflows, user flows y demostraciones del prototipo según el enunciado del curso.
@@ -1076,16 +1104,19 @@ El equipo dispone de un conjunto preliminar de 27 mock-ups de la experiencia mó
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
 #### 3.1.4.5. Mobile Applications Prototyping
+
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 # Capítulo IV: Product Implementation & Validation
-> **Sección pendiente de desarrollo:** falta incorporar pruebas, repositorios, sprints y evidencias reales de implementación; no se han inventado resultados.
 ## 4. Product Implementation & Validation
 ### 4.1. Software Configuration Management
 #### 4.1.1. Software Development Environment Configuration
 #### 4.1.2. Source Code Management
 #### 4.1.3. Source Code Style Guide & Conventions
 #### 4.1.4. Software Deployment Configuration
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
 ### 4.2. Landing Page & Mobile Application Implementation
 #### 4.2.1. Sprint n
 ##### 4.2.1.1. Sprint Planning n
