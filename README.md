@@ -959,7 +959,12 @@ El diseño visual de BlockVoluntariado busca facilitar la interacción de estudi
 
 **Identidad y comunicación.** El onboarding utiliza una ilustración de colaboración y el mensaje «Conecta tu talento con causas que importan», asociando el producto con participación social. Los textos de las interfaces son breves y orientados a acciones concretas como «Empezar», «Entrar», «Crear nueva convocatoria», «Postularme ahora» y «Guardar asistencia». Se busca un tono cercano para el voluntario y claro para las tareas administrativas de las ONG.
 
-![Pantalla de bienvenida de BlockVoluntariado](assets/figma-tb1/01_onboarding.png)
+<div align="center">
+    <img
+        src="assets/figma-tb1/01_onboarding.png"
+        width="240"
+    />
+</div>
 
 *Figura 3.1. Propuesta de onboarding de BlockVoluntariado. Fuente: diseño del equipo en Figma.*
 
@@ -969,7 +974,12 @@ El diseño visual de BlockVoluntariado busca facilitar la interacción de estudi
 
 **Componentes y espaciado.** Se emplean tarjetas con bordes y esquinas redondeadas, campos de formulario con etiqueta visible, botones destacados, chips de categorías, listas, pestañas y navegación inferior. La repetición visual de estos elementos favorece la consistencia. La escala exacta de espaciado, los radios de borde y las dimensiones de controles deberán extraerse de los diseños originales.
 
-![Edición de datos de perfil](assets/figma-tb1/05_perfil_editar_datos.png)
+<div align="center">
+    <img
+        src="assets/figma-tb1/05_perfil_editar_datos.png"
+        width="240"
+    />
+</div>
 
 *Figura 3.2. Uso de campos, etiquetas y botón de acción en el perfil. Fuente: diseño del equipo en Figma.*
 
@@ -989,11 +999,22 @@ La propuesta móvil agrupa las tareas por objetivos de usuario. Los estudiantes 
 
 **Navegación.** Algunas vistas presentan una barra inferior para módulos frecuentes y flechas de retorno en tareas secundarias. Las pantallas de registro y publicación se organizan por pasos o acciones focalizadas. Debe verificarse que todas las vistas correspondan a un mapa de navegación coherente.
 
-![Catálogo de oportunidades](assets/figma-tb1/08_discovery_lista.png)
+<div align="center">
+    <img
+        src="assets/figma-tb1/08_discovery_lista.png"
+        width="240"
+    />
+</div>
 
 *Figura 3.3. Pantalla de descubrimiento de voluntariados. Fuente: diseño del equipo en Figma.*
 
-![Creación de convocatoria, primer paso](assets/figma-tb1/11_nueva_convocatoria_paso_1.png)
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+<div align="center">
+    <img
+        src="assets/figma-tb1/11_nueva_convocatoria_paso_1.png"
+        width="240"
+    />
+</div>
 
 *Figura 3.4. Formulario secuencial para crear una convocatoria. Fuente: diseño del equipo en Figma.*
 
@@ -1015,31 +1036,56 @@ El equipo dispone de un conjunto preliminar de 27 mock-ups de la experiencia mó
 
 **Inicio y acceso.** Las pantallas de bienvenida, selección del tipo de usuario e inicio de sesión distinguen el ingreso de estudiantes y representantes de organizaciones.
 
-![Selección del tipo de usuario](assets/figma-tb1/02_registro_tipo_usuario.png)
+<div align="center">
+    <img
+        src="assets/figma-tb1/02_registro_tipo_usuario.png"
+        width="240"
+    />
+</div>
 
 *Figura 3.5. Selección del perfil de usuario.*
 
 **Descubrimiento y postulación.** Las vistas del catálogo y detalle de voluntariados muestran información de las oportunidades, requisitos y acciones de postulación.
 
-![Detalle de voluntariado](assets/figma-tb1/13_detalle_voluntariado.png)
+<div align="center">
+    <img
+        src="assets/figma-tb1/13_detalle_voluntariado.png"
+        width="240"
+    />
+</div>
 
 *Figura 3.6. Vista de detalle y postulación a voluntariado.*
 
 **Gestión de ONG.** Se han diseñado vistas de convocatorias, creación de una convocatoria, listado de postulantes y rechazo con confirmación.
 
-![Gestión de postulantes](assets/figma-tb1/15_gestion_postulantes.png)
+<div align="center">
+    <img
+        src="assets/figma-tb1/15_gestion_postulantes.png"
+        width="240"
+    />
+</div>
 
 *Figura 3.7. Revisión de postulaciones desde el rol de organización.*
 
 **Participación.** Existen propuestas de calendario, seguimiento de actividades, asistencia y escaneo QR.
 
-![Control de asistencia](assets/figma-tb1/19_control_asistencia.png)
+<div align="center">
+    <img
+        src="assets/figma-tb1/19_control_asistencia.png"
+        width="240"
+    />
+</div>
 
 *Figura 3.8. Registro de asistencia a una actividad.*
 
 **Reconocimientos y comunicación.** Los mock-ups incluyen portafolio de logros, certificados, valoración de voluntariados y preferencias de notificaciones.
 
-![Portafolio de logros](assets/figma-tb1/22_portafolio_logros.png)
+<div align="center">
+    <img
+        src="assets/figma-tb1/22_portafolio_logros.png"
+        width="240"
+    />
+</div>
 
 *Figura 3.9. Propuesta de portafolio de logros y certificados.*
 
