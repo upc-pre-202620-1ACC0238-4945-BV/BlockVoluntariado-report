@@ -703,7 +703,6 @@ El objetivo es reconocer las responsabilidades principales del sistema y determi
 De esta manera, se busca evitar que todas las funcionalidades del sistema se encuentren mezcladas dentro de un único modelo, permitiendo una mejor organización del dominio y facilitando el desarrollo futuro de la solución.
 
 ---
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 2.5.1. EventStorming
 #### Procedimiento aplicado para la elaboración del EventStorming
