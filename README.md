@@ -1,18 +1,3 @@
-<style>
-@media print {
-  @page { size: A4 portrait; margin: 18mm 17mm 18mm 17mm; }
-  body { font-size: 10pt; line-height: 1.4; }
-  h1, h2, h3, h4, h5 { break-after: avoid; page-break-after: avoid; }
-  table { width: 100%; border-collapse: collapse; font-size: 9pt; }
-  thead { display: table-header-group; }
-  tr, td, th { break-inside: avoid; page-break-inside: avoid; }
-  img { max-width: 100%; max-height: 240mm; height: auto; object-fit: contain; break-inside: avoid; page-break-inside: avoid; }
-  figure, blockquote { break-inside: avoid; page-break-inside: avoid; }
-  pre { white-space: pre-wrap; overflow-wrap: anywhere; }
-  .print-page-break { display: block; break-before: page; page-break-before: always; height: 0; margin: 0; padding: 0; }
-}
-</style>
-
 <div align="center">
 
 <img src="assets/md-images-front-matter/upc-logo-transparente.png" width="52"></img><br>
@@ -430,7 +415,9 @@ Segmento 2 - ONG y fundaciones sociales:
 |2  | Nombre:  Rosalia <br>Apellido: Maquera <br>Edad: 20<br>Distrito: Callao| Rosalía, estudiante de 21 años, prefiere voluntariados virtuales y de largo plazo enfocados en educación e inclusión para mejorar su CV y conseguir becas. Considera clave recibir certificados y que la app sea fácil de usar, incluya testimonios y filtre oportunidades por tiempo y lugar, ya que le frena la falta de información y confianza. |<img src="assets/md-images-chapter1/s1-e2.png"><br>link del video:<br>https://youtu.be/x08H55_hld8
 |3  | Nombre: Richard <br>Apellido: Lozano <br>Edad: 20 <br>Distrito: San Martin de Porres |  Richard Lozano es un joven interesado en participar en actividades de voluntariado que le permitan ayudar a otras personas y, al mismo tiempo, adquirir nuevas experiencias. Busca una plataforma sencilla donde pueda encontrar oportunidades de acuerdo con sus intereses, disponibilidad de tiempo y ubicación, para así elegir un voluntariado que se adapte a sus necesidades. |<img  src="assets/md-images-chapter1/s1-e3.png"><br>Link del Video: https://youtu.be/wQHt7u7u8ME
 
-### Segmento 2: ONG y fundaciones sociales
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
+#### Segmento 2: ONG y fundaciones sociales
 
 | N | Datos |Descripción |Imagen referencial
 |--|--|--|--|
@@ -448,8 +435,6 @@ Otro hallazgo relevante es que muchas organizaciones todavía utilizan herramien
 
 En conjunto, los resultados respaldan la necesidad de una solución que centralice oportunidades de voluntariado, facilite la búsqueda según las necesidades del estudiante y proporcione a las ONG herramientas de gestión y seguimiento más organizadas.
 
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
-
 ## 2.3. Needfinding
 Con el objetivo de comprender mejor a los usuarios y el contexto en el que participan en actividades de voluntariado, se utilizaron técnicas de investigación y análisis centradas en sus necesidades. Inicialmente, el análisis del problema permitió identificar dificultades relacionadas con la falta de información centralizada, la disponibilidad de tiempo y la gestión de voluntarios.
 
@@ -460,6 +445,8 @@ Los hallazgos obtenidos permiten concluir que existe la necesidad de una platafo
 ### 2.3.1. User Personas
 
 <img src="assets/md-images-chapter1/userPersonaS1.jpeg">
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 2.3.2. User Task Matrix
 
@@ -488,6 +475,7 @@ La matriz de tareas permite priorizar las acciones que cada segmento necesita re
 | Comunicar novedades y actividades | Muy frecuente | Alta |
 | Administrar modalidades de voluntariado | Ocasional | Alta |
 | Publicar convocatorias | Frecuente | Alta |
+
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 2.3.3. User Journey Mapping
@@ -613,13 +601,6 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 | HU10 | EP02 | Recuperación de contraseña | Como usuario, quiero recuperar mi contraseña mediante mi correo electrónico, para recuperar el acceso a mi cuenta en caso de olvidarla. |
 | HU11 | EP02 | Validación de identidad | Como voluntario, quiero verificar mi identidad, para generar mayor confianza en las organizaciones antes de participar en sus actividades. |
 | HU12 | EP03 | Perfil del voluntario | Como estudiante voluntario, quiero editar mi perfil con mis datos, intereses y habilidades, para mostrar información relevante a las organizaciones. |
-
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
-
-**Tabla (continuación 2/5)**
-
-| User Story ID | Epic ID | Título | Descripción |
-|---|---|---|---|
 | HU13 | EP03 | Historial de voluntariados | Como estudiante, quiero visualizar mi historial de voluntariados realizados, para llevar un registro de mi participación. |
 | HU14 | EP03 | Visualización de progreso | Como estudiante, quiero visualizar mi progreso dentro de cada voluntariado, para conocer las actividades y días que he completado. |
 | HU15 | EP03 | Calendario de actividades | Como estudiante, quiero visualizar mis voluntariados programados en un calendario, para organizar mejor mi tiempo. |
@@ -632,13 +613,6 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 | HU22 | EP05 | Inscripción rápida | Como estudiante, quiero inscribirme rápidamente en un voluntariado, para evitar procedimientos innecesariamente largos. |
 | HU23 | EP05 | Horarios flexibles | Como estudiante con poca disponibilidad, quiero escoger horarios compatibles con mis actividades académicas, para evitar afectar mis estudios. |
 | HU24 | EP05 | Detalle del voluntariado | Como estudiante, quiero revisar la información detallada de un voluntariado antes de inscribirme, para conocer los requisitos, duración, ubicación y organización responsable. |
-
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
-
-**Tabla (continuación 3/5)**
-
-| User Story ID | Epic ID | Título | Descripción |
-|---|---|---|---|
 | HU25 | EP06 | Recomendaciones según perfil | Como estudiante, quiero recibir recomendaciones según mis intereses y perfil, para descubrir oportunidades que puedan resultarme relevantes. |
 | HU26 | EP06 | Recomendaciones por ubicación | Como estudiante, quiero recibir recomendaciones de voluntariados cercanos a mi ubicación, para reducir el tiempo de traslado. |
 | HU27 | EP06 | Voluntariados favoritos | Como estudiante, quiero guardar oportunidades de voluntariado que me interesan, para revisarlas posteriormente. |
@@ -651,13 +625,6 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 | HU34 | EP08 | Testimonios de participantes | Como estudiante interesado en un voluntariado, quiero visualizar experiencias de otros voluntarios, para sentir mayor confianza antes de inscribirme. |
 | HU35 | EP09 | Crear convocatoria | Como organización, quiero crear una convocatoria de voluntariado indicando título, descripción, requisitos y fechas, para encontrar personas interesadas en participar. |
 | HU36 | EP09 | Editar convocatoria | Como organización, quiero editar una convocatoria publicada, para corregir o actualizar información cuando sea necesario. |
-
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
-
-**Tabla (continuación 4/5)**
-
-| User Story ID | Epic ID | Título | Descripción |
-|---|---|---|---|
 | HU37 | EP09 | Cerrar convocatoria | Como organización, quiero cerrar una convocatoria cuando se hayan cubierto las vacantes disponibles, para evitar recibir nuevas postulaciones. |
 | HU38 | EP09 | Gestionar convocatorias | Como organización, quiero visualizar todas mis convocatorias publicadas, para administrar fácilmente mis actividades de voluntariado. |
 | HU39 | EP10 | Visualizar postulantes | Como organización, quiero consultar los perfiles de los estudiantes postulantes, para evaluar quiénes cumplen mejor con los requisitos de la actividad. |
@@ -670,24 +637,13 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 | HU46 | EP11 | Calificación de voluntarios | Como organización, quiero evaluar el desempeño de los voluntarios al finalizar una actividad, para registrar referencias sobre su participación. |
 | HU47 | EP11 | Comentario sobre voluntario | Como organización, quiero dejar comentarios sobre la participación de un voluntario, para complementar su historial dentro de la plataforma. |
 | HU48 | EP12 | Reportes de participación | Como organización, quiero visualizar reportes sobre la participación de los voluntarios, para analizar el desempeño y alcance de mis convocatorias. |
-
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
-
-**Tabla (continuación 5/5)**
-
-| User Story ID | Epic ID | Título | Descripción |
-|---|---|---|---|
 | HU49 | EP12 | Estadísticas de voluntariado | Como organización, quiero consultar estadísticas de mis actividades publicadas, para conocer la cantidad de postulantes, participantes y actividades completadas. |
 | HU50 | EP12 | Medición de impacto | Como organización, quiero visualizar indicadores relacionados con el impacto generado por mis proyectos, para evaluar los resultados obtenidos mediante los voluntarios. |
 
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
-
 ### 2.4.2. Impact Mapping
  <img src="assets/md-images-chapter1/ImpactMapping_BlockVoluntariado.png">
-
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 2.4.3. Product Backlog
 
@@ -698,6 +654,9 @@ El Product Backlog de BlockVoluntariado reúne y prioriza las principales funcio
 Cada elemento del backlog representa una funcionalidad que aporta valor a uno de los segmentos objetivo del proyecto. La prioridad fue establecida considerando la importancia de la funcionalidad para el funcionamiento básico de la plataforma y su relación con los principales objetivos del producto.
 
 Los Story Points representan una estimación relativa del esfuerzo necesario para desarrollar cada User Story, considerando su complejidad, cantidad de componentes involucrados y posibles dependencias técnicas.
+
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 | # Orden | User Story ID | Descripción | Story Points |
 |---:|---|---|---:|
@@ -711,13 +670,6 @@ Los Story Points representan una estimación relativa del esfuerzo necesario par
 | 8 | HU05 | Como estudiante, quiero encontrar voluntariados relacionados con mi carrera universitaria para desarrollar experiencia profesional. | 3 |
 | 9 | HU24 | Como estudiante, quiero consultar los detalles de una actividad antes de inscribirme para conocer sus requisitos, horario, ubicación y organización responsable. | 3 |
 | 10 | HU21 | Como estudiante, quiero postularme rápidamente a una convocatoria para participar en un voluntariado. | 3 |
-
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
-
-**Tabla (continuación 2/3)**
-
-| # Orden | User Story ID | Descripción | Story Points |
-|---:|---|---|---:|
 | 11 | HU35 | Como ONG, quiero crear y publicar una convocatoria para encontrar voluntarios interesados en participar en mis actividades. | 5 |
 | 12 | HU36 | Como ONG, quiero modificar una convocatoria publicada para mantener actualizada su información. | 3 |
 | 13 | HU37 | Como ONG, quiero cerrar una convocatoria cuando ya no necesite recibir más postulantes. | 2 |
@@ -728,13 +680,6 @@ Los Story Points representan una estimación relativa del esfuerzo necesario par
 | 18 | HU29 | Como estudiante, quiero recibir recordatorios antes de una actividad para evitar olvidar mis compromisos. | 3 |
 | 19 | HU15 | Como estudiante, quiero visualizar mis actividades programadas en un calendario para organizar mejor mi tiempo. | 5 |
 | 20 | HU45 | Como ONG, quiero registrar la asistencia de los voluntarios para mantener evidencia de su participación. | 5 |
-
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
-
-**Tabla (continuación 3/3)**
-
-| # Orden | User Story ID | Descripción | Story Points |
-|---:|---|---|---:|
 | 21 | HU13 | Como voluntario, quiero consultar mi historial de voluntariados para mantener un registro de mis participaciones. | 3 |
 | 22 | HU19 | Como voluntario, quiero descargar un certificado al completar correctamente una actividad para demostrar mi participación. | 5 |
 | 23 | HU18 | Como voluntario, quiero obtener insignias por completar actividades para sentirme motivado a continuar participando. | 5 |
@@ -1175,3 +1120,21 @@ Las métricas de adopción, certificación y retención del producto son hipóte
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 # Anexos
+
+
+#### Codecito
+
+<style>
+@media print {
+  @page { size: A4 portrait; margin: 18mm 17mm 18mm 17mm; }
+  body { font-size: 10pt; line-height: 1.4; }
+  h1, h2, h3, h4, h5 { break-after: avoid; page-break-after: avoid; }
+  table { width: 100%; border-collapse: collapse; font-size: 9pt; }
+  thead { display: table-header-group; }
+  tr, td, th { break-inside: avoid; page-break-inside: avoid; }
+  img { max-width: 100%; max-height: 240mm; height: auto; object-fit: contain; break-inside: avoid; page-break-inside: avoid; }
+  figure, blockquote { break-inside: avoid; page-break-inside: avoid; }
+  pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+  .print-page-break { display: block; break-before: page; page-break-before: always; height: 0; margin: 0; padding: 0; }
+}
+</style>
