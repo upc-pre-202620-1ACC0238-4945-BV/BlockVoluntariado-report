@@ -1384,8 +1384,6 @@ El Mobile Applications Prototyping presenta de forma visual la interacción entr
 
 # Capítulo IV: Product Implementation & Validation
 
-# Capítulo IV: Product Implementation & Validation
-
 ## 4. Product Implementation & Validation
 
 En este capítulo se documenta el proceso de implementación, configuración,
@@ -1411,6 +1409,7 @@ servicios, despliegue y colaboración del equipo.
 Las evidencias presentadas permiten diferenciar los artefactos de diseño,
 el código fuente desarrollado y las funcionalidades que han sido
 implementadas y comprobadas durante el avance del proyecto.
+
 ## 4.1. Software Configuration Management
 
 Para el desarrollo de BlockVoluntariado se establecieron herramientas,
@@ -1426,23 +1425,54 @@ utilizados para publicar los diferentes productos que componen la solución.
 Las siguientes subsecciones documentan las herramientas y configuraciones
 utilizadas durante el desarrollo del proyecto.
 
-#### 4.1.1. Software Development Environment Configuration
+### 4.1.1. Software Development Environment Configuration
 
-Se identifican las herramientas relacionadas con el diseño, desarrollo, revisión, control de versiones y pruebas. La tabla debe contrastarse con los entornos efectivamente utilizados por cada integrante.
+Para el desarrollo de BlockVoluntariado se utilizan diferentes herramientas
+de software que permiten cubrir las actividades relacionadas con el diseño
+UX/UI, desarrollo web, desarrollo móvil, implementación de servicios RESTful,
+gestión de base de datos, control de versiones, pruebas, documentación y
+despliegue.
 
-| Actividad | Herramienta / tecnología | Propósito en BlockVoluntariado | Evidencia o fuente |
-|---|---|---|---|
-| Diseño UI/UX | Figma | Diseño de pantallas y prototipos móviles | Imágenes de pantallas facilitadas por el equipo; enlace editable pendiente |
-| Landing Page | HTML5, CSS3, JavaScript | Estructura, presentación e interacciones del sitio | ZIP original de `BlockVoluntariado-website` |
-| Desarrollo web | WebStorm u otro editor utilizado por el equipo | Edición de HTML, CSS, JS y Markdown | Captura/configuración pendiente |
-| Desarrollo móvil | Android Studio; Kotlin, Jetpack Compose y Material 3 | Implementación nativa para Android | Dependencias y estructura vistas en ZIP de `main`; ejecución de pantallas core pendiente |
-| Backend | Spring Boot 4.0.6, Java 25 y Maven; MySQL | Servicios RESTful y persistencia | Dependencias identificadas en `pom.xml` del ZIP de la rama `develop`; compilación, pruebas y despliegue por confirmar |
-| Control de versiones | Git y GitHub | Ramas, commits, revisiones y colaboración | Cuatro URLs públicas confirmadas; faltan capturas de branches, commits y colaboración |
-| Gestión de Sprint | [Trello, Jira o YouTrack utilizado] | Product Backlog, Sprint Backlog y seguimiento | URL del tablero pendiente |
-| Pruebas API | [Postman, Swagger UI u otro, si se utilizó] | Verificación de endpoints | Evidencia pendiente |
-| Despliegue de Landing Page | GitHub Pages | Publicación del sitio estático | URL pública indicada a continuación |
+La selección de estas herramientas permite que los integrantes del equipo
+trabajen de manera colaborativa y mantengan un entorno de desarrollo
+consistente durante el ciclo de vida de los productos digitales que conforman
+la solución.
 
+A continuación, se describen las principales herramientas utilizadas,
+indicando su propósito dentro del proyecto y su ruta de referencia o descarga.
+
+| Actividad | Producto / Tecnología | Tipo | Propósito en BlockVoluntariado | Ruta de referencia / descarga |
+|---|---|---|---|---|
+| Product UX/UI Design | Figma | SaaS | Diseño de wireframes, mock-ups, wireflows, user flows y prototipos de la aplicación móvil. | https://www.figma.com/ |
+| Software Development - Landing Page | WebStorm | Desktop | Desarrollo y mantenimiento de los archivos HTML, CSS y JavaScript de la Landing Page. | https://www.jetbrains.com/webstorm/ |
+| Software Development - Landing Page | HTML5 | Tecnología web | Define la estructura y contenido semántico de la Landing Page. | https://developer.mozilla.org/en-US/docs/Web/HTML |
+| Software Development - Landing Page | CSS3 | Tecnología web | Define estilos, distribución visual, responsive design y presentación de la Landing Page. | https://developer.mozilla.org/en-US/docs/Web/CSS |
+| Software Development - Landing Page | JavaScript | Tecnología web | Implementa las interacciones, navegación y comportamiento dinámico de la Landing Page. | https://developer.mozilla.org/en-US/docs/Web/JavaScript |
+| Software Development - Mobile | Android Studio | Desktop | IDE utilizado para desarrollar, compilar, ejecutar y depurar la aplicación móvil nativa para Android. | https://developer.android.com/studio |
+| Software Development - Mobile | Kotlin | Lenguaje | Lenguaje principal utilizado para implementar la aplicación Android. | https://kotlinlang.org/ |
+| Software Development - Mobile | Jetpack Compose | Framework UI | Construcción declarativa de las interfaces de usuario de la aplicación Android. | https://developer.android.com/compose |
+| Software Development - Mobile | Material 3 | Librería UI | Componentes visuales y lineamientos utilizados en las interfaces de la aplicación móvil. | https://m3.material.io/ |
+| Software Development - Backend | IntelliJ IDEA | Desktop | IDE utilizado para desarrollar y mantener los servicios backend de BlockVoluntariado. | https://www.jetbrains.com/idea/ |
+| Software Development - Backend | Spring Boot | Framework | Implementación de los servicios RESTful y lógica de negocio del backend. | https://spring.io/projects/spring-boot |
+| Software Development - Backend | Java | Lenguaje | Lenguaje utilizado para implementar la lógica del backend. | https://www.oracle.com/java/ |
+| Build Management | Maven | Desktop / CLI | Administración de dependencias, construcción y empaquetado del backend. | https://maven.apache.org/ |
+| Data Management | MySQL | DBMS | Persistencia de usuarios, organizaciones, convocatorias, postulaciones, actividades, certificados y demás información del sistema. | https://www.mysql.com/ |
+| Source Code Management | Git | Desktop / CLI | Sistema de control de versiones utilizado para registrar y gestionar cambios en el código fuente. | https://git-scm.com/ |
+| Source Code Management | GitHub | SaaS | Aloja los repositorios del proyecto y facilita la colaboración del equipo mediante ramas, commits y Pull Requests. | https://github.com/ |
+| Software Testing / API Documentation | Swagger / OpenAPI | Web / Librería | Documentación y verificación de los endpoints expuestos por los servicios RESTful. | https://swagger.io/ |
+| Software Deployment | GitHub Pages | SaaS | Publicación y alojamiento de la Landing Page de BlockVoluntariado. | https://pages.github.com/ |
+| Software Deployment | Azure App Service | SaaS / Cloud | Servicio cloud utilizado para ejecutar y publicar el backend de BlockVoluntariado. | https://azure.microsoft.com/products/app-service |
+| Containerization | Docker | Desktop / CLI | Empaquetado del backend y preparación de un entorno reproducible para su ejecución y despliegue. | https://www.docker.com/ |
+| Software Documentation | Markdown | Formato | Elaboración y mantenimiento de la documentación técnica del proyecto y del informe. | https://www.markdownguide.org/ |
+| Software Documentation | Visual Studio Code | Desktop | Revisión y edición de documentación Markdown del proyecto. | https://code.visualstudio.com/ |
 La Landing Page se encuentra asociada a la dirección pública: https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/ . La accesibilidad y el funcionamiento de cada interacción deben validarse en la fecha de entrega y respaldarse mediante capturas de ejecución.
+
+
+Las herramientas descritas son utilizadas por los integrantes del equipo
+según el producto sobre el cual se encuentren trabajando. Los repositorios
+alojados en GitHub permiten mantener centralizado el código fuente de la
+Landing Page, aplicación Android, servicios backend y documentación del
+proyecto.
 
 **Información que falta completar:** versiones de IDE, JDK/Android SDK/Gradle, tecnología y versión del backend, gestor de base de datos, herramientas de pruebas, sistema operativo, URLs de descarga o documentación de cada herramienta y responsables de configuración.
 
@@ -1518,17 +1548,27 @@ El Sprint 1 se orienta a obtener un primer incremento observable de BlockVolunta
 
 ##### 4.2.1.1. Sprint Planning 1
 
-| Campo | Información |
-|---|---|
-| Sprint | Sprint 1 |
-| Fecha y hora | 07-10-2026 (hora no registrada) |
-| Modalidad / lugar | Coordinación virtual mediante WhatsApp y GitHub |
-| Preparado por | Diego Alexander Cabrejos Chocco |
-| Participantes | Diego Alexander Cabrejos Chocco; Sebastian Oswaldo Tavara Correa; Ghorghet Saul Thuncar Vila |
-| Sprint Goal | Desarrollar un primer incremento funcional de BlockVoluntariado mediante la implementación y publicación de la Landing Page, el avance de los servicios backend y la configuración inicial de la aplicación Android, estableciendo las bases para la gestión de voluntariados y organizaciones sociales. |
-| Métrica de cumplimiento | Porcentaje de Story Points completados respecto a los comprometidos en el Sprint Backlog, respaldado mediante commits, pruebas y evidencias de ejecución. |
-| Velocity prevista | Pendiente de confirmar según los Story Points estimados por el equipo. |
-| Suma de Story Points comprometidos | Pendiente de calcular a partir de las User Stories incluidas en el Sprint Backlog 1. |
+
+| Campo | Información                                                                                                                                                                                                                                                                                                                                               |
+|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Sprint | Sprint 1                                                                                                                                                                                                                                                                                                                                                  |
+| Fecha | 07-10-2026                                                                                                                                                                                                                                                                                                                                                |
+| Hora | 12:00 pm                                                                                                                                                                                                                                                                                                                                                  |
+| Modalidad / lugar | Reunión virtual mediante WhatsApp y coordinación por GitHub                                                                                                                                                                                                                                                                                               |
+| Preparado por | Diego Alexander Cabrejos Chocco                                                                                                                                                                                                                                                                                                                           |
+| Participantes | Diego Alexander Cabrejos Chocco; Sebastian Oswaldo Tavara Correa; Ghorghet Saul Thuncar Vila                                                                                                                                                                                                                                                              |
+| Sprint 0 Review Summary | No aplica. Corresponde al primer Sprint del proyecto.                                                                                                                                                                                                                                                                                                     |
+| Sprint 0 Retrospective Summary | No aplica. No existe un Sprint anterior.                                                                                                                                                                                                                                                                                                                  |
+| Sprint Goal | Proporcionar a estudiantes universitarios y organizaciones sociales una primera experiencia digital de BlockVoluntariado mediante una Landing Page pública y adaptable, estableciendo las capacidades iniciales de la plataforma de servicios y la aplicación Android para facilitar el descubrimiento y futura gestión de oportunidades de voluntariado. |
+| Meta 1: Landing Page | Completar y publicar el 100 % de las secciones previstas de la Landing Page, incluyendo navegación, diseño adaptable para escritorio y móvil y presentación de los beneficios de BlockVoluntariado.                                                                                                                                                       |
+| Meta 2: Backend | Alcanzar al menos el 70 % del alcance funcional comprometido para los servicios RESTful y desplegar el backend, documentando las operaciones implementadas mediante OpenAPI/Swagger.                                                                                                                                                                      |
+| Meta 3: Aplicación Android | Implementar y demostrar las pantallas core priorizadas de la aplicación Android. El equipo establece como meta interna avanzar aproximadamente el 70 % del alcance móvil planificado para esta etapa.                                                                                                                                                     |
+| Meta 4: Diseño UI/UX | Completar los artefactos del Capítulo III: Style Guidelines, Information Architecture, wireframes, mock-ups, wireflows, user flows y prototipos correspondientes al alcance definido.                                                                                                                                                                     |
+| Meta 5: Gestión y documentación | Documentar el Sprint 1 en el Capítulo IV, incluyendo configuración del entorno, control de versiones, Sprint Backlog, evidencias de desarrollo, pruebas, ejecución, despliegue y colaboración.                                                                                                                                                            |
+| Meta 6: Mejoras de AV1 | Revisar y corregir los artefactos de análisis, requisitos y arquitectura elaborados durante AV1, incorporando las observaciones del docente.                                                                                                                                                                                                              |
+| Métrica de cumplimiento | Landing Page: 100 % de secciones comprometidas publicadas y verificadas. Backend: mínimo 70 % del alcance comprometido implementado y desplegado. Android: pantallas core demostrables y seguimiento de la meta interna de avance. Documentación: secciones y evidencias requeridas completadas y revisadas.                                              |
+| Sprint 1 Velocity | 21 Story Points.                                                                                                                                                                                                                                                                                                                                          |
+| Sum of Story Points | 16 Story Points.                                                                                                                                                                                                                                                                                                                                          |
 
 ##### 4.2.1.2. Aspect Leaders and Collaborators
 
