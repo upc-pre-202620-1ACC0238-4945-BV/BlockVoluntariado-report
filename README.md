@@ -1356,6 +1356,17 @@ En conjunto, los mock-ups reflejan una propuesta de interfaz que busca mantener 
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
+El Mobile Applications User Flow Diagram representa la secuencia de navegación de BlockVoluntariado, mostrando cómo los usuarios acceden a la aplicación, gestionan su perfil, buscan y postulan a oportunidades de voluntariado, registran su participación y consultan sus logros. También incluye el flujo correspondiente a las organizaciones y las principales secciones informativas y de apoyo de la aplicación.
+
+<div align="center">
+    <img
+        src="assets/figma-tb1/AppPhoneFlowDiagram.png"
+        width="440"
+    />
+</div>
+
+**Figura 4.1 User Flow Diagrams.
+
 #### 3.1.4.5. Mobile Applications Prototyping
 
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
