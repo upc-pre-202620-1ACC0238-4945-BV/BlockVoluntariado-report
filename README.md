@@ -1023,7 +1023,7 @@ La propuesta móvil agrupa las tareas por objetivos de usuario. Los estudiantes 
 ### 3.1.3. Landing Page UI Design
 #### 3.1.3.1. Landing Page Wireframe
 Los wireframes de la Landing Page de BlockVoluntariado representan la estructura preliminar de la interfaz web, definiendo la distribución de los contenidos, la jerarquía visual y los mecanismos de navegación que orientan a los visitantes hacia las principales funcionalidades de la plataforma.
-La propuesta se organiza en tres frames que, en conjunto, representan el recorrido de la Landing Page para navegadores de escritorio.
+La propuesta se organiza en frames que, en conjunto, representan el recorrido de la Landing Page para navegadores de escritorio.
 
 ### Este es el modelo del boceto de como se veria en PC, MAC, y pantalla grande
 
@@ -1216,66 +1216,143 @@ Los mock-ups de la Landing Page de BlockVoluntariado representan la propuesta vi
 El equipo dispone de un conjunto preliminar de 27 mock-ups de la experiencia móvil de BlockVoluntariado. Las pantallas cubren los recorridos de voluntarios y representantes de ONG, aunque la evidencia gráfica todavía debe complementarse con wireframes, wireflows, user flows y demostraciones del prototipo según el enunciado del curso.
 
 #### 3.1.4.1. Mobile Applications Wireframes
+
+  Los wireframes de la Mobile Applications de BlockVoluntariado representan la estructura preliminar de la interfaz de ususario, definiendo la distribución de los contenidos, la jerarquía visual de la plataforma.
+
+### Este es el modelo del boceto de como se veria la aplicacion
+
+![boceto](assets/figma-tb1/AppPhoneBoceto.png)
+
+**Figura 3.8 Wireframe del Mobile Application de BlockVoluntariado.
+*Nota. Elaboración del equipo. El diagrama representa la organización estructural del Mobile Application.*
+
+
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
+
+Los wireflows diagrams del Mobile Applications de BlockVoluntariado muestran la relación entre las principales interfaces y las decisiones que puede realizar el usuario durante su interacción con la aplicación. 
+Permite visualizar cómo se conectan procesos como el registro, búsqueda de voluntariados, postulación, participación, seguimiento de actividades y gestión por parte de las ONG.ual de la plataforma.
+
+### Este es el Wireflow Diagram de la aplicacion
+
+![wireflow](assets/figma-tb1/AppPhoneWireflow.png)
+
+**Figura 3.9 Wireflow del Mobile Application de BlockVoluntariado.
+*Nota. Elaboración del equipo. El diagrama representa la organización estructural y los pasos a seguir del Mobile Application.*
+
 
 #### 3.1.4.3. Mobile Applications Mock-ups
 
-**Inicio y acceso.** Las pantallas de bienvenida, selección del tipo de usuario e inicio de sesión distinguen el ingreso de estudiantes y representantes de organizaciones.
+Los mock-ups de BlockVoluntariado representan la propuesta visual de la aplicación móvil para estudiantes universitarios y representantes de organizaciones sociales. Su diseño incorpora una identidad gráfica basada en tonos azules, naranjas y blancos, empleando tarjetas informativas, formularios, iconografía y botones diferenciados para facilitar la interacción.
+
+Las pantallas se organizan según los principales procesos de la plataforma: autenticación, personalización del perfil, búsqueda y postulación a voluntariados, administración de convocatorias, control de asistencia, seguimiento de actividades, reconocimientos y notificaciones.
+
+La propuesta aplica principios de jerarquía visual, consistencia y agrupación de información relacionada. Asimismo, incorpora etiquetas descriptivas, controles identificables y mensajes de confirmación que buscan favorecer la comprensión de las acciones realizadas.
+
+**Registro e inicio de sesión**
+
+Se presentan las pantallas de bienvenida, selección del tipo de usuario e inicio de sesión. Estas vistas permiten diferenciar los perfiles de estudiante voluntario y representante de ONG, estableciendo el punto de acceso a las principales funcionalidades.
 
 <div align="center">
     <img
-        src="assets/figma-tb1/02_registro_tipo_usuario.png"
-        width="240"
+        src="assets/figma-tb1/AppPhoneIMG1.png"
+        width="440"
     />
 </div>
 
-*Figura 3.5. Selección del perfil de usuario.*
+**Figura 4.0.01 Mock-ups de bienvenida, registro e inicio de sesión.
 
-**Descubrimiento y postulación.** Las vistas del catálogo y detalle de voluntariados muestran información de las oportunidades, requisitos y acciones de postulación.
+**Gestión del perfil y disponibilidad**
+
+Los diseños presentan la información académica, habilidades, intereses y disponibilidad del estudiante. Se incorporan formularios de edición, etiquetas de causas sociales y una cuadrícula de horarios que facilita la personalización de las preferencias de voluntariado.
 
 <div align="center">
     <img
-        src="assets/figma-tb1/13_detalle_voluntariado.png"
-        width="240"
+        src="assets/figma-tb1/AppPhoneIMG2.png"
+        width="440"
     />
 </div>
 
-*Figura 3.6. Vista de detalle y postulación a voluntariado.*
+**Figura 4.0.02 Mock-ups de gestión del perfil, intereses y disponibilidad.
 
-**Gestión de ONG.** Se han diseñado vistas de convocatorias, creación de una convocatoria, listado de postulantes y rechazo con confirmación.
+**Exploración y gestión de convocatorias**
+
+Estas pantallas muestran la búsqueda de oportunidades, la consulta de detalles y el proceso de creación de convocatorias por parte de las organizaciones. La información se distribuye en tarjetas y formularios organizados por etapas, permitiendo identificar requisitos, fechas y características de las actividades.
 
 <div align="center">
     <img
-        src="assets/figma-tb1/15_gestion_postulantes.png"
-        width="240"
+        src="assets/figma-tb1/AppPhoneIMG3.png"
+        width="440"
     />
 </div>
 
-*Figura 3.7. Revisión de postulaciones desde el rol de organización.*
+**Figura 4.0.03 Mock-ups de exploración de voluntariados y gestión de convocatorias.
 
-**Participación.** Existen propuestas de calendario, seguimiento de actividades, asistencia y escaneo QR.
+**Postulaciones y evaluación de candidatos**
+
+Se presentan las interfaces de envío de solicitudes, seguimiento de postulaciones y revisión de candidatos. Los estados de las solicitudes se distinguen mediante etiquetas visuales, mientras que las acciones de aceptación y rechazo se acompañan de controles específicos.
 
 <div align="center">
     <img
-        src="assets/figma-tb1/19_control_asistencia.png"
-        width="240"
+        src="assets/figma-tb1/AppPhoneIMG4.png"
+        width="440"
     />
 </div>
 
-*Figura 3.8. Registro de asistencia a una actividad.*
+**Figura 4.0.04 Mock-ups de postulaciones y gestión de candidatos.
 
-**Reconocimientos y comunicación.** Los mock-ups incluyen portafolio de logros, certificados, valoración de voluntariados y preferencias de notificaciones.
+**Agenda y actividades**
+
+Las pantallas de calendario y actividades permiten visualizar las fechas programadas y consultar información relacionada con la participación en voluntariados, favoreciendo la organización de las actividades.
 
 <div align="center">
     <img
-        src="assets/figma-tb1/22_portafolio_logros.png"
-        width="240"
+        src="assets/figma-tb1/AppPhoneIMG5.png"
+        width="440"
     />
 </div>
 
-*Figura 3.9. Propuesta de portafolio de logros y certificados.*
+**Figura 4.0.05 Mock-ups de agenda y actividades.
 
-**Pendientes de validación.** Identificar qué mock-ups están aprobados, construir los diagramas de flujo y documentar videos o enlaces de prototipo interactivo. No se consideran funcionalidades implementadas hasta que se presenten evidencias de ejecución.
+**Registro y control de asistencia**
+
+Los diseños incluyen la lista de participantes, el escaneo de códigos QR y la confirmación de asistencia. Se utilizan indicadores de estado y mensajes de retroalimentación para comunicar el resultado de las operaciones.
+
+<div align="center">
+    <img
+        src="assets/figma-tb1/AppPhoneIMG6.png"
+        width="440"
+    />
+</div>
+
+**Figura 4.0.06 Mock-ups de registro y control de asistencia.
+
+**Logros, certificados y evaluaciones**
+
+Las interfaces presentan el historial de participación, las insignias obtenidas, los certificados y los formularios de evaluación. Esta organización permite visualizar el progreso del voluntario y los reconocimientos asociados a sus actividades.
+
+<div align="center">
+    <img
+        src="assets/figma-tb1/AppPhoneIMG7.png"
+        width="440"
+    />
+</div>
+
+**Figura 4.0.07 Mock-ups de reconocimientos y evaluaciones.
+
+**Notificaciones y configuración**
+
+Finalmente, se presentan las pantallas de notificaciones y preferencias, que permiten consultar mensajes relacionados con las actividades y seleccionar categorías de avisos.
+
+<div align="center">
+    <img
+        src="assets/figma-tb1/AppPhoneIMG8.png"
+        width="440"
+    />
+</div>
+
+**Figura 4.0.08 Mock-ups de notificaciones y configuración.
+
+En conjunto, los mock-ups reflejan una propuesta de interfaz que busca mantener coherencia visual y facilitar el acceso a las funcionalidades principales de BlockVoluntariado. Las decisiones de diseño inclusivo y usabilidad deberán comprobarse mediante pruebas con representantes de los segmentos objetivo.
 
 #### 3.1.4.4. Mobile Applications User Flow Diagrams
 
