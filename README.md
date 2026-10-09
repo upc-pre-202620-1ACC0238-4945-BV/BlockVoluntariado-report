@@ -1755,8 +1755,8 @@ El Sprint 1 se orienta a obtener un primer incremento observable de BlockVolunta
 | Fecha | 07-10-2026                                                                                                                                                                                                                                                                                                                                                |
 | Hora | 12:00 pm                                                                                                                                                                                                                                                                                                                                                  |
 | Modalidad / lugar | Reunión virtual mediante WhatsApp y coordinación por GitHub                                                                                                                                                                                                                                                                                               |
-| Preparado por | Diego Alexander Cabrejos Chocco                                                                                                                                                                                                                                                                                                                           |
-| Participantes | Diego Alexander Cabrejos Chocco; Sebastian Oswaldo Tavara Correa; Ghorghet Saul Thuncar Vila                                                                                                                                                                                                                                                              |
+| Preparado por | Cabrejos Chocco, Diego Alexander                                                                                                                                                                                                                                                          |
+| Participantes | Cabrejos Chocco, Diego Alexander; Tavara Correa, Sebastian Oswaldo; Tuncar Vila, Ghorghet Saul                                                                                                                                                                                            |
 | Sprint 0 Review Summary | No aplica. Corresponde al primer Sprint del proyecto.                                                                                                                                                                                                                                                                                                     |
 | Sprint 0 Retrospective Summary | No aplica. No existe un Sprint anterior.                                                                                                                                                                                                                                                                                                                  |
 | Sprint Goal | Proporcionar a estudiantes universitarios y organizaciones sociales una primera experiencia digital de BlockVoluntariado mediante una Landing Page pública y adaptable, estableciendo las capacidades iniciales de la plataforma de servicios y la aplicación Android para facilitar el descubrimiento y futura gestión de oportunidades de voluntariado. |
@@ -1777,8 +1777,8 @@ El equipo debe incorporar una matriz LACX que identifique al líder (`L`) y los 
 | Integrante y GitHub username                        | Landing Page | Backend | Android | UX/UI y prototipos | Pruebas / despliegue |
 |-----------------------------------------------------|---|---|---|---|---|
 | [Cabrejos Chocco, Diego Alexander — MOTOX-357]      | [L] | [C] | [C] | [L] | [C] |
-| [Tavara Correa, Sebastian Tavara — SebastianTavara] | [C] | [L] | [C] | [C] | [L] |
-| [Thuncar Vila, Ghorghet Saul — Ghorghet]            | [C] | [C] | [L] | [C] | [C] |
+| [Tavara Correa, Sebastian Oswaldo — SebastianTavara] | [C] | [L] | [C] | [C] | [L] |
+| [Tuncar Vila, Ghorghet Saul — Ghorghet]            | [C] | [C] | [L] | [C] | [C] |
 
 La asignación debe guardar coherencia con las tareas, los commits y las evidencias presentadas en el resto del capítulo.
 
@@ -1901,9 +1901,9 @@ Durante el Sprint 1, el equipo aplicó un flujo de trabajo altamente sincronizad
 
 | Integrante | Rol Principal en Sprint 1 | Contribuciones y Entregables Clave | Repositorios Impactados |
 |---|---|---|---|
-| **Sebastian Oswaldo Tavara Correa** | Líder de Backend y Arquitectura REST | - Implementación de la capa de seguridad IAM con autenticación JWT y roles.<br>- Desarrollo de controladores y servicios para `Applications`, `Recognition` (certificados SHA-256) y `Communication`.<br>- Configuración del `Dockerfile`, integración continua y despliegue en Azure App Service.<br>- Integración del cliente de red Retrofit y TokenManager en la app Android. | `Blockvoluntariado-platform`, `BlockVoluntariado-android`, `BlockVoluntariado-report` |
-| **Diego Alexander Cabrejos Chocco** | Líder de UI/UX y Landing Page | - Diseño integral del Design System, wireframes y mock-ups en Figma.<br>- Maquetación, estilos CSS responsive y despliegue de la Landing Page en GitHub Pages.<br>- Implementación de vistas móviles de Convocatorias y Asistencia en Jetpack Compose.<br>- Estructuración y consolidación del informe académico conforme a la rúbrica de evaluación. | `BlockVoluntariado-website`, `BlockVoluntariado-android`, `BlockVoluntariado-report` |
-| **Ghorghet Saul Thuncar Vila** | Líder de Desarrollo Móvil Android | - Configuración del proyecto base Android con Jetpack Compose y Gradle Kotlin DSL.<br>- Implementación de la pantalla de exploración de convocatorias (`DiscoveryScreen`) y filtros.<br>- Construcción del módulo de perfil de voluntario (`ProfileScreen`) y disponibilidad horaria.<br>- Pruebas funcionales de interfaz en emulador y validación de componentes visuales Material 3. | `BlockVoluntariado-android`, `BlockVoluntariado-report` |
+| **Cabrejos Chocco, Diego Alexander** | Líder de UI/UX y Landing Page | - Diseño integral del Design System, wireframes y mock-ups en Figma.<br>- Maquetación, estilos CSS responsive y despliegue de la Landing Page en GitHub Pages.<br>- Implementación de vistas móviles de Convocatorias y Asistencia en Jetpack Compose.<br>- Estructuración y consolidación del informe académico conforme a la rúbrica de evaluación. | `BlockVoluntariado-website`, `BlockVoluntariado-android`, `BlockVoluntariado-report` |
+| **Tavara Correa, Sebastian Oswaldo** | Líder de Backend y Arquitectura REST | - Implementación de la capa de seguridad IAM con autenticación JWT y roles.<br>- Desarrollo de controladores y servicios para `Applications`, `Recognition` (certificados SHA-256) y `Communication`.<br>- Configuración del `Dockerfile`, integración continua y despliegue en Azure App Service.<br>- Integración del cliente de red Retrofit y TokenManager en la app Android. | `Blockvoluntariado-platform`, `BlockVoluntariado-android`, `BlockVoluntariado-report` |
+| **Tuncar Vila, Ghorghet Saul** | Líder de Desarrollo Móvil Android | - Configuración del proyecto base Android con Jetpack Compose y Gradle Kotlin DSL.<br>- Implementación de la pantalla de exploración de convocatorias (`DiscoveryScreen`) y filtros.<br>- Construcción del módulo de perfil de voluntario (`ProfileScreen`) y disponibilidad horaria.<br>- Pruebas funcionales de interfaz en emulador y validación de componentes visuales Material 3. | `BlockVoluntariado-android`, `BlockVoluntariado-report` |
 
 ---
 
@@ -1985,7 +1985,7 @@ A continuación se presentan los enlaces a las grabaciones oficiales de sustenta
 ## Video About the Team
 - **Descripción:** Presentación formal de los integrantes del equipo, roles según la matriz LACX, metodología de trabajo y dinámica colaborativa.
 - **Enlace de visualización:** [URL de video en OneDrive / Stream / YouTube]
-- **Participantes:** Cabrejos Chocco, Diego Alexander; Tavara Correa, Sebastian Oswaldo; Thuncar Vila, Ghorghet Saul.
+- **Participantes:** Cabrejos Chocco, Diego Alexander; Tavara Correa, Sebastian Oswaldo; Tuncar Vila, Ghorghet Saul.
 
 ## Video About the Product
 - **Descripción:** Explicación detallada de la propuesta de valor de BlockVoluntariado, los segmentos objetivo abordados, el modelo de negocio social y la arquitectura técnica de la plataforma.
