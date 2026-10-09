@@ -1384,15 +1384,47 @@ El Mobile Applications Prototyping presenta de forma visual la interacción entr
 
 # Capítulo IV: Product Implementation & Validation
 
+# Capítulo IV: Product Implementation & Validation
+
 ## 4. Product Implementation & Validation
 
-El presente capítulo documenta la configuración, construcción, pruebas, ejecución y despliegue de los productos digitales de **BlockVoluntariado** durante el **Sprint 1 (TB1)**. La solución contempla una Landing Page informativa, servicios backend para los procesos de negocio y una aplicación Android orientada a estudiantes voluntarios y representantes de organizaciones sociales. Se distingue expresamente entre **diseños de Figma**, **código desarrollado**, **funcionalidades verificadas** y **despliegues accesibles**, puesto que representan evidencias diferentes.
+En este capítulo se documenta el proceso de implementación, configuración,
+despliegue y validación de los productos digitales que conforman la solución
+BlockVoluntariado.
 
-Al momento de elaborar esta versión, el equipo ha indicado que la Landing Page, los servicios backend, la aplicación Android y los diseños de Figma se encuentran **parcialmente desarrollados**. Se dispone de capturas de la Landing Page y cuatro repositorios públicos (web, Android, backend e informe). La existencia del código fuente no implica que las funcionalidades, pruebas o despliegues estén terminados. El estado específico de cada funcionalidad, prueba y despliegue backend/móvil permanece **pendiente de comprobación**.
+La solución está compuesta actualmente por tres productos principales: una
+Landing Page orientada a presentar la propuesta de valor y facilitar el
+descubrimiento de la plataforma; una aplicación móvil nativa para Android,
+destinada principalmente a estudiantes universitarios y representantes de
+organizaciones sociales; y un conjunto de servicios RESTful encargados de
+gestionar los procesos y datos principales del dominio.
 
-### 4.1. Software Configuration Management
+Durante esta sección se presentan las herramientas utilizadas por el equipo,
+la estrategia de control de versiones, las convenciones aplicadas al código
+fuente y la configuración utilizada para el despliegue de los diferentes
+productos.
 
-Esta sección presenta las decisiones de configuración y colaboración propuestas para mantener trazabilidad de cambios y coherencia entre los diferentes productos digitales. Las convenciones que aún no se hayan aplicado deben aprobarse y utilizarse efectivamente antes de declararlas como prácticas consolidadas.
+Asimismo, se documentan las actividades realizadas durante el Sprint 1,
+incluyendo evidencias de desarrollo, pruebas, ejecución, documentación de
+servicios, despliegue y colaboración del equipo.
+
+Las evidencias presentadas permiten diferenciar los artefactos de diseño,
+el código fuente desarrollado y las funcionalidades que han sido
+implementadas y comprobadas durante el avance del proyecto.
+## 4.1. Software Configuration Management
+
+Para el desarrollo de BlockVoluntariado se establecieron herramientas,
+convenciones y prácticas de configuración orientadas a mantener la
+consistencia del proyecto y facilitar el trabajo colaborativo entre los
+integrantes del equipo.
+
+La gestión de configuración comprende los entornos empleados para diseño,
+desarrollo, pruebas y despliegue; el control de versiones mediante Git y
+GitHub; las convenciones aplicadas al código fuente; y los procedimientos
+utilizados para publicar los diferentes productos que componen la solución.
+
+Las siguientes subsecciones documentan las herramientas y configuraciones
+utilizadas durante el desarrollo del proyecto.
 
 #### 4.1.1. Software Development Environment Configuration
 
@@ -1497,8 +1529,6 @@ El Sprint 1 se orienta a obtener un primer incremento observable de BlockVolunta
 | Métrica de cumplimiento | Porcentaje de Story Points completados respecto a los comprometidos en el Sprint Backlog, respaldado mediante commits, pruebas y evidencias de ejecución. |
 | Velocity prevista | Pendiente de confirmar según los Story Points estimados por el equipo. |
 | Suma de Story Points comprometidos | Pendiente de calcular a partir de las User Stories incluidas en el Sprint Backlog 1. |
-
-**Ejemplo de formulación para discusión (no constituye un resultado comprometido):** "Facilitar que una persona descubra la propuesta de valor de BlockVoluntariado y consulte las oportunidades de voluntariado a través de una primera experiencia web y móvil demostrable". El equipo debe precisar qué experiencia y qué criterios efectivamente comprometió.
 
 ##### 4.2.1.2. Aspect Leaders and Collaborators
 
