@@ -1369,33 +1369,262 @@ El Mobile Applications User Flow Diagram representa la secuencia de navegación 
 
 #### 3.1.4.5. Mobile Applications Prototyping
 
+El Mobile Applications Prototyping presenta de forma visual la interacción entre las principales pantallas de BlockVoluntariado. El prototipo organiza los recorridos de autenticación, perfil, descubrimiento de voluntariados, seguimiento de actividades, retroalimentación y gestión para ONG, mostrando mediante conexiones la secuencia de navegación esperada dentro de la aplicación móvil.
+<div align="center">
+    <img
+        src="assets/figma-tb1/AppPhonePrototyping.png"
+        width="440"
+    />
+</div>
+
+**Figura 4.2 Mobile Applications Prototyping.
+
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
 
 # Capítulo IV: Product Implementation & Validation
+
 ## 4. Product Implementation & Validation
+
+El presente capítulo documenta la configuración, construcción, pruebas, ejecución y despliegue de los productos digitales de **BlockVoluntariado** durante el **Sprint 1 (TB1)**. La solución contempla una Landing Page informativa, servicios backend para los procesos de negocio y una aplicación Android orientada a estudiantes voluntarios y representantes de organizaciones sociales. Se distingue expresamente entre **diseños de Figma**, **código desarrollado**, **funcionalidades verificadas** y **despliegues accesibles**, puesto que representan evidencias diferentes.
+
+Al momento de elaborar esta versión, el equipo ha indicado que la Landing Page, los servicios backend, la aplicación Android y los diseños de Figma se encuentran **parcialmente desarrollados**. Se dispone de capturas de la Landing Page y cuatro repositorios públicos (web, Android, backend e informe). La existencia del código fuente no implica que las funcionalidades, pruebas o despliegues estén terminados. El estado específico de cada funcionalidad, prueba y despliegue backend/móvil permanece **pendiente de comprobación**.
+
 ### 4.1. Software Configuration Management
+
+Esta sección presenta las decisiones de configuración y colaboración propuestas para mantener trazabilidad de cambios y coherencia entre los diferentes productos digitales. Las convenciones que aún no se hayan aplicado deben aprobarse y utilizarse efectivamente antes de declararlas como prácticas consolidadas.
+
 #### 4.1.1. Software Development Environment Configuration
+
+Se identifican las herramientas relacionadas con el diseño, desarrollo, revisión, control de versiones y pruebas. La tabla debe contrastarse con los entornos efectivamente utilizados por cada integrante.
+
+| Actividad | Herramienta / tecnología | Propósito en BlockVoluntariado | Evidencia o fuente |
+|---|---|---|---|
+| Diseño UI/UX | Figma | Diseño de pantallas y prototipos móviles | Imágenes de pantallas facilitadas por el equipo; enlace editable pendiente |
+| Landing Page | HTML5, CSS3, JavaScript | Estructura, presentación e interacciones del sitio | ZIP original de `BlockVoluntariado-website` |
+| Desarrollo web | WebStorm u otro editor utilizado por el equipo | Edición de HTML, CSS, JS y Markdown | Captura/configuración pendiente |
+| Desarrollo móvil | Android Studio; Kotlin / Jetpack Compose | Implementación nativa para Android | Repositorio GitHub público disponible; compilación y ejecución pendientes de evidenciar |
+| Backend | [Framework y versión por confirmar] | Servicios RESTful para el dominio | Repositorio GitHub público disponible; framework, documentación y pruebas por confirmar |
+| Control de versiones | Git y GitHub | Ramas, commits, revisiones y colaboración | Cuatro URLs públicas confirmadas; faltan capturas de branches, commits y colaboración |
+| Gestión de Sprint | [Trello, Jira o YouTrack utilizado] | Product Backlog, Sprint Backlog y seguimiento | URL del tablero pendiente |
+| Pruebas API | [Postman, Swagger UI u otro, si se utilizó] | Verificación de endpoints | Evidencia pendiente |
+| Despliegue de Landing Page | GitHub Pages | Publicación del sitio estático | URL pública indicada a continuación |
+
+La Landing Page se encuentra asociada a la dirección pública: https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/ . La accesibilidad y el funcionamiento de cada interacción deben validarse en la fecha de entrega y respaldarse mediante capturas de ejecución.
+
+**Información que falta completar:** versiones de IDE, JDK/Android SDK/Gradle, tecnología y versión del backend, gestor de base de datos, herramientas de pruebas, sistema operativo, URLs de descarga o documentación de cada herramienta y responsables de configuración.
+
 #### 4.1.2. Source Code Management
+
+BlockVoluntariado utiliza GitHub para el control de versiones. La estrategia de trabajo **debe documentarse y verificarse** según GitFlow, incluyendo ramas de integración, ramas de funcionalidades y convenciones de entrega. La rama personal `dev/diego`, empleada en el repositorio del informe, no sustituye por sí sola una rama compartida de integración.
+
+| Producto | Repositorio | Rama principal / integración | Estado de evidencia |
+|---|---|---|---|
+| Informe del proyecto | [BlockVoluntariado-report](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-report) | `main` visible; integración por confirmar | README y carpeta `assets` públicos; `dev/diego` mencionada por integrante, confirmar política del equipo |
+| Landing Page | [BlockVoluntariado-website](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-website) | `main` visible; integración por confirmar | `index.html`, `css/`, `js/`, `html/` e imágenes visibles; página publicada indicada por el equipo |
+| Backend REST API | [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `main` visible; integración por confirmar | Directorio de proyecto y README visibles; endpoints, pruebas y despliegue aún por validar |
+| Aplicación Android | [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `main` visible; integración por confirmar | `app/`, archivos Gradle y README visibles; pantallas en ejecución aún por validar |
+| Aplicación cross-platform, si corresponde al Sprint | [URL del repositorio cuando exista] | [Confirmar] | No se proporcionó repositorio |
+
+**Revisión pública de repositorios (08/10/2026):** en la vista principal se observaron `main` y la estructura general de los cuatro proyectos. GitHub mostraba 18 commits en Website, 6 en Android, 3 en Platform y 68 en Report en el momento de la consulta. Son contadores de las ramas/vistas públicas en ese momento y **no** permiten atribuir trabajos al Sprint 1 ni a integrantes concretos. Se deben recoger IDs, fechas, autoría y ramas reales directamente desde el historial del período que corresponda. El README del repositorio Platform todavía titula la página como `BlockVoluntariado-website`, aspecto documental que debe revisarse.
+
+**Convención propuesta — aplicar solo después de validarla con el equipo:** `main` para versiones estables, `develop` para integración, `feature/<descripcion>` para funcionalidades, `release/<version>` para preparación de entregas y `hotfix/<descripcion>` para correcciones urgentes. Usar mensajes de commits del tipo `feat:`, `fix:`, `docs:`, `test:` y `chore:`; asignar versiones conforme a Semantic Versioning (`MAJOR.MINOR.PATCH`).
+
+**Evidencias por insertar:** captura de ramas remotas, historial de commits por producto, ejemplos reales de Conventional Commits y URL de las solicitudes de integración utilizadas.
+
 #### 4.1.3. Source Code Style Guide & Conventions
+
+Para mejorar la legibilidad y facilitar la colaboración, el equipo debe emplear nomenclatura en inglés y convenciones coherentes con cada lenguaje. Las pautas siguientes son criterios para comprobar sobre el código real, no una certificación de cumplimiento.
+
+| Producto | Convenciones a documentar y comprobar |
+|---|---|
+| HTML5 | Etiquetas semánticas, atributos `alt`, etiquetas accesibles, indentación consistente y estructura comprensible |
+| CSS3 | Selectores descriptivos, separación de estilos por responsabilidad y variables para colores y espaciado |
+| JavaScript | Identificadores en `camelCase`, constantes bien nombradas y separación de eventos y lógica reutilizable |
+| Kotlin/Android | Clases y componentes en `PascalCase`, funciones/variables en `camelCase` y organización de paquetes por responsabilidad |
+| Backend | Convenciones oficiales del lenguaje/framework efectivamente empleado, contratos REST consistentes y manejo explícito de errores |
+| Pruebas BDD | Historias/escenarios Gherkin con `Given`, `When` y `Then` para comportamientos verificables |
+
+Se debe documentar además cómo se aplican el idioma inglés como valor predeterminado, la internacionalización inglés/español y los criterios de accesibilidad establecidos para los productos. **No afirmar cumplimiento sin revisión de código o pruebas.**
+
 #### 4.1.4. Software Deployment Configuration
 
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+El despliegue de los productos debe describirse con pasos reproducibles, dependencias, requisitos de configuración y evidencia del resultado.
+
+**Landing Page — código en [BlockVoluntariado-website](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-website) y publicación indicada en GitHub Pages; flujo que debe contrastarse con la configuración real:**
+
+1. Integrar los cambios autorizados del sitio estático en el repositorio correspondiente.
+2. Configurar GitHub Pages para publicar desde la rama y ruta definidas por el equipo, o mediante el workflow adoptado.
+3. Verificar la URL pública y el funcionamiento del menú, vínculos, controles de idioma, apariencia y navegación responsive.
+4. Registrar captura del sitio publicado y capturas de la configuración de despliegue.
+
+**Backend:** [Especificar proveedor cloud, variables de entorno sin revelar secretos, almacenamiento, base de datos, dominio y proceso de despliegue]. Adjuntar captura de estado y documentación OpenAPI publicada o local según corresponda.
+
+**Aplicación Android:** [Especificar configuración del proyecto, build y ejecución, método de instalación en dispositivo/emulador y evidencia de las pantallas core funcionando]. Los mock-ups de Figma no equivalen a ejecución de la aplicación.
+
+**Diagrama solicitado:** insertar el C4 Deployment Diagram coherente con la infraestructura realmente utilizada o planeada, identificando explícitamente qué nodos ya están desplegados.
+
+---
 
 ### 4.2. Landing Page & Mobile Application Implementation
-#### 4.2.1. Sprint n
-##### 4.2.1.1. Sprint Planning n
+
+La sección presenta los incrementos del Sprint 1. El Sprint Backlog y la información de desarrollo deben corresponder a actividades registradas en el gestor del proyecto y en los repositorios. No se asignan fechas, Story Points, responsables, porcentajes de avance ni funcionalidades terminadas sin evidencias verificables.
+
+
+**Repositorios fuente para capturar evidencias del Sprint:**
+
+- Website: [https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-website](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-website/commits/main)
+- Android: [https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android/commits/main)
+- Platform: [https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform/commits/main)
+- Report: [https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-report](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-report/commits/main)
+
+*Nota:* comprobar las ramas realmente utilizadas y filtrar por fechas del Sprint 1 antes de completar las tablas de commits y colaboración.
+
+#### 4.2.1. Sprint 1
+
+El Sprint 1 se orienta a obtener un primer incremento observable de BlockVoluntariado y dejar preparadas las bases de integración entre Landing Page, backend y experiencia móvil. **Este enfoque es una propuesta de redacción; el Sprint Goal definitivo debe coincidir con el objetivo aprobado por el equipo.**
+
+##### 4.2.1.1. Sprint Planning 1
+
+| Campo | Información para TB1 |
+|---|---|
+| Sprint | Sprint 1 |
+| Fecha y hora | [Completar con acta real] |
+| Modalidad / lugar | [Completar] |
+| Preparado por | [Integrante responsable] |
+| Participantes | [Integrantes asistentes] |
+| Sprint anterior — Review | No aplica al primer Sprint, salvo que el equipo use otra secuencia |
+| Sprint anterior — Retrospective | No aplica al primer Sprint, salvo que el equipo use otra secuencia |
+| Sprint Goal | [Insertar objetivo de negocio validado por el equipo] |
+| Métrica de cumplimiento | [Criterio observable y medible] |
+| Velocity prevista | [Cantidad de Story Points acordada] |
+| Suma de Story Points comprometidos | [Total calculado del Sprint Backlog] |
+
+**Ejemplo de formulación para discusión (no constituye un resultado comprometido):** "Facilitar que una persona descubra la propuesta de valor de BlockVoluntariado y consulte las oportunidades de voluntariado a través de una primera experiencia web y móvil demostrable". El equipo debe precisar qué experiencia y qué criterios efectivamente comprometió.
+
 ##### 4.2.1.2. Aspect Leaders and Collaborators
-##### 4.2.1.3. Sprint Backlog n
+
+El equipo debe incorporar una matriz LACX que identifique al líder (`L`) y los colaboradores (`C`) por aspecto del Sprint. Los roles se completarán según la distribución real de responsabilidades.
+
+| Integrante y GitHub username | Landing Page | Backend | Android | UX/UI y prototipos | Pruebas / despliegue |
+|---|---|---|---|---|---|
+| [Apellido, nombre — usuario] | [L/C] | [L/C] | [L/C] | [L/C] | [L/C] |
+| [Apellido, nombre — usuario] | [L/C] | [L/C] | [L/C] | [L/C] | [L/C] |
+| [Apellido, nombre — usuario] | [L/C] | [L/C] | [L/C] | [L/C] | [L/C] |
+
+La asignación debe guardar coherencia con las tareas, los commits y las evidencias presentadas en el resto del capítulo.
+
+##### 4.2.1.3. Sprint Backlog 1
+
+El Sprint Backlog descompone las historias comprometidas en tareas trazables y registra esfuerzo, responsables y estado. Se incluirá la **captura del tablero real y su URL pública**.
+
+**Tablero del Sprint 1:** [URL pendiente].  
+**Figura 4.x.** Captura de Sprint Backlog 1 [pendiente].
+
+| User Story ID y título | Task ID | Tarea | Descripción / entregable | Estimación (h) | Responsable | Estado |
+|---|---|---|---|---|---|---|
+| [US validada] | [TASK] | [Nombre] | [Resultado verificable] | [h] | [Integrante] | [To-do / In-Process / To-Review / Done] |
+
+**Importante:** no inventar IDs, estados, estimaciones ni compromisos; tomar estos datos del tablero y del Product Backlog aprobados.
+
 ##### 4.2.1.4. Development Evidence for Sprint Review
+
+Las evidencias de desarrollo deben vincular cambios reales con sus correspondientes repositorios, ramas, fechas y commits. La tabla se completará usando el historial de GitHub, sin inferir autoría a partir de imágenes de interfaz.
+
+| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
+|---|---|---|---|---|---|
+| [user/repository] | [branch] | [hash] | [mensaje real] | [cuerpo o no aplica] | [YYYY-MM-DD] |
+
+Para cada producto, agregar un párrafo que explique qué incremento funcional produjo la secuencia de commits y qué User Story satisface.
+
 ##### 4.2.1.5. Testing Suite Evidence for Sprint Review
+
+Esta sección debe presentar las pruebas automatizadas de unidad, integración y aceptación relacionadas con las User Stories del Sprint, particularmente para los Web Services. **El estado actual de la suite no ha sido documentado**, por lo que no se declaran pruebas aprobadas.
+
+| ID de prueba | Tipo | Funcionalidad / clase / endpoint | User Story | Resultado | Evidencia |
+|---|---|---|---|---|---|
+| [ID] | [Unit / Integration / Acceptance] | [Elemento probado] | [US] | [Pass / Fail / Not run] | [Enlace o captura] |
+
+Para escenarios BDD, adjuntar los archivos `.feature`, sus steps, los criterios Given–When–Then y enlaces a commits de pruebas. Describir de forma explícita los problemas encontrados y las correcciones aplicadas, si corresponde.
+
 ##### 4.2.1.6. Execution Evidence for Sprint Review
+
+El diseño presentado en Figma y el sitio web publicado permiten ilustrar la experiencia propuesta. Sin embargo, cada imagen debe clasificarse correctamente según su origen.
+
+**Evidencia visual de la Landing Page en escritorio:**
+
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/capitulo4/landing-escritorio.png" alt="Captura facilitada de la Landing Page en escritorio" width="610" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.1. Vista de la Landing Page de BlockVoluntariado en navegador de escritorio. Fuente: captura compartida por el equipo.</em></p>
+</div>
+
+**Evidencia visual de la Landing Page en móvil:**
+
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/capitulo4/landing-movil.png" alt="Capturas facilitadas de la Landing Page en móvil" width="560" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.2. Adaptación móvil del sitio publicada por el equipo. Fuente: capturas compartidas por el equipo.</em></p>
+</div>
+
+**Aplicación Android:** [Insertar capturas tomadas desde el emulador o dispositivo con la aplicación ejecutándose, indicando pantalla, funcionalidad y estado; no reutilizar collages Figma como prueba de ejecución].  
+**Video de ejecución del Sprint:** [URL del video y breve explicación de navegación].
+
 ##### 4.2.1.7. Services Documentation Evidence for Sprint Review
+
+Para los servicios implementados, incluir documentación OpenAPI/Swagger y ejemplos verificables de solicitudes y respuestas. El nombre, disponibilidad y cantidad de endpoints aún no se han confirmado.
+
+| Método HTTP | Endpoint | Funcionalidad y parámetros | Respuesta de ejemplo | Estado de implementación | Evidencia OpenAPI |
+|---|---|---|---|---|---|
+| [GET/POST/PATCH/etc.] | [ruta real] | [Descripción] | [Código HTTP y JSON de ejemplo] | [Implementado / En desarrollo] | [URL o captura] |
+
+Agregar capturas de Swagger UI con datos de prueba, URL del repositorio backend y commits relacionados con la documentación del Sprint. No incluir datos personales reales ni secretos en las capturas.
+
 ##### 4.2.1.8. Software Deployment Evidence for Sprint Review
+
+Se documentarán por producto las acciones de preparación, configuración, publicación y comprobación realizadas durante el Sprint 1.
+
+| Producto | Entorno / servicio | Evidencia solicitada | Estado documentable |
+|---|---|---|---|
+| Landing Page | GitHub Pages | URL pública, configuración del despliegue, captura y prueba de acceso | URL y capturas disponibles; verificar configuración de publicación |
+| Backend | [Cloud provider o entorno utilizado] | Endpoint accesible, logs/capturas, configuración y documentación API | Sin evidencia de despliegue aportada aún |
+| Android | [Dispositivo/emulador/distribución] | Captura de instalación, compilación y ejecución | Diseños aportados; ejecución pendiente de evidenciar |
+
+La rúbrica del TB1 solicita un backend desplegado al **70 %**. Para sustentar este requisito debe definirse la base de cálculo (por ejemplo, endpoints o historias del alcance acordado) y comprobar el avance con evidencias reales; no basta asignar un porcentaje estimado.
+
 ##### 4.2.1.9. Team Collaboration Insights during Sprint
+
+Esta sección interpreta la colaboración real del equipo durante Sprint 1. Deben insertarse capturas de analíticas GitHub de cada repositorio (Contributors, Commits, Pull Requests, cuando corresponda), junto con la distribución de tareas del tablero. El análisis debe reflejar quién contribuyó, a qué funcionalidades, en qué fechas y cómo se resolvieron dependencias o bloqueos.
+
+| Producto | Evidencia de colaboración | Interpretación pendiente |
+|---|---|---|
+| Landing Page | [Captura de commits y contribuciones] | [Explicar contribuciones comprobadas] |
+| Backend | [Captura de commits y contribuciones] | [Explicar contribuciones comprobadas] |
+| Aplicación Android | [Captura de commits y contribuciones] | [Explicar contribuciones comprobadas] |
+| Documentación del proyecto | [Captura del repositorio del informe] | [Relacionar con el Registro de Versiones] |
+
+---
+
 ### 4.3. Validation Interviews
+
+La validación busca recoger observaciones de representantes de ambos segmentos objetivo mediante tareas realizadas sobre las experiencias disponibles de BlockVoluntariado. **No se han proporcionado entrevistas de validación del TB1**, por lo que esta sección se plantea como preparación del trabajo y no como una actividad ya ejecutada. Su alcance y fecha deben confirmarse según la planificación del curso.
+
 #### 4.3.1. Diseño de Entrevistas
+
+Se propone preparar tareas alineadas con los objetivos de cada segmento: identificar una oportunidad de voluntariado y revisar sus requisitos (estudiante); localizar información para publicar una convocatoria y comprender el proceso de gestión (representante de ONG). Para cada tarea, definir guion, criterios observables, preguntas de seguimiento y formato de evaluación heurística establecido en el Anexo E de la rúbrica.
+
 #### 4.3.2. Registro de Entrevistas
+
+[Pendiente de ejecutar y documentar]. Para cada entrevista realizada se deberá incluir nombre, edad, distrito, segmento objetivo, captura del video, enlace a OneDrive, tiempo de inicio y duración, más un resumen descriptivo de las observaciones. La guía del curso establece **entre tres y cinco entrevistas por segmento** para esta sección.
+
 #### 4.3.3. Evaluaciones según heurísticas
+
+[Pendiente de evidencia]. Documentar los problemas realmente observados, asignando severidad del 1 al 4 según el Anexo E, identificar el principio de usabilidad, diseño inclusivo o arquitectura de información comprometido, adjuntar captura y formular una mejora justificable. No inventar hallazgos ni resultados de usuarios.
+
+---
+
+**Nota de cierre del Capítulo IV para TB1.** Esta versión constituye una base documental estructurada. Para considerarla lista para evaluación, deben sustituirse los campos `[pendiente]` por evidencias del equipo, confirmar el Sprint Goal y el tablero, incorporar datos y pruebas reales del backend y Android, y comprobar el alcance exigido para el TB1.
+
+
+**Nota de cierre del Capítulo IV para TB1.** Esta versión constituye una base documental estructurada. Para considerarla lista para evaluación, deben sustituirse los campos `[pendiente]` por evidencias del equipo, confirmar el Sprint Goal y el tablero, incorporar datos y pruebas reales del backend y Android, y comprobar el alcance exigido para el TB1.
 
 # Conclusiones
 ## Conclusiones y recomendaciones
