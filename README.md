@@ -1403,8 +1403,8 @@ Se identifican las herramientas relacionadas con el diseño, desarrollo, revisi�
 | Diseño UI/UX | Figma | Diseño de pantallas y prototipos móviles | Imágenes de pantallas facilitadas por el equipo; enlace editable pendiente |
 | Landing Page | HTML5, CSS3, JavaScript | Estructura, presentación e interacciones del sitio | ZIP original de `BlockVoluntariado-website` |
 | Desarrollo web | WebStorm u otro editor utilizado por el equipo | Edición de HTML, CSS, JS y Markdown | Captura/configuración pendiente |
-| Desarrollo móvil | Android Studio; Kotlin / Jetpack Compose | Implementación nativa para Android | Repositorio GitHub público disponible; compilación y ejecución pendientes de evidenciar |
-| Backend | [Framework y versión por confirmar] | Servicios RESTful para el dominio | Repositorio GitHub público disponible; framework, documentación y pruebas por confirmar |
+| Desarrollo móvil | Android Studio; Kotlin, Jetpack Compose y Material 3 | Implementación nativa para Android | Dependencias y estructura vistas en ZIP de `main`; ejecución de pantallas core pendiente |
+| Backend | Spring Boot 4.0.6, Java 25 y Maven; MySQL | Servicios RESTful y persistencia | Dependencias identificadas en `pom.xml` del ZIP de la rama `develop`; compilación, pruebas y despliegue por confirmar |
 | Control de versiones | Git y GitHub | Ramas, commits, revisiones y colaboración | Cuatro URLs públicas confirmadas; faltan capturas de branches, commits y colaboración |
 | Gestión de Sprint | [Trello, Jira o YouTrack utilizado] | Product Backlog, Sprint Backlog y seguimiento | URL del tablero pendiente |
 | Pruebas API | [Postman, Swagger UI u otro, si se utilizó] | Verificación de endpoints | Evidencia pendiente |
@@ -1458,9 +1458,9 @@ El despliegue de los productos debe describirse con pasos reproducibles, depende
 3. Verificar la URL pública y el funcionamiento del menú, vínculos, controles de idioma, apariencia y navegación responsive.
 4. Registrar captura del sitio publicado y capturas de la configuración de despliegue.
 
-**Backend:** [Especificar proveedor cloud, variables de entorno sin revelar secretos, almacenamiento, base de datos, dominio y proceso de despliegue]. Adjuntar captura de estado y documentación OpenAPI publicada o local según corresponda.
+**Backend:** el código proporcionado contiene un `Dockerfile`, configuración Maven, dependencia MySQL y documentación OpenAPI. [Especificar proveedor cloud, variables de entorno sin revelar secretos, almacenamiento, base de datos, dominio y proceso real de despliegue]. Adjuntar captura de estado y documentación OpenAPI publicada o local según corresponda.
 
-**Aplicación Android:** [Especificar configuración del proyecto, build y ejecución, método de instalación en dispositivo/emulador y evidencia de las pantallas core funcionando]. Los mock-ups de Figma no equivalen a ejecución de la aplicación.
+**Aplicación Android:** el código proporcionado contiene el módulo `app`, Gradle Kotlin DSL y `MainActivity.kt`. La versión ZIP revisada aún presenta el contenido inicial «Hello Android»; [especificar build, ejecución y pantallas core de la rama que corresponda]. Los mock-ups de Figma no equivalen a ejecución de la aplicación.
 
 **Diagrama solicitado:** insertar el C4 Deployment Diagram coherente con la infraestructura realmente utilizada o planeada, identificando explícitamente qué nodos ya están desplegados.
 
@@ -1486,19 +1486,17 @@ El Sprint 1 se orienta a obtener un primer incremento observable de BlockVolunta
 
 ##### 4.2.1.1. Sprint Planning 1
 
-| Campo | Información para TB1 |
+| Campo | Información |
 |---|---|
 | Sprint | Sprint 1 |
-| Fecha y hora | [Completar con acta real] |
-| Modalidad / lugar | [Completar] |
-| Preparado por | [Integrante responsable] |
-| Participantes | [Integrantes asistentes] |
-| Sprint anterior — Review | No aplica al primer Sprint, salvo que el equipo use otra secuencia |
-| Sprint anterior — Retrospective | No aplica al primer Sprint, salvo que el equipo use otra secuencia |
-| Sprint Goal | [Insertar objetivo de negocio validado por el equipo] |
-| Métrica de cumplimiento | [Criterio observable y medible] |
-| Velocity prevista | [Cantidad de Story Points acordada] |
-| Suma de Story Points comprometidos | [Total calculado del Sprint Backlog] |
+| Fecha y hora | 07-10-2026 (hora no registrada) |
+| Modalidad / lugar | Coordinación virtual mediante WhatsApp y GitHub |
+| Preparado por | Diego Alexander Cabrejos Chocco |
+| Participantes | Diego Alexander Cabrejos Chocco; Sebastian Oswaldo Tavara Correa; Ghorghet Saul Thuncar Vila |
+| Sprint Goal | Desarrollar un primer incremento funcional de BlockVoluntariado mediante la implementación y publicación de la Landing Page, el avance de los servicios backend y la configuración inicial de la aplicación Android, estableciendo las bases para la gestión de voluntariados y organizaciones sociales. |
+| Métrica de cumplimiento | Porcentaje de Story Points completados respecto a los comprometidos en el Sprint Backlog, respaldado mediante commits, pruebas y evidencias de ejecución. |
+| Velocity prevista | Pendiente de confirmar según los Story Points estimados por el equipo. |
+| Suma de Story Points comprometidos | Pendiente de calcular a partir de las User Stories incluidas en el Sprint Backlog 1. |
 
 **Ejemplo de formulación para discusión (no constituye un resultado comprometido):** "Facilitar que una persona descubra la propuesta de valor de BlockVoluntariado y consulte las oportunidades de voluntariado a través de una primera experiencia web y móvil demostrable". El equipo debe precisar qué experiencia y qué criterios efectivamente comprometió.
 
@@ -1506,11 +1504,11 @@ El Sprint 1 se orienta a obtener un primer incremento observable de BlockVolunta
 
 El equipo debe incorporar una matriz LACX que identifique al líder (`L`) y los colaboradores (`C`) por aspecto del Sprint. Los roles se completarán según la distribución real de responsabilidades.
 
-| Integrante y GitHub username | Landing Page | Backend | Android | UX/UI y prototipos | Pruebas / despliegue |
-|---|---|---|---|---|---|
-| [Apellido, nombre — usuario] | [L/C] | [L/C] | [L/C] | [L/C] | [L/C] |
-| [Apellido, nombre — usuario] | [L/C] | [L/C] | [L/C] | [L/C] | [L/C] |
-| [Apellido, nombre — usuario] | [L/C] | [L/C] | [L/C] | [L/C] | [L/C] |
+| Integrante y GitHub username                        | Landing Page | Backend | Android | UX/UI y prototipos | Pruebas / despliegue |
+|-----------------------------------------------------|---|---|---|---|---|
+| [Cabrejos Chocco, Diego Alexander — MOTOX-357]      | [L] | [C] | [C] | [L] | [C] |
+| [Tavara Correa, Sebastian Tavara — SebastianTavara] | [C] | [L] | [C] | [C] | [L] |
+| [Thuncar Vila, Ghorghet Saul — Ghorghet]            | [C] | [C] | [L] | [C] | [C] |
 
 La asignación debe guardar coherencia con las tareas, los commits y las evidencias presentadas en el resto del capítulo.
 
@@ -1570,7 +1568,7 @@ El diseño presentado en Figma y el sitio web publicado permiten ilustrar la exp
 
 ##### 4.2.1.7. Services Documentation Evidence for Sprint Review
 
-Para los servicios implementados, incluir documentación OpenAPI/Swagger y ejemplos verificables de solicitudes y respuestas. El nombre, disponibilidad y cantidad de endpoints aún no se han confirmado.
+El proyecto backend adjunto incluye soporte de OpenAPI/Swagger y 11 archivos de tipo Controller (véase inventario técnico al final del capítulo). Esto no acredita que los endpoints respondan, que estén documentados completamente o que la API esté desplegada. Para los servicios realmente implementados, incluir documentación OpenAPI/Swagger y ejemplos verificables de solicitudes y respuestas.
 
 | Método HTTP | Endpoint | Funcionalidad y parámetros | Respuesta de ejemplo | Estado de implementación | Evidencia OpenAPI |
 |---|---|---|---|---|---|
@@ -1621,8 +1619,30 @@ Se propone preparar tareas alineadas con los objetivos de cada segmento: identif
 
 ---
 
-**Nota de cierre del Capítulo IV para TB1.** Esta versión constituye una base documental estructurada. Para considerarla lista para evaluación, deben sustituirse los campos `[pendiente]` por evidencias del equipo, confirmar el Sprint Goal y el tablero, incorporar datos y pruebas reales del backend y Android, y comprobar el alcance exigido para el TB1.
 
+
+### 4.4. Análisis técnico de los proyectos recibidos (evidencia de código fuente para TB1)
+
+Esta subsección complementaria documenta **solo evidencias estáticas revisadas** en los ZIP aportados por el equipo: `Blockvoluntariado-platform-develop.zip` y `BlockVoluntariado-android-main (1).zip`. No constituye evidencia de compilación, ejecución, despliegue ni porcentaje de avance.
+
+**Backend (rama `develop`, según nombre del archivo recibido).** En el `pom.xml` se identifican Spring Boot **4.0.6**, Java **25**, Maven, conector de MySQL y dependencia de Springdoc OpenAPI. El proyecto también incluye un `Dockerfile` y `schema.sql`. La organización del código incorpora responsabilidades relacionadas con postulaciones, autenticación, usuarios, roles, notificaciones, actividades, certificados, evaluaciones, convocatorias y voluntarios.
+
+**Controladores identificados en el código:**
+
+| Área funcional | Archivos Controller identificados |
+|---|---|
+| Postulaciones | `PostulacionesController.java` |
+| Autenticación, usuarios y roles | `AuthController.java`, `AuthenticationController.java`, `UsersController.java`, `RolesController.java` |
+| Convocatorias y voluntarios | `ConvocatoriasController.java`, `VolunteersController.java` |
+| Actividades y participación | `ActividadesController.java` |
+| Evaluación y certificados | `EvaluacionesController.java`, `CertificadosController.java` |
+| Notificaciones | `NotificationsController.java` |
+
+Estos nombres son **inventario del código**, no un listado de endpoints probados. Antes de completar 4.2.1.7 se deben extraer los métodos HTTP y rutas reales de las anotaciones de cada controlador y contrastarlos con Swagger UI en ejecución.
+
+**Android (archivo correspondiente a `main`).** La estructura contiene `app`, configuración Gradle Kotlin DSL, Kotlin y Jetpack Compose con Material 3. La versión recibida conserva en `MainActivity.kt` la presentación básica «Hello Android». Por ello, las 27 pantallas del diseño de Figma siguen siendo artefactos UX/UI y no se deben adjuntar como evidencia de funcionalidad Android ejecutada. Si existe una rama más avanzada, debe aportarse una captura de ejecución y el commit asociado.
+
+**Acciones de verificación previas a la entrega:** registrar compilación y pruebas de cada producto; documentar las rutas, respuestas y fallos de APIs reales; comprobar el despliegue backend y justificar con una base medible el 70 % solicitado; probar en dispositivo las pantallas core Android; y enlazar esas evidencias a historias, tareas y commits del Sprint 1.
 
 **Nota de cierre del Capítulo IV para TB1.** Esta versión constituye una base documental estructurada. Para considerarla lista para evaluación, deben sustituirse los campos `[pendiente]` por evidencias del equipo, confirmar el Sprint Goal y el tablero, incorporar datos y pruebas reales del backend y Android, y comprobar el alcance exigido para el TB1.
 
