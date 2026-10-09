@@ -550,15 +550,27 @@ El **Big Picture EventStorming** es un taller de modelado colaborativo rápido y
 Para la ejecución del proceso se siguió la guía metodológica canónica (*Step-by-Step Guide for Big Picture EventStorming* - [bpes-guide](https://bit.ly/bpes-guide)), estructurada en las siguientes etapas consecutivas:
 
 1. **Paso 1: Generación Caótica de Eventos de Dominio (Domain Events):** Cada integrante redactó en post-its de color naranja todos los eventos relevantes que ocurren en el ciclo de vida del voluntariado, formulados estrictamente en tiempo pasado (ej. `Convocatoria Publicada`, `Postulación Enviada`, `Asistencia Registrada`).
+
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/md-images-chapter2/event-storming-paso1-caotico.jpg" alt="Paso 1: Generación Caótica de Eventos de Dominio" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.3.5.1. Big Picture EventStorming - Paso 1: Generación Caótica de Eventos de Dominio en Miro.</em></p>
+</div>
+
 2. **Paso 2: Línea de Tiempo y Ordenamiento Temporal (Timeline):** Se eliminaron duplicados y se organizaron los eventos en un eje temporal secuencial de izquierda a derecha, estableciendo bifurcaciones paralelas y caminos alternativos (ej. `Postulación Aceptada` vs `Postulación Rechazada`).
 3. **Paso 3: Eventos Pivote (Pivotal Events):** Se identificaron los eventos de mayor relevancia y cambio de estado dentro del negocio que marcan fronteras naturales entre fases: `UsuarioRegistrado` (Identidad), `ConvocatoriaPublicada` (Publicación), `PostulacionAceptada` (Admisión) y `CertificadoGenerado` (Reconocimiento).
 4. **Paso 4: Disparadores de Eventos (Commands y Actores):** Se asociaron los comandos (post-its azules, en modo imperativo) que provocan los eventos y los roles de usuario (post-its amarillos) que los ejecutan: `Estudiante Universitario` ejecutando `Enviar Postulación`, y `Coordinador de ONG` ejecutando `Publicar Convocatoria`, `Aceptar Postulante` y `Registrar Asistencia`.
+
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/md-images-chapter2/event-storming-paso2-triggers.jpg" alt="Paso 2: Disparadores de Eventos (Commands y Actores)" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.3.5.2. Big Picture EventStorming - Paso 4: Disparadores de Eventos (Commands y Actores) en Miro.</em></p>
+</div>
+
 5. **Paso 5: Puntos Críticos y Preguntas Abiertas (Hotspots):** Se colocaron post-its rojos/rosados sobre las zonas de incertidumbre o fricción del negocio: validación de horas reales en campo, prevención de postulaciones duplicadas y criterios de emisión de constancias verificables.
 6. **Paso 6: Oportunidades y Políticas de Negocio (Policies / Read Models):** Se establecieron las reglas automáticas reactivas (post-its lilas): *«Siempre que una postulación sea aceptada, notificar al estudiante y actualizar vacantes disponibles»*.
 
-<div align="center">
-  <img src="assets/md-images-chapter2/EventStorming.png" alt="Mural colaborativo de Big Picture EventStorming" width="850" style="max-width:100%; height:auto;" />
-  <p><em>Figura 2.3.5. Tablero de Big Picture EventStorming de BlockVoluntariado desarrollado en Miro.</em></p>
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/md-images-chapter2/event-storming-paso3-bounded-contexts.jpg" alt="Paso Final: Separación de posibles Bounded Contexts" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.3.5.3. Big Picture EventStorming - Paso Final: Delimitación de Bounded Contexts candidatos en Miro.</em></p>
 </div>
 
 A continuación, se listan los eventos de dominio consolidados por área funcional:
@@ -872,6 +884,11 @@ Se modelan los tres escenarios operacionales más relevantes de la plataforma:
 | 3 | Volunteering Core | **Event** | `ConvocatoriaPublicadaEvent` (id, causa, distrito) | Communication & Notifications | Dispara búsqueda reactiva de voluntarios interesados |
 | 4 | Notifications | **Command** | `EnviarAlertaNuevaOportunidadCommand` | Proveedor Push (FCM) | Notifica a voluntarios con perfil compatible |
 
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/diagramas/domain-message-flow-escenario-1.jpg" alt="Escenario 1: Creación y Publicación de Convocatoria" width="800" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.2.1. Domain Message Flow - Escenario 1: Creación y Publicación de Convocatoria de Voluntariado en Miro.</em></p>
+</div>
+
 ##### Escenario 2: Búsqueda, Postulación y Selección de Voluntario
 | N.º | Emisor | Tipo de Mensaje | Mensaje / Datos Clave | Contexto Receptor | Efecto en el Negocio |
 |---:|---|---|---|---|---|
@@ -881,6 +898,11 @@ Se modelan los tres escenarios operacionales más relevantes de la plataforma:
 | 8 | Coordinador ONG | **Command** | `AcceptApplicantCommand` (postulacionId) | Application Management | Cambia estado a `ACEPTADA` y reserva vacante |
 | 9 | Application Mgmt | **Event** | `PostulacionAceptadaEvent` (postulacionId, voluntarioId) | Participation & Tracking | Inicializa la ficha de participación para la actividad |
 
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/diagramas/domain-message-flow-escenario-2.jpg" alt="Escenario 2: Búsqueda, Postulación y Selección de Voluntario" width="800" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.2.2. Domain Message Flow - Escenario 2: Búsqueda, Postulación y Selección de Voluntario en Miro.</em></p>
+</div>
+
 ##### Escenario 3: Ejecución en Campo, Control de Asistencia y Emisión de Certificado
 | N.º | Emisor | Tipo de Mensaje | Mensaje / Datos Clave | Contexto Receptor | Efecto en el Negocio |
 |---:|---|---|---|---|---|
@@ -889,9 +911,9 @@ Se modelan los tres escenarios operacionales más relevantes de la plataforma:
 | 12 | Recognition & Cert | **Event** | `CertificadoGeneradoEvent` (certificadoId, hashFirma, urlPdf) | Communication & Notifications | Genera documento firmado con QR y alerta al alumno |
 | 13 | Estudiante | **Query** | `GetCertificadoByIdQuery` (certificadoId) | Recognition & Certification | Descarga PDF oficial verificado para su portafolio |
 
-<div align="center">
-  <img src="assets/diagramas/domain-message-flow.png" alt="Domain Message Flow Modelling" width="750" style="max-width:100%; height:auto;" />
-  <p><em>Figura 2.5.2. Coreografía de mensajes entre Bounded Contexts y actores de BlockVoluntariado.</em></p>
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/diagramas/domain-message-flow-escenario-3.jpg" alt="Escenario 3: Ejecución en Campo, Asistencia y Certificación" width="800" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.2.3. Domain Message Flow - Escenario 3: Ejecución en Campo, Asistencia y Certificación en Miro.</em></p>
 </div>
 
 <div style="page-break-before: always;"></div>
@@ -899,7 +921,7 @@ Se modelan los tres escenarios operacionales más relevantes de la plataforma:
 #### 2.5.1.3. Bounded Context Canvases
 El **Bounded Context Canvas** ([DDD Crew – Bounded Context Canvas](https://github.com/ddd-crew/bounded-context-canvas)) es un artefacto estructurado que formaliza el alcance, responsabilidades, modelo y contratos de cada contexto acotado.
 
-A continuación, se documenta el Canvas integral de los contextos principales de la solución:
+A continuación, se documentan los Canvases individuales desarrollados en Miro para los Bounded Contexts representativos:
 
 ##### Canvas 1: Volunteering Management Core (Core Domain)
 * **1. Name & Purpose:** `Volunteering Management Core`. Gobierna el ciclo de vida, configuración de vacantes y publicación de convocatorias de voluntariado social.
@@ -917,6 +939,11 @@ A continuación, se documenta el Canvas integral de los contextos principales de
   * El cupo de vacantes debe ser un entero estrictamente positivo ($>0$).
 * **8. Dependencies & Relationships:** Upstream respecto a `Application Management` mediante patrón *Customer/Supplier*.
 
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/md-images-chapter2/canvas-volunteering-management.jpg" alt="Bounded Context Canvas: Volunteering Management Core" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.3.1. Bounded Context Canvas - Volunteering Management Core desarrollado en Miro.</em></p>
+</div>
+
 ##### Canvas 2: Application Management (Core Domain)
 * **1. Name & Purpose:** `Application Management`. Administra las postulaciones de los estudiantes, el proceso de filtrado de perfiles y la decisión de admisión por parte de las organizaciones.
 * **2. Strategic Classification:** *Core Domain*. Componente crítico de matching entre la demanda de voluntarios y la selección de la ONG.
@@ -931,9 +958,39 @@ A continuación, se documenta el Canvas integral de los contextos principales de
   * Solo el coordinador de la ONG propietaria de la convocatoria está autorizado a aceptar o rechazar postulantes.
 * **7. Dependencies & Relationships:** Downstream de `Volunteering Management Core` (Customer/Supplier) y Upstream de `Participation & Attendance Tracking`.
 
-<div align="center">
-  <img src="assets/md-images-chapter1/boundend context canvases.png" alt="Bounded Context Canvases del proyecto" width="850" style="max-width:100%; height:auto;" />
-  <p><em>Figura 2.5.3. Bounded Context Canvases consolidados de BlockVoluntariado elaborados en Miro.</em></p>
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/md-images-chapter2/canvas-application-management.jpg" alt="Bounded Context Canvas: Application Management" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.3.2. Bounded Context Canvas - Application Management desarrollado en Miro.</em></p>
+</div>
+
+##### Canvas 3: Participation Management (Supporting Domain)
+* **1. Name & Purpose:** `Participation Management`. Controla la ejecución operativa en terreno de las actividades de voluntariado, el pase de lista y el cómputo de horas auditables.
+* **2. Strategic Classification:** *Supporting Domain*. Soporte operativo para verificar el cumplimiento real de los voluntarios.
+* **3. Inbound Communication:**
+  * *Commands:* `StartActivityCommand`, `CheckInAttendanceCommand`, `EndActivityCommand`, `ValidateHoursCommand`.
+  * *Queries:* `GetAttendanceListQuery`, `GetVolunteerAccumulatedHoursQuery`.
+* **4. Outbound Communication:**
+  * *Events:* `ActividadIniciadaEvent`, `AsistenciaRegistradaEvent`, `HorasValidadasEvent`.
+* **5. Dependencies & Relationships:** Downstream de `Application Management` y Upstream de `Recognition & Certification`.
+
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/md-images-chapter2/canvas-participation-management.jpg" alt="Bounded Context Canvas: Participation Management" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.3.3. Bounded Context Canvas - Participation Management desarrollado en Miro.</em></p>
+</div>
+
+##### Canvas 4: Recognition and Evaluation (Supporting Domain)
+* **1. Name & Purpose:** `Recognition and Evaluation`. Emisión de constancias digitales firmadas con hash SHA-256, asignación de insignias de gamificación y calificaciones recíprocas.
+* **2. Strategic Classification:** *Supporting Domain*. Reconocimiento del impacto social y convalidación universitaria.
+* **3. Inbound Communication:**
+  * *Commands:* `GenerateCertificateCommand`, `AwardBadgeCommand`, `SubmitEvaluationCommand`.
+  * *Queries:* `VerifyCertificateHashQuery`, `GetStudentAchievementsQuery`.
+* **4. Outbound Communication:**
+  * *Events:* `CertificadoGeneradoEvent`, `InsigniaOtorgadaEvent`, `EvaluacionRegistradaEvent`.
+* **5. Dependencies & Relationships:** Downstream de `Participation Management` (requiere horas validadas).
+
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/md-images-chapter2/canvas-recognition-evaluation.jpg" alt="Bounded Context Canvas: Recognition and Evaluation" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.3.4. Bounded Context Canvas - Recognition and Evaluation desarrollado en Miro.</em></p>
 </div>
 
 <div style="page-break-before: always;"></div>
@@ -942,8 +999,8 @@ A continuación, se documenta el Canvas integral de los contextos principales de
 El **Context Mapping** ([DDD Crew – Context Mapping](https://github.com/ddd-crew/context-mapping)) formaliza la topología de relaciones arquitectónicas y organizacionales entre los distintos Bounded Contexts, definiendo los patrones de integración y los acuerdos de gobernanza técnica.
 
 <div align="center">
-  <img src="assets/md-images-chapter1/contextMap.png" alt="Context Map de BlockVoluntariado" width="850" style="max-width:100%; height:auto;" />
-  <p><em>Figura 2.5.4. Mapa de Contextos (Context Map) formal de BlockVoluntariado con relaciones Upstream/Downstream.</em></p>
+  <img src="assets/md-images-chapter2/context-mapping.png" alt="Context Map de BlockVoluntariado" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.4. Mapa de Contextos (Context Map) formal de BlockVoluntariado desarrollado en Miro con relaciones Upstream/Downstream.</em></p>
 </div>
 
 A continuación, se justifican técnicamente los patrones de integración empleados:
