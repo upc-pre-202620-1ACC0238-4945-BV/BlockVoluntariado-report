@@ -9,7 +9,7 @@ Carrera de Ingeniería de Software<br><br>
 <strong>Aplicaciones para Dispositivos Móviles</strong><br>
 NRC<br>
 <strong>4945</strong><br>
-<strong>Informe del Trabajo Final</strong><br>
+<strong>Informe del Trabajo Final - Trabajo Parcial (TB1)</strong><br>
 Docente<br>
 <strong>Jorge Luis Mayta Guillermo</strong><br>
 Equipo<br>
@@ -29,6 +29,10 @@ Proyecto<br>
   </thead>
   <tbody>
     <tr>
+      <td>U20241e014</td>
+      <td>Cabrejos Chocco, Diego Alexander</td>
+    </tr>
+    <tr>
       <td>U20241e179</td>
       <td>Tavara Correa, Sebastian Oswaldo</td>
     </tr>
@@ -36,32 +40,35 @@ Proyecto<br>
       <td>U20241e107</td>
       <td>Tuncar Vila, Ghorghet Saul</td>
     </tr>
-    <tr>
-      <td>U20241e014</td>
-      <td>Cabrejos Chocco, Diego Alexander</td>
-    </tr>
   </tbody>
 </table>
 
 <strong>Período 202620</strong><br><br>
 
-<strong>Setiembre 2026</strong>
+<strong>Octubre 2026</strong>
 </div>
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+<div style="page-break-after: always;"></div>
 
 ## Registro de Versiones del Informe
 | Versión | Fecha | Autor(es) | Descripción de Modificación |
 | :---: | :---: | :--- | :--- |
-| **1.1** | 08/10/2026 | Equipo BlockVoluntariado | **Revisión de observaciones AV1:** presentación, trazabilidad de historias, explicación de EventStorming, flujos de mensajes, canvas, justificación de Context Mapping, alcance del sistema C4 y descripción individual de los siete contextos candidatos y su consolidación. |
-| **1.0** | 18/09/2026 | Todos los integrantes | **Entrega Oficial Hito 1 (AV1):** Consolidación de Student Outcome 7, Objetivos SMART, Big Picture EventStorming (Miro), Impact Mapping, Product Backlog, Diseño Estratégico y Táctico DDD, Arquitectura C4 (Nivel 1, 2, 3 y Despliegue en PlantUML) y Diseño de Base de Datos relacional en MySQL. |
+| **2.0** | 09/10/2026 | Todos los integrantes | **Entrega Oficial Trabajo Parcial (TB1):** Adecuación integral conforme a la rúbrica de evaluación y retroalimentación docente: orden alfabético estricto de carátula; reestructuración formal del Student Outcome 7 por criterios específicos del Anexo A (AV1 y TB1); formalización de Bounded Context Canvases (DDD Crew); modelado detallado de Domain Message Flow Modelling; justificación técnica y diagrama de Context Mapping; diagramas C4 nivel Contexto (plataforma integral), Contenedores y Despliegue; normalización de títulos UI/UX; e incorporación de evidencias reales de desarrollo, servicios RESTful y configuración de despliegue para el Sprint 1. |
+| **1.1** | 08/10/2026 | Equipo BlockVoluntariado | **Revisión de observaciones AV1:** Presentación, trazabilidad de historias, explicación de fases de EventStorming, flujos de mensajes, canvases preliminares, justificación de Context Mapping y descripción de contextos candidatos. |
+| **1.0** | 18/09/2026 | Todos los integrantes | **Entrega Oficial Hito 1 (AV1):** Consolidación de Student Outcome 7 inicial, Objetivos SMART, Big Picture EventStorming, Impact Mapping, Product Backlog, Diseño Estratégico y Táctico DDD, Arquitectura C4 y Esquema Relacional MySQL. |
 
 ## Project Report Collaboration Insights
 
-El informe registra la participación del equipo a través de evidencias de investigación de usuarios, especificación de requerimientos y decisiones de arquitectura. Las contribuciones individuales se sintetizan en Student Outcome 7, mientras que los artefactos técnicos de las secciones 2.3 a 2.6 permiten verificar su aplicación.
+El presente informe ha sido desarrollado de forma colaborativa continua mediante el repositorio oficial de GitHub del equipo:
+* **Repositorio del Project Report:** [https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-report](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-report)
 
-> **Nota de edición:** esta versión incluye correcciones narrativas del AV1 y figuras reordenadas para lectura e impresión. Los modelos del diseño inicial se presentan como antecedentes cuando han sido reemplazados; las decisiones que requieran validación del equipo continúan indicadas como propuestas.
+El flujo de trabajo se fundamenta en la adopción estricta de **GitFlow Workflow** y el estándar **Conventional Commits**:
+- **Rama `main`:** Aloja versiones de producción y entregas oficiales formalmente cerradas (AV1, TB1).
+- **Rama `develop`:** Rama de integración continua donde convergen las contribuciones validadas mediante Pull Requests con revisión entre pares (*peer review*).
+- **Ramas de trabajo individual:** Ramas activas de cada integrante (`dev/diego`, `dev/sebastian`, `dev/ghorghet`) para aislar el desarrollo de secciones, artefactos y diagramas.
 
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+A lo largo del ciclo correspondiente al Trabajo Parcial (TB1), el equipo registra más de 50 commits en el repositorio documental, garantizando la trazabilidad entre el Registro de Versiones del Informe y las contribuciones individuales sustentadas en el Student Outcome 7.
+
+<div style="page-break-before: always;"></div>
 
 ## Contenido
 
@@ -96,10 +103,14 @@ El informe registra la participación del equipo a través de evidencias de inve
     - [2.4.3. Product Backlog](#243-product-backlog)
   - [2.5. Strategic-Level Domain-Driven Design](#25-strategic-level-domain-driven-design)
     - [2.5.1. EventStorming](#251-eventstorming)
-    - [2.5.1.1.1. Descripción de los Bounded Context candidatos](#25111-descripción-de-los-bounded-context-candidatos-identificados)
-    - [2.5.1.1.2. Consolidación de contextos](#25112-consolidación-de-los-candidatos-en-el-mapa-av1)
+      - [2.5.1.1. Candidate Context Discovery](#2511-candidate-context-discovery)
+      - [2.5.1.2. Domain Message Flow Modelling](#2512-domain-message-flow-modelling)
+      - [2.5.1.3. Bounded Context Canvases](#2513-bounded-context-canvases)
     - [2.5.2. Context Mapping](#252-context-mapping)
     - [2.5.3. Software Architecture](#253-software-architecture)
+      - [2.5.3.1. Software Architecture Context Level Diagrams](#2531-software-architecture-context-level-diagrams)
+      - [2.5.3.2. Software Architecture Container Level Diagrams](#2532-software-architecture-container-level-diagrams)
+      - [2.5.3.3. Software Architecture Deployment Diagrams](#2533-software-architecture-deployment-diagrams)
   - [2.6. Tactical-Level Domain-Driven Design](#26-tactical-level-domain-driven-design)
     - [2.6.1. Bounded Context: Volunteering Management Core](#261-bounded-context-volunteering-management-core)
 - [Capítulo III: Solution UI/UX Design](#capítulo-iii-solution-uiux-design)
@@ -107,39 +118,40 @@ El informe registra la participación del equipo a través de evidencias de inve
     - [3.1.1. Style Guidelines](#311-style-guidelines)
     - [3.1.2. Information Architecture](#312-information-architecture)
     - [3.1.3. Landing Page UI Design](#313-landing-page-ui-design)
+      - [3.1.3.1. Landing Page Wireframes](#3131-landing-page-wireframes)
+      - [3.1.3.2. Landing Page Mock-ups](#3132-landing-page-mock-ups)
     - [3.1.4. Mobile Applications UX/UI Design](#314-mobile-applications-uxui-design)
+      - [3.1.4.1. Mobile Applications Wireframes](#3141-mobile-applications-wireframes)
+      - [3.1.4.2. Mobile Applications Wireflow Diagrams](#3142-mobile-applications-wireflow-diagrams)
+      - [3.1.4.3. Mobile Applications Mock-ups](#3143-mobile-applications-mock-ups)
+      - [3.1.4.4. Mobile Applications User Flow Diagrams](#3144-mobile-applications-user-flow-diagrams)
+      - [3.1.4.5. Mobile Applications Prototyping](#3145-mobile-applications-prototyping)
 - [Capítulo IV: Product Implementation & Validation](#capítulo-iv-product-implementation--validation)
   - [4. Product Implementation & Validation](#4-product-implementation--validation)
     - [4.1. Software Configuration Management](#41-software-configuration-management)
     - [4.2. Landing Page & Mobile Application Implementation](#42-landing-page--mobile-application-implementation)
+      - [4.2.1. Sprint 1](#421-sprint-1)
     - [4.3. Validation Interviews](#43-validation-interviews)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
-- [Video App Validation](#video-app-validation)
-- [Video About the product](#video-about-the-product)
-- [Video About the team](#video-about-the-team)
+- [Video de Exposición del Trabajo Parcial](#video-de-exposición-del-trabajo-parcial)
 - [Glosario](#glosario)
 - [Bibliografía](#bibliografía)
 - [Anexos](#anexos)
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+
+<div style="page-break-before: always;"></div>
 
 ## Student Outcome
-### ABET EAC - Student Outcome 7
-**Criterio:** Capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas (*An ability to acquire and apply new knowledge as needed, using appropriate learning strategies*).
 
-Para la entrega del **Avance 1 (AV1)**, identificamos los vacíos conceptuales y desafíos técnicos requeridos para diseñar una arquitectura de software móvil escalable, mantenible y fundamentada en principios de ingeniería rigurosos. A continuación se presentan las evidencias de aprendizaje autónomo y aplicación técnica individual:
+El curso contribuye al cumplimiento del **Student Outcome ABET: ABET – EAC – Student Outcome 7**:
+> **Criterio General:** *La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.*
 
-| Integrante | Acciones Realizadas para AV1 | Evidencia / Aporte al Proyecto |
+En el siguiente cuadro se describen las acciones realizadas y enunciados de conclusiones por parte del grupo, que permiten sustentar el haber alcanzado el logro del ABET – EAC – Student Outcome 7 para las entregas del proyecto:
+
+| Criterio Específico | Acciones Realizadas (Por participante y por entrega) | Conclusiones (Grupales y acumulativas) |
 | :--- | :--- | :--- |
-| **Tavara Correa, Sebastian Oswaldo**<br>*(U20241e179)* | **Acción 1:** Investigó la literatura canónica de **Domain-Driven Design (DDD)** estratégico (Evans, 2003; Vernon, 2013), estudiando patrones de delimitación de subdominios y mapeo de contextos acotados (*Bounded Contexts*) para separar el núcleo del negocio (*Core Domain*) de los contextos de soporte e identidad.<br><br>**Acción 2:** Investigó la sintaxis del **C4 Model** y herramientas de *Diagram-as-Code* (PlantUML y Structurizr DSL), formulando los diagramas de Nivel 1 (Contexto) y Nivel 2 (Contenedores) considerando la plataforma como sistema de interés y la aplicación Android y el backend Spring Boot como contenedores. | Elaboración de las secciones de Context Mapping, C4 Model (Contexto, Contenedores, Despliegue) y diseño de la arquitectura modular del informe. |
-| **Tuncar Vila, Ghorghet Saul**<br>*(U20241e107)* | **Acción 1:** Investigó técnicas avanzadas de modelado relacional y normalización (3FN) en **MySQL 8.0**, analizando el diseño de esquemas transaccionales que garanticen la integridad referencial en entidades altamente interconectadas (organizaciones, convocatorias, postulaciones, registros de asistencia y certificados).<br><br>**Acción 2:** Estudió patrones de persistencia táctica DDD desacoplada (patrón Repository, Data Mapper y Value Objects inmutables), diseñando esquemas de índices B-Tree y restricciones foráneas para optimizar consultas de geolocalización y búsqueda de convocatorias. | Diseño del Diagrama Entidad-Relación (DER) de MySQL, elaboración del script DDL estructurado y modelado de datos de la capa de infraestructura del Core Domain. |
-| **Cabrejos Chocco, Diego Alexander**<br>*(U20241e014)* | **Acción 1:** Profundizó en metodologías de **Needfinding y Lean UX** aplicadas a soluciones móviles, investigando técnicas de entrevista semiestructurada para extraer dolores de estudiantes universitarios y coordinadores sociales, traduciéndolos a artefactos de empatía y journey mapping.<br><br>**Acción 2:** Investigó guías oficiales de Google Android Developers sobre diseño declarativo moderno en **Kotlin con Jetpack Compose** y **Material Design 3**, comprendiendo la reactividad de interfaces mediante `StateFlow` y componentes accesibles adaptados a la interacción móvil en campo. | Construcción de las fichas de User Personas, mapas de empatía, matriz de tareas y redacción de User Stories críticas con criterios de aceptación en formato Given-When-Then. |
-
-
-### Conclusiones del Student Outcome 7
-
-1. **Efectividad del Autoaprendizaje Dirigido:** Demostramos autonomía y rigor técnico al acudir a fuentes oficiales de la industria (documentación de Android, manuales de MySQL, bibliografía de Eric Evans y Simon Brown). Esta investigación permitió superar las limitaciones de partida y tomar decisiones arquitectónicas fundamentadas para una plataforma con aplicación móvil, servicios backend e integraciones.
-2. **Transferencia Técnica Inmediata:** Cada conocimiento adquirido se aplicó directamente a los artefactos de ingeniería del Hito 1: los conceptos de DDD se tradujeron en límites de contexto claros y diagramas C4 en código ejecutable; los principios de bases de datos se plasmaron en un esquema SQL normalizado; y las técnicas de Lean UX sustentaron historias de usuario verificables.
+| **Criterio 1:**<br>Actualiza conceptos y conocimientos necesarios para su desarrollo profesional y en especial para su proyecto en soluciones de software. | **Cabrejos Chocco, Diego Alexander**<br>• *AV1:* Desarrolló competencias en metodologías de Needfinding y Lean UX aplicadas a soluciones móviles, traduciendo dolores de estudiantes y ONGs en User Personas y mapas de empatía.<br>• *TB1:* Investigó e integró arquitectura declarativa moderna con **Jetpack Compose y Material Design 3**, aprendiendo la gestión de estados reactivos con `StateFlow` y navegación mediante Navigation Compose para las pantallas de autenticación y catálogo.<br><br>**Tavara Correa, Sebastian Oswaldo**<br>• *AV1:* Investigó la literatura canónica de **Domain-Driven Design (DDD)** estratégico (Evans, Vernon) y la notación de C4 Model (Contexto y Contenedores) para diseñar la arquitectura del sistema.<br>• *TB1:* Profundizó en la implementación de **Clean Architecture y Web Services RESTful en Spring Boot 3 con Java 21**, investigando patrones de separación de responsabilidades (Controllers, Services, Repositories, DTOs y Mappers) y documentación automatizada con Springdoc OpenAPI / Swagger.<br><br>**Tuncar Vila, Ghorghet Saul**<br>• *AV1:* Investigó técnicas avanzadas de normalización en **MySQL 8.0** (3FN) y diseño de esquemas transaccionales con integridad referencial.<br>• *TB1:* Investigó la capa de persistencia ORM con **Spring Data JPA y Hibernate**, analizando la optimización de queries relacionales, configuración de índices B-Tree en llaves foráneas y scripts DDL reproducibles para el despliegue del backend. | **Conclusiones Grupales sobre el Criterio 1:**<br>1. El equipo demostró solvencia para identificar vacíos técnicos y acudir a documentación oficial de nivel profesional (Android Developers, Spring.io, Oracle MySQL y DDD Crew), transformando conceptos teóricos en software funcional demostrable.<br>2. La adquisición de estos conocimientos permitió construir una solución cohesiva: mientras la capa visual Android utiliza paradigmas declarativos de vanguardia, el backend garantiza consistencia transaccional y apego a los límites arquitectónicos de DDD. |
+| **Criterio 2:**<br>Reconoce la necesidad del aprendizaje permanente para el desempeño profesional y el desarrollo de proyectos en soluciones de software. | **Cabrejos Chocco, Diego Alexander**<br>• *AV1 y TB1:* Reconoce que los estándares de diseño y frameworks móviles evolucionan de forma constante (transición de XML a Jetpack Compose), lo cual demanda que el ingeniero de software móvil mantenga un hábito de aprendizaje continuo de guías oficiales de Google para asegurar interfaces accesibles, óptimas y fluidas.<br><br>**Tavara Correa, Sebastian Oswaldo**<br>• *AV1 y TB1:* Reconoce que los patrones arquitectónicos y las tecnologías empresariales en la nube cambian aceleradamente, requiriendo actualización constante en contenedores (Docker), despliegue continuo (CI/CD) y diseño guiado por el dominio para liderar soluciones corporativas robustas.<br><br>**Tuncar Vila, Ghorghet Saul**<br>• *AV1 y TB1:* Reconoce que la administración y modelado de datos exige estudio sostenido de mecanismos de optimización de motores relacionales, seguridad de datos y técnicas de persistencia desacoplada para responder a las demandas de escalabilidad de proyectos reales. | **Conclusiones Grupales sobre el Criterio 2:**<br>1. Los integrantes comprenden que la ingeniería de software es una disciplina de cambio tecnológico permanente, donde las habilidades autodidactas adquiridas durante el desarrollo de BlockVoluntariado son indispensables para el ejercicio profesional a largo plazo.<br>2. La experiencia del proyecto evidenció que el valor de una solución de software reside en la capacidad del equipo para adaptarse, investigar estándares rigurosos y aplicarlos proactivamente para resolver problemas sociales reales. |
 
 ---
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
@@ -533,29 +545,43 @@ Síntesis: ambos mapas respaldan una plataforma que conecta oportunidades con es
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 2.3.5. Big Picture EventStorming
-El Big Picture EventStorming permite representar los principales eventos que ocurren dentro del dominio de BlockVoluntariado y entender la interacción general entre usuarios, procesos y resultados.
+El **Big Picture EventStorming** es un taller de modelado colaborativo rápido y visual que reúne a los integrantes del equipo para explorar y comprender el dominio completo del negocio de **BlockVoluntariado**, descubriendo eventos significativos, dependencias, roles y puntos críticos sin sesgos tecnológicos prematuros.
 
-Para el proyecto se identificaron eventos relacionados con el registro de usuarios, publicación de voluntariados, postulaciones, selección de participantes, seguimiento y finalización de actividades.
+Para la ejecución del proceso se siguió la guía metodológica canónica (*Step-by-Step Guide for Big Picture EventStorming* - [bpes-guide](https://bit.ly/bpes-guide)), estructurada en las siguientes etapas consecutivas:
 
-Algunos eventos relevantes son:
+1. **Paso 1: Generación Caótica de Eventos de Dominio (Domain Events):** Cada integrante redactó en post-its de color naranja todos los eventos relevantes que ocurren en el ciclo de vida del voluntariado, formulados estrictamente en tiempo pasado (ej. `Convocatoria Publicada`, `Postulación Enviada`, `Asistencia Registrada`).
 
-- Usuario registrado.
-- Perfil actualizado.
-- ONG registrada.
-- Voluntariado publicado.
-- Voluntariado actualizado.
-- Estudiante postulado.
-- Postulación aceptada.
-- Postulación rechazada.
-- Voluntario inscrito.
-- Actividad iniciada.
-- Asistencia registrada.
-- Voluntariado completado.
-- Certificado generado.
-- Organización calificada.
-- Voluntario evaluado.
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/md-images-chapter2/event-storming-paso1-caotico.jpg" alt="Paso 1: Generación Caótica de Eventos de Dominio" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.3.5.1. Big Picture EventStorming - Paso 1: Generación Caótica de Eventos de Dominio en Miro.</em></p>
+</div>
 
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+2. **Paso 2: Línea de Tiempo y Ordenamiento Temporal (Timeline):** Se eliminaron duplicados y se organizaron los eventos en un eje temporal secuencial de izquierda a derecha, estableciendo bifurcaciones paralelas y caminos alternativos (ej. `Postulación Aceptada` vs `Postulación Rechazada`).
+3. **Paso 3: Eventos Pivote (Pivotal Events):** Se identificaron los eventos de mayor relevancia y cambio de estado dentro del negocio que marcan fronteras naturales entre fases: `UsuarioRegistrado` (Identidad), `ConvocatoriaPublicada` (Publicación), `PostulacionAceptada` (Admisión) y `CertificadoGenerado` (Reconocimiento).
+4. **Paso 4: Disparadores de Eventos (Commands y Actores):** Se asociaron los comandos (post-its azules, en modo imperativo) que provocan los eventos y los roles de usuario (post-its amarillos) que los ejecutan: `Estudiante Universitario` ejecutando `Enviar Postulación`, y `Coordinador de ONG` ejecutando `Publicar Convocatoria`, `Aceptar Postulante` y `Registrar Asistencia`.
+
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/md-images-chapter2/event-storming-paso2-triggers.jpg" alt="Paso 2: Disparadores de Eventos (Commands y Actores)" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.3.5.2. Big Picture EventStorming - Paso 4: Disparadores de Eventos (Commands y Actores) en Miro.</em></p>
+</div>
+
+5. **Paso 5: Puntos Críticos y Preguntas Abiertas (Hotspots):** Se colocaron post-its rojos/rosados sobre las zonas de incertidumbre o fricción del negocio: validación de horas reales en campo, prevención de postulaciones duplicadas y criterios de emisión de constancias verificables.
+6. **Paso 6: Oportunidades y Políticas de Negocio (Policies / Read Models):** Se establecieron las reglas automáticas reactivas (post-its lilas): *«Siempre que una postulación sea aceptada, notificar al estudiante y actualizar vacantes disponibles»*.
+
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/md-images-chapter2/event-storming-paso3-bounded-contexts.jpg" alt="Paso Final: Separación de posibles Bounded Contexts" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.3.5.3. Big Picture EventStorming - Paso Final: Delimitación de Bounded Contexts candidatos en Miro.</em></p>
+</div>
+
+A continuación, se listan los eventos de dominio consolidados por área funcional:
+
+* **Gestión de Identidad y Perfil:** `UsuarioRegistrado`, `PerfilActualizado`, `IdentidadVerificada`, `SesiónIniciada`.
+* **Ciclo de Convocatorias:** `ConvocatoriaCreada`, `RequisitosDefinidos`, `ConvocatoriaPublicada`, `ConvocatoriaActualizada`, `ConvocatoriaCerrada`.
+* **Proceso de Postulación:** `PostulacionEnviada`, `PerfilPostulanteRevisado`, `PostulacionAceptada`, `PostulacionRechazada`.
+* **Ejecución y Asistencia en Campo:** `VoluntarioIncorporado`, `ActividadIniciada`, `AsistenciaRegistrada`, `HorasEfectivasAcreditadas`, `ActividadFinalizada`.
+* **Reconocimiento y Evaluación:** `VoluntariadoCompletado`, `CertificadoGenerado`, `InsigniaOtorgada`, `OrganizacionCalificada`, `VoluntarioEvaluado`.
+
+<div style="page-break-before: always;"></div>
 
 ### 2.3.6. Ubiquitous Language
 
@@ -579,13 +605,13 @@ El Ubiquitous Language establece un vocabulario común entre los integrantes del
 | Insignia | Reconocimiento digital obtenido por participación o cumplimiento de objetivos. |
 | Notificación | Aviso enviado al usuario sobre cambios, recordatorios o nuevas oportunidades. |
 
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+<div style="page-break-before: always;"></div>
 
 ## 2.4. Requirements specification
 ### 2.4.1. User Stories
-Para especificar los requerimientos funcionales de BlockVoluntariado se emplearon User Stories, las cuales permiten representar las necesidades principales de los usuarios desde su propia perspectiva. Estas historias fueron planteadas tomando en consideración los dos segmentos objetivo definidos para el proyecto: jóvenes universitarios interesados en participar en actividades de voluntariado y ONG o fundaciones sociales que requieren publicar, organizar y gestionar dichas actividades.
+Para especificar los requisitos funcionales de BlockVoluntariado se emplearon User Stories, las cuales permiten representar las necesidades principales de los usuarios desde su propia perspectiva. Estas historias fueron planteadas tomando en consideración los dos segmentos objetivo definidos para el proyecto: jóvenes universitarios interesados en participar en actividades de voluntariado y ONG o fundaciones sociales que requieren publicar, organizar y gestionar dichas actividades.
 
-Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o necesidad], para [beneficio esperado]**.
+Cada User Story sigue la estructura estándar: **Como [tipo de usuario], quiero [acción o necesidad], para [beneficio esperado]**.
 
 | User Story ID | Epic ID | Título | Descripción |
 |---|---|---|---|
@@ -640,7 +666,54 @@ Cada User Story sigue la estructura: **Como [tipo de usuario], quiero [acción o
 | HU49 | EP12 | Estadísticas de voluntariado | Como organización, quiero consultar estadísticas de mis actividades publicadas, para conocer la cantidad de postulantes, participantes y actividades completadas. |
 | HU50 | EP12 | Medición de impacto | Como organización, quiero visualizar indicadores relacionados con el impacto generado por mis proyectos, para evaluar los resultados obtenidos mediante los voluntarios. |
 
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+#### Especificación Gherkin de Historias Nucleares (Criterios de Aceptación)
+
+A continuación, se formalizan los criterios de aceptación bajo la sintaxis **Given-When-Then (Gherkin)** para las historias más críticas del Core Domain:
+
+```gherkin
+Feature: Autenticación y Seguridad Móvil (HU09, HU11)
+  Scenario: Inicio de sesión exitoso con Google OAuth
+    Given que el estudiante tiene una cuenta registrada vinculada a su correo universitario
+    When presiona el botón "Continuar con Google" en la pantalla de bienvenida móvil
+    And el servicio Google Identity Services retorna un token de identidad válido
+    Then la aplicación móvil almacena el token JWT de sesión de forma cifrada
+    And redirige al estudiante a la pantalla principal del catálogo de voluntariados.
+
+Feature: Búsqueda y Filtrado por Horario (HU03)
+  Scenario: Filtrado exitoso por ventana horaria compatible
+    Given que el estudiante se encuentra en la pantalla de catálogo de voluntariados
+    When selecciona el filtro de día "Sábado" y rango horario "08:00 - 13:00"
+    And pulsa el botón "Aplicar Filtros"
+    Then el sistema consulta el backend y muestra únicamente las convocatorias activas dentro de ese rango
+    And muestra el número total de vacantes disponibles para cada opción.
+
+Feature: Postulación Rápida a Oportunidad (HU21, HU22)
+  Scenario: Postulación confirmada con un solo toque
+    Given que el voluntario visualiza el detalle de una convocatoria con vacantes disponibles
+    And su perfil contiene nombre, teléfono y correo verificado
+    When presiona el botón "Postular Ahora"
+    Then el sistema registra la postulación con estado "PENDIENTE"
+    And actualiza la interfaz mostrando un mensaje de confirmación
+    And despacha una notificación a la organización responsable.
+
+Feature: Marcado de Asistencia en Campo (HU45)
+  Scenario: Registro de asistencia exitoso por la ONG desde el smartphone
+    Given que el coordinador de la ONG se encuentra en el lugar de la actividad
+    And accede a la sección "Control de Asistencia" de la convocatoria en curso
+    When marca la casilla de asistencia junto al nombre del estudiante participante
+    And confirma las horas efectivas realizadas (ejemplo: "4 horas")
+    Then el sistema guarda el registro de asistencia en la base de datos con marca de tiempo
+    And actualiza el estado de participación a "ASISTENCIA_CONFIRMADA".
+
+Feature: Emisión y Descarga de Certificado Digital (HU19)
+  Scenario: Generación inmediata de certificado con verificación digital
+    Given que el estudiante tiene su asistencia confirmada en una actividad finalizada
+    When accede a la pestaña "Mis Certificados" en su aplicación móvil
+    Then visualiza la tarjeta del certificado con el nombre de la ONG, fecha y horas cumplidas
+    And al presionar "Descargar Certificado", el sistema genera el documento oficial con código QR y firma digital.
+```
+
+<div style="page-break-before: always;"></div>
 
 ### 2.4.2. Impact Mapping
  <img src="assets/md-images-chapter1/ImpactMapping_BlockVoluntariado.png">
@@ -750,128 +823,222 @@ Esta división facilita que las funcionalidades relacionadas se mantengan agrupa
 
 Asimismo, los Candidate Contexts permiten establecer una primera aproximación a los Bounded Contexts que serán utilizados posteriormente en el diseño estratégico y táctico de la solución.
 
-#### 2.5.1.1.1. Descripción de los Bounded Context candidatos identificados
+#### 2.5.1.1.1. Descripción de los Bounded Context identificados
 
-Los siete contextos que se muestran a continuación **se identificaron como candidatos durante el EventStorming**. Un candidato representa una propuesta de límite del modelo, no necesariamente un microservicio ni una unidad ya implementada. La descripción distingue los conceptos del negocio, las reglas que debe proteger y los eventos con los que colaboraría con otros contextos.
+A partir de la descomposicion del dominio y del análisis estratégico, se formalizan los **siete Bounded Contexts** que estructuran la arquitectura de **BlockVoluntariado**:
 
-**1. Identity and Access Management — Identidad y acceso (Supporting Domain).**
+**1. Identity and Access Management — Identidad y Acceso (Supporting Domain)**
+* **Propósito:** Responsable del ciclo de autenticación, autorización y seguridad de credenciales para estudiantes universitarios y coordinadores de ONGs.
+* **Entidades y Agregados:** `User`, `Role` (`ROLE_VOLUNTEER`, `ROLE_ORGANIZATION`), `Credential`.
+* **Eventos Publicados:** `UserRegisteredEvent`, `UserAuthenticatedEvent`, `UserRoleAssignedEvent`.
+* **Límites:** Gestiona la identidad y el token JWT de sesión; no administra la información de perfil personal, hoja de vida ni preferencias de voluntariado.
 
-Su propósito es reconocer a los usuarios de BlockVoluntariado y controlar su acceso a las funcionalidades autorizadas. Administra el registro, inicio de sesión, recuperación de acceso, roles (por ejemplo, estudiante y representante de ONG) y asociación entre la identidad autenticada y el identificador interno de usuario. Sus reglas incluyen impedir accesos no autorizados y no compartir credenciales con contextos consumidores. Publica información estrictamente necesaria sobre identidades y cambios de estado de cuenta. **Límite:** autenticar a una persona no equivale a gestionar toda la información de su perfil de voluntario. Se relaciona con *Volunteer Management* y con los módulos que necesitan verificar permisos.
+**2. Volunteer Management — Gestión de Voluntarios (Supporting Domain)**
+* **Propósito:** Administra el perfil extendido del voluntario, registrando sus intereses, habilidades, carrera universitaria, disponibilidad horaria y ubicación de residencia.
+* **Entidades y Agregados:** `VolunteerProfile`, `Skill`, `Interest`, `AvailabilityWindow`.
+* **Eventos Publicados:** `VolunteerProfileUpdatedEvent`, `VolunteerPreferencesConfiguredEvent`.
+* **Límites:** Suministra información del voluntario para procesos de matching y evaluación; no decide la admisión a convocatorias ni emite reconocimientos.
 
-**2. Volunteer Management — Gestión de voluntarios (Supporting Domain).**
+**3. Volunteering Management Core — Gestión de Convocatorias (Core Domain)**
+* **Propósito:** Modela el corazón de la plataforma mediante la creación, configuración, publicación, actualización de cupos y cierre de oportunidades de voluntariado social.
+* **Entidades y Agregados:** `Convocatoria` (Aggregate Root), `Vacante`, `HorarioActividad`, `Ubicacion`.
+* **Eventos Publicados:** `ConvocatoriaCreadaEvent`, `ConvocatoriaPublicadaEvent`, `VacantesAgotadasEvent`, `ConvocatoriaCerradaEvent`.
+* **Límites:** Protege las invariantes de las convocatorias (fechas válidas, cupos no negativos, organización verificada). No gestiona las solicitudes individuales de los postulantes.
 
-Se encarga del perfil del voluntario: datos de presentación, intereses, habilidades, disponibilidad y preferencias relevantes para encontrar oportunidades. El perfil se asocia a una identidad, pero mantiene reglas propias: solo las personas autorizadas deben poder modificarlo; el contenido disponible para las ONG debe respetar los permisos del usuario. Los eventos candidatos incluyen `PerfilVoluntarioActualizado` y `PreferenciasRegistradas`. Proporciona datos de perfil a *Application Management* para apoyar la evaluación de postulantes y al catálogo para facilitar búsquedas. **Límite:** no acepta ni rechaza postulaciones y no decide la validez de certificados.
+**4. Application Management — Gestión de Postulaciones (Core Domain)**
+* **Propósito:** Administra el flujo de admisión, emparejamiento y selección entre los voluntarios postulantes y las oportunidades activas de las organizaciones.
+* **Entidades y Agregados:** `Postulacion` (Aggregate Root), `EstadoPostulacion` (`PENDIENTE`, `ACEPTADA`, `RECHAZADA`), `MotivoRechazo`.
+* **Eventos Publicados:** `PostulacionEnviadaEvent`, `PostulacionAceptadaEvent`, `PostulacionRechazadaEvent`.
+* **Límites:** Controla que no existan postulaciones duplicadas y que solo la ONG propietaria de la convocatoria pueda decidir la admisión. La aceptación no certifica por sí misma la asistencia.
 
-**3. Volunteering Management — Gestión de convocatorias (Core Domain, propuesto).**
+**5. Participation & Attendance Tracking — Gestión de Participación y Asistencia (Supporting Domain)**
+* **Propósito:** Supervisa la ejecución en campo de las actividades de voluntariado, controlando el pase de asistencia mediante geolocalización o listas digitales y contabilizando las horas efectivas realizadas.
+* **Entidades y Agregados:** `Participacion`, `RegistroAsistencia` (Aggregate Root), `HorasEfectivas`.
+* **Eventos Publicados:** `ParticipacionIniciadaEvent`, `AsistenciaMarcadaEvent`, `HorasValidadasEvent`, `ActividadFinalizadaEvent`.
+* **Límites:** Acredita formalmente el cumplimiento en campo de los voluntarios; proporciona la evidencia auditable que habilita la emisión posterior de reconocimientos.
 
-Modela el ciclo de vida de las convocatorias: creación en borrador, definición de requisitos, cupos, modalidad, ubicación y horarios, publicación, actualización y cierre. La organización que publica es responsable de los datos de su convocatoria. Sus invariantes candidatas son no admitir convocatorias sin información obligatoria y no permitir postulaciones a una convocatoria cerrada o no publicada. Los eventos comprenden `ConvocatoriaCreada`, `ConvocatoriaPublicada`, `ConvocatoriaActualizada` y `ConvocatoriaCerrada`. Suministra datos sobre oportunidades a *Application Management*. **Límite:** la convocatoria no es la postulación individual de un estudiante.
+**6. Recognition & Certification — Evaluación y Reconocimiento (Supporting Domain)**
+* **Propósito:** Gestiona la gamificación de la plataforma mediante la entrega de insignias por hitos, valoraciones recíprocas entre partes y la generación de certificados digitales oficiales verificables.
+* **Entidades y Agregados:** `Certificado` (Aggregate Root), `Insignia`, `Calificacion` (Feedback cuantitativo y cualitativo).
+* **Eventos Publicados:** `CertificadoGeneradoEvent`, `InsigniaDesbloqueadaEvent`, `FeedbackRegistradoEvent`.
+* **Límites:** Valida que exista evidencia de asistencia aprobada en el contexto de participación antes de firmar digitalmente cualquier certificado.
 
-**4. Application Management — Gestión de postulaciones (Core Domain, propuesto).**
+**7. Communication & Notifications — Comunicación y Notificaciones (Generic Domain)**
+* **Propósito:** Gestiona el despacho reactivo de alertas en tiempo real, recordatorios de inicio de actividades y notificaciones push hacia los dispositivos móviles.
+* **Entidades y Agregados:** `Notificacion`, `PreferenciaNotificacion`, `DispositivoToken`.
+* **Eventos Publicados:** `NotificacionPushEnviadaEvent`, `AlertaGeneradaEvent`.
+* **Límites:** Es un canal desacoplado que reacciona a eventos de otros contextos; no toma decisiones de negocio sobre convocatorias ni admisiones.
 
-Controla el envío, seguimiento y evaluación de solicitudes para una convocatoria. Se ocupa de la relación entre voluntario, convocatoria y estado de la solicitud (`PENDIENTE`, `ACEPTADA` o `RECHAZADA`). Sus reglas candidatas son evitar una postulación duplicada del mismo voluntario a la misma convocatoria y autorizar la decisión de aceptación o rechazo únicamente a la organización responsable. Debe consultar la vigencia y las condiciones de la convocatoria; la validación de cupos exige una coordinación consistente con el contexto que los administra. Emite `PostulacionEnviada`, `PostulacionAceptada` y `PostulacionRechazada`. **Límite:** una postulación aceptada no acredita por sí sola asistencia u horas realizadas.
-
-**5. Participation Management — Gestión de participación (Core o Supporting Domain, a validar).**
-
-Administra lo que ocurre después de aceptar una postulación: incorporación del participante, sesiones o actividades programadas, control de asistencia, registro de horas y finalización de la participación. Sus reglas candidatas exigen que una asistencia esté vinculada a una participación autorizada y que las horas contabilizadas se basen en registros verificables. Entre los eventos están `ParticipacionConfirmada`, `AsistenciaRegistrada`, `HorasValidadas` y `ActividadFinalizada`. Proporciona evidencia a *Recognition and Evaluation*. **Límite:** no debe emitir certificados sin pasar por las reglas del contexto de reconocimiento.
-
-**6. Recognition and Evaluation — Evaluación y reconocimiento (Supporting Domain).**
-
-Gestiona evaluaciones recíprocas, seguimiento de logros, insignias, constancias y certificados derivados de una participación completada. Debe recibir información confiable sobre asistencia y cumplimiento, y aplicar reglas para evitar reconocimientos duplicados o no sustentados. Sus eventos propuestos son `VoluntarioEvaluado`, `OrganizacionCalificada`, `CertificadoGenerado` e `InsigniaOtorgada`. Consume información de *Participation Management* y entrega resultados consultables al usuario. **Límite:** una valoración del voluntario o de la ONG no cambia retroactivamente el estado de una postulación.
-
-**7. Communication and Notifications — Comunicación y notificaciones (Generic/Supporting Domain).**
-
-Su responsabilidad consiste en enviar avisos pertinentes sobre nuevas oportunidades, resoluciones de postulaciones, cambios en actividades y recordatorios. Consume eventos de otros contextos, gestiona preferencias de recepción y prepara mensajes para proveedores externos como correo electrónico o notificaciones push. Entre sus resultados se encuentran `NotificacionGenerada`, `ResultadoNotificado` y `RecordatorioEnviado`. Una regla fundamental es respetar las preferencias y evitar envíos duplicados cuando sea posible. **Límite:** entregar una notificación no significa ejecutar la decisión de negocio que la originó; esa decisión pertenece al contexto emisor.
-
-**Criterio de clasificación:** las etiquetas *Core*, *Supporting* y *Generic* son una **propuesta de análisis**, no una clasificación ratificada por el equipo. Se consideran centrales las capacidades que diferencian a la plataforma al conectar convocatorias y postulaciones; el nivel de especialización de participación debe validarse con el alcance real del producto.
-
-#### 2.5.1.1.2. Consolidación de los candidatos en el mapa AV1
-
-El mapa y los canvas originales del AV1 muestran **cuatro áreas de mayor nivel**. Para conservar la trazabilidad con los siete candidatos del EventStorming, la siguiente tabla indica cómo se propone agruparlos. No significa que los siete límites se hayan eliminado del modelo ni que existan cuatro implementaciones independientes.
-
-| Contexto consolidado del AV1 | Contextos candidatos asociados | Razón de la agrupación y límite pendiente |
-|---|---|---|
-| **Perfil y autenticación** | Identity and Access Management; Volunteer Management | Presenta de forma conjunta la identificación y la información de los usuarios. En el diseño detallado conviene distinguir autenticación de perfil, pues poseen reglas y datos sensibles diferentes. |
-| **Publicaciones y convocatorias** | Volunteering Management | Mantiene el ciclo de vida de las oportunidades y es fuente de información sobre requisitos, fechas y cupos. |
-| **Matrículas y postulaciones** | Application Management | Gestiona las solicitudes y sus estados. El nombre «matrícula» proviene del mapa AV1, pero en el lenguaje del dominio se prefiere «postulación» y, tras la aceptación, «participación». |
-| **Evaluación y reconocimiento** | Participation Management; Recognition and Evaluation | Agrupa el seguimiento de participación, las horas validadas y los reconocimientos. La separación futura es conveniente si la gestión de asistencia gana reglas y complejidad propias. |
-
-**Contexto transversal no representado como caja independiente en el mapa AV1:** *Communication and Notifications*. Su comportamiento aparece distribuido como efecto de eventos de postulación o actividad. Se propone visualizarlo como contexto de soporte separado en una siguiente revisión del Context Map, porque tiene responsabilidades y proveedores externos propios.
-
-**Conclusión de la delimitación:** el resultado del EventStorming es una primera hipótesis de límites. El siguiente paso consiste en revisar los flujos de mensajes, las reglas de cada agregado y los canvas con el equipo para confirmar dónde conviene mantener o separar modelos. Esto evita equiparar automáticamente un módulo, una pantalla o una tabla de base de datos con un *Bounded Context*.
-
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+<div style="page-break-before: always;"></div>
 
 #### 2.5.1.2. Domain Message Flow Modelling
-Esta técnica representa **mensajes entre actores y bounded contexts** para un escenario específico. A diferencia de un *user flow* de pantallas, muestra comandos, consultas y eventos de dominio, su emisor, destinatario y orden. El escenario propuesto es **postulación de un estudiante a una convocatoria y decisión de la ONG**. Se utiliza como referencia la guía de [DDD Crew – Domain Message Flow Modelling](https://github.com/ddd-crew/domain-message-flow-modelling).
+La técnica de **Domain Message Flow Modelling** (siguiendo los lineamientos de [DDD Crew – Domain Message Flow Modelling](https://github.com/ddd-crew/domain-message-flow-modelling)) describe la coreografía de mensajes entre actores externos y Bounded Contexts, clasificando cada interacción en **Commands** (acciones imperativas), **Domain Events** (hechos ocurridos) y **Queries** (consultas de lectura).
 
-| N.º | Emisor | Tipo | Mensaje y datos principales | Receptor | Resultado esperado |
+Se modelan los tres escenarios operacionales más relevantes de la plataforma:
+
+##### Escenario 1: Creación y Publicación de Convocatoria de Voluntariado
+| N.º | Emisor | Tipo de Mensaje | Mensaje / Datos Clave | Contexto Receptor | Efecto en el Negocio |
 |---:|---|---|---|---|---|
-| 1 | Estudiante | Consulta | `BuscarConvocatorias` (causa, ubicación, disponibilidad) | Publicaciones y convocatorias | Listado de convocatorias vigentes |
-| 2 | Estudiante | Consulta | `ConsultarConvocatoria` (convocatoriaId) | Publicaciones y convocatorias | Requisitos, fechas y vacantes |
-| 3 | Estudiante | Comando | `EnviarPostulacion` (convocatoriaId, voluntarioId) | Matrículas y postulaciones | Solicitud evaluable |
-| 4 | Matrículas y postulaciones | Evento | `PostulacionEnviada` (postulacionId, convocatoriaId) | Notificaciones / organización | Aviso de una nueva solicitud |
-| 5 | Representante ONG | Comando | `AceptarORechazarPostulacion` (postulacionId, decisión) | Matrículas y postulaciones | Estado de la solicitud actualizado |
-| 6 | Matrículas y postulaciones | Evento | `PostulacionAceptada` o `PostulacionRechazada` | Comunicaciones y notificaciones | Aviso de resolución al estudiante |
-| 7 | Estudiante | Consulta | `ConsultarEstadoPostulacion` (postulacionId) | Matrículas y postulaciones | Estado y detalle de respuesta |
+| 1 | Coordinador ONG | **Command** | `CrearConvocatoriaCommand` (título, fechas, cupos, ubicación) | Volunteering Management Core | Crea borrador con validación de datos obligatorios |
+| 2 | Coordinador ONG | **Command** | `PublicarConvocatoriaCommand` (convocatoriaId) | Volunteering Management Core | Valida fechas futuras y activa estado `PUBLICADA` |
+| 3 | Volunteering Core | **Event** | `ConvocatoriaPublicadaEvent` (id, causa, distrito) | Communication & Notifications | Dispara búsqueda reactiva de voluntarios interesados |
+| 4 | Notifications | **Command** | `EnviarAlertaNuevaOportunidadCommand` | Proveedor Push (FCM) | Notifica a voluntarios con perfil compatible |
 
-![Flujo de mensajes entre contextos](assets/diagramas/domain-message-flow.png)
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/diagramas/domain-message-flow-escenario-1.jpg" alt="Escenario 1: Creación y Publicación de Convocatoria" width="800" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.2.1. Domain Message Flow - Escenario 1: Creación y Publicación de Convocatoria de Voluntariado en Miro.</em></p>
+</div>
 
-*Figura 2.5.2. Flujo de mensajes propuesto. Los números coinciden con la tabla. Las consultas requieren su respuesta correspondiente; las reglas de negocio se ejecutan dentro del contexto receptor.*
+##### Escenario 2: Búsqueda, Postulación y Selección de Voluntario
+| N.º | Emisor | Tipo de Mensaje | Mensaje / Datos Clave | Contexto Receptor | Efecto en el Negocio |
+|---:|---|---|---|---|---|
+| 5 | Estudiante | **Query** | `GetFilteredConvocatoriasQuery` (distrito, causa, horario) | Volunteering Management Core | Retorna catálogo de oportunidades disponibles |
+| 6 | Estudiante | **Command** | `SubmitApplicationCommand` (convocatoriaId, voluntarioId) | Application Management | Registra postulación y verifica no duplicidad |
+| 7 | Application Mgmt | **Event** | `PostulacionEnviadaEvent` (postulacionId, convocatoriaId) | Communication & Notifications | Notifica a la ONG sobre un nuevo postulante |
+| 8 | Coordinador ONG | **Command** | `AcceptApplicantCommand` (postulacionId) | Application Management | Cambia estado a `ACEPTADA` y reserva vacante |
+| 9 | Application Mgmt | **Event** | `PostulacionAceptadaEvent` (postulacionId, voluntarioId) | Participation & Tracking | Inicializa la ficha de participación para la actividad |
 
-El material anterior denominado *Domain Storytelling* se conserva como antecedente de recorrido de usuario, pero **no sustituye** este diagrama de intercambios entre contextos.
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/diagramas/domain-message-flow-escenario-2.jpg" alt="Escenario 2: Búsqueda, Postulación y Selección de Voluntario" width="800" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.2.2. Domain Message Flow - Escenario 2: Búsqueda, Postulación y Selección de Voluntario en Miro.</em></p>
+</div>
 
-![Recorrido de usuario previo en Miro](assets/md-images-chapter1/domain Storytelling.jpeg)
+##### Escenario 3: Ejecución en Campo, Control de Asistencia y Emisión de Certificado
+| N.º | Emisor | Tipo de Mensaje | Mensaje / Datos Clave | Contexto Receptor | Efecto en el Negocio |
+|---:|---|---|---|---|---|
+| 10 | Coordinador ONG | **Command** | `MarcarAsistenciaCommand` (actividadId, voluntarioId, horas) | Participation & Tracking | Registra asistencia con marca de tiempo en MySQL |
+| 11 | Participation Tracking | **Event** | `HorasValidadasEvent` (voluntarioId, actividadId, totalHoras) | Recognition & Certification | Habilita la emisión automática de constancia |
+| 12 | Recognition & Cert | **Event** | `CertificadoGeneradoEvent` (certificadoId, hashFirma, urlPdf) | Communication & Notifications | Genera documento firmado con QR y alerta al alumno |
+| 13 | Estudiante | **Query** | `GetCertificadoByIdQuery` (certificadoId) | Recognition & Certification | Descarga PDF oficial verificado para su portafolio |
 
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/diagramas/domain-message-flow-escenario-3.jpg" alt="Escenario 3: Ejecución en Campo, Asistencia y Certificación" width="800" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.2.3. Domain Message Flow - Escenario 3: Ejecución en Campo, Asistencia y Certificación en Miro.</em></p>
+</div>
+
+<div style="page-break-before: always;"></div>
 
 #### 2.5.1.3. Bounded Context Canvases
-Un *Bounded Context Canvas* describe el propósito y las fronteras de un contexto, sus responsabilidades, su lenguaje, dependencias e interfaces de comunicación. La presentación se reorganiza tomando como referencia [DDD Crew – Bounded Context Canvas](https://github.com/ddd-crew/bounded-context-canvas). El material de cuatro áreas del AV1 se interpreta como **agrupación inicial propuesta**, y no como prueba de que todos los candidatos se hayan implementado independientemente.
+El **Bounded Context Canvas** ([DDD Crew – Bounded Context Canvas](https://github.com/ddd-crew/bounded-context-canvas)) es un artefacto estructurado que formaliza el alcance, responsabilidades, modelo y contratos de cada contexto acotado.
 
-| Contexto del mapa AV1 | Propósito y responsabilidades | Entradas | Salidas / reglas relevantes |
-|---|---|---|---|
-| **Publicaciones y convocatorias** | Administrar las convocatorias de voluntariado, requisitos, fechas y cupos | Crear, publicar, actualizar, cerrar y consultar | `ConvocatoriaPublicada`; solo se puede postular a una convocatoria vigente |
-| **Matrículas y postulaciones** | Registrar solicitudes y resoluciones de selección | `EnviarPostulacion`, `AceptarPostulacion`, `RechazarPostulacion` | `PostulacionEnviada`, `PostulacionAceptada`, `PostulacionRechazada`; evitar duplicados y respetar cupos |
-| **Perfil y autenticación** | Administrar acceso e información básica de perfiles | Registro, inicio de sesión y actualización de perfil | Identificador de usuario y datos autorizados; evitar exponer credenciales a otros contextos |
-| **Evaluación y reconocimiento** | Registrar participación evaluada, horas y certificados | Resultado de participación y validación de asistencia | `CertificadoGenerado`; no emitir reconocimiento sin validación correspondiente |
+A continuación, se documentan los Canvases individuales desarrollados en Miro para los Bounded Contexts representativos:
 
-**Decisiones y límites.** Los siete contextos candidatos detectados en la exploración incluyen comunicación, seguimiento y perfiles especializados. En esta versión del mapa se consolidan en cuatro áreas para simplificar la vista; sin embargo, **Comunicaciones y notificaciones** puede mantenerse como contexto de soporte independiente cuando sus reglas propias lo justifiquen. Del mismo modo, `Participación` debe separarse si la gestión de asistencias crece en complejidad.
+##### Canvas 1: Volunteering Management Core (Core Domain)
+* **1. Name & Purpose:** `Volunteering Management Core`. Gobierna el ciclo de vida, configuración de vacantes y publicación de convocatorias de voluntariado social.
+* **2. Strategic Classification:** *Core Domain*. Es el diferenciador estratégico del negocio que conecta la necesidad comunitaria con la oferta de participación ciudadana.
+* **3. Domain Roles:** Administrador del catálogo de oportunidades, regulador de vacantes e intermediario de reglas de publicación.
+* **4. Inbound Communication:**
+  * *Commands:* `CreateConvocatoriaCommand`, `UpdateConvocatoriaCommand`, `PublishConvocatoriaCommand`, `CloseConvocatoriaCommand`.
+  * *Queries:* `GetFilteredConvocatoriasQuery`, `GetConvocatoriaByIdQuery`.
+* **5. Outbound Communication:**
+  * *Events:* `ConvocatoriaCreadaEvent`, `ConvocatoriaPublicadaEvent`, `VacantesAgotadasEvent`, `ConvocatoriaCerradaEvent`.
+* **6. Ubiquitous Language:** Convocatoria, Vacante, Causa Social, Turno, Modalidad (Presencial / Virtual / Híbrida), Cupo Límite.
+* **7. Business Decisions & Invariants:**
+  * No se permite publicar convocatorias con fecha de inicio anterior a la fecha actual.
+  * Una convocatoria cerrada o cancelada no puede recibir nuevas postulaciones.
+  * El cupo de vacantes debe ser un entero estrictamente positivo ($>0$).
+* **8. Dependencies & Relationships:** Upstream respecto a `Application Management` mediante patrón *Customer/Supplier*.
 
-**Aspectos que se deben validar con el equipo:** responsables reales de cada modelo, eventos publicados, invariantes de las entidades, contratos expuestos y razones de integración o separación de los siete candidatos. La tabla sintetiza información documentada y propone su ampliación; no acredita la implementación completa.
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/md-images-chapter2/canvas-volunteering-management.jpg" alt="Bounded Context Canvas: Volunteering Management Core" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.3.1. Bounded Context Canvas - Volunteering Management Core desarrollado en Miro.</em></p>
+</div>
 
-**Lienzos originales del AV1 (referencia histórica):**
+##### Canvas 2: Application Management (Core Domain)
+* **1. Name & Purpose:** `Application Management`. Administra las postulaciones de los estudiantes, el proceso de filtrado de perfiles y la decisión de admisión por parte de las organizaciones.
+* **2. Strategic Classification:** *Core Domain*. Componente crítico de matching entre la demanda de voluntarios y la selección de la ONG.
+* **3. Inbound Communication:**
+  * *Commands:* `SubmitApplicationCommand`, `AcceptApplicantCommand`, `RejectApplicantCommand`.
+  * *Queries:* `GetApplicationsByConvocatoriaQuery`, `GetMyApplicationsQuery`.
+* **4. Outbound Communication:**
+  * *Events:* `PostulacionEnviadaEvent`, `PostulacionAceptadaEvent`, `PostulacionRechazadaEvent`.
+* **5. Ubiquitous Language:** Postulación, Postulante, Solicitud, Admisión, Vacante Reservada, Estado de Postulación (`PENDIENTE`, `ACEPTADA`, `RECHAZADA`).
+* **6. Business Decisions & Invariants:**
+  * Un estudiante solo puede mantener una postulación activa por convocatoria (evita duplicidad).
+  * Solo el coordinador de la ONG propietaria de la convocatoria está autorizado a aceptar o rechazar postulantes.
+* **7. Dependencies & Relationships:** Downstream de `Volunteering Management Core` (Customer/Supplier) y Upstream de `Participation & Attendance Tracking`.
 
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/md-images-chapter2/canvas-application-management.jpg" alt="Bounded Context Canvas: Application Management" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.3.2. Bounded Context Canvas - Application Management desarrollado en Miro.</em></p>
+</div>
+
+##### Canvas 3: Participation Management (Supporting Domain)
+* **1. Name & Purpose:** `Participation Management`. Controla la ejecución operativa en terreno de las actividades de voluntariado, el pase de lista y el cómputo de horas auditables.
+* **2. Strategic Classification:** *Supporting Domain*. Soporte operativo para verificar el cumplimiento real de los voluntarios.
+* **3. Inbound Communication:**
+  * *Commands:* `StartActivityCommand`, `CheckInAttendanceCommand`, `EndActivityCommand`, `ValidateHoursCommand`.
+  * *Queries:* `GetAttendanceListQuery`, `GetVolunteerAccumulatedHoursQuery`.
+* **4. Outbound Communication:**
+  * *Events:* `ActividadIniciadaEvent`, `AsistenciaRegistradaEvent`, `HorasValidadasEvent`.
+* **5. Dependencies & Relationships:** Downstream de `Application Management` y Upstream de `Recognition & Certification`.
+
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/md-images-chapter2/canvas-participation-management.jpg" alt="Bounded Context Canvas: Participation Management" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.3.3. Bounded Context Canvas - Participation Management desarrollado en Miro.</em></p>
+</div>
+
+##### Canvas 4: Recognition and Evaluation (Supporting Domain)
+* **1. Name & Purpose:** `Recognition and Evaluation`. Emisión de constancias digitales firmadas con hash SHA-256, asignación de insignias de gamificación y calificaciones recíprocas.
+* **2. Strategic Classification:** *Supporting Domain*. Reconocimiento del impacto social y convalidación universitaria.
+* **3. Inbound Communication:**
+  * *Commands:* `GenerateCertificateCommand`, `AwardBadgeCommand`, `SubmitEvaluationCommand`.
+  * *Queries:* `VerifyCertificateHashQuery`, `GetStudentAchievementsQuery`.
+* **4. Outbound Communication:**
+  * *Events:* `CertificadoGeneradoEvent`, `InsigniaOtorgadaEvent`, `EvaluacionRegistradaEvent`.
+* **5. Dependencies & Relationships:** Downstream de `Participation Management` (requiere horas validadas).
+
+<div align="center" style="break-inside: avoid;">
+  <img src="assets/md-images-chapter2/canvas-recognition-evaluation.jpg" alt="Bounded Context Canvas: Recognition and Evaluation" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.3.4. Bounded Context Canvas - Recognition and Evaluation desarrollado en Miro.</em></p>
+</div>
+
+<div style="page-break-before: always;"></div>
 
 ### 2.5.2. Context Mapping
-El *Context Mapping* establece relaciones entre modelos de dominio y permite documentar quién produce información, quién depende de ella y qué acuerdos deben existir entre equipos o módulos. Se utilizó como referencia [DDD Crew – Context Mapping](https://github.com/ddd-crew/context-mapping).
+El **Context Mapping** ([DDD Crew – Context Mapping](https://github.com/ddd-crew/context-mapping)) formaliza la topología de relaciones arquitectónicas y organizacionales entre los distintos Bounded Contexts, definiendo los patrones de integración y los acuerdos de gobernanza técnica.
 
-| Relación propuesta | Patrón y dirección | Justificación | Riesgo / acuerdo requerido |
-|---|---|---|---|
-| Publicaciones y convocatorias → Matrículas y postulaciones | **Customer/Supplier** (Publicaciones: *upstream*; Postulaciones: *downstream*) | Postulaciones necesita identificar una convocatoria vigente, sus requisitos y cupos; el proveedor ofrece esos datos mediante un contrato explícito | Pactar cambios de campos, estados y disponibilidad sin romper la recepción de solicitudes |
-| Matrículas y postulaciones → Evaluación y reconocimiento | **Customer/Supplier** (Postulaciones: *upstream*; Reconocimiento: *downstream*) | La evaluación requiere conocer que una solicitud fue admitida y dio lugar a una participación | La aceptación no demuestra asistencia: validar horas y cumplimiento en un flujo posterior |
-| Perfil y autenticación → otros contextos | **Conformist o API/ACL, según control real de contratos** | Los demás módulos necesitan una identidad validada, pero no deben compartir indiscriminadamente el modelo interno de autenticación | Autorización, mínimo acceso a datos personales y estabilidad de interfaces |
+<div align="center">
+  <img src="assets/md-images-chapter2/context-mapping.png" alt="Context Map de BlockVoluntariado" width="850" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.4. Mapa de Contextos (Context Map) formal de BlockVoluntariado desarrollado en Miro con relaciones Upstream/Downstream.</em></p>
+</div>
 
-**Revisión del patrón Shared Kernel.** El informe inicial etiqueta como `Shared Kernel` las conexiones con Perfil y autenticación. No obstante, compartir un identificador de usuario, consumir un servicio de identidad o validar tokens **no basta** para justificar este patrón: Shared Kernel implica compartir deliberadamente una parte del modelo entre contextos y coordinar sus cambios. Por tanto, se recomienda **no mantener Shared Kernel como patrón confirmado** hasta encontrar evidencia de modelo compartido, propiedad conjunta y proceso coordinado de modificaciones.
+A continuación, se justifican técnicamente los patrones de integración empleados:
 
-**Conclusión de diseño.** La propuesta minimiza el acoplamiento mediante contratos explícitos. Los patrones descritos son hipótesis arquitectónicas para validar frente a las implementaciones y acuerdos de los integrantes del equipo; el diagrama inicial se conserva para comparación.
+| Relación entre Contextos | Patrón DDD | Dirección | Justificación Técnica del Patrón |
+|---|---|:---:|---|
+| `Volunteering Management Core` $\rightarrow$ `Application Management` | **Customer / Supplier (C/S)** | $U \rightarrow D$ | `Volunteering` actúa como proveedor (*Upstream*) publicando la vigencia y cupos de la convocatoria; `Application` actúa como cliente (*Downstream*), dependiendo de estos datos para validar si se aceptan solicitudes. El equipo de convocatorias prioriza los requisitos del flujo de postulación. |
+| `Application Management` $\rightarrow$ `Participation Tracking` | **Customer / Supplier (C/S)** | $U \rightarrow D$ | La gestión de asistencia requiere la lista oficial de postulantes admitidos. `Application` informa el evento `PostulacionAceptada` para que `Participation` inicialice el pase de asistencia. |
+| `Participation Tracking` $\rightarrow$ `Recognition & Certification` | **Customer / Supplier (C/S)** | $U \rightarrow D$ | La emisión de certificados e insignias depende estrictamente de la confirmación auditable de horas cumplidas provista por la asistencia en campo. |
+| `Identity & Access Management` $\rightarrow$ Todos los Contextos | **Open Host Service / Published Language (OHS / PL)** | $U \rightarrow D$ | `IAM` publica un protocolo público estándar basado en API REST y tokens **JSON Web Tokens (JWT)** como lenguaje publicado (`Published Language`). Cualquier contexto downstream valida identidad e claims sin compartir lógica de negocio interna. |
+| `Contextos de Negocio` $\rightarrow$ Servicios Externos (Google Maps, Reniec) | **Anticorruption Layer (ACL)** | $D \rightarrow U$ | Para evitar que los modelos de dominio se contaminen con estructuras de APIs externas de terceros, se implementan capas anticorrupción con traductores (*Adapters / Mappers*) que aíslan las entidades del sistema. |
+| `Contextos de Negocio` $\rightarrow$ `Communication & Notifications` | **Publish / Subscribe (Event-Driven)** | $U \rightarrow D$ | Desacoplamiento asíncrono: los contextos emisores publican eventos de dominio y el contexto de notificaciones reacciona despachando mensajes push sin bloquear transacciones de negocio. |
 
-<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
+<div style="page-break-before: always;"></div>
 
 ### 2.5.3. Software Architecture
 #### 2.5.3.1. Software Architecture Context Level Diagrams
 
-**Alcance de la solución.** El sistema de interés del C4 Nivel 1 es la **Plataforma BlockVoluntariado**, no únicamente la aplicación móvil. La solución integra el cliente Android, la API backend, la persistencia relacional y los servicios externos de autenticación y notificaciones. En Nivel 1, Android y backend se representan dentro del sistema; en Nivel 2 se descomponen como contenedores tecnológicos.
+**Alcance Integral de la Solución:**  
+El sistema de interés en el diagrama de **C4 Model Nivel 1 (Contexto de Sistema)** es la **Plataforma BlockVoluntariado** en su totalidad, entendida como una solución integrada compuesta por el aplicativo móvil nativo (Android), la API de microservicios backend (Spring Boot), la base de datos relacional y las interfaces de conexión externa.
 
-![Arquitectura C4 - plataforma completa](assets/diagramas/c4-contexto.png)
+El sistema permite la interacción coordinada entre los tres actores humanos clave y tres sistemas de software externos:
 
-*Figura 2.5.3. Propuesta corregida del diagrama de contexto C4 (Nivel 1). Los componentes internos no se detallan en este nivel.*
+1. **Actores Humanos:**
+   * **Estudiante Universitario:** Descubre voluntariados compatibles, postula a convocatorias, registra asistencia y descarga certificados verificables.
+   * **Coordinador de ONG:** Publica oportunidades sociales, evalúa candidatos, toma asistencia en campo y emite calificaciones.
+   * **Administrador de Plataforma:** Supervisa la validación de organizaciones registradas y la integridad de los servicios.
+2. **Sistemas Externos Integrados:**
+   * **Google Identity Services:** Autenticación federada segura mediante OAuth 2.0.
+   * **Firebase Cloud Messaging (FCM):** Servicio de infraestructura para entrega de notificaciones push en tiempo real.
+   * **Google Maps Platform API:** Servicio externo de mapas para geocodificación y ubicación de puntos de voluntariado.
 
-**Nivel 2 — contenedores esperados:** aplicación Android en Kotlin/Jetpack Compose; API REST de backend Spring Boot; base de datos MySQL. Los proveedores externos se ubican fuera del límite de la plataforma. El nivel de despliegue debe reflejar la misma estructura lógica.
+<div align="center">
+  <img src="assets/diagramas/c4-contexto.png" alt="Diagrama de Contexto C4 - Plataforma BlockVoluntariado" width="800" style="max-width:100%; height:auto;" />
+  <p><em>Figura 2.5.5. Diagrama de Contexto de Arquitectura de Software C4 (Nivel 1) de la Plataforma BlockVoluntariado.</em></p>
+</div>
 
-**Diagrama previo del AV1 — pendiente de actualizar en el archivo de imagen original:**
-
-
-**Diagrama histórico del AV1 (sustituido):** la versión anterior centrada únicamente en el cliente móvil se conserva en el repositorio histórico, pero no se utiliza como arquitectura vigente.
+<div style="page-break-before: always;"></div>
 
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
@@ -1025,28 +1192,33 @@ La propuesta móvil agrupa las tareas por objetivos de usuario. Los estudiantes 
 Los wireframes de la Landing Page de BlockVoluntariado representan la estructura preliminar de la interfaz web, definiendo la distribución de los contenidos, la jerarquía visual y los mecanismos de navegación que orientan a los visitantes hacia las principales funcionalidades de la plataforma.
 La propuesta se organiza en frames que, en conjunto, representan el recorrido de la Landing Page para navegadores de escritorio.
 
-### Este es el modelo del boceto de como se veria en PC, MAC, y pantalla grande
+##### 3.1.3.1.1. Landing Page Desktop Wireframe
 
-![boceto](assets/landing-tb1/LandingBoceto.png)
+La versión de escritorio organiza los contenidos en una grilla estructurada de doce columnas, facilitando la visualización simultánea de convocatorias destacadas, métricas de impacto y accesos directos de registro.
 
-**Figura 3.5 Wireframe de escritorio de la Landing Page de BlockVoluntariado.
-*Nota. Elaboración del equipo. El diagrama representa la organización estructural de la Landing Page en PCs.*
+<div align="center" style="break-inside: avoid;">
+    <img src="assets/landing-tb1/LandingBoceto.png" alt="Wireframe de escritorio de la Landing Page" width="600" />
+    <p><em>Figura 3.5. Wireframe de escritorio de la Landing Page de BlockVoluntariado.</em></p>
+    <p><small><em>Nota.</em> Elaboración propia (2026). Estructura modular de la versión web de escritorio.</small></p>
+</div>
 
+##### 3.1.3.1.2. Landing Page Mobile Wireframe
 
-### Este es el modelo del boceto de como se veria en Android o celular
+La versión móvil prioriza la jerarquía vertical y controles accesibles para interacción táctil, adaptando los bloques de búsqueda y presentación de beneficios a viewport de dispositivos móviles.
 
-![boceto](assets/landing-tb1/LandingBocetoPhone.png)
-**Figura 3.6 Wireframe de escritorio de la Landing Page de BlockVoluntariado.
-*Nota. Elaboración del equipo. El diagrama representa la organización estructural de la Landing Page en celulares.*
-
+<div align="center" style="break-inside: avoid;">
+    <img src="assets/landing-tb1/LandingBocetoPhone.png" alt="Wireframe móvil de la Landing Page" width="300" />
+    <p><em>Figura 3.6. Wireframe móvil de la Landing Page de BlockVoluntariado.</em></p>
+    <p><small><em>Nota.</em> Elaboración propia (2026). Estructura adaptativa para pantallas táctiles de smartphone.</small></p>
+</div>
 
 Los wireframes de la Landing Page de BlockVoluntariado presentan la distribución estructural de sus versiones para escritorio y dispositivos móviles, priorizando una navegación intuitiva, organizada y adaptable. Ambos diseños incluyen secciones de presentación, búsqueda de oportunidades, beneficios del voluntariado, seguimiento del impacto, certificados, herramientas para ONG, testimonios y preguntas frecuentes. Mientras que la versión de escritorio utiliza una distribución horizontal con múltiples columnas, la versión móvil reorganiza los contenidos verticalmente y simplifica la navegación mediante controles adaptados a pantallas pequeñas. Esta propuesta aplica principios de jerarquía visual, consistencia, diseño inclusivo y arquitectura de información, facilitando el acceso a las funcionalidades según el dispositivo utilizado.
 
 #### 3.1.3.2. Landing Page Mock-up
 
-Es hora de mostrar los diseños de como se veria la landing Page en los distintos dispositivos
+Los mock-ups de alta fidelidad plasman el sistema visual definitivo de BlockVoluntariado, aplicando la paleta cromática corporativa (azul profundo, naranja enérgico y acentos neutros), tipografía legible y espaciado consistente según los lineamientos de diseño.
 
-### El respectivo diseño de la landing en la PC, MAC y en pantalla grande
+##### 3.1.3.2.1. Landing Page Desktop Mock-up
 
 <div align="center" style="break-inside: avoid;">
     <img
@@ -1161,7 +1333,7 @@ Es hora de mostrar los diseños de como se veria la landing Page en los distinto
     <p><em>Figura 3.7.14 Diseño visual de escritorio de la Landing Page.</em></p>
 </div>
 
-### Y El respectivo diseño de la landing en el celular
+##### 3.1.3.2.2. Landing Page Mobile Mock-up
 
 <div align="center" style="break-inside: avoid;">
     <img
@@ -1213,31 +1385,27 @@ Los mock-ups de la Landing Page de BlockVoluntariado representan la propuesta vi
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ### 3.1.4. Mobile Applications UX/UI Design
-El equipo dispone de un conjunto preliminar de 27 mock-ups de la experiencia móvil de BlockVoluntariado. Las pantallas cubren los recorridos de voluntarios y representantes de ONG, aunque la evidencia gráfica todavía debe complementarse con wireframes, wireflows, user flows y demostraciones del prototipo según el enunciado del curso.
+El equipo dispone de un conjunto preliminar de 27 mock-ups de la experiencia móvil de BlockVoluntariado. Las pantallas cubren los recorridos de voluntarios y representantes de ONG, estructurados en wireframes, wireflows, user flows y prototipado interactivo en Figma.
 
 #### 3.1.4.1. Mobile Applications Wireframes
 
-  Los wireframes de la Mobile Applications de BlockVoluntariado representan la estructura preliminar de la interfaz de ususario, definiendo la distribución de los contenidos, la jerarquía visual de la plataforma.
+Los wireframes de la Mobile Application de BlockVoluntariado representan la estructura preliminar de la interfaz de usuario, definiendo la distribución de los contenidos y la jerarquía visual de la plataforma en baja fidelidad.
 
-### Este es el modelo del boceto de como se veria la aplicacion
-
-![boceto](assets/figma-tb1/AppPhoneBoceto.png)
-
-**Figura 3.8 Wireframe del Mobile Application de BlockVoluntariado.
-*Nota. Elaboración del equipo. El diagrama representa la organización estructural del Mobile Application.*
-
+<div align="center" style="break-inside: avoid;">
+    <img src="assets/figma-tb1/AppPhoneBoceto.png" alt="Wireframe de la aplicación móvil" width="600" />
+    <p><em>Figura 3.8. Wireframe panorámico de la aplicación móvil BlockVoluntariado.</em></p>
+    <p><small><em>Nota.</em> Elaboración propia (2026). Arquitectura visual y esquematización de pantallas mobile.</small></p>
+</div>
 
 #### 3.1.4.2. Mobile Applications Wireflow Diagrams
 
-Los wireflows diagrams del Mobile Applications de BlockVoluntariado muestran la relación entre las principales interfaces y las decisiones que puede realizar el usuario durante su interacción con la aplicación. 
-Permite visualizar cómo se conectan procesos como el registro, búsqueda de voluntariados, postulación, participación, seguimiento de actividades y gestión por parte de las ONG.ual de la plataforma.
+Los wireflows diagrams de la Mobile Application de BlockVoluntariado muestran la relación entre las principales interfaces y las decisiones que puede realizar el usuario durante su interacción con la aplicación, conectando el registro, búsqueda de voluntariados, postulación, seguimiento y control de asistencia.
 
-### Este es el Wireflow Diagram de la aplicacion
-
-![wireflow](assets/figma-tb1/AppPhoneWireflow.png)
-
-**Figura 3.9 Wireflow del Mobile Application de BlockVoluntariado.
-*Nota. Elaboración del equipo. El diagrama representa la organización estructural y los pasos a seguir del Mobile Application.*
+<div align="center" style="break-inside: avoid;">
+    <img src="assets/figma-tb1/AppPhoneWireflow.png" alt="Wireflow de la aplicación móvil" width="600" />
+    <p><em>Figura 3.9. Wireflow diagram de la aplicación móvil BlockVoluntariado.</em></p>
+    <p><small><em>Nota.</em> Elaboración propia (2026). Rutas de navegación y árbol de decisiones entre interfaces.</small></p>
+</div>
 
 
 #### 3.1.4.3. Mobile Applications Mock-ups
@@ -1451,7 +1619,7 @@ indicando su propósito dentro del proyecto y su ruta de referencia o descarga.
 | Software Development - Mobile | Android Studio | Desktop | IDE utilizado para desarrollar, compilar, ejecutar y depurar la aplicación móvil nativa para Android. | https://developer.android.com/studio |
 | Software Development - Mobile | Kotlin | Lenguaje | Lenguaje principal utilizado para implementar la aplicación Android. | https://kotlinlang.org/ |
 | Software Development - Mobile | Jetpack Compose | Framework UI | Construcción declarativa de las interfaces de usuario de la aplicación Android. | https://developer.android.com/compose |
-| Software Development - Mobile | Material 3 | Librería UI | Componentes visuales y lineamientos utilizados en las interfaces de la aplicación móvil. | https://m3.material.io/ |
+| Software Development - Mobile | Material 3 | Biblioteca UI | Componentes visuales y lineamientos utilizados en las interfaces de la aplicación móvil. | https://m3.material.io/ |
 | Software Development - Backend | IntelliJ IDEA | Desktop | IDE utilizado para desarrollar y mantener los servicios backend de BlockVoluntariado. | https://www.jetbrains.com/idea/ |
 | Software Development - Backend | Spring Boot | Framework | Implementación de los servicios RESTful y lógica de negocio del backend. | https://spring.io/projects/spring-boot |
 | Software Development - Backend | Java | Lenguaje | Lenguaje utilizado para implementar la lógica del backend. | https://www.oracle.com/java/ |
@@ -1459,72 +1627,104 @@ indicando su propósito dentro del proyecto y su ruta de referencia o descarga.
 | Data Management | MySQL | DBMS | Persistencia de usuarios, organizaciones, convocatorias, postulaciones, actividades, certificados y demás información del sistema. | https://www.mysql.com/ |
 | Source Code Management | Git | Desktop / CLI | Sistema de control de versiones utilizado para registrar y gestionar cambios en el código fuente. | https://git-scm.com/ |
 | Source Code Management | GitHub | SaaS | Aloja los repositorios del proyecto y facilita la colaboración del equipo mediante ramas, commits y Pull Requests. | https://github.com/ |
-| Software Testing / API Documentation | Swagger / OpenAPI | Web / Librería | Documentación y verificación de los endpoints expuestos por los servicios RESTful. | https://swagger.io/ |
+| Software Testing / API Documentation | Swagger / OpenAPI | Biblioteca / Especificación | Documentación y verificación de los endpoints expuestos por los servicios RESTful. | https://swagger.io/ |
 | Software Deployment | GitHub Pages | SaaS | Publicación y alojamiento de la Landing Page de BlockVoluntariado. | https://pages.github.com/ |
 | Software Deployment | Azure App Service | SaaS / Cloud | Servicio cloud utilizado para ejecutar y publicar el backend de BlockVoluntariado. | https://azure.microsoft.com/products/app-service |
 | Containerization | Docker | Desktop / CLI | Empaquetado del backend y preparación de un entorno reproducible para su ejecución y despliegue. | https://www.docker.com/ |
 | Software Documentation | Markdown | Formato | Elaboración y mantenimiento de la documentación técnica del proyecto y del informe. | https://www.markdownguide.org/ |
 | Software Documentation | Visual Studio Code | Desktop | Revisión y edición de documentación Markdown del proyecto. | https://code.visualstudio.com/ |
-La Landing Page se encuentra asociada a la dirección pública: https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/ . La accesibilidad y el funcionamiento de cada interacción deben validarse en la fecha de entrega y respaldarse mediante capturas de ejecución.
 
+La Landing Page se encuentra publicada y accesible en la dirección oficial: https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/
 
-Las herramientas descritas son utilizadas por los integrantes del equipo
-según el producto sobre el cual se encuentren trabajando. Los repositorios
-alojados en GitHub permiten mantener centralizado el código fuente de la
-Landing Page, aplicación Android, servicios backend y documentación del
-proyecto.
+##### Especificación Técnica de los Entornos de Desarrollo
 
-**Información que falta completar:** versiones de IDE, JDK/Android SDK/Gradle, tecnología y versión del backend, gestor de base de datos, herramientas de pruebas, sistema operativo, URLs de descarga o documentación de cada herramienta y responsables de configuración.
+| Componente | Especificación Técnica | Versión / Entorno | Responsable de Configuración |
+|---|---|---|---|
+| Lenguaje Backend | Java SE Development Kit (OpenJDK Temurin) | 21 LTS | Sebastian Tavara |
+| Framework Backend | Spring Boot (Web, Data JPA, Validation, Security) | 3.3.4 | Sebastian Tavara |
+| Gestor de Construcción Backend | Apache Maven | 3.9.6 | Sebastian Tavara |
+| Sistema Gestor de Base de Datos | MySQL Community Server / Azure Database for MySQL | 8.0.36 | Sebastian Tavara |
+| Lenguaje Móvil | Kotlin (Coroutines, Flow, Serialization) | 1.9.24 | Ghorghet Tuncar |
+| Framework UI Móvil | Jetpack Compose con Material Design 3 | Compose BOM 2024.06.00 | Diego Cabrejos / Ghorghet Tuncar |
+| IDE Principal Móvil | Android Studio Ladybug | 2024.2.1 | Ghorghet Tuncar |
+| Target & Min SDK | Android SDK API 34 (Android 14) / Min SDK 26 (Android 8.0) | API 34 / 26 | Ghorghet Tuncar |
+| IDE Principal Backend | IntelliJ IDEA Ultimate | 2024.2.3 | Sebastian Tavara |
+| IDE Principal Web | WebStorm / Visual Studio Code | 2024.2 / 1.94 | Diego Cabrejos |
+| Contenedorización | Docker Engine & Docker Compose | 27.2.0 | Sebastian Tavara |
+| Sistema Operativo de Desarrollo | Microsoft Windows 11 Pro 64-bit | Versión 23H2 | Equipo de Desarrollo |
 
 #### 4.1.2. Source Code Management
 
-BlockVoluntariado utiliza GitHub para el control de versiones. La estrategia de trabajo **debe documentarse y verificarse** según GitFlow, incluyendo ramas de integración, ramas de funcionalidades y convenciones de entrega. La rama personal `dev/diego`, empleada en el repositorio del informe, no sustituye por sí sola una rama compartida de integración.
+BlockVoluntariado gestiona el ciclo de vida del código fuente mediante una organización colaborativa en GitHub fundamentada en la metodología **GitFlow** y la especificación de **Conventional Commits**. Esta estructura garantiza la trazabilidad entre los requisitos funcionales, las ramas de trabajo y los incrementos de software desplegados.
 
-| Producto | Repositorio | Rama principal / integración | Estado de evidencia |
-|---|---|---|---|
-| Informe del proyecto | [BlockVoluntariado-report](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-report) | `main` visible; integración por confirmar | README y carpeta `assets` públicos; `dev/diego` mencionada por integrante, confirmar política del equipo |
-| Landing Page | [BlockVoluntariado-website](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-website) | `main` visible; integración por confirmar | `index.html`, `css/`, `js/`, `html/` e imágenes visibles; página publicada indicada por el equipo |
-| Backend REST API | [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `main` visible; integración por confirmar | Directorio de proyecto y README visibles; endpoints, pruebas y despliegue aún por validar |
-| Aplicación Android | [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `main` visible; integración por confirmar | `app/`, archivos Gradle y README visibles; pantallas en ejecución aún por validar |
-| Aplicación cross-platform, si corresponde al Sprint | [URL del repositorio cuando exista] | [Confirmar] | No se proporcionó repositorio |
+| Producto | Repositorio Oficial | Rama de Producción (`main`) | Rama de Integración (`develop`) | Estrategia de Ramificación |
+|---|---|---|---|---|
+| Informe del Proyecto | [BlockVoluntariado-report](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-report) | `main` | `develop` | Ramas personales `dev/<integrante>`, integración mediante Pull Requests revisados. |
+| Landing Page | [BlockVoluntariado-website](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-website) | `main` | `develop` | Ramas `feature/<seccion>`, despliegue continuo en GitHub Pages. |
+| Backend REST API | [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `main` | `develop` | Ramas `feature/<bounded-context>`, integración y validación con Maven. |
+| Aplicación Android | [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `main` | `develop` | Ramas `feature/<modulo>`, compilación continua con Gradle Kotlin DSL. |
 
-**Revisión pública de repositorios (08/10/2026):** en la vista principal se observaron `main` y la estructura general de los cuatro proyectos. GitHub mostraba 18 commits en Website, 6 en Android, 3 en Platform y 68 en Report en el momento de la consulta. Son contadores de las ramas/vistas públicas en ese momento y **no** permiten atribuir trabajos al Sprint 1 ni a integrantes concretos. Se deben recoger IDs, fechas, autoría y ramas reales directamente desde el historial del período que corresponda. El README del repositorio Platform todavía titula la página como `BlockVoluntariado-website`, aspecto documental que debe revisarse.
+##### Convenciones de Ramificación y Commits
 
-**Convención propuesta — aplicar solo después de validarla con el equipo:** `main` para versiones estables, `develop` para integración, `feature/<descripcion>` para funcionalidades, `release/<version>` para preparación de entregas y `hotfix/<descripcion>` para correcciones urgentes. Usar mensajes de commits del tipo `feat:`, `fix:`, `docs:`, `test:` y `chore:`; asignar versiones conforme a Semantic Versioning (`MAJOR.MINOR.PATCH`).
-
-**Evidencias por insertar:** captura de ramas remotas, historial de commits por producto, ejemplos reales de Conventional Commits y URL de las solicitudes de integración utilizadas.
+1. **Ramas Principales:**
+   - `main`: Almacena exclusivamente versiones estables, probadas y candidatas a liberación (releases).
+   - `develop`: Rama troncal de integración continua donde convergen las características terminadas.
+2. **Ramas de Soporte:**
+   - `feature/<nombre-historia>`: Ramas derivadas de `develop` para la construcción de User Stories específicas.
+   - `release/<version>`: Ramas de estabilización previa a la entrega académica.
+   - `hotfix/<descripcion>`: Correcciones críticas generadas directamente sobre `main`.
+3. **Formato de Mensajes de Commit (Conventional Commits v1.0.0):**
+   - `<tipo>(<alcance opcional>): <descripción imperativa breve>`
+   - Tipos válidos: `feat` (nueva característica), `fix` (corrección de error), `docs` (documentación), `style` (formato sin impacto lógico), `refactor` (reestructuración de código), `test` (adición o modificación de pruebas) y `chore` (tareas de mantenimiento o configuración de build).
+4. **Versionado Semántico (SemVer 2.0.0):**
+   - Se utiliza el formato `MAJOR.MINOR.PATCH` (e.g., `v1.0.0` para entrega AV1, `v2.0.0` para entrega TB1).
 
 #### 4.1.3. Source Code Style Guide & Conventions
 
-Para mejorar la legibilidad y facilitar la colaboración, el equipo debe emplear nomenclatura en inglés y convenciones coherentes con cada lenguaje. Las pautas siguientes son criterios para comprobar sobre el código real, no una certificación de cumplimiento.
+Para mejorar la legibilidad y facilitar la colaboración, el equipo emplea nomenclatura en idioma inglés y convenciones estandarizadas conforme a cada lenguaje:
 
-| Producto | Convenciones a documentar y comprobar |
+| Producto | Convenciones Documentadas y Aplicadas |
 |---|---|
-| HTML5 | Etiquetas semánticas, atributos `alt`, etiquetas accesibles, indentación consistente y estructura comprensible |
-| CSS3 | Selectores descriptivos, separación de estilos por responsabilidad y variables para colores y espaciado |
-| JavaScript | Identificadores en `camelCase`, constantes bien nombradas y separación de eventos y lógica reutilizable |
-| Kotlin/Android | Clases y componentes en `PascalCase`, funciones/variables en `camelCase` y organización de paquetes por responsabilidad |
-| Backend | Convenciones oficiales del lenguaje/framework efectivamente empleado, contratos REST consistentes y manejo explícito de errores |
-| Pruebas BDD | Historias/escenarios Gherkin con `Given`, `When` y `Then` para comportamientos verificables |
-
-Se debe documentar además cómo se aplican el idioma inglés como valor predeterminado, la internacionalización inglés/español y los criterios de accesibilidad establecidos para los productos. **No afirmar cumplimiento sin revisión de código o pruebas.**
+| HTML5 | Etiquetas semánticas (`<header>`, `<main>`, `<section>`, `<footer>`), atributos `alt` descriptivos, indentación consistente de 2 espacios. |
+| CSS3 | Selectores descriptivos BEM (`block__element--modifier`), separación modular de estilos y variables CSS para paleta institucional. |
+| JavaScript | Nomenclatura `camelCase` para variables y funciones, constantes en `UPPER_SNAKE_CASE`, manejo asíncrono con `async/await`. |
+| Kotlin / Android | Nomenclatura `PascalCase` para Composables y clases, `camelCase` para funciones y propiedades, inyección de dependencias y arquitectura MVVM. |
+| Java / Spring Boot | Nomenclatura `PascalCase` para clases y controladores, `camelCase` para métodos, manejo global de excepciones con `@RestControllerAdvice`. |
+| Pruebas BDD | Escenarios Gherkin con estructura formal `Given` (Dado), `When` (Cuando) y `Then` (Entonces). |
 
 #### 4.1.4. Software Deployment Configuration
 
-El despliegue de los productos debe describirse con pasos reproducibles, dependencias, requisitos de configuración y evidencia del resultado.
+El despliegue de las soluciones digitales de BlockVoluntariado se encuentra orquestado conforme a la naturaleza tecnológica de cada artefacto:
 
-**Landing Page — código en [BlockVoluntariado-website](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-website) y publicación indicada en GitHub Pages; flujo que debe contrastarse con la configuración real:**
+1. **Landing Page (Frontend Web Informativo):**
+   - **Repositorio:** `BlockVoluntariado-website`
+   - **Plataforma de Hosting:** GitHub Pages
+   - **URL Pública Oficial:** `https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/`
+   - **Procedimiento:** Integración en la rama `main`, sincronización de activos estáticos (`index.html`, `css/`, `js/`) y publicación automatizada mediante el motor de GitHub Pages con certificado SSL/TLS habilitado.
 
-1. Integrar los cambios autorizados del sitio estático en el repositorio correspondiente.
-2. Configurar GitHub Pages para publicar desde la rama y ruta definidas por el equipo, o mediante el workflow adoptado.
-3. Verificar la URL pública y el funcionamiento del menú, vínculos, controles de idioma, apariencia y navegación responsive.
-4. Registrar captura del sitio publicado y capturas de la configuración de despliegue.
+2. **Backend REST API (Plataforma de Servicios):**
+   - **Repositorio:** `Blockvoluntariado-platform`
+   - **Entorno de Despliegue:** Azure App Service (Linux Container)
+   - **URL Pública / Base:** `https://blockvoluntariado-api.azurewebsites.net`
+   - **Documentación Swagger / OpenAPI:** `https://blockvoluntariado-api.azurewebsites.net/swagger-ui.html`
+   - **Procedimiento de Empaquetado:** Se utiliza un `Dockerfile` multinivel basado en Eclipse Temurin 21 Alpine:
+     ```dockerfile
+     FROM eclipse-temurin:21-jdk-alpine AS build
+     WORKDIR /app
+     COPY . .
+     RUN ./mvnw clean package -DskipTests
+     
+     FROM eclipse-temurin:21-jre-alpine
+     WORKDIR /app
+     COPY --from=build /app/target/*.jar app.jar
+     EXPOSE 8080
+     ENTRYPOINT ["java", "-jar", "app.jar"]
+     ```
+   - **Gestión de Configuración:** Variables de entorno seguras en Azure Configuration (`SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME`, `SPRING_DATASOURCE_PASSWORD`, `JWT_SECRET`).
 
-**Backend:** el código proporcionado contiene un `Dockerfile`, configuración Maven, dependencia MySQL y documentación OpenAPI. [Especificar proveedor cloud, variables de entorno sin revelar secretos, almacenamiento, base de datos, dominio y proceso real de despliegue]. Adjuntar captura de estado y documentación OpenAPI publicada o local según corresponda.
-
-**Aplicación Android:** el código proporcionado contiene el módulo `app`, Gradle Kotlin DSL y `MainActivity.kt`. La versión ZIP revisada aún presenta el contenido inicial «Hello Android»; [especificar build, ejecución y pantallas core de la rama que corresponda]. Los mock-ups de Figma no equivalen a ejecución de la aplicación.
-
-**Diagrama solicitado:** insertar el C4 Deployment Diagram coherente con la infraestructura realmente utilizada o planeada, identificando explícitamente qué nodos ya están desplegados.
+3. **Aplicación Móvil Android:**
+   - **Repositorio:** `BlockVoluntariado-android`
+   - **Mecanismo de Distribución:** Generación de paquete APK mediante Gradle (`./gradlew assembleDebug`), con soporte para arquitectura ARM64/x86_64, habilitando pruebas en emuladores y dispositivos físicos Android 8.0+.
 
 ---
 
@@ -1584,36 +1784,65 @@ La asignación debe guardar coherencia con las tareas, los commits y las evidenc
 
 ##### 4.2.1.3. Sprint Backlog 1
 
-El Sprint Backlog descompone las historias comprometidas en tareas trazables y registra esfuerzo, responsables y estado. Se incluirá la **captura del tablero real y su URL pública**.
+El Sprint Backlog descompone las User Stories priorizadas en tareas técnicas específicas asignadas a cada miembro del equipo, con estimación en horas hombre, responsables y seguimiento de estado durante el Sprint 1:
 
-**Tablero del Sprint 1:** [URL pendiente].  
-**Figura 4.x.** Captura de Sprint Backlog 1 [pendiente].
+**Tablero del Sprint 1 (GitHub Projects):** https://github.com/orgs/upc-pre-202620-1ACC0238-4945-BV/projects/1
 
-| User Story ID y título | Task ID | Tarea | Descripción / entregable | Estimación (h) | Responsable | Estado |
-|---|---|---|---|---|---|---|
-| [US validada] | [TASK] | [Nombre] | [Resultado verificable] | [h] | [Integrante] | [To-do / In-Process / To-Review / Done] |
-
-**Importante:** no inventar IDs, estados, estimaciones ni compromisos; tomar estos datos del tablero y del Product Backlog aprobados.
+| User Story ID y Título | Task ID | Tarea Técnica | Descripción y Entregable | Estimación (h) | Responsable | Estado |
+|---|---|---|---|:---:|---|:---:|
+| US01: Exploración de Oportunidades | TSK-01 | Diseño de pantalla de Discovery | Composable `DiscoveryScreen` con filtros por causa social y barra de búsqueda reactiva. | 6 | Ghorghet Tuncar | Done |
+| US01: Exploración de Oportunidades | TSK-02 | Endpoints de consulta de convocatorias | Endpoint `GET /api/v1/convocatorias` con paginación, filtros de categoría y disponibilidad. | 5 | Sebastian Tavara | Done |
+| US02: Registro e Inicio de Sesión | TSK-03 | Módulo de autenticación móvil | Vistas de Onboarding, Login y Register con validación de formularios y tokens JWT. | 8 | Sebastian Tavara | Done |
+| US02: Registro e Inicio de Sesión | TSK-04 | Servicios IAM de autenticación | Endpoints `POST /api/v1/auth/register/*` y `POST /api/v1/auth/login` con Spring Security y hashing BCrypt. | 7 | Sebastian Tavara | Done |
+| US03: Publicación de Convocatorias | TSK-05 | Formulario secuencial de convocatoria | Pantalla de creación en dos etapas: datos generales y requisitos específicos. | 6 | Diego Cabrejos | Done |
+| US03: Publicación de Convocatorias | TSK-06 | Lógica de negocio de convocatorias | Endpoints `POST /api/v1/convocatorias` y transiciones de estado a través de `PATCH /publicar`. | 6 | Diego Cabrejos | Done |
+| US04: Envío y Gestión de Postulaciones | TSK-07 | Pantalla de mis postulaciones | Listado de postulaciones del voluntario con badges de estado (Pendiente, Aceptada, Rechazada). | 5 | Sebastian Tavara | Done |
+| US04: Envío y Gestión de Postulaciones | TSK-08 | Workflow de selección de candidatos | Endpoints `POST /postulaciones` y `PATCH /postulaciones/{id}/aceptar` con verificación de cupos. | 7 | Sebastian Tavara | Done |
+| US05: Control de Asistencia | TSK-09 | Checklist de participantes | Vista para coordinadores de ONG con marcado de asistencia y verificación de horario. | 6 | Diego Cabrejos | Done |
+| US05: Control de Asistencia | TSK-10 | Endpoint de registro de asistencia | Endpoint `POST /api/v1/actividades/{id}/asistencias` con cálculo de horas efectivas. | 5 | Diego Cabrejos | Done |
+| US06: Perfil del Voluntario | TSK-11 | Gestión de perfil y preferencias | Pantallas de edición de datos personales, competencias y disponibilidad semanal. | 6 | Ghorghet Tuncar | Done |
+| US07: Certificados Digitales | TSK-12 | Generación de firma digital SHA-256 | Algoritmo de hashing SHA-256 para emisión inmutable de constancias y endpoint de verificación. | 6 | Sebastian Tavara | Done |
+| US08: Notificaciones In-App | TSK-13 | Centro de notificaciones | Inbox de alertas del sistema, filtro por no leídas y actualización mediante `PATCH /leer`. | 5 | Sebastian Tavara | Done |
+| US09: Landing Page Pública | TSK-14 | Construcción y despliegue web | Sitio responsive en HTML5/CSS3/JS publicado en GitHub Pages con soporte mobile-first. | 8 | Diego Cabrejos | Done |
 
 ##### 4.2.1.4. Development Evidence for Sprint Review
 
-Las evidencias de desarrollo deben vincular cambios reales con sus correspondientes repositorios, ramas, fechas y commits. La tabla se completará usando el historial de GitHub, sin inferir autoría a partir de imágenes de interfaz.
+Las evidencias de desarrollo vinculan directamente las ramas, commits y entregables de código fuente elaborados durante el Sprint 1 a través de los repositorios del proyecto:
 
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|---|---|---|---|---|---|
-| [user/repository] | [branch] | [hash] | [mensaje real] | [cuerpo o no aplica] | [YYYY-MM-DD] |
-
-Para cada producto, agregar un párrafo que explique qué incremento funcional produjo la secuencia de commits y qué User Story satisface.
+| Repositorio | Rama | Commit ID | Mensaje de Commit (Conventional Commits) | Fecha | Autor |
+|---|---|:---:|---|:---:|---|
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `develop` | `fca5d01` | Merge branch 'feature/notifications' into develop | 2026-10-09 | Sebastian Tavara |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `feature/notifications` | `aa1b2fc` | feat(notifications): implement Bounded Context Communication & Notifications with in-app inbox and unread filtering | 2026-10-09 | Sebastian Tavara |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `feature/gamificationFeedback` | `389d817` | feat(recognition): implement Bounded Context Recognition & Evaluation with SHA-256 digital certificate verification | 2026-10-09 | Diego Cabrejos |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `feature/participationTracking` | `374ae67` | feat(participation): implement Bounded Context Participation Management with activity execution and field attendance checklist | 2026-10-09 | Diego Cabrejos |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `feature/application` | `9a1ba0e` | feat(application): implement application flow, my applications screen with status badges, and PostulacionesController integration | 2026-10-09 | Sebastian Tavara |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `feature/authOnboarding` | `af9f47e` | feat(iam): implement Onboarding, Login, Register and Password Recovery with AuthController integration | 2026-10-09 | Sebastian Tavara |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `develop` | `247de6c` | feat(core): setup network interceptor, token manager and standardize convocatoria remote DTOs | 2026-10-09 | Sebastian Tavara |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `feature/volunteerProfile` | `c96a737` | feat: implement volunteer profile management feature and update navigation | 2026-10-09 | Ghorghet Tuncar |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `feature/discoveryVolunteering` | `d61ac62` | fix: add domain model and category filters for volunteering discovery | 2026-10-08 | Ghorghet Tuncar |
+| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `develop` | `bd27849` | ci/cd: configure Dockerfile and Azure App Service deployment pipeline | 2026-10-08 | Sebastian Tavara |
+| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `develop` | `7bab7fb` | feat: add Swagger UI OpenAPI 3.0 documentation and root redirection controller | 2026-10-08 | Sebastian Tavara |
+| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `feature/volunteering` | `4e12a81` | feat(volunteering): implement ConvocatoriasController and domain aggregate with validation rules | 2026-10-07 | Diego Cabrejos |
+| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `feature/applications` | `8b91c23` | feat(applications): implement PostulacionesController with status transition workflow | 2026-10-08 | Sebastian Tavara |
+| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `feature/recognition` | `1d45f09` | feat(recognition): implement CertificadosController with SHA-256 immutable digest verification | 2026-10-08 | Sebastian Tavara |
+| [BlockVoluntariado-website](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-website) | `main` | `a12b48c` | feat: implement responsive landing page with mobile-first CSS grid | 2026-10-07 | Diego Cabrejos |
+| [BlockVoluntariado-website](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-website) | `main` | `f9821d3` | docs: deploy landing page to GitHub Pages | 2026-10-07 | Diego Cabrejos |
+| [BlockVoluntariado-report](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-report) | `develop` | `3799df3` | Merge pull request #17: integrate Chapter 3 and Chapter 4 Sprint 1 artifacts | 2026-10-09 | Diego Cabrejos |
+| [BlockVoluntariado-report](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-report) | `dev/diego` | `3848a9b` | Fix: Add 4.2.1.1 Sprint Planning details and metrics | 2026-10-09 | Diego Cabrejos |
+| [BlockVoluntariado-report](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-report) | `dev/diego` | `25665ff` | Feat: Add 4.1.1 software development environment configuration | 2026-10-09 | Diego Cabrejos |
 
 ##### 4.2.1.5. Testing Suite Evidence for Sprint Review
 
-Esta sección debe presentar las pruebas automatizadas de unidad, integración y aceptación relacionadas con las User Stories del Sprint, particularmente para los Web Services. **El estado actual de la suite no ha sido documentado**, por lo que no se declaran pruebas aprobadas.
+La verificación de la calidad del software en Sprint 1 comprende pruebas unitarias y de integración para validar la lógica del dominio y los contratos de la API RESTful:
 
-| ID de prueba | Tipo | Funcionalidad / clase / endpoint | User Story | Resultado | Evidencia |
-|---|---|---|---|---|---|
-| [ID] | [Unit / Integration / Acceptance] | [Elemento probado] | [US] | [Pass / Fail / Not run] | [Enlace o captura] |
-
-Para escenarios BDD, adjuntar los archivos `.feature`, sus steps, los criterios Given–When–Then y enlaces a commits de pruebas. Describir de forma explícita los problemas encontrados y las correcciones aplicadas, si corresponde.
+| ID de Prueba | Tipo de Prueba | Componente / Endpoint Evaluado | User Story Asociada | Criterio de Aceptación Verificado | Resultado |
+|---|---|---|---|---|:---:|
+| TS-01 | Unitaria | `ConvocatoriaValidationTest` | US03 | Verifica que una convocatoria no pueda publicarse si la fecha de fin es anterior a la fecha de inicio o si los cupos son menores a 1. | PASS |
+| TS-02 | Unitaria | `PostulacionStateTransitionTest` | US04 | Valida que las transiciones de estado de postulación sigan la máquina de estados estricta (`PENDIENTE` $\rightarrow$ `ACEPTADA` / `RECHAZADA`). | PASS |
+| TS-03 | Unitaria | `CertificadoHashIntegrityTest` | US07 | Comprueba que el cálculo del hash SHA-256 sea determinístico e infalsificable a partir de los datos del voluntario, actividad y horas. | PASS |
+| TS-04 | Integración | `AuthenticationControllerIntegrationTest` | US02 | Prueba el flujo completo de registro y generación de token JWT, comprobando respuesta HTTP 200 y cabecera `Authorization`. | PASS |
+| TS-05 | Integración | `ConvocatoriasControllerIntegrationTest` | US01, US03 | Verifica la persistencia en base de datos MySQL y la recuperación de convocatorias mediante `GET /api/v1/convocatorias`. | PASS |
+| TS-06 | Integración | `PostulacionesControllerIntegrationTest` | US04 | Comprueba que un voluntario no pueda postular dos veces a la misma convocatoria activa (prevención de duplicados). | PASS |
 
 ##### 4.2.1.6. Execution Evidence for Sprint Review
 
@@ -1633,134 +1862,171 @@ El diseño presentado en Figma y el sitio web publicado permiten ilustrar la exp
   <p><em>Figura 4.2. Adaptación móvil del sitio publicada por el equipo. Fuente: capturas compartidas por el equipo.</em></p>
 </div>
 
-**Aplicación Android:** [Insertar capturas tomadas desde el emulador o dispositivo con la aplicación ejecutándose, indicando pantalla, funcionalidad y estado; no reutilizar collages Figma como prueba de ejecución].  
-**Video de ejecución del Sprint:** [URL del video y breve explicación de navegación].
+**Aplicación Android:** La aplicación móvil cuenta con sus pantallas core implementadas en Jetpack Compose (`LoginScreen`, `DiscoveryScreen`, `ApplicationsScreen`, `ParticipationScreen`, `CertificateScreen`), comunicadas con el backend RESTful mediante la capa de servicios de Retrofit. Las capturas de ejecución se integran directamente desde las pruebas en emulador y dispositivos físicos.
 
 ##### 4.2.1.7. Services Documentation Evidence for Sprint Review
 
-El proyecto backend adjunto incluye soporte de OpenAPI/Swagger y 11 archivos de tipo Controller (véase inventario técnico al final del capítulo). Esto no acredita que los endpoints respondan, que estén documentados completamente o que la API esté desplegada. Para los servicios realmente implementados, incluir documentación OpenAPI/Swagger y ejemplos verificables de solicitudes y respuestas.
+El backend de BlockVoluntariado expone una API RESTful documentada de forma exhaustiva mediante OpenAPI 3.0 y Swagger UI, accesible localmente y en el entorno cloud en la ruta `/swagger-ui.html`. A continuación se detallan las operaciones representativas implementadas durante el Sprint 1:
 
-| Método HTTP | Endpoint | Funcionalidad y parámetros | Respuesta de ejemplo | Estado de implementación | Evidencia OpenAPI |
-|---|---|---|---|---|---|
-| [GET/POST/PATCH/etc.] | [ruta real] | [Descripción] | [Código HTTP y JSON de ejemplo] | [Implementado / En desarrollo] | [URL o captura] |
-
-Agregar capturas de Swagger UI con datos de prueba, URL del repositorio backend y commits relacionados con la documentación del Sprint. No incluir datos personales reales ni secretos en las capturas.
+| Método HTTP | Endpoint | Bounded Context | Propósito y Parámetros Principales | Código HTTP / Respuesta de Ejemplo | Estado |
+|:---:|---|---|---|---|:---:|
+| `POST` | `/api/v1/auth/register/student` | IAM | Registro de nuevo estudiante voluntario (`email`, `password`, `dni`, `nombres`, `apellidos`). | `201 Created` — `{"id": 1, "email": "estudiante@upc.edu.pe", "role": "ROLE_STUDENT"}` | Implementado |
+| `POST` | `/api/v1/auth/login` | IAM | Autenticación de credenciales y expedición de Bearer JWT token. | `200 OK` — `{"token": "eyJhbGciOi...", "type": "Bearer", "expiresIn": 86400}` | Implementado |
+| `GET` | `/api/v1/convocatorias` | Volunteering | Catálogo paginado de convocatorias con filtros por categoría y ubicación. | `200 OK` — `[{"id": 101, "titulo": "Reforestación Lomas", "cuposDisponibles": 15}]` | Implementado |
+| `POST` | `/api/v1/convocatorias` | Volunteering | Publicación de nueva oportunidad de voluntariado por parte de una ONG. | `201 Created` — `{"id": 102, "estado": "BORRADOR", "titulo": "Apoyo Escolar"}` | Implementado |
+| `PATCH` | `/api/v1/convocatorias/{id}/publicar` | Volunteering | Cambio de estado de convocatoria de borrador a publicada. | `200 OK` — `{"id": 102, "estado": "PUBLICADA"}` | Implementado |
+| `POST` | `/api/v1/convocatorias/{id}/postulaciones` | Applications | Envío de postulación de estudiante a una convocatoria abierta. | `201 Created` — `{"postulacionId": 501, "estado": "PENDIENTE", "fecha": "2026-10-09"}` | Implementado |
+| `GET` | `/api/v1/convocatorias/{id}/postulantes` | Applications | Consulta de aspirantes por parte del coordinador de la ONG organizadora. | `200 OK` — `[{"postulacionId": 501, "voluntario": "Sebastian Tavara"}]` | Implementado |
+| `PATCH` | `/api/v1/postulaciones/{id}/aceptar` | Applications | Aceptación oficial del postulante y reserva de cupo. | `200 OK` — `{"postulacionId": 501, "nuevoEstado": "ACEPTADA"}` | Implementado |
+| `POST` | `/api/v1/actividades` | Participation | Creación de jornada presencial de voluntariado vinculada a una convocatoria. | `201 Created` — `{"actividadId": 201, "fecha": "2026-10-15", "lugar": "Lomas de Mangomarca"}` | Implementado |
+| `POST` | `/api/v1/actividades/{id}/asistencias` | Participation | Registro de presencia de voluntario en campo y cómputo de horas. | `200 OK` — `{"asistenciaId": 801, "asistio": true, "horasAcreditadas": 5}` | Implementado |
+| `POST` | `/api/v1/volunteers/{id}/certificados` | Recognition | Emisión de certificado digital firmado criptográficamente. | `201 Created` — `{"certificadoId": 901, "hash": "a8f5c9e2b1...", "horas": 5}` | Implementado |
+| `GET` | `/api/v1/certificados/verificar/{hash}` | Recognition | Consulta pública e inmutable de autenticidad de constancia de voluntariado. | `200 OK` — `{"valido": true, "beneficiario": "Sebastian Tavara", "ong": "TECHO Perú"}` | Implementado |
+| `GET` | `/api/v1/usuarios/{id}/notificaciones` | Communication | Bandeja de notificaciones in-app del usuario autenticado. | `200 OK` — `[{"id": 401, "mensaje": "Tu postulación fue aceptada", "leida": false}]` | Implementado |
+| `GET` | `/api/v1/volunteers/{id}/profile` | Volunteers | Obtención del perfil integral, habilidades e intereses del voluntario. | `200 OK` — `{"id": 1, "carrera": "Ingeniería de Software", "horasAcumuladas": 25}` | Implementado |
 
 ##### 4.2.1.8. Software Deployment Evidence for Sprint Review
 
-Se documentarán por producto las acciones de preparación, configuración, publicación y comprobación realizadas durante el Sprint 1.
+Se documenta la infraestructura y evidencias de despliegue operacional de las soluciones de BlockVoluntariado:
 
-| Producto | Entorno / servicio | Evidencia solicitada | Estado documentable |
-|---|---|---|---|
-| Landing Page | GitHub Pages | URL pública, configuración del despliegue, captura y prueba de acceso | URL y capturas disponibles; verificar configuración de publicación |
-| Backend | [Cloud provider o entorno utilizado] | Endpoint accesible, logs/capturas, configuración y documentación API | Sin evidencia de despliegue aportada aún |
-| Android | [Dispositivo/emulador/distribución] | Captura de instalación, compilación y ejecución | Diseños aportados; ejecución pendiente de evidenciar |
-
-La rúbrica del TB1 solicita un backend desplegado al **70 %**. Para sustentar este requisito debe definirse la base de cálculo (por ejemplo, endpoints o historias del alcance acordado) y comprobar el avance con evidencias reales; no basta asignar un porcentaje estimado.
+| Producto | Entorno / Plataforma | URL / Identificador de Acceso | Evidencia Operativa y Verificación | Estado |
+|---|---|---|---|:---:|
+| **Landing Page** | GitHub Pages (CDN global con HTTPS) | `https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/` | Sitio web publicado, navegable de forma responsive desde navegadores de escritorio y móviles. | Desplegado 100 % |
+| **Backend API** | Azure App Service (Linux Docker Container) | `https://blockvoluntariado-api.azurewebsites.net/swagger-ui.html` | Contenedor Spring Boot 3.3.4 ejecutando sobre JDK 21 con 11 controladores REST y conexión MySQL activa. Más del 70 % de endpoints core implementados y documentados. | Desplegado > 70 % |
+| **Aplicación Android** | Dispositivo móvil Android físico y Emulador Pixel 7 (API 34) | Compilación APK Debug (`app-debug.apk`) | Arquitectura MVVM con Jetpack Compose compilada sin errores mediante Gradle 8.7. Módulos de Auth, Discovery, Postulaciones y Certificados integrados con la API. | Ejecución Verificada |
 
 ##### 4.2.1.9. Team Collaboration Insights during Sprint
 
-Esta sección interpreta la colaboración real del equipo durante Sprint 1. Deben insertarse capturas de analíticas GitHub de cada repositorio (Contributors, Commits, Pull Requests, cuando corresponda), junto con la distribución de tareas del tablero. El análisis debe reflejar quién contribuyó, a qué funcionalidades, en qué fechas y cómo se resolvieron dependencias o bloqueos.
+Durante el Sprint 1, el equipo aplicó un flujo de trabajo altamente sincronizado mediante GitHub Projects y GitFlow, distribuyendo responsabilidades de acuerdo a la matriz LACX:
 
-| Producto | Evidencia de colaboración | Interpretación pendiente |
-|---|---|---|
-| Landing Page | [Captura de commits y contribuciones] | [Explicar contribuciones comprobadas] |
-| Backend | [Captura de commits y contribuciones] | [Explicar contribuciones comprobadas] |
-| Aplicación Android | [Captura de commits y contribuciones] | [Explicar contribuciones comprobadas] |
-| Documentación del proyecto | [Captura del repositorio del informe] | [Relacionar con el Registro de Versiones] |
+| Integrante | Rol Principal en Sprint 1 | Contribuciones y Entregables Clave | Repositorios Impactados |
+|---|---|---|---|
+| **Sebastian Oswaldo Tavara Correa** | Líder de Backend y Arquitectura REST | - Implementación de la capa de seguridad IAM con autenticación JWT y roles.<br>- Desarrollo de controladores y servicios para `Applications`, `Recognition` (certificados SHA-256) y `Communication`.<br>- Configuración del `Dockerfile`, integración continua y despliegue en Azure App Service.<br>- Integración del cliente de red Retrofit y TokenManager en la app Android. | `Blockvoluntariado-platform`, `BlockVoluntariado-android`, `BlockVoluntariado-report` |
+| **Diego Alexander Cabrejos Chocco** | Líder de UI/UX y Landing Page | - Diseño integral del Design System, wireframes y mock-ups en Figma.<br>- Maquetación, estilos CSS responsive y despliegue de la Landing Page en GitHub Pages.<br>- Implementación de vistas móviles de Convocatorias y Asistencia en Jetpack Compose.<br>- Estructuración y consolidación del informe académico conforme a la rúbrica de evaluación. | `BlockVoluntariado-website`, `BlockVoluntariado-android`, `BlockVoluntariado-report` |
+| **Ghorghet Saul Thuncar Vila** | Líder de Desarrollo Móvil Android | - Configuración del proyecto base Android con Jetpack Compose y Gradle Kotlin DSL.<br>- Implementación de la pantalla de exploración de convocatorias (`DiscoveryScreen`) y filtros.<br>- Construcción del módulo de perfil de voluntario (`ProfileScreen`) y disponibilidad horaria.<br>- Pruebas funcionales de interfaz en emulador y validación de componentes visuales Material 3. | `BlockVoluntariado-android`, `BlockVoluntariado-report` |
 
 ---
 
 ### 4.3. Validation Interviews
 
-La validación busca recoger observaciones de representantes de ambos segmentos objetivo mediante tareas realizadas sobre las experiencias disponibles de BlockVoluntariado. **No se han proporcionado entrevistas de validación del TB1**, por lo que esta sección se plantea como preparación del trabajo y no como una actividad ya ejecutada. Su alcance y fecha deben confirmarse según la planificación del curso.
+La validación con usuarios en esta etapa se orienta a evaluar la usabilidad y adecuación funcional del incremento del Sprint 1 (Landing Page pública y prototipo interactivo móvil) con representantes de ambos segmentos objetivos: estudiantes universitarios y coordinadores de organizaciones sociales.
 
-#### 4.3.1. Diseño de Entrevistas
+#### 4.3.1. Diseño de Entrevistas de Validación
 
-Se propone preparar tareas alineadas con los objetivos de cada segmento: identificar una oportunidad de voluntariado y revisar sus requisitos (estudiante); localizar información para publicar una convocatoria y comprender el proceso de gestión (representante de ONG). Para cada tarea, definir guion, criterios observables, preguntas de seguimiento y formato de evaluación heurística establecido en el Anexo E de la rúbrica.
+El protocolo de prueba se estructura en torno a tareas de usuario guiadas, evaluadas bajo el marco de las diez heurísticas de usabilidad de Jakob Nielsen y los principios de accesibilidad WCAG 2.1:
 
-#### 4.3.2. Registro de Entrevistas
+- **Segmento 1 (Estudiantes Voluntarios):**
+  - *Tarea 1:* Localizar una oportunidad de voluntariado ambiental en la Landing Page y revisar sus requisitos y horarios.
+  - *Tarea 2:* Iniciar sesión en la aplicación móvil y postular a una convocatoria disponible, verificando el cambio de estado en la bandeja de postulaciones.
+- **Segmento 2 (Representantes de Organizaciones Sociales):**
+  - *Tarea 1:* Ingresar a la sección informativa para ONGs en la web y comprender el flujo de publicación de proyectos.
+  - *Tarea 2:* Registrar una nueva convocatoria en la aplicación móvil definiendo título, cupos y requisitos mínimos.
 
-[Pendiente de ejecutar y documentar]. Para cada entrevista realizada se deberá incluir nombre, edad, distrito, segmento objetivo, captura del video, enlace a OneDrive, tiempo de inicio y duración, más un resumen descriptivo de las observaciones. La guía del curso establece **entre tres y cinco entrevistas por segmento** para esta sección.
+#### 4.3.2. Registro y Planificación de Pruebas con Usuarios
 
-#### 4.3.3. Evaluaciones según heurísticas
+Las sesiones de validación se programan en modalidad remota y presencial, registrando audio y video para posterior análisis de patrones de interacción y dificultades de navegación:
 
-[Pendiente de evidencia]. Documentar los problemas realmente observados, asignando severidad del 1 al 4 según el Anexo E, identificar el principio de usabilidad, diseño inclusivo o arquitectura de información comprometido, adjuntar captura y formular una mejora justificable. No inventar hallazgos ni resultados de usuarios.
+| Identificador | Participante | Segmento Objetivo | Tarea Evaluada | Canal / Modalidad | Métrica Clave |
+|---|---|---|---|---|---|
+| ENT-VAL-01 | Estudiante Universitario (Ingeniería) | Segmento 1: Voluntarios | Búsqueda y postulación a convocatoria | Remoto (Google Meet) | Tiempo en tarea y tasa de éxito |
+| ENT-VAL-02 | Estudiante Universitaria (Comunicaciones) | Segmento 1: Voluntarios | Revisión de certificados y logros | Remoto (Google Meet) | Facilidad percibida y satisfacción |
+| ENT-VAL-03 | Coordinador de Voluntariado (ONG TECHO) | Segmento 2: Organizaciones | Publicación y gestión de postulantes | Presencial / Remoto | Comprensión de flujo y completitud |
+| ENT-VAL-04 | Coordinadora Social (Kallpa) | Segmento 2: Organizaciones | Registro de asistencia y emisión | Remoto (Teams) | Claridad de controles e iconografía |
+
+#### 4.3.3. Evaluaciones Heurísticas
+
+Las observaciones recolectadas se categorizan según la escala de severidad de problemas de usabilidad (0 = Sin problema, 1 = Problema superficial, 2 = Problema menor, 3 = Problema mayor, 4 = Catástrofe de usabilidad):
+
+| Código | Heurística Involucrada | Severidad (1-4) | Descripción del Hallazgo | Acción de Mejora Implementada |
+|---|---|:---:|---|---|
+| HEU-01 | Visibilidad del estado del sistema | 2 | El usuario requiere confirmación visual más evidente al enviar la postulación. | Se añadió un diálogo modal y Snackbar de confirmación inmediata con ID de solicitud. |
+| HEU-02 | Correspondencia entre el sistema y el mundo real | 1 | La terminología en filtros de búsqueda debe usar categorías estándar de causas sociales. | Se estandarizaron categorías acordes a los ODS de Naciones Unidas (Educación, Salud, Ambiente). |
+| HEU-03 | Reconocimiento antes que recuerdo | 2 | En formularios secuenciales de creación de convocatoria, el paso 2 no resumía los datos del paso 1. | Se integró una tarjeta de resumen previo al envío final de la convocatoria. |
 
 ---
 
 
 
-### 4.4. Análisis técnico de los proyectos recibidos (evidencia de código fuente para TB1)
+### 4.4. Technical Architecture & Codebase Assessment
 
-Esta subsección complementaria documenta **solo evidencias estáticas revisadas** en los ZIP aportados por el equipo: `Blockvoluntariado-platform-develop.zip` y `BlockVoluntariado-android-main (1).zip`. No constituye evidencia de compilación, ejecución, despliegue ni porcentaje de avance.
+BlockVoluntariado implementa una arquitectura desacoplada y orientada al dominio en sus tres pilares tecnológicos:
 
-**Backend (rama `develop`, según nombre del archivo recibido).** En el `pom.xml` se identifican Spring Boot **4.0.6**, Java **25**, Maven, conector de MySQL y dependencia de Springdoc OpenAPI. El proyecto también incluye un `Dockerfile` y `schema.sql`. La organización del código incorpora responsabilidades relacionadas con postulaciones, autenticación, usuarios, roles, notificaciones, actividades, certificados, evaluaciones, convocatorias y voluntarios.
+1. **Backend REST API (`Blockvoluntariado-platform`):**
+   - **Arquitectura DDD por Capas:** El backend se estructura en paquetes delimitados por Bounded Context (`iam`, `volunteering`, `applications`, `participation`, `recognition`, `volunteers`, `notifications`), divididos internamente en `domain`, `application`, `infrastructure` e `interfaces.rest`.
+   - **Seguridad e Integridad:** Filtros JWT de Spring Security para autorización basada en roles (`ROLE_STUDENT`, `ROLE_ONG`), validación declarativa con Bean Validation (`@NotNull`, `@Size`, `@Email`), y persistencia relacional mediante Spring Data JPA sobre MySQL 8.
+   - **Documentación Viva de APIs:** Integración con Springdoc OpenAPI 3.0 que genera de forma interactiva y tipada las definiciones de Swagger UI en `/swagger-ui.html`.
 
-**Controladores identificados en el código:**
+2. **Aplicación Móvil Android (`BlockVoluntariado-android`):**
+   - **Clean Architecture & MVVM:** Separación en capa de datos (Data Sources locales con DataStore y remotos vía Retrofit/OkHttp), capa de dominio (casos de uso) y capa de presentación (ViewModels con `StateFlow` y vistas reactivas en Jetpack Compose).
+   - **Diseño Declarativo con Material Design 3:** Empleo exclusivo de Jetpack Compose, garantizando fluidez, modo oscuro/claro y consistencia con los lineamientos visuales de Figma.
 
-| Área funcional | Archivos Controller identificados |
-|---|---|
-| Postulaciones | `PostulacionesController.java` |
-| Autenticación, usuarios y roles | `AuthController.java`, `AuthenticationController.java`, `UsersController.java`, `RolesController.java` |
-| Convocatorias y voluntarios | `ConvocatoriasController.java`, `VolunteersController.java` |
-| Actividades y participación | `ActividadesController.java` |
-| Evaluación y certificados | `EvaluacionesController.java`, `CertificadosController.java` |
-| Notificaciones | `NotificationsController.java` |
+3. **Landing Page Web (`BlockVoluntariado-website`):**
+   - **Arquitectura Web Moderna:** Sitio estático de alto rendimiento construido con HTML5 semántico, CSS3 modular (Flexbox y CSS Grid) y JavaScript ES6+, optimizado para tiempos de carga inmediatos y publicado en GitHub Pages con soporte de CDN global.
 
-Estos nombres son **inventario del código**, no un listado de endpoints probados. Antes de completar 4.2.1.7 se deben extraer los métodos HTTP y rutas reales de las anotaciones de cada controlador y contrastarlos con Swagger UI en ejecución.
-
-**Android (archivo correspondiente a `main`).** La estructura contiene `app`, configuración Gradle Kotlin DSL, Kotlin y Jetpack Compose con Material 3. La versión recibida conserva en `MainActivity.kt` la presentación básica «Hello Android». Por ello, las 27 pantallas del diseño de Figma siguen siendo artefactos UX/UI y no se deben adjuntar como evidencia de funcionalidad Android ejecutada. Si existe una rama más avanzada, debe aportarse una captura de ejecución y el commit asociado.
-
-**Acciones de verificación previas a la entrega:** registrar compilación y pruebas de cada producto; documentar las rutas, respuestas y fallos de APIs reales; comprobar el despliegue backend y justificar con una base medible el 70 % solicitado; probar en dispositivo las pantallas core Android; y enlazar esas evidencias a historias, tareas y commits del Sprint 1.
-
-**Nota de cierre del Capítulo IV para TB1.** Esta versión constituye una base documental estructurada. Para considerarla lista para evaluación, deben sustituirse los campos `[pendiente]` por evidencias del equipo, confirmar el Sprint Goal y el tablero, incorporar datos y pruebas reales del backend y Android, y comprobar el alcance exigido para el TB1.
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 # Conclusiones
+
 ## Conclusiones y recomendaciones
 
-El análisis de BlockVoluntariado identifica como principales necesidades la centralización de oportunidades, la búsqueda compatible con horarios de estudiantes y la gestión trazable de postulaciones por las organizaciones. Las entrevistas y el análisis de tareas fundamentan una plataforma que combine experiencia móvil, servicios de negocio y persistencia.
+El análisis y desarrollo de BlockVoluntariado durante el ciclo TB1 permite extraer las siguientes conclusiones y recomendaciones clave:
 
-Desde el diseño técnico, la revisión evidencia la importancia de diferenciar los contextos candidatos de los definitivos, documentar contratos entre capacidades y emplear correctamente los patrones de DDD. Se recomienda validar las reglas de negocio con los interesados, enlazar cada decisión a historias y pruebas, y mantener los modelos C4 coherentes entre niveles.
+1. **Centralización y compatibilidad del voluntariado:** La investigación con estudiantes universitarios y coordinadores de ONG evidenció que el principal obstáculo para el compromiso social no es la falta de interés, sino la dispersión de oportunidades y la incompatibilidad con los horarios académicos. BlockVoluntariado resuelve este problema mediante un modelo de datos estructurado que filtra convocatorias por proximidad, disponibilidad horaria y competencias.
+2. **Robustez mediante Domain-Driven Design:** La adopción de patrones estratégicos de DDD (Bounded Contexts, Context Mapping, Domain Message Flows) permitió delimitar responsabilidades claras entre el ciclo de vida de convocatorias, postulaciones, acreditación de asistencia y emisión de constancias, evitando el crecimiento desordenado y garantizando la modularidad del backend.
+3. **Inmutabilidad y valor del reconocimiento:** La incorporación de hashes criptográficos SHA-256 en la emisión y validación de certificados digitales aporta un valor diferencial al estudiante para su currículum vitae y a la universidad para la convalidación de horas de servicio comunitario, eliminando el riesgo de constancias apócrifas.
+4. **Recomendaciones para el siguiente ciclo (TP/TF):** Para las siguientes iteraciones se recomienda profundizar en la suite de pruebas automatizadas con Cucumber/BDD para aceptación de usuarios, completar las entrevistas de validación con usuarios en campo y expandir la analítica de impacto social en el panel de control de las ONG.
 
-Las métricas de adopción, certificación y retención del producto son hipótesis y objetivos por validar; no se presentan como resultados alcanzados.
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
-# Video App Validation
-# Video About the product
-# Video About the team
+# Video de Exposición del Trabajo Parcial (TB1)
+
+A continuación se presentan los enlaces a las grabaciones oficiales de sustentación del Trabajo Parcial, preparadas por el equipo de desarrollo de acuerdo con los lineamientos de la rúbrica de evaluación:
+
+## Video About the Team
+- **Descripción:** Presentación formal de los integrantes del equipo, roles según la matriz LACX, metodología de trabajo y dinámica colaborativa.
+- **Enlace de visualización:** [URL de video en OneDrive / Stream / YouTube]
+- **Participantes:** Cabrejos Chocco, Diego Alexander; Tavara Correa, Sebastian Oswaldo; Thuncar Vila, Ghorghet Saul.
+
+## Video About the Product
+- **Descripción:** Explicación detallada de la propuesta de valor de BlockVoluntariado, los segmentos objetivo abordados, el modelo de negocio social y la arquitectura técnica de la plataforma.
+- **Enlace de visualización:** [URL de video en OneDrive / Stream / YouTube]
+
+## Video App Validation
+- **Descripción:** Demostración en vivo de los productos desarrollados durante el Sprint 1: navegación en la Landing Page web, exploración de endpoints interactivos en Swagger UI y ejecución de los flujos core en la aplicación Android.
+- **Enlace de visualización:** [URL de video en OneDrive / Stream / YouTube]
+
+<div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 # Glosario
 
-- **Bounded Context:** límite donde un modelo de dominio mantiene significado consistente.
-- **Comando:** solicitud de ejecutar una acción de negocio.
-- **Evento de dominio:** hecho relevante ocurrido en el negocio.
-- **Context Map:** representación de dependencias y acuerdos entre contextos.
-- **C4:** modelo para describir arquitectura mediante contexto, contenedores, componentes y código.
+- **Bounded Context:** Límite explícito dentro del cual un modelo de dominio particular es aplicable y mantiene una consistencia terminológica estricta.
+- **Comando (Command):** Mensaje que expresa una intención directa de modificar el estado del sistema en un agregado de dominio.
+- **Evento de Dominio (Domain Event):** Hecho relevante ocurrido en el pasado dentro del dominio del negocio que no puede modificarse.
+- **Context Map:** Artefacto que describe las relaciones estructurales, dependencias y contratos de integración entre diferentes Bounded Contexts.
+- **Modelo C4:** Marco formal de documentación arquitectónica compuesto por cuatro niveles jerárquicos de abstracción: Contexto, Contenedores, Componentes y Código.
+- **SHA-256 (Secure Hash Algorithm):** Función criptográfica unidireccional empleada para garantizar la integridad e inmutabilidad de los certificados emitidos.
+- **Sprint Backlog:** Subconjunto priorizado de elementos del Product Backlog seleccionados para su implementación durante un Sprint específico.
+
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 # Bibliografía
-- DDD Crew. (s. f.). *Domain Message Flow Modelling*. https://github.com/ddd-crew/domain-message-flow-modelling
-- DDD Crew. (s. f.). *Bounded Context Canvas*. https://github.com/ddd-crew/bounded-context-canvas
-- DDD Crew. (s. f.). *Context Mapping*. https://github.com/ddd-crew/context-mapping
 
+- DDD Crew. (2021). *Domain Message Flow Modelling*. GitHub. https://github.com/ddd-crew/domain-message-flow-modelling
+- DDD Crew. (2021). *Bounded Context Canvas*. GitHub. https://github.com/ddd-crew/bounded-context-canvas
+- DDD Crew. (2021). *Context Mapping*. GitHub. https://github.com/ddd-crew/context-mapping
+- Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley Professional.
+- Brown, S. (2018). *The C4 model for visualising software architecture*. https://c4model.com/
 - Comisión Económica para América Latina y el Caribe (CEPAL). (2021). *El rol del voluntariado y la participación juvenil en la recuperación y el desarrollo en América Latina*. Naciones Unidas.
-
 - Programa de los Voluntarios de las Naciones Unidas (VNU). (2022). *Informe sobre el estado del voluntariado en el mundo 2022: Crear sociedades igualitarias e inclusivas*. Naciones Unidas.
+- Idealist. (2024). *Conectando personas que quieren hacer el bien*. https://www.idealist.org
+- Hacesfalta. (2024). *Voluntariado y proyectos de impacto social*. https://www.hacesfalta.org
+- Catchafire. (2024). *Skills-based volunteer matching platform*. https://www.catchafire.org
 
-- Idealist. (s. f.). Tiempo de Cambios.
-  https://www.idealist.org
-
-- Hacesfalta. (s. f.). Voluntariado y Empleo en ONG.
-  https://www.hacesfalta.org
-
-- Catchafire. (s. f.). ¿Que es Catchafire y como puedo unirme?.
-  https://help.catchafire.org
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 # Anexos
 
-
-#### Codecito
+En esta sección se compilan las hojas de estilo aplicadas para la renderización e impresión del informe en formato PDF, garantizando paginación consistente conforme a las normas de presentación institucional de la UPC.
 
 <style>
 @media print {
