@@ -157,39 +157,7 @@ En el siguiente cuadro se describen las acciones realizadas y enunciados de conc
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
 ## Objetivos SMART
-### 1. Tavara Correa, Sebastian Oswaldo
-* **Objetivo SMART 1 (Certificación Cloud & Arquitectura):**
-  * **Declaración:** Obtener la certificación oficial **AWS Certified Solutions Architect – Associate** en un lapso no mayor a **6 meses** posteriores a la graduación universitaria, dedicando 10 horas semanales a cursos oficiales y laboratorios prácticos en AWS, con la finalidad de consolidar su perfil profesional en diseño de infraestructuras distribuidas y de alta disponibilidad.
-  * **S (Específico):** Aprobar la certificación AWS Certified Solutions Architect - Associate.
-  * **M (Medible):** Obtener un puntaje mínimo de 750/1000 en el examen oficial SAA-C03.
-  * **A (Alcanzable):** Asignar un horario fijo de 10 horas de autoestudio semanal y desplegar 5 arquitecturas serverless/contenedores en sandbox de AWS.
-  * **R (Relevante):** Clave para ejercer el rol de Arquitecto de Software y diseñar sistemas escalables desacoplados.
-  * **T (Temporal):** Culminar y certificar dentro de los primeros 6 meses post-titulación.
-* **Objetivo SMART 2 (Liderazgo Técnico en Proyectos Móviles):**
-  * **Declaración:** Liderar como **Mobile Tech Lead** o **Senior Software Engineer** el diseño e implementación de una aplicación móvil corporativa con Clean Architecture y DDD que logre una cobertura de pruebas unitarias superior al **80%** y cero vulnerabilidades críticas en SonarQube, durante sus primeros **12 meses** en el mercado laboral profesional.
-  * **S (Específico):** Liderar el diseño de módulos de software móvil aplicando Clean Architecture y DDD.
-  * **M (Medible):** Mantener un *code coverage* $\ge 80\%$ y cumplir con estándares de calidad de código estricto.
-  * **A (Alcanzable):** Respaldado en la experiencia adquirida en el curso y en la arquitectura de BlockVoluntariado.
-  * **R (Relevante):** Garantizar la mantenibilidad y calidad del software a escala empresarial.
-  * **T (Temporal):** En un plazo de 12 meses de ejercicio profesional continuo.
-
-### 2. Tuncar Vila, Ghorghet Saul
-* **Objetivo SMART 1 (Certificación Profesional en Bases de Datos):**
-  * **Declaración:** Aprobar la certificación internacional **Oracle Certified Professional: MySQL 8.0 Database Administrator** en un plazo máximo de **9 meses** tras graduarse de la universidad, completando un programa de preparación técnica de 8 horas semanales enfocado en indexación InnoDB, particionamiento, replicación y alta disponibilidad.
-  * **S (Específico):** Obtener la certificación OCP MySQL 8.0 Database Administrator (Examen 1Z0-908).
-  * **M (Medible):** Aprobar el examen oficial con una calificación igual o superior al 80%.
-  * **A (Alcanzable):** Cimentado en su experiencia en optimización SQL relacional y laboratorios de administración de bases de datos.
-  * **R (Relevante):** Validar internacionalmente competencias técnicas para la administración y tuning de motores de base de datos críticos.
-  * **T (Temporal):** Meta a cumplirse dentro de los primeros 9 meses post-graduación.
-* **Objetivo SMART 2 (Optimización de Rendimiento Backend y Datos):**
-  * **Declaración:** Diseñar y desplegar una arquitectura de base de datos relacional y capa de cacheo en memoria (Redis + MySQL) en un entorno productivo que logre reducir el tiempo promedio de respuesta (*latency*) de transacciones concurrentes en un **35%**, durante sus primeros **12 meses** como ingeniero backend o de datos.
-  * **S (Específico):** Optimizar la capa de persistencia y ejecución de queries complejas en producción.
-  * **M (Medible):** Disminución medible del 35% en los tiempos de respuesta según métricas de APM (New Relic / Datadog).
-  * **A (Alcanzable):** Mediante profiling de consultas lentas, normalización estratégica e indexación balanceada.
-  * **R (Relevante):** Generar eficiencia operativa y ahorro en costos de infraestructura cloud.
-  * **T (Temporal):** Durante el primer año de ejercicio laboral.
-
-### 3. Cabrejos Chocco, Diego Alexander
+### 1. Cabrejos Chocco, Diego Alexander
 * **Objetivo SMART 1 (Certificación en Desarrollo Móvil Google):**
   * **Declaración:** Obtener la certificación oficial **Google Associate Android Developer** en un plazo de **6 meses** posteriores a la graduación universitaria, dedicando 10 horas semanales a proyectos prácticos en Kotlin, Jetpack Compose, Coroutines y arquitectura modular.
   * **S (Específico):** Rendir y aprobar el examen oficial de Google para desarrolladores Android.
@@ -205,6 +173,38 @@ En el siguiente cuadro se describen las acciones realizadas y enunciados de conc
   * **R (Relevante):** Demostrar la capacidad de alinear el valor percibido por el usuario final con ingeniería móvil de primer nivel.
   * **T (Temporal):** En un lapso de 10 meses tras el lanzamiento.
 
+### 2. Tavara Correa, Sebastian Oswaldo
+* **Objetivo SMART 1 (Certificación Cloud & Arquitectura):**
+  * **Declaración:** Obtener la certificación oficial **AWS Certified Solutions Architect – Associate** en un lapso no mayor a **6 meses** posteriores a la graduación universitaria, dedicando 10 horas semanales a cursos oficiales y laboratorios prácticos en AWS, con la finalidad de consolidar su perfil profesional en diseño de infraestructuras distribuidas y de alta disponibilidad.
+  * **S (Específico):** Aprobar la certificación AWS Certified Solutions Architect - Associate.
+  * **M (Medible):** Obtener un puntaje mínimo de 750/1000 en el examen oficial SAA-C03.
+  * **A (Alcanzable):** Asignar un horario fijo de 10 horas de autoestudio semanal y desplegar 5 arquitecturas serverless/contenedores en sandbox de AWS.
+  * **R (Relevante):** Clave para ejercer el rol de Arquitecto de Software y diseñar sistemas escalables desacoplados.
+  * **T (Temporal):** Culminar y certificar dentro de los primeros 6 meses post-titulación.
+* **Objetivo SMART 2 (Liderazgo Técnico en Proyectos Móviles):**
+  * **Declaración:** Liderar como **Mobile Tech Lead** o **Senior Software Engineer** el diseño e implementación de una aplicación móvil corporativa con Clean Architecture y DDD que logre una cobertura de pruebas unitarias superior al **80%** y cero vulnerabilidades críticas en SonarQube, durante sus primeros **12 meses** en el mercado laboral profesional.
+  * **S (Específico):** Liderar el diseño de módulos de software móvil aplicando Clean Architecture y DDD.
+  * **M (Medible):** Mantener un *code coverage* $\ge 80\%$ y cumplir con estándares de calidad de código estricto.
+  * **A (Alcanzable):** Respaldado en la experiencia adquirida en el curso y en la arquitectura de BlockVoluntariado.
+  * **R (Relevante):** Garantizar la mantenibilidad y calidad del software a escala empresarial.
+  * **T (Temporal):** En un plazo de 12 meses de ejercicio profesional continuo.
+
+### 3. Tuncar Vila, Ghorghet Saul
+* **Objetivo SMART 1 (Certificación Profesional en Bases de Datos):**
+  * **Declaración:** Aprobar la certificación internacional **Oracle Certified Professional: MySQL 8.0 Database Administrator** en un plazo máximo de **9 meses** tras graduarse de la universidad, completando un programa de preparación técnica de 8 horas semanales enfocado en indexación InnoDB, particionamiento, replicación y alta disponibilidad.
+  * **S (Específico):** Obtener la certificación OCP MySQL 8.0 Database Administrator (Examen 1Z0-908).
+  * **M (Medible):** Aprobar el examen oficial con una calificación igual o superior al 80%.
+  * **A (Alcanzable):** Cimentado en su experiencia en optimización SQL relacional y laboratorios de administración de bases de datos.
+  * **R (Relevante):** Validar internacionalmente competencias técnicas para la administración y tuning de motores de base de datos críticos.
+  * **T (Temporal):** Meta a cumplirse dentro de los primeros 9 meses post-graduación.
+* **Objetivo SMART 2 (Optimización de Rendimiento Backend y Datos):**
+  * **Declaración:** Diseñar y desplegar una arquitectura de base de datos relacional y capa de cacheo en memoria (Redis + MySQL) en un entorno productivo que logre reducir el tiempo promedio de respuesta (*latency*) de transacciones concurrentes en un **35%**, durante sus primeros **12 meses** como ingeniero backend o de datos.
+  * **S (Específico):** Optimizar la capa de persistencia y ejecución de queries complejas en producción.
+  * **M (Medible):** Disminución medible del 35% en los tiempos de respuesta según métricas de APM (New Relic / Datadog).
+  * **A (Alcanzable):** Mediante profiling de consultas lentas, normalización estratégica e indexación balanceada.
+  * **R (Relevante):** Generar eficiencia operativa y ahorro en costos de infraestructura cloud.
+  * **T (Temporal):** Durante el primer año de ejercicio laboral.
+
 ---
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
@@ -218,9 +218,9 @@ Es una plataforma en donde los ciudadanos puedan tener la oportunidad de partici
 
 | **Nombre Completo del integrante**    |   **Descripcion de la carrera**                                   | **Fotografia**                                                         | **Conocimientos y habilidades**
 | :------------------------------------ |:-----------------------------------------------------------------|:-----------------------------------------------------------------------|:------------------------------------ |
+| Cabrejos Chocco, Diego Alexander      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-chapter1/diego-cabrejos.jpeg">               | Soy Diego Alexander Cabrejos Chocco estudiante de la carrera de ingeniería de software, actualmente cursando el 6to ciclo, soy una persona sociable, creativa, que trabaja bien en equipo y busco que todo el equipo participe en las actividades activamente. Me adapto rapidamente a la modalidad de trabajo. Mi meta es poder crear y desarrollar proyectos tecnologicos que tenga un impacto positivo y que sea entretenido. Lo mas interesante de la Software es que cada vez se va expandiendo, y las opciones para poder desarrollar algun proyecto por mas interesante o loco que paresca el tema, no es impedimento para desarrollar lo que desees. (claro que siempre siguiendo el tema legal)
 | Tavara Correa, Sebastian Oswaldo      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-chapter1/sebastian-tavara.jpeg"> | Soy Sebastian Oswaldo Tavara Correa estudiante de la carrera de ingeniería de software, actualmente cursando el 6to ciclo, me considero una persona estudiosa y muy colaborativa al trabajar en grupo. Me adapto rápidamente a cualquier entorno. Me interesa desarrollar soluciones tecnológicas que tengan un impacto positivo. Creo que el desarrollo de software no debe limitarse en buscar la mayor funcionalidad, sino que también en generar bienestar en la sociedad.
 | Tuncar Vila, Ghorghet Saul      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-chapter1/ghorghet-tuncar.png">               | Soy Ghorghet Saul Tuncar Vila, estudiante de 6to ciclo de Ingeniería de Software. Cuento con una base sólida en el desarrollo de algoritmos en C++, la creación de interfaces web interactivas mediante HTML, CSS y JavaScript, y el dominio de bases de datos relacionales (MySQL) y no relacionales (MongoDB). Me apasiona transformar problemas complejos en soluciones de software eficientes, escalables y con una gestión de datos versátil. Mi enfoque combina la rigurosidad técnica con habilidades blandas como la proactividad y la empatía, lo que me permite integrarme fácilmente en equipos colaborativos bajo metodologías ágiles.
-| Cabrejos Chocco, Diego Alexander      | Ingeniería de Software Universidad Peruana de Ciencias Aplicadas | <img src="assets/md-images-chapter1/diego-cabrejos.jpeg">               | Soy Diego Alexander Cabrejos Chocco estudiante de la carrera de ingeniería de software, actualmente cursando el 6to ciclo, soy una persona sociable, creativa, que trabaja bien en equipo y busco que todo el equipo participe en las actividades activamente. Me adapto rapidamente a la modalidad de trabajo. Mi meta es poder crear y desarrollar proyectos tecnologicos que tenga un impacto positivo y que sea entretenido. Lo mas interesante de la Software es que cada vez se va expandiendo, y las opciones para poder desarrollar algun proyecto por mas interesante o loco que paresca el tema, no es impedimento para desarrollar lo que desees. (claro que siempre siguiendo el tema legal)
 
 <div class="print-page-break" style="break-before: page; page-break-before: always; height: 0;"></div>
 
