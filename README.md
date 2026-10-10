@@ -1915,12 +1915,29 @@ La validación con usuarios en esta etapa se orienta a evaluar la usabilidad y a
 
 El protocolo de prueba se estructura en torno a tareas de usuario guiadas, evaluadas bajo el marco de las diez heurísticas de usabilidad de Jakob Nielsen y los principios de accesibilidad WCAG 2.1:
 
-- **Segmento 1 (Estudiantes Voluntarios):**
-  - *Tarea 1:* Localizar una oportunidad de voluntariado ambiental en la Landing Page y revisar sus requisitos y horarios.
-  - *Tarea 2:* Iniciar sesión en la aplicación móvil y postular a una convocatoria disponible, verificando el cambio de estado en la bandeja de postulaciones.
-- **Segmento 2 (Representantes de Organizaciones Sociales):**
-  - *Tarea 1:* Ingresar a la sección informativa para ONGs en la web y comprender el flujo de publicación de proyectos.
-  - *Tarea 2:* Registrar una nueva convocatoria en la aplicación móvil definiendo título, cupos y requisitos mínimos.
+### Landing Page
+  Pregunta 1. ¿Qué impresión te produjo el diseño visual de la Landing Page al ingresar por primera vez?
+
+  Pregunta 2. ¿Qué opinas sobre la combinación de colores, el tamaño de los textos y las imágenes utilizadas?
+
+  Pregunta 3. ¿Consideras que las secciones están bien organizadas o hubo alguna parte difícil de localizar?
+
+  Pregunta 4. ¿Encontraste algún texto, ícono o elemento visual difícil de leer o comprender?
+
+  Pregunta 5. ¿Qué cambiarías del diseño de la Landing Page?
+
+
+### Aplicación Mobile
+  Pregunta 6. ¿Qué impresión te produjo el diseño de la aplicación?
+
+  Pregunta 7. ¿Cómo describirías la distribución de botones, textos, imágenes y formularios?
+
+  Pregunta 8. ¿Qué tan cómodo te resultó navegar entre las pantallas?
+
+  Pregunta 9. ¿Observaste elementos demasiado pequeños o difíciles de utilizar?
+
+  Pregunta 10. ¿Qué mejorarías del diseño de la aplicación?
+
 
 #### 4.3.2. Registro y Planificación de Pruebas con Usuarios
 
