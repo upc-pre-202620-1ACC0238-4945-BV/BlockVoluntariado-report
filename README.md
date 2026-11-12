@@ -131,6 +131,7 @@ A lo largo del ciclo correspondiente al Trabajo Parcial (TB1), el equipo registr
     - [4.1. Software Configuration Management](#41-software-configuration-management)
     - [4.2. Landing Page & Mobile Application Implementation](#42-landing-page--mobile-application-implementation)
       - [4.2.1. Sprint 1](#421-sprint-1)
+      - [4.2.2. Sprint 2](#422-sprint-2)
     - [4.3. Validation Interviews](#43-validation-interviews)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
