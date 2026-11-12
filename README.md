@@ -1907,9 +1907,13 @@ Durante el Sprint 1, el equipo aplicó un flujo de trabajo altamente sincronizad
 | **Tuncar Vila, Ghorghet Saul** | Líder de Desarrollo Móvil Android | - Configuración del proyecto base Android con Jetpack Compose y Gradle Kotlin DSL.<br>- Implementación de la pantalla de exploración de convocatorias (`DiscoveryScreen`) y filtros.<br>- Construcción del módulo de perfil de voluntario (`ProfileScreen`) y disponibilidad horaria.<br>- Pruebas funcionales de interfaz en emulador y validación de componentes visuales Material 3. | `BlockVoluntariado-android`, `BlockVoluntariado-report` |
 
 
+# 4.2.2. Sprint 2 — Product Implementation & Validation (AV2)
+
+> **Estado documental:** revisión de Sprint 2 basada en los ZIP de Android (`devDiego`) y Flutter/iOS (`develop`), tres capturas proporcionadas por el equipo del historial de GitHub, la URL de Landing Page, la rúbrica y el Product Backlog anterior. Las capturas prueban que GitHub muestra determinadas contribuciones, pero no certifican ejecución de las aplicaciones, pruebas aprobadas ni despliegue del backend. Las tareas y los Story Points deben contrastarse con el tablero del Sprint 2.
+
 ## 4.2.2. Sprint 2
 
-El Sprint 2 se orienta a consolidar una experiencia móvil demostrable de **BlockVoluntariado** y a incrementar la confiabilidad de los servicios que la respaldan. El propósito funcional es que el estudiante pueda identificar oportunidades de voluntariado, consultar sus características, gestionar una postulación y seguir su participación; desde la perspectiva organizacional, la plataforma debe permitir administrar las actividades y postulantes definidos en el alcance. El trabajo también contempla el avance del cliente cross-platform desarrollado en **Flutter**, que incluye la estructura para iOS.
+El Sprint 2 se orienta a consolidar una experiencia móvil demostrable de **BlockVoluntariado** y a incrementar la confiabilidad de los servicios que la respaldan. El propósito funcional es que el estudiante pueda identificar oportunidades de voluntariado, consultar sus características, gestionar una postulación y seguir su participación; desde la perspectiva organizacional, la plataforma debe permitir administrar las actividades y postulantes definidos en el alcance. El trabajo también contempla el avance del cliente multiplataforma desarrollado en **Flutter**, que incluye la estructura para iOS. La **Landing Page no recibió cambios en el Sprint 2**, según la información actualizada del equipo; permanece publicada en [GitHub Pages](https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/) y forma parte del producto existente desde una iteración anterior.
 
 Como parte del AV2 (semana 12), la rúbrica exige mantener la Landing Page desplegada, contar con el **backend desplegado al 100 % y su documentación pública**, mostrar las principales funcionalidades core de la aplicación e incorporar una primera versión de los videos de validación, About-the-Product y About-the-Team. Se actualizarán además el Registro de Versiones, los analíticos de colaboración del informe, Student Outcome, las correcciones de los artefactos previos, conclusiones, bibliografía y anexos.
 
@@ -1925,11 +1929,11 @@ La planificación del segundo Sprint debe construirse a partir de los resultados
 | Modalidad / lugar | **[Completar; adjuntar evidencia de reunión]** |
 | Preparado por | **[Responsable de esta planificación]** |
 | Participantes | **[Confirmar participantes de Sprint 2]** |
-| Sprint 1 Review Summary | En TB1 se documentó la Landing Page y se registraron avances de backend y Android. **[Completar con historias terminadas, impedimentos, feedback y métricas reales de Sprint 1.]** |
+| Sprint 1 Review Summary | En TB1 se documentó la Landing Page, que se mantiene publicada sin cambios en el Sprint 2, y se registraron avances en backend y Android. Las capturas de Platform incluyen commits de octubre de 2026 que deben asignarse al Sprint que corresponda según las fechas oficiales. **[Completar con historias terminadas, impedimentos, feedback y métricas reales del Sprint 1.]** |
 | Sprint 1 Retrospective Summary | **[Incorporar acuerdos reales de retrospectiva: aciertos, dificultades, acciones concretas de mejora.]** |
 | Sprint Goal (propuesta por validar) | Facilitar a los estudiantes una experiencia móvil demostrable para descubrir oportunidades, postular y consultar el seguimiento de sus actividades, con servicios REST desplegados y documentados; paralelamente, avanzar en la experiencia multiplataforma para ampliar el acceso a la solución. |
 | Valor para los usuarios | Reducir la dificultad de encontrar oportunidades relevantes y conocer el estado de participación; para las ONG, mejorar la trazabilidad de solicitudes y actividades. |
-| Criterios de verificación del objetivo | (1) Recorrido Android demostrado en dispositivo desde acceso hasta postulación/seguimiento; (2) backend al 100 % del alcance acordado accesible y documentado con Swagger/OpenAPI; (3) Landing Page accesible; (4) progreso Flutter demostrado en las pantallas que realmente funcionen; (5) evidencias y primera versión de videos AV2 incorporadas. |
+| Criterios de verificación del objetivo | (1) Recorrido Android demostrado en dispositivo desde acceso hasta postulación/seguimiento; (2) backend al 100 % del alcance acordado accesible y documentado con Swagger/OpenAPI; (3) Landing Page existente accesible, **sin nuevas tareas de implementación**; (4) progreso Flutter/iOS demostrado en pantallas ejecutadas; (5) commits de noviembre identificados, pruebas y primeras versiones de videos AV2 incorporadas. |
 | Sprint 2 Velocity prevista | **[Cantidad de Story Points que el equipo acuerde poder completar, fundamentada en Sprint 1]** |
 | Sum of Story Points comprometidos | **[Sumar exclusivamente las User Stories aprobadas para Sprint 2 en el tablero]** |
 
@@ -1937,13 +1941,13 @@ La planificación del segundo Sprint debe construirse a partir de los resultados
 
 ### 4.2.2.2. Aspect Leaders and Collaborators
 
-Se propone conservar como **punto de partida no ratificado** la distribución documentada en TB1, pero debe revisarse porque el Sprint 2 incluye un frente Flutter/iOS y nuevos entregables audiovisuales.
+Se propone conservar como **punto de partida no ratificado** la distribución documentada en TB1, pero debe revisarse porque el Sprint 2 incluye un frente Flutter/iOS y nuevos entregables audiovisuales. **Landing Page: mantenimiento sin cambios** en esta iteración; no atribuir nuevas funcionalidades ni commits a ese frente.
 
 | Miembro del equipo | Android | Backend / API | Flutter / iOS | Landing Page | Pruebas y validación | Videos y documentación |
 |---|---|---|---|---|---|---|
-| Diego Alexander Cabrejos Chocco | C | C | **[Confirmar]** | L | C | **[Confirmar]** |
-| Sebastian Oswaldo Tavara Correa | C | L | **[Confirmar]** | C | L | **[Confirmar]** |
-| Ghorghet Saul Thuncar Vila | L | C | **[Confirmar]** | C | C | **[Confirmar]** |
+| Diego Alexander Cabrejos Chocco | C (**se observan commits en `devDiego`**) | C | **[Confirmar]** | **Sin cambios de implementación** | C | **[Confirmar]** |
+| Sebastian Oswaldo Tavara Correa | C (**se observan integraciones del 09/10**) | L **[confirmar Sprint 2]** | **[Confirmar]** | **Sin cambios de implementación** | L **[confirmar]** | **[Confirmar]** |
+| Ghorghet Saul Thuncar Vila | L **[confirmar]** | C (**captura de octubre**) | C/L **[confirmar; commits de noviembre]** | **Sin cambios de implementación** | C | **[Confirmar]** |
 
 **L = Leader; C = Collaborator.** Esta matriz reproduce como antecedente los roles de TB1, no certifica el reparto real de tareas del Sprint 2. Ajustar con el tablero y los commits de la iteración.
 
@@ -1966,18 +1970,49 @@ La tabla siguiente muestra **historias candidatas**, no un Sprint Backlog confir
 
 ### 4.2.2.4. Development Evidence for Sprint Review
 
-El proyecto Android suministrado contiene **140 archivos Kotlin en `app/src/main`** y carpetas de funcionalidades para identidad y acceso, perfiles, descubrimiento, postulaciones, participación, reconocimientos y notificaciones. Se observa separación de presentación, casos de uso, dominio e infraestructura y contratos Retrofit para varios servicios REST. **La inspección de archivos no equivale a una compilación ni a una validación funcional integral.**
+La evidencia suministrada incluye capturas del historial de commits de **Android (`devDiego`)**, **Flutter/iOS (`develop`)** y **Platform (`develop`)**, obtenidas por el equipo. Se mantiene como referencia técnica el código previamente compartido: Android agrupa las funcionalidades de identidad, perfiles, convocatorias, postulaciones, participación, reconocimientos y notificaciones; Flutter/iOS contiene avances en autenticación, navegación, descubrimiento y creación de voluntariados.
 
-El cliente multiplataforma tiene **18 archivos Dart en `lib/`** y estructura Flutter con directorios `ios/` y `android/`. Se identifican pantallas de onboarding, selección de acceso, login, registro, exploración y vista de voluntariados. El repositorio de exploración actualmente devuelve una lista fija de ejemplos y no consulta una API remota.
+**La Landing Page no recibió modificaciones en el Sprint 2.** Su versión pública continúa disponible en [BlockVoluntariado – GitHub Pages](https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/), por lo que no se deben inventar nuevos commits ni User Stories web para esta iteración.
 
-**Evidencias pendientes:** insertar capturas y enlaces de cambios de las ramas `devDiego` (Android) y `develop` (Flutter/iOS), fechas, commits, Pull Requests y descripción del incremento real que aporta cada cambio.
+**Evidencia Android — rama `devDiego`.** La captura muestra contribuciones de `MOTOX-357` los días **5 y 6 de noviembre de 2026**, con incorporación del control de música de fondo, confirmación del cierre de sesión, controles de navegación y ajustes de archivos. En la misma captura también se visualizan commits de **9 de octubre de 2026** asociados a integraciones de notificaciones, reconocimientos y participación. Estos últimos deben registrarse como antecedentes o incluirse en Sprint 2 **solo si el período oficial del Sprint así lo respalda**.
 
-| Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-|---|---|---|---|---|---|
-| BlockVoluntariado-android | `devDiego` **[revisar nombre remoto exacto]** | [hash real] | [mensaje real] | [descripción] | [fecha] |
-| BlockVoluntariado-iOS | `develop` | [hash real] | [mensaje real] | [descripción] | [fecha] |
-| Blockvoluntariado-platform | [rama real] | [hash real] | [mensaje real] | [descripción] | [fecha] |
-| BlockVoluntariado-website | [rama real] | [hash real] | [mensaje real] | [descripción] | [fecha] |
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/evidencias-github/github-android-devDiego.png" alt="Historial GitHub del repositorio Android en la rama devDiego" width="760" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.x. Evidencia de commits de Android, rama devDiego. Fuente: captura del equipo.</em></p>
+</div>
+
+**Evidencia Flutter/iOS — rama `develop`.** La captura exhibe cambios del **10 y 11 de noviembre de 2026**, entre ellos navegación inferior desde la página principal, estructura de descubrimiento de oportunidades y formulario de creación de voluntariados en la capa de presentación. También muestra Pull Requests integrados mediante merges. El título del repositorio indica `BlockVoluntariado-iOS`, mientras que el código revisado corresponde a Flutter/Dart; por ello se documenta como **cliente multiplataforma con soporte iOS**, no como una aplicación Swift nativa verificada.
+
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/evidencias-github/github-ios-develop.png" alt="Historial GitHub de la aplicación Flutter iOS en rama develop" width="760" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.x. Evidencia de commits y merges del cliente Flutter/iOS, rama develop. Fuente: captura del equipo.</em></p>
+</div>
+
+**Evidencia backend / Platform — rama `develop`.** Los commits visibles datan del **7 al 9 de octubre de 2026**. Incluyen configuración de Azure App Service, ajustes de compatibilidad a Java 21 LTS, documentación OpenAPI e integración de componentes del backend. Son evidencia histórica de desarrollo y configuración de despliegue, **no prueba de que el backend esté al 100 % desplegado en AV2**. En la captura aparecen verificaciones `2/2` y `0/2` para diferentes cambios, por lo que es indispensable mostrar un despliegue actual con resultado exitoso.
+
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/evidencias-github/github-platform-develop.png" alt="Historial GitHub de Platform en rama develop" width="760" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.x. Evidencia histórica de commits del backend y configuración Azure, rama develop. Fuente: captura del equipo.</em></p>
+</div>
+
+**Tabla de commits representativos visibles en las capturas** (los hashes completos y cualquier cuerpo de commit deben extraerse de GitHub al completar la tabla oficial de la rúbrica):
+
+| Repository | Branch | Fecha visible | Commit Message / Pull Request | Aporte identificado |
+|---|---|---|---|---|
+| BlockVoluntariado-android | `devDiego` | 2026-11-06 | `feat: add navigation controls, background music and logout functionality` | Controles de navegación, audio y salida de sesión |
+| BlockVoluntariado-android | `devDiego` | 2026-11-06 | `feat(profile): add logout confirmation button` | Confirmación de cierre de sesión |
+| BlockVoluntariado-android | `devDiego` | 2026-11-05 | `feat(audio): add background music toggle` | Interruptor de música |
+| BlockVoluntariado-iOS | `develop` | 2026-11-11 | `feat(volunteering): add volunteering creation form page in presentation layer` | Formulario para crear oportunidades |
+| BlockVoluntariado-iOS | `develop` | 2026-11-10 | `feat(navigation): add main_page with bottom navigation and link to auth_page and discovery_page` | Navegación principal |
+| BlockVoluntariado-iOS | `develop` | 2026-11-10 | `feat(discovery): add application, domain, infrastructure and presentation` | Módulo de descubrimiento |
+| Blockvoluntariado-platform | `develop` | 2026-10-09 | `feat(web): add root redirect controller to swagger and permit public root path` | Redirección hacia Swagger |
+| Blockvoluntariado-platform | `develop` | 2026-10-08 | `fix(compatibility): target Java 21 LTS for Azure App Service runtime compatibility` | Ajuste de compatibilidad de runtime |
+| Blockvoluntariado-platform | `develop` | 2026-10-08 | `feat(deploy): add production configuration, dockerfile, and deployment assets for azure` | Archivos de despliegue |
+| Blockvoluntariado-platform | `develop` | 2026-10-07 | `feat(integration): finalize backend integration, openapi documentation and mysql 8.0 schema scripts` | Integración, documentación y esquemas de datos |
+
+**Repositorios de evidencia:** [Android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android), [Flutter/iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) y [Platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform). Los enlaces dirigen a los repositorios; verificar los commits exactos y agregar sus hashes completos o abreviados antes de la entrega.
+
+**Pendiente:** contrastar commits con el calendario del Sprint 2, completar la tabla requerida con `Commit ID`, `Commit Message Body` y fecha real de cada contribución, y relacionar cada cambio con las User Stories comprometidas.
 
 ### 4.2.2.5. Testing Suite Evidence for Sprint Review
 
@@ -2023,31 +2058,38 @@ El código establece como base URL `https://api.blockvoluntariado.com/api/`; est
 
 ### 4.2.2.8. Software Deployment Evidence for Sprint Review
 
-| Producto | Evidencia esperada para AV2 | Estado comprobable con los materiales recibidos |
+Durante el Sprint 2 la **Landing Page permaneció publicada sin modificaciones**. Se conserva como evidencia de disponibilidad del producto digital existente el enlace público:
+
+**https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/**
+
+| Producto | Evidencia disponible | Interpretación y comprobación pendiente |
 |---|---|---|
-| Landing Page | URL pública, captura y configuración GitHub Pages | URL conocida; debe comprobarse el acceso en el momento de la entrega |
-| Backend | Servicios al **100 % del alcance comprometido**, URL de API, Swagger público, pruebas de solicitudes y logs de despliegue | Se entregó código backend en una iteración anterior, **no evidencia actual de despliegue AV2** |
-| Android | APK ejecutable y demostración de los flujos core, capturas y versión | Código fuente de `devDiego` disponible; **APK, compilación y ejecución no aportados en este ZIP** |
-| Flutter / iOS | Ejecución en simulador/dispositivo y avance funcional del cliente cross-platform | Código Flutter compartido; **no evidencia de compilación iOS ni distribución** |
+| Landing Page | URL pública del sitio; sin cambios reportados en Sprint 2 | Mantener evidencia de acceso; no registrar commits nuevos de web durante esta iteración |
+| Backend / Platform | Captura de `develop` con commits del 07–09/10 sobre Azure App Service, Dockerfile, Java 21 y Swagger | **Hay trabajo de configuración**, pero falta URL pública vigente, captura de Swagger, pruebas HTTP y ejecución exitosa que demuestren el 100 % |
+| Android | Captura de `devDiego` con avances del 05–06/11 y código fuente previamente compartido | Falta incorporar video/capturas de ejecución del APK en dispositivo y pruebas de funcionalidades core |
+| Flutter / iOS | Captura de `develop` con commits del 10–11/11, formularios, descubrimiento y navegación | Falta evidencia de compilación y ejecución en simulador o dispositivo iOS; el APK Android no la sustituye |
 
-**Observación del código Android:** `RepositoryModule.kt` vincula `ConvocatoriasRepository` y `VolunteerRepository` a implementaciones **`InMemoryRepository`**. Aunque existen servicios y repositorios remotos, debe revisarse la inyección de dependencias antes de documentar ambos módulos como integrados al backend en producción.
+El historial Platform incluye cambios para Azure, pero **la existencia de un workflow de despliegue y un controlador de redirección a Swagger no implica que una API esté publicada y operativa**. Para cumplir AV2 se necesita documentar el endpoint accesible, capturas de Swagger con operaciones y respuestas, estado de despliegue y pruebas satisfactorias.
 
-**[Agregar C4 Deployment Diagram actualizado si cambió la infraestructura, evidencias de proveedor cloud, capturas y secuencia reproducible de despliegue.]**
+**Observación pendiente de integración Android:** en el código previamente recibido, `RepositoryModule.kt` vinculaba ciertas interfaces a implementaciones `InMemoryRepository`; confirmar si esa configuración ha cambiado antes de afirmar integración de extremo a extremo con el backend.
+
+**[Agregar C4 Deployment Diagram actualizado si cambió la infraestructura y evidencias vigentes de GitHub Pages, Azure y ejecución móvil.]**
 
 ### 4.2.2.9. Team Collaboration Insights during Sprint
 
-Describir por cada repositorio las contribuciones del período real del Sprint 2, incluyendo commits por participante, Pull Requests, revisiones, tareas del tablero y decisiones de integración. Adjuntar capturas de GitHub Insights y explicar cómo cada contribución ayudó a conseguir el Sprint Goal. Las carpetas ZIP no incorporan el historial Git, por lo que **no se pueden asignar autorías ni fechar cambios desde su contenido**.
+Las capturas suministradas muestran actividad colaborativa en GitHub: en **Android** se observan commits de `MOTOX-357` en noviembre y merges históricos registrados por `SebastianTavara` en octubre; en **Flutter/iOS** se aprecian commits y Pull Requests integrados por `Ghorghet` los días 10 y 11 de noviembre; en **Platform** se documentan commits de `Ghorghet`, `SebastianTavara` y una contribución identificada como `MOTOX-bot` en octubre. La captura **no basta para determinar la autoría humana detrás de una cuenta de automatización** ni para demostrar que estos commits pertenezcan a la misma iteración.
 
-| Integrante | Contribución realizada | Evidencia | Dificultad / solución |
-|---|---|---|---|
-| Diego Alexander Cabrejos Chocco | [Describir según commits del Sprint 2] | [URL/captura] | [Registrar] |
-| Sebastian Oswaldo Tavara Correa | [Describir según commits del Sprint 2] | [URL/captura] | [Registrar] |
-| Ghorghet Saul Thuncar Vila | [Describir según commits del Sprint 2] | [URL/captura] | [Registrar] |
+| Miembro | Evidencias observables en capturas | Consideración para el informe |
+|---|---|---|
+| Diego Alexander Cabrejos Chocco | Captura Android: cuenta `MOTOX-357`, con cambios de navegación, música y cierre de sesión (05–06/11) | Confirmar correspondencia de usuario, relación con historias del Sprint y PRs asociados |
+| Sebastian Oswaldo Tavara Correa | Captura Android: merges de features del 09/10; captura Platform: workflow Azure del 08/10 | Registrar como antecedentes salvo confirmación de que corresponden al período Sprint 2 |
+| Ghorghet Saul Thuncar Vila | Captura Flutter/iOS: commits y merges en `develop` (10–11/11); captura Platform: ajustes Azure y Swagger (07–09/10) | Distinguir avance iOS reciente de trabajos históricos del backend |
+
+La Landing Page mantiene su contenido y despliegue: **no se reportaron nuevas contribuciones de implementación web para Sprint 2**. Añadir las gráficas de *Insights → Contributors*, el listado de Pull Requests y el tablero del Sprint 2 para sustentar tanto la distribución como el impacto real de cada colaboración.
 
 ### Cierre del Sprint 2
 
 La revisión preliminar confirma un avance sustancial en la estructura Android y un desarrollo inicial del cliente Flutter. Para concluir el Sprint 2, corresponde registrar los resultados aceptados por el equipo, contrastarlos con las User Stories y criterios de aceptación, y aportar pruebas de ejecución, despliegue y colaboración. La afirmación de **Android al 100 %** debe expresarse como avance reportado por el equipo hasta contar con una demostración que valide todo el alcance aprobado.
-
 
 ### 4.3. Validation Interviews
 
