@@ -1914,43 +1914,48 @@ Durante el Sprint 1, el equipo aplicó un flujo de trabajo altamente sincronizad
 
 ## 4.2.2. Sprint 2
 
-El Sprint 2 se orienta a consolidar una experiencia móvil demostrable de **BlockVoluntariado** y a incrementar la confiabilidad de los servicios que la respaldan. El propósito funcional es que el estudiante pueda identificar oportunidades de voluntariado, consultar sus características, gestionar una postulación y seguir su participación; desde la perspectiva organizacional, la plataforma debe permitir administrar las actividades y postulantes definidos en el alcance. El trabajo también contempla el avance del cliente multiplataforma desarrollado en **Flutter**, que incluye la estructura para iOS. La **Landing Page no recibió cambios en el Sprint 2**, según la información actualizada del equipo; permanece publicada en [GitHub Pages](https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/) y forma parte del producto existente desde una iteración anterior.
-
-Como parte del AV2 (semana 12), la rúbrica exige mantener la Landing Page desplegada, contar con el **backend desplegado al 100 % y su documentación pública**, mostrar las principales funcionalidades core de la aplicación e incorporar una primera versión de los videos de validación, About-the-Product y About-the-Team. Se actualizarán además el Registro de Versiones, los analíticos de colaboración del informe, Student Outcome, las correcciones de los artefactos previos, conclusiones, bibliografía y anexos.
-
 ### 4.2.2.1. Sprint Planning 2
 
-La planificación del segundo Sprint debe construirse a partir de los resultados observados en el Sprint 1 y de los requisitos de AV2. Su objetivo es entregar valor comprobable a estudiantes y organizaciones, no solamente reunir tareas técnicas.
+El Sprint 2 se desarrolló del **07 al 12 de noviembre de 2026**, según lo informado por el equipo. El objetivo central fue completar el alcance funcional planificado para la aplicación Android y desarrollar la primera versión de la aplicación multiplataforma Flutter/iOS. La Landing Page se mantuvo publicada sin cambios de implementación. El cumplimiento de los requisitos complementarios de AV2 (backend público al 100 %, pruebas, videos y actualización documental) debe registrarse con evidencias verificables.
 
 | Campo de planificación | Información |
 |---|---|
-| Sprint | Sprint 2 |
-| Fecha | **[Completar con la fecha real de la reunión]** |
-| Hora | **[Completar]** |
-| Modalidad / lugar | **[Completar; adjuntar evidencia de reunión]** |
-| Preparado por | **[Responsable de esta planificación]** |
-| Participantes | **[Confirmar participantes de Sprint 2]** |
-| Sprint 1 Review Summary | En TB1 se documentó la Landing Page, que se mantiene publicada sin cambios en el Sprint 2, y se registraron avances en backend y Android. Las capturas de Platform incluyen commits de octubre de 2026 que deben asignarse al Sprint que corresponda según las fechas oficiales. **[Completar con historias terminadas, impedimentos, feedback y métricas reales del Sprint 1.]** |
-| Sprint 1 Retrospective Summary | **[Incorporar acuerdos reales de retrospectiva: aciertos, dificultades, acciones concretas de mejora.]** |
-| Sprint Goal (propuesta por validar) | Facilitar a los estudiantes una experiencia móvil demostrable para descubrir oportunidades, postular y consultar el seguimiento de sus actividades, con servicios REST desplegados y documentados; paralelamente, avanzar en la experiencia multiplataforma para ampliar el acceso a la solución. |
-| Valor para los usuarios | Reducir la dificultad de encontrar oportunidades relevantes y conocer el estado de participación; para las ONG, mejorar la trazabilidad de solicitudes y actividades. |
-| Criterios de verificación del objetivo | (1) Recorrido Android demostrado en dispositivo desde acceso hasta postulación/seguimiento; (2) backend al 100 % del alcance acordado accesible y documentado con Swagger/OpenAPI; (3) Landing Page existente accesible, **sin nuevas tareas de implementación**; (4) progreso Flutter/iOS demostrado en pantallas ejecutadas; (5) commits de noviembre identificados, pruebas y primeras versiones de videos AV2 incorporadas. |
-| Sprint 2 Velocity prevista | **[Cantidad de Story Points que el equipo acuerde poder completar, fundamentada en Sprint 1]** |
-| Sum of Story Points comprometidos | **[Sumar exclusivamente las User Stories aprobadas para Sprint 2 en el tablero]** |
+| Sprint | Sprint 2 — AV2 Sprint Review |
+| Fecha de inicio | 07/11/2026 |
+| Fecha de cierre | 12/11/2026 |
+| Hora de la reunión | Pendiente de registrar (no informada por el equipo) |
+| Modalidad / lugar | Pendiente de confirmar (no se proporcionó acta de reunión) |
+| Preparado por | Pendiente de ratificar por el equipo |
+| Participantes | Diego Alexander Cabrejos Chocco; Sebastian Oswaldo Tavara Correa; Ghorghet Saul Tuncar Vila |
+| Sprint 1 Review Summary | Tras la entrega TB1 se identificó la necesidad de **mejorar la aplicación Android** y **revisar/ampliar el archivo `README.md`** del informe. La Landing Page ya se encontraba publicada y se conservó sin cambios durante el Sprint 2. |
+| Sprint 1 Retrospective Summary | Como mejora de trabajo para la siguiente iteración, se priorizó el cierre del alcance Android y la actualización de la documentación. No se cuenta aún con el acta ni con acuerdos adicionales de retrospectiva para atribuirlos al equipo. |
+| Sprint Goal | **Completar el 100 % del alcance funcional Android definido para AV2 y desarrollar una primera versión del cliente multiplataforma Flutter/iOS de BlockVoluntariado**, manteniendo la coherencia con los procesos de voluntariado y los criterios de demostración del curso. |
+| Objetivo específico 1: Android | Finalizar los módulos y mejoras pendientes de la aplicación Android, incluidos los detalles finales de navegación y experiencia de usuario; realizar una demostración de los flujos priorizados. El 100 % es la meta y el avance declarado por el equipo, pendiente de validación con pruebas y criterios de aceptación. |
+| Objetivo específico 2: Flutter/iOS | Elaborar la primera versión funcional del proyecto Flutter/iOS, con estructura base, navegación, autenticación y pantallas iniciales de exploración/creación según lo efectivamente implementado. |
+| Objetivo específico 3: Informe AV2 | Mejorar el `README.md`, conservar lo desarrollado en TB1 y actualizar Sprint 2, registro de versiones, evidencias y anexos de la entrega AV2. |
+| Objetivo específico 4: Backend | Acreditar la disponibilidad pública del backend al 100 % del alcance AV2 y su documentación Swagger/OpenAPI mediante pruebas reales. Se trata de un requisito de la entrega; su cumplimiento todavía necesita demostración. |
+| Objetivo específico 5: Validación y videos | Preparar las primeras versiones de los videos de validación de la aplicación, About-the-Product y About-the-Team exigidos para AV2, con enlaces y evidencias reales. |
+| Landing Page | Mantener disponible el sitio publicado en https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/ sin modificaciones de implementación en este Sprint. |
+| Métrica de cumplimiento | Android: cantidad de historias/funcionalidades del alcance acordado aceptadas y demostradas respecto del total comprometido; Flutter/iOS: primera versión ejecutable con pantallas y rutas verificadas; documentación: apartados AV2 revisados; backend: disponibilidad y cobertura del alcance comprobadas con Swagger y pruebas. |
+| Sprint 2 Velocity prevista | Pendiente de determinar con el Sprint Backlog acordado y capacidad prevista del equipo. |
+| Sum of Story Points comprometidos | Pendiente de sumar únicamente las User Stories seleccionadas realmente para Sprint 2 (no todo el Product Backlog). |
+| Velocity real | Pendiente de contabilizar las historias aceptadas como Done con sus Story Points y evidencias. |
 
-**Nota sobre las métricas.** La *velocity prevista* es la capacidad planificada del equipo; la *suma comprometida* corresponde a las historias elegidas. No se deben deducir automáticamente de todo el Product Backlog. La *velocity real* se determina al finalizar el Sprint mediante las historias aceptadas como Done.
+**Criterio de aceptación del Sprint Goal.** El avance Android declarado como 100 % debe contrastarse con el alcance acordado y con pruebas de ejecución (APK o dispositivo), casos de uso y resultados de aceptación. Para Flutter/iOS se deberá demostrar qué pantallas y recorridos funcionan efectivamente, distinguiendo el soporte iOS del repositorio de una ejecución verificada en iPhone/simulador. Los requisitos AV2 relativos a backend, documentación y videos se contabilizan de manera independiente, para no presentar como terminadas actividades sin evidencia.
+
+**Criterio cronológico.** Los commits Android del 05 y 06/11 son **anteriores al comienzo declarado del Sprint 2 (07/11)** y se incorporan como antecedentes o como parte del incremento demostrado al cierre, no como commits realizados dentro del período. Los commits Flutter/iOS del 10 y 11/11 sí están dentro del período. Los commits Platform de octubre pertenecen al historial previo.
 
 ### 4.2.2.2. Aspect Leaders and Collaborators
 
-Se propone conservar como **punto de partida no ratificado** la distribución documentada en TB1, pero debe revisarse porque el Sprint 2 incluye un frente Flutter/iOS y nuevos entregables audiovisuales. **Landing Page: mantenimiento sin cambios** en esta iteración; no atribuir nuevas funcionalidades ni commits a ese frente.
+La siguiente matriz recoge exclusivamente las responsabilidades **confirmadas por el equipo para Sprint 2**. Las tareas del backend, pruebas, documentación y videos conservan estado pendiente de asignación o ratificación. La ausencia de un rol confirmado no implica ausencia de contribución.
 
-| Miembro del equipo | Android | Backend / API | Flutter / iOS | Landing Page | Pruebas y validación | Videos y documentación |
-|---|---|---|---|---|---|---|
-| Diego Alexander Cabrejos Chocco | C (**se observan commits en `devDiego`**) | C | **[Confirmar]** | **Sin cambios de implementación** | C | **[Confirmar]** |
-| Sebastian Oswaldo Tavara Correa | C (**se observan integraciones del 09/10**) | L **[confirmar Sprint 2]** | **[Confirmar]** | **Sin cambios de implementación** | L **[confirmar]** | **[Confirmar]** |
-| Ghorghet Saul Thuncar Vila | L **[confirmar]** | C (**captura de octubre**) | C/L **[confirmar; commits de noviembre]** | **Sin cambios de implementación** | C | **[Confirmar]** |
+| Miembro del equipo | Android | Flutter/iOS | Backend / API | Landing Page | Informe, pruebas y videos |
+|---|:---:|:---:|---|---|---|
+| **Diego Alexander Cabrejos Chocco** (`MOTOX-357`) | **C** — ajustes finales, controles de navegación y detalles de UX | — | Por confirmar | Sin cambios de implementación | Por confirmar |
+| **Sebastian Oswaldo Tavara Correa** | **L** — liderazgo del desarrollo Android | — | Por confirmar (lideró backend en TB1; no ratificado para Sprint 2) | Sin cambios de implementación | Por confirmar |
+| **Ghorghet Saul Tuncar Vila** | — | **L** — desarrollo integral de la primera versión Flutter/iOS | Por confirmar | Sin cambios de implementación | Por confirmar |
 
-**L = Leader; C = Collaborator.** Esta matriz reproduce como antecedente los roles de TB1, no certifica el reparto real de tareas del Sprint 2. Ajustar con el tablero y los commits de la iteración.
+**L = Leader; C = Collaborator; — = no se ha informado contribución en ese frente durante este Sprint.** En la columna del informe se dejarán los responsables definitivos cuando estén confirmados en el tablero. Las evidencias visuales proporcionadas muestran commits de Diego en Android y de Ghorghet en Flutter/iOS; el liderazgo Android de Sebastian fue confirmado verbalmente por el equipo, pero aún requiere enlace a sus contribuciones del alcance evaluado.
 
 ### 4.2.2.3. Sprint Backlog 2
 
@@ -1975,7 +1980,7 @@ La evidencia suministrada incluye capturas del historial de commits de **Android
 
 **La Landing Page no recibió modificaciones en el Sprint 2.** Su versión pública continúa disponible en [BlockVoluntariado – GitHub Pages](https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/), por lo que no se deben inventar nuevos commits ni User Stories web para esta iteración.
 
-**Evidencia Android — rama `devDiego`.** La captura muestra contribuciones de `MOTOX-357` los días **5 y 6 de noviembre de 2026**, con incorporación del control de música de fondo, confirmación del cierre de sesión, controles de navegación y ajustes de archivos. En la misma captura también se visualizan commits de **9 de octubre de 2026** asociados a integraciones de notificaciones, reconocimientos y participación. Estos últimos deben registrarse como antecedentes o incluirse en Sprint 2 **solo si el período oficial del Sprint así lo respalda**.
+**Evidencia Android — rama `devDiego`.** La captura muestra contribuciones de `MOTOX-357` los días **5 y 6 de noviembre de 2026**, con incorporación del control de música de fondo, confirmación del cierre de sesión, controles de navegación y ajustes de archivos. En la misma captura se visualizan commits de **9 de octubre de 2026** asociados a integraciones de notificaciones, reconocimientos y participación. Dado que el Sprint 2 se sitúa entre el **07 y el 12/11/2026**, tanto los commits de octubre como los de **05–06/11** son **antecedentes previos al período**. Pueden demostrar la evolución del producto, pero no contabilizarse como commits efectuados durante el Sprint 2.
 
 <div align="center" style="break-inside: avoid; page-break-inside: avoid;">
   <img src="assets/evidencias-github/github-android-devDiego.png" alt="Historial GitHub del repositorio Android en la rama devDiego" width="760" style="max-width: 100%; height: auto;" />
@@ -2078,19 +2083,19 @@ El historial Platform incluye cambios para Azure, pero **la existencia de un wor
 
 ### 4.2.2.9. Team Collaboration Insights during Sprint
 
-Las capturas suministradas muestran actividad colaborativa en GitHub: en **Android** se observan commits de `MOTOX-357` en noviembre y merges históricos registrados por `SebastianTavara` en octubre; en **Flutter/iOS** se aprecian commits y Pull Requests integrados por `Ghorghet` los días 10 y 11 de noviembre; en **Platform** se documentan commits de `Ghorghet`, `SebastianTavara` y una contribución identificada como `MOTOX-bot` en octubre. La captura **no basta para determinar la autoría humana detrás de una cuenta de automatización** ni para demostrar que estos commits pertenezcan a la misma iteración.
+El equipo confirmó que **Sebastian lideró Android**, **Diego realizó mejoras finales de Android**, y **Ghorghet lideró Flutter/iOS**. Las capturas suministradas muestran actividad colaborativa en GitHub: en **Android** se observan commits de `MOTOX-357` los días 05–06/11 (previos al Sprint 2) y merges históricos registrados por `SebastianTavara` en octubre; en **Flutter/iOS** se aprecian commits y Pull Requests integrados por `Ghorghet` los días 10 y 11 de noviembre (dentro del Sprint 2); en **Platform** se documentan commits de `Ghorghet`, `SebastianTavara` y una contribución identificada como `MOTOX-bot` en octubre. La captura **no basta para determinar la autoría humana detrás de una cuenta de automatización** ni para demostrar que estos commits pertenezcan a la misma iteración.
 
 | Miembro | Evidencias observables en capturas | Consideración para el informe |
 |---|---|---|
 | Diego Alexander Cabrejos Chocco | Captura Android: cuenta `MOTOX-357`, con cambios de navegación, música y cierre de sesión (05–06/11) | Confirmar correspondencia de usuario, relación con historias del Sprint y PRs asociados |
-| Sebastian Oswaldo Tavara Correa | Captura Android: merges de features del 09/10; captura Platform: workflow Azure del 08/10 | Registrar como antecedentes salvo confirmación de que corresponden al período Sprint 2 |
-| Ghorghet Saul Thuncar Vila | Captura Flutter/iOS: commits y merges en `develop` (10–11/11); captura Platform: ajustes Azure y Swagger (07–09/10) | Distinguir avance iOS reciente de trabajos históricos del backend |
+| Sebastian Oswaldo Tavara Correa | Líder Android según reporte del equipo; capturas Android muestran merges de features del 09/10 y Platform muestra configuración de Azure del 08/10 | Atribución de liderazgo confirmada por el equipo; commits visibles son antecedentes previos al 07/11; agregar evidencia de ejecución del cierre Android |
+| Ghorghet Saul Tuncar Vila | Responsable completo Flutter/iOS según reporte del equipo; commits y merges en `develop` (10–11/11); trabajos anteriores Platform (07–09/10) | Los commits Flutter/iOS sí corresponden a Sprint 2; añadir capturas de ejecución para demostrar la primera versión |
 
 La Landing Page mantiene su contenido y despliegue: **no se reportaron nuevas contribuciones de implementación web para Sprint 2**. Añadir las gráficas de *Insights → Contributors*, el listado de Pull Requests y el tablero del Sprint 2 para sustentar tanto la distribución como el impacto real de cada colaboración.
 
 ### Cierre del Sprint 2
 
-La revisión preliminar confirma un avance sustancial en la estructura Android y un desarrollo inicial del cliente Flutter. Para concluir el Sprint 2, corresponde registrar los resultados aceptados por el equipo, contrastarlos con las User Stories y criterios de aceptación, y aportar pruebas de ejecución, despliegue y colaboración. La afirmación de **Android al 100 %** debe expresarse como avance reportado por el equipo hasta contar con una demostración que valide todo el alcance aprobado.
+En el cierre del Sprint 2 (12/11/2026), el equipo reporta **Android al 100 % del alcance acordado** y una **primera versión Flutter/iOS** bajo responsabilidad de Ghorghet. Diego añadió ajustes finales a Android, cuyo desarrollo fue liderado por Sebastian. Para respaldar estos resultados es necesario contrastar la entrega con las User Stories seleccionadas, la compilación y ejecución de las aplicaciones, las pruebas, el estado real del backend y los videos del AV2. En particular, el **100 % de Android** sigue siendo un resultado declarado que requiere verificación de todos los criterios de aceptación.
 
 ### 4.3. Validation Interviews
 
