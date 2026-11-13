@@ -1911,7 +1911,7 @@ Durante el Sprint 1, el equipo aplicó un flujo de trabajo altamente sincronizad
 
 ##### 4.2.2.1. Sprint Planning 2
 
-La planificación del Sprint 2 se desarrolló considerando las mejoras pendientes al finalizar el TB1 y los entregables exigidos en el AV2. A diferencia del primer Sprint, en esta iteración se priorizó completar el alcance Android acordado y construir la primera versión de Flutter/iOS.
+La planificación del Sprint 2 se desarrolló considerando las mejoras pendientes al finalizar el TB1 y los entregables exigidos en el AV2. A diferencia del primer Sprint, en esta iteración se priorizó completar el alcance Android acordado y construir la primera versión de Flutter/iOS. La Landing Page continuó publicada, **sin modificaciones de código durante el Sprint 2**.
 
 | Campo | Información |
 |---|---|
@@ -1945,17 +1945,19 @@ El equipo utilizó una matriz LACX para reconocer al líder (`L`) y los colabora
 
 | Integrante y GitHub username | Landing Page | Backend / Swagger | Android | Flutter / iOS | README / documentación |
 |---|:---:|:---:|:---:|:---:|:---:|
-| Cabrejos Chocco, Diego Alexander — `MOTOX-357` | C | C | C | C | **L** |
-| Tavara Correa, Sebastian Oswaldo — `SebastianTavara` | C | **L** | **L** | C | C |
-| Tuncar Vila, Ghorghet Saul — `Ghorghet` | C | C | C | **L** | C |
+| Cabrejos Chocco, Diego Alexander — `MOTOX-357` | — | — | C | — | **L** |
+| Tavara Correa, Sebastian Oswaldo — `SebastianTavara` | — | **L** | **L** | — | C |
+| Tuncar Vila, Ghorghet Saul — `Ghorghet` | — | — | — | **L** | C |
 
-**L = líder; C = colaborador; — = sin tarea nueva asignada en ese frente.**
+**L = líder; C = colaborador; — = sin tarea nueva asignada en ese frente.** Diego realizó los ajustes Android visibles en los commits del 05–06/11, previos al intervalo de Sprint 2. La Landing Page no requirió modificaciones. Las tareas de videos todavía no tienen un responsable individual confirmado.
 
 ##### 4.2.2.3. Sprint Backlog 2
 
 El Sprint Backlog descompone el objetivo de AV2 en tareas técnicas, entregables, responsables, horas estimadas y estados, siguiendo la **misma estructura de siete columnas del Sprint 1**. Para conservar la nomenclatura del tablero se utilizan los identificadores `BV-T29` a `BV-T45`.
 
-**Tablero del Sprint 2 (Trello):** https://trello.com/b/SnJ7mdLg/blockvoluntariado-sprint-1-tb1
+**Tablero del Sprint 2 (Trello):** https://trello.com/b/hnlqzC0C/blockvoluntariado-sprint-2-av2
+
+**Periodo de planificación:** 07/11/2026–12/11/2026. Las horas se estimaron con fines de planificación académica, no proceden de un registro de trabajo cronometrado. Los estados reproducen el tablero observado, por lo que *To Review* no equivale a *Done*.
 
 | User Story ID y Título | Task ID | Tarea Técnica | Descripción y Entregable | Estimación (h) | Responsable | Estado |
 |---|---|---|---|:---:|---|:---:|
@@ -1983,42 +1985,42 @@ El Sprint Backlog descompone el objetivo de AV2 en tareas técnicas, entregables
 | BV-T40 | Control de música de fondo Android | Diego Cabrejos | 05/11/2026 | 2 | To Review |
 | BV-T41 | Confirmación de cierre de sesión Android | Diego Cabrejos | 06/11/2026 | 2 | To Review |
 
-**Conciliación de cargas:** Sprint 1 = 86 h según la suma de TSK-01 a TSK-14; Sprint 2 = **86 h propuestas** dentro de su intervalo; antecedentes Android = 7 h **excluidas**.
+**Conciliación de cargas:** Sprint 1 = 86 h según la suma de TSK-01 a TSK-14; Sprint 2 = **86 h propuestas** dentro de su intervalo; antecedentes Android = 7 h **excluidas**. Los Story Points no se obtienen de la suma de horas. Las historias incluidas son candidatas para trazabilidad; el compromiso final debe coincidir con la selección acordada por el equipo.
 
 ##### 4.2.2.4. Development Evidence for Sprint Review
 
 Las evidencias de desarrollo vinculan las ramas, commits y entregables de código fuente de BlockVoluntariado con el periodo correspondiente al Sprint 2. Se consignan mensajes visibles en las capturas aportadas por el equipo y se distinguen los commits **dentro del Sprint** de los antecedentes anteriores.
 
-| Repositorio | Rama  | Mensaje de Commit (Conventional Commits) | Fecha | Autor |
+| Repositorio | Rama | Commit ID | Mensaje de Commit (Conventional Commits) | Fecha | Autor |
 |---|---|:---:|---|:---:|---|
-| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | `feat(volunteering): add volunteering creation form page in presentation layer` | 2026-11-11 | Ghorghet Tuncar |
-| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | Merge PR #11 de `feature/volunteering` | 2026-11-11 | Ghorghet Tuncar |
-| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | `feat(navigation): add main_page with bottom navigation and link to auth page and discovery_page` | 2026-11-10 | Ghorghet Tuncar |
-| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | `feat(discovery): add application, domain, infrastructure and presentation` | 2026-11-10 | Ghorghet Tuncar |
-| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | `feat: add navigation controls, background music and logout functionality` **(antecedente)** | 2026-11-06 | Diego Cabrejos |
-| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | `feat(profile): add logout confirmation button` **(antecedente)** | 2026-11-06 | Diego Cabrejos |
-| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | `feat(audio): add background music toggle` **(antecedente)** | 2026-11-05 | Diego Cabrejos |
-| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `develop` | `feat(web): add root redirect controller to swagger and permit public root path` **(antecedente)** | 2026-10-09 | Ghorghet Tuncar |
-| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `develop` | `fix(compatibility): target Java 21 LTS for Azure App Service runtime compatibility` **(antecedente)** | 2026-10-08 | Ghorghet Tuncar |
+| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | Ver captura | `feat(volunteering): add volunteering creation form page in presentation layer` | 2026-11-11 | Ghorghet Tuncar |
+| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | Ver captura | Merge PR #11 de `feature/volunteering` | 2026-11-11 | Ghorghet Tuncar |
+| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | Ver captura | `feat(navigation): add main_page with bottom navigation and link to auth page and discovery_page` | 2026-11-10 | Ghorghet Tuncar |
+| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | Ver captura | `feat(discovery): add application, domain, infrastructure and presentation` | 2026-11-10 | Ghorghet Tuncar |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | Ver captura | `feat: add navigation controls, background music and logout functionality` **(antecedente)** | 2026-11-06 | Diego Cabrejos |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | Ver captura | `feat(profile): add logout confirmation button` **(antecedente)** | 2026-11-06 | Diego Cabrejos |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | Ver captura | `feat(audio): add background music toggle` **(antecedente)** | 2026-11-05 | Diego Cabrejos |
+| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `develop` | Ver captura | `feat(web): add root redirect controller to swagger and permit public root path` **(antecedente)** | 2026-10-09 | Ghorghet Tuncar |
+| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `develop` | Ver captura | `fix(compatibility): target Java 21 LTS for Azure App Service runtime compatibility` **(antecedente)** | 2026-10-08 | Ghorghet Tuncar |
 
 **Evidencia de desarrollo Android:** rama `devDiego`. Los commits del 5 y 6 de noviembre se presentan como antecedentes del incremento Android mostrado en AV2; no se atribuyen a tareas ejecutadas durante el 7–12 de noviembre.
 
 <div align="center" style="break-inside: avoid; page-break-inside: avoid;">
-  <img src="assets/evidencias-github/github-android-devDiego.png" alt="Historial de commits Android en la rama devDiego" width="760" style="max-width: 100%; height: auto;" />
+  <img src="assets/md-images-chapter3/EvidenciaAndroid.png" alt="Historial de commits Android en la rama devDiego" width="760" style="max-width: 100%; height: auto;" />
   <p><em>Figura 4.3. Historial de Android en GitHub, con ajustes de navegación, audio y cierre de sesión. Fuente: captura del equipo.</em></p>
 </div>
 
 **Evidencia de desarrollo Flutter/iOS:** rama `develop`. Los commits del 10 y 11 de noviembre reflejan avances de navegación, descubrimiento y creación de convocatorias dentro del Sprint.
 
 <div align="center" style="break-inside: avoid; page-break-inside: avoid;">
-  <img src="assets/evidencias-github/github-ios-develop.png" alt="Historial de commits Flutter/iOS en develop" width="760" style="max-width: 100%; height: auto;" />
+  <img src="assets/md-images-chapter3/EvidenciaIOS.png" alt="Historial de commits Flutter/iOS en develop" width="760" style="max-width: 100%; height: auto;" />
   <p><em>Figura 4.4. Commits y Pull Requests de Flutter/iOS correspondientes al Sprint 2. Fuente: captura del equipo.</em></p>
 </div>
 
 **Evidencia de desarrollo Platform:** los cambios de Java, Azure y Swagger mostrados corresponden a octubre y se utilizan como antecedentes de implementación. La asignación de Sebastian a la habilitación de Swagger en Sprint 2 se basa en lo informado por el equipo, pero requiere una evidencia de noviembre adicional.
 
 <div align="center" style="break-inside: avoid; page-break-inside: avoid;">
-  <img src="assets/evidencias-github/github-platform-develop.png" alt="Historial de commits del backend Platform" width="760" style="max-width: 100%; height: auto;" />
+  <img src="assets/md-images-chapter3/EvidenciaPlatform.png" alt="Historial de commits del backend Platform" width="760" style="max-width: 100%; height: auto;" />
   <p><em>Figura 4.5. Antecedentes de backend y configuración Azure/Swagger, previos al Sprint 2. Fuente: captura del equipo.</em></p>
 </div>
 
@@ -2051,41 +2053,50 @@ Se distinguen dos tipos de registros: **pruebas localizadas en el código fuente
 
 **Criterio para reportar resultados:** completar la columna Resultado con `PASS`, `FAIL` o `BLOCKED` **solo después de ejecutar el caso** y guardar evidencia de fecha, dispositivo/entorno, comando o procedimiento, captura o reporte y commit probado. Los Story Points asociados a las HU corresponden al Product Backlog; **una prueba no constituye una User Story adicional ni incrementa la velocidad del Sprint**.
 
+**Observación de integración Android:** en el ZIP `devDiego`, `RepositoryModule.kt` vincula `ConvocatoriasRepository` a `DiscoveryInMemoryRepository` y `VolunteerRepository` a `VolunteerInMemoryRepository`. Por consiguiente, las pruebas de catálogo y perfil deben distinguir el comportamiento local de una integración REST efectivamente comprobada.
+
 ##### 4.2.2.6. Execution Evidence for Sprint Review
 
-Las evidencias de ejecución del Sprint 2 siguen la misma presentación del **4.2.1.6**: introducción, identificación de la interfaz, **imagen centrada y pie de figura**. La Landing Page es una versión publicada previamente y no tuvo modificaciones durante el Sprint 2. Las evidencias de Android y Flutter/iOS deben proceder de aplicaciones **ejecutadas**, no de los mock-ups de Figma del Capítulo III.
+En esta sección se presentan las **capturas de ejecución de la primera versión Flutter**, desarrollada por Ghorghet Saul Tuncar Vila durante el Sprint 2 (7–12 de noviembre de 2026). Se sigue el mismo formato del **4.2.1.6**: identificación de cada pantalla, imagen centrada y pie de figura. Se priorizan las evidencias de la nueva experiencia multiplataforma; la Landing Page se mantuvo sin cambios y el avance Android se documenta en las otras secciones del Sprint.
 
-**Evidencia visual de la aplicación Android — inicio de sesión y navegación:**
+Las imágenes muestran la aplicación en **modo DEBUG**. **No acreditan por sí solas que se haya ejecutado en un iPhone o simulador iOS**, ni prueban la persistencia en el backend. Por ello se describen como capturas del proyecto *Flutter/iOS* proporcionadas por el equipo, y no como una publicación de iOS en la App Store.
 
-**[Captura de ejecución pendiente: `assets/capitulo4/sprint2-android-autenticacion.png`]**. Mostrar la aplicación instalada en dispositivo físico o emulador, su pantalla inicial y la navegación a la pantalla principal. Registrar equipo, versión de Android y fecha de prueba.
+**Evidencia visual de Flutter/iOS — pantalla de bienvenida:**
 
-<!-- Figura 4.8. Cuando exista la imagen: <div align="center" style="break-inside: avoid;"><img src="assets/capitulo4/sprint2-android-autenticacion.png" alt="Android ejecutándose: autenticación y navegación" width="280"/><p><em>Figura 4.8. Inicio de sesión y navegación Android en ejecución. Fuente: captura del equipo.</em></p></div> -->
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/md-images-chapter3/sprint2-ios-01-pantalla-bienvenida.png" alt="Pantalla de bienvenida de BlockVoluntariado en la primera versión Flutter" width="270" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.6. Pantalla de bienvenida de BlockVoluntariado en Flutter. Presenta la identidad visual, una ilustración de colaboración y la acción «Empezar». Fuente: captura de ejecución en modo DEBUG compartida por el equipo.</em></p>
+</div>
 
-**Evidencia visual de la aplicación Android — oportunidades y postulaciones:**
+**Evidencia visual de Flutter/iOS — selección del tipo de acceso:**
 
-**[Captura de ejecución pendiente: `assets/capitulo4/sprint2-android-convocatorias.png`]**. Mostrar listado, detalle y confirmación de postulación; registrar si los datos provienen de `InMemory` o de la API REST y citar las HU01, HU24 y HU21.
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/md-images-chapter3/sprint2-ios-02-seleccion-acceso.png" alt="Pantalla con opciones de acceso de voluntarios y organizaciones" width="270" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.7. Selección de acceso con opciones para registrarse como voluntario u ONG e iniciar sesión. Relacionada con los flujos de HU07 y HU09. Fuente: captura de ejecución en modo DEBUG compartida por el equipo.</em></p>
+</div>
 
-<!-- Figura 4.9. <div align="center"><img src="assets/capitulo4/sprint2-android-convocatorias.png" alt="Android ejecutándose: discovery, detalle y postulación" width="540"/><p><em>Figura 4.9. Exploración y postulación en Android. Fuente: captura del equipo.</em></p></div> -->
+**Evidencia visual de Flutter/iOS — formulario de registro de ONG:**
 
-**Evidencia visual de la aplicación Android — asistencia, certificados y notificaciones:**
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/md-images-chapter3/sprint2-ios-03-registro-ong.png" alt="Formulario de registro de una organización en Flutter" width="270" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.8. Interfaz inicial del registro para organizaciones sociales, con campos de nombre corporativo, correo electrónico y contraseña. No constituye evidencia de un registro exitoso. Fuente: captura de ejecución en modo DEBUG compartida por el equipo.</em></p>
+</div>
 
-**[Captura de ejecución pendiente: `assets/capitulo4/sprint2-android-participacion.png`]**. Mostrar los módulos en ejecución y especificar los pasos realizados; relacionar HU45, HU19 y HU30.
+**Evidencia visual de Flutter/iOS — exploración de oportunidades:**
 
-<!-- Figura 4.10. <div align="center"><img src="assets/capitulo4/sprint2-android-participacion.png" alt="Android ejecutándose: participación, certificados y notificaciones" width="540"/><p><em>Figura 4.10. Módulos de participación y reconocimiento Android. Fuente: captura del equipo.</em></p></div> -->
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/md-images-chapter3/sprint2-ios-04-explorar-oportunidades.png" alt="Pantalla de búsqueda y exploración de oportunidades" width="270" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.9. Vista de descubrimiento de voluntariados con búsqueda, categorías, tarjetas de oportunidades y navegación inferior. Relacionada con HU01 y HU02; la captura no demuestra una consulta REST real. Fuente: captura de ejecución en modo DEBUG compartida por el equipo.</em></p>
+</div>
 
-**Evidencia visual de Flutter/iOS — onboarding y navegación:**
+**Evidencia visual de Flutter/iOS — creación de voluntariado:**
 
-**[Captura de ejecución pendiente: `assets/capitulo4/sprint2-ios-onboarding.png`]**. Demostrar la primera versión de la aplicación Flutter funcionando en un simulador o dispositivo, identificando expresamente la plataforma utilizada (iOS o Android).
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/md-images-chapter3/sprint2-ios-05-crear-voluntariado.png" alt="Formulario de creación de nueva convocatoria de voluntariado" width="270" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.10. Formulario inicial para crear una convocatoria, con selección de imagen de portada, título y descripción. Relacionado con HU35; su publicación y persistencia deben comprobarse por separado. Fuente: captura de ejecución en modo DEBUG compartida por el equipo.</em></p>
+</div>
 
-<!-- Figura 4.11. <div align="center"><img src="assets/capitulo4/sprint2-ios-onboarding.png" alt="Flutter ejecutándose: onboarding y navegación" width="280"/><p><em>Figura 4.11. Onboarding de la primera versión Flutter/iOS en ejecución. Fuente: captura del equipo.</em></p></div> -->
-
-**Evidencia visual de Flutter/iOS — descubrimiento y creación de voluntariado:**
-
-**[Captura de ejecución pendiente: `assets/capitulo4/sprint2-ios-discovery.png`]**. Mostrar el módulo de descubrimiento y el formulario para crear una convocatoria; indicar si la pantalla está conectada al backend o usa datos de ejemplo. Relacionar HU01 y HU35.
-
-<!-- Figura 4.12. <div align="center"><img src="assets/capitulo4/sprint2-ios-discovery.png" alt="Flutter ejecutándose: discovery y formulario" width="540"/><p><em>Figura 4.12. Descubrimiento y creación en Flutter/iOS. Fuente: captura del equipo.</em></p></div> -->
-
-**Síntesis:** Android tiene un avance del **100 % declarado por el equipo** respecto del alcance comprometido; Flutter/iOS cuenta con una primera versión de código. El cierre del apartado requiere sustituir las cinco marcas de captura pendientes por fotografías o capturas reales de ejecución, con sus respectivos pies de figura. No se debe atribuir una sesión de simulador iOS sin evidencia de que haya ocurrido.
+**Síntesis:** las cinco capturas permiten documentar visualmente el avance de la primera versión Flutter: bienvenida, acceso, registro de organizaciones, exploración y formulario de convocatoria. Los resultados funcionales de los flujos (registro real, búsqueda mediante API y publicación de una convocatoria) requieren pruebas adicionales. Para confirmar ejecución específica en iOS será necesaria una evidencia del simulador iOS o de un iPhone.
 
 ##### 4.2.2.7. Services Documentation Evidence for Sprint Review
 
@@ -2125,7 +2136,7 @@ La infraestructura y el despliegue de BlockVoluntariado se documentan con **las 
 | **Landing Page** | GitHub Pages / HTTPS | [BlockVoluntariado — Landing Page](https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/) | **URL pública accesible en la revisión**. Capturas de escritorio y móvil reutilizadas de TB1; el equipo indica que no hubo nuevos cambios durante Sprint 2. | Desplegada; sin cambios en Sprint 2 |
 | **Backend API** | Spring Boot / Azure App Service (configuración de repositorio) | `https://blockvoluntariado-api.azurewebsites.net/swagger-ui.html` **(referencia anterior, pendiente de verificar)** | Existen controladores y archivos de despliegue; falta captura de Swagger público, llamada HTTP satisfactoria, versión desplegada y alcance funcional validado al 100 %. | **100 % no acreditado** con evidencias recibidas |
 | **Aplicación Android** | Android Studio / APK / emulador o dispositivo físico | `BlockVoluntariado-android`, rama `devDiego`; versión de APK por adjuntar | Código con módulos del producto. Se requiere instalar APK, documentar dispositivo, capturas de pantallas principales, pruebas e integración REST, distinguiendo datos locales. | 100 % **declarado por el equipo**; ejecución por documentar |
-| **Primera versión Flutter/iOS** | Flutter/Dart / proyecto con soporte iOS | `BlockVoluntariado-iOS`, rama `develop`; compilación y dispositivo por adjuntar | En ZIP se identifican onboarding, navegación, exploración y formulario de voluntariado; no se adjuntó captura de ejecución iOS ni publicación/TestFlight. | Primera versión en código; ejecución en iOS pendiente de comprobar |
+| **Primera versión Flutter/iOS** | Flutter/Dart / proyecto con soporte iOS | `BlockVoluntariado-iOS`, rama `develop`; compilación y dispositivo por adjuntar | Se adjuntan cinco capturas de la primera versión Flutter en modo DEBUG (4.2.2.6): bienvenida, acceso, registro de ONG, exploración y formulario. Aún falta verificar ejecución específica en iOS, integración REST y publicación/TestFlight. | Primera versión Flutter con capturas DEBUG; ejecución en iOS pendiente de comprobar |
 
 **Observación de despliegue:** un ZIP de código, un archivo `Dockerfile`, una rama o un directorio `ios/` no representan por sí mismos una aplicación operativa o publicada. Para cerrar AV2 registrar **fecha, entorno, versión, URL funcional, pantallazo y resultado de prueba**. En Android e iOS, la distribución para pruebas no exige necesariamente una publicación en Play Store/App Store si la rúbrica solo solicita mostrar las funciones core; sin embargo, la demostración de ejecución sí debe estar sustentada.
 
@@ -2142,22 +2153,22 @@ El Sprint 2 se organizó en frentes diferenciados: finalización y revisión de 
 **Evidencia de colaboración Android:** historial de la rama `devDiego` con los ajustes del 5–6/11, incluidos únicamente como antecedentes. La incorporación de Android al 100 % fue declarada por el equipo; se requiere evidencia del cierre y la aceptación durante el Sprint.
 
 <div align="center" style="break-inside: avoid; page-break-inside: avoid;">
-  <img src="assets/evidencias-github/github-android-devDiego.png" alt="Historial GitHub Android rama devDiego" width="750" style="max-width:100%; height:auto;" />
-  <p><em>Figura 4.13. Contribuciones Android en GitHub, rama devDiego. Fuente: captura facilitada por el equipo.</em></p>
+  <img src="assets/md-images-chapter3/EvidenciaAndroid.png" alt="Historial GitHub Android rama devDiego" width="750" style="max-width:100%; height:auto;" />
+  <p><em>Figura 4.11. Contribuciones Android en GitHub, rama devDiego. Fuente: captura facilitada por el equipo.</em></p>
 </div>
 
 **Evidencia de colaboración Flutter/iOS:** historial en `develop` con commits y Pull Requests del 10–11/11 que sí se encuentran dentro del periodo del Sprint 2.
 
 <div align="center" style="break-inside: avoid; page-break-inside: avoid;">
-  <img src="assets/evidencias-github/github-ios-develop.png" alt="Historial GitHub Flutter iOS rama develop" width="750" style="max-width:100%; height:auto;" />
-  <p><em>Figura 4.14. Contribuciones Flutter/iOS en GitHub, rama develop. Fuente: captura facilitada por el equipo.</em></p>
+  <img src="assets/md-images-chapter3/EvidenciaIOS.png" alt="Historial GitHub Flutter iOS rama develop" width="750" style="max-width:100%; height:auto;" />
+  <p><em>Figura 4.12. Contribuciones Flutter/iOS en GitHub, rama develop. Fuente: captura facilitada por el equipo.</em></p>
 </div>
 
 **Evidencia técnica de Platform:** historial de cambios en Swagger, Azure e integración. Los commits visibles en la captura son del **7–9/10** y sirven para contextualizar la configuración, pero **no prueban actividad durante Sprint 2**.
 
 <div align="center" style="break-inside: avoid; page-break-inside: avoid;">
-  <img src="assets/evidencias-github/github-platform-develop.png" alt="Historial de GitHub Platform rama develop" width="750" style="max-width:100%; height:auto;" />
-  <p><em>Figura 4.15. Historial de commits de Platform en GitHub. Fuente: captura facilitada por el equipo; antecedentes de octubre.</em></p>
+  <img src="assets/md-images-chapter3/EvidenciaPlatform.png" alt="Historial de GitHub Platform rama develop" width="750" style="max-width:100%; height:auto;" />
+  <p><em>Figura 4.13. Historial de commits de Platform en GitHub. Fuente: captura facilitada por el equipo; antecedentes de octubre.</em></p>
 </div>
 
 **Interpretación de resultados:** las capturas muestran trabajo y especialización de los integrantes, pero no constituyen por sí mismas un indicador de productividad o de cumplimiento. Para cerrar el *Team Collaboration Insights* se deben relacionar las tareas del [tablero Sprint 2 – AV2](https://trello.com/b/hnlqzC0C/blockvoluntariado-sprint-2-av2), responsables, commits efectivamente fechados entre el 7 y el 12 de noviembre y aceptación de entregables en `Done`. El trabajo de documentación de Diego y habilitación de Swagger de Sebastian requiere enlaces o capturas adicionales de ese periodo.
