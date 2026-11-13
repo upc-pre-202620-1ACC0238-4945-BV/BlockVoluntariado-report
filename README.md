@@ -1987,43 +1987,42 @@ El Sprint Backlog descompone el objetivo de AV2 en tareas técnicas, entregables
 
 ##### 4.2.2.4. Development Evidence for Sprint Review
 
-Las evidencias de GitHub se organizan por repositorio, rama, fecha, autor, mensaje y naturaleza del trabajo. Se adjuntan capturas del equipo; los identificadores completos de commit deben copiarse desde sus páginas individuales al cerrar el informe.
+Las evidencias de desarrollo vinculan las ramas, commits y entregables de código fuente de BlockVoluntariado con el periodo correspondiente al Sprint 2. Se consignan mensajes visibles en las capturas aportadas por el equipo y se distinguen los commits **dentro del Sprint** de los antecedentes anteriores.
 
-| Repositorio | Rama | Commit ID | Commit / aporte visible | Fecha | Autor visible | Relación con Sprint 2 |
-|---|---|---|---|---|---|---|
-| `BlockVoluntariado-android` | `devDiego` | Por registrar | `feat: add navigation controls, background music and logout functionality` | 06-11-2026 | `MOTOX-357` | **Anterior**; antecedente Android |
-| `BlockVoluntariado-android` | `devDiego` | Por registrar | `feat(profile): add logout confirmation button` | 06-11-2026 | `MOTOX-357` | **Anterior**; antecedente Android |
-| `BlockVoluntariado-android` | `devDiego` | Por registrar | `feat(audio): add background music toggle` | 05-11-2026 | `MOTOX-357` | **Anterior**; antecedente Android |
-| `BlockVoluntariado-iOS` | `develop` | Por registrar | `feat(volunteering): add volunteering creation form page in presentation layer` | 11-11-2026 | `Ghorghet` | **Dentro**; Flutter/iOS |
-| `BlockVoluntariado-iOS` | `develop` | Por registrar | Merge PR #11 de `feature/volunteering` | 11-11-2026 | `Ghorghet` | **Dentro**; integración |
-| `BlockVoluntariado-iOS` | `develop` | Por registrar | `feat(navigation): add main_page with bottom navigation and link to auth page and discovery page` | 10-11-2026 | `Ghorghet` | **Dentro**; navegación |
-| `BlockVoluntariado-iOS` | `develop` | Por registrar | `feat(discovery): add application, domain, infrastructure and presentation` | 10-11-2026 | `Ghorghet` | **Dentro**; discovery |
-| `Blockvoluntariado-platform` | `develop` | Por registrar | `feat(web): add root redirect controller to swagger and permit public root path` | 09-10-2026 | `Ghorghet` | **Histórico**, fuera del Sprint |
-| `Blockvoluntariado-platform` | `develop` | Por registrar | `fix(compatibility): target Java 21 LTS for Azure App Service runtime compatibility` | 08-10-2026 | `Ghorghet` | **Histórico**, fuera del Sprint |
-| `Blockvoluntariado-platform` | `develop` | Por registrar | `feat(deploy): add production configuration, dockerfile, and deployment assets for azure` | 08-10-2026 | `Ghorghet` | **Histórico**, fuera del Sprint |
+| Repositorio | Rama  | Mensaje de Commit (Conventional Commits) | Fecha | Autor |
+|---|---|:---:|---|:---:|---|
+| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | `feat(volunteering): add volunteering creation form page in presentation layer` | 2026-11-11 | Ghorghet Tuncar |
+| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | Merge PR #11 de `feature/volunteering` | 2026-11-11 | Ghorghet Tuncar |
+| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | `feat(navigation): add main_page with bottom navigation and link to auth page and discovery_page` | 2026-11-10 | Ghorghet Tuncar |
+| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | `feat(discovery): add application, domain, infrastructure and presentation` | 2026-11-10 | Ghorghet Tuncar |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | `feat: add navigation controls, background music and logout functionality` **(antecedente)** | 2026-11-06 | Diego Cabrejos |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | `feat(profile): add logout confirmation button` **(antecedente)** | 2026-11-06 | Diego Cabrejos |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | `feat(audio): add background music toggle` **(antecedente)** | 2026-11-05 | Diego Cabrejos |
+| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `develop` | `feat(web): add root redirect controller to swagger and permit public root path` **(antecedente)** | 2026-10-09 | Ghorghet Tuncar |
+| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `develop` | `fix(compatibility): target Java 21 LTS for Azure App Service runtime compatibility` **(antecedente)** | 2026-10-08 | Ghorghet Tuncar |
 
-**Evidencia Android.** Rama `devDiego`, con ajustes del 5 y 6 de noviembre y commits previos de octubre correspondientes a módulos funcionales.
+**Evidencia de desarrollo Android:** rama `devDiego`. Los commits del 5 y 6 de noviembre se presentan como antecedentes del incremento Android mostrado en AV2; no se atribuyen a tareas ejecutadas durante el 7–12 de noviembre.
 
-<div align="center" style="break-inside:avoid;page-break-inside:avoid;">
-  <img src="assets/evidencias-github/github-android-devDiego.png" alt="Commits de Android, rama devDiego" width="740" style="max-width:100%;height:auto;" />
-  <p><em>Figura 4.2.2.1. Historial Android en GitHub; los cambios visibles de noviembre son anteriores al Sprint 2 declarado.</em></p>
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/evidencias-github/github-android-devDiego.png" alt="Historial de commits Android en la rama devDiego" width="760" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.3. Historial de Android en GitHub, con ajustes de navegación, audio y cierre de sesión. Fuente: captura del equipo.</em></p>
 </div>
 
-**Evidencia Flutter/iOS.** Rama `develop`, con commits y Pull Requests integrados el 10 y 11 de noviembre, dentro del periodo del Sprint.
+**Evidencia de desarrollo Flutter/iOS:** rama `develop`. Los commits del 10 y 11 de noviembre reflejan avances de navegación, descubrimiento y creación de convocatorias dentro del Sprint.
 
-<div align="center" style="break-inside:avoid;page-break-inside:avoid;">
-  <img src="assets/evidencias-github/github-ios-develop.png" alt="Commits de Flutter iOS, rama develop" width="740" style="max-width:100%;height:auto;" />
-  <p><em>Figura 4.2.2.2. Historial de integración Flutter/iOS en GitHub correspondiente a noviembre.</em></p>
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/evidencias-github/github-ios-develop.png" alt="Historial de commits Flutter/iOS en develop" width="760" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.4. Commits y Pull Requests de Flutter/iOS correspondientes al Sprint 2. Fuente: captura del equipo.</em></p>
 </div>
 
-**Evidencia Platform.** Rama `develop`, con avances de integración, Java 21, Azure y Swagger del 7 al 9 de octubre. **No representan por sí solos el despliegue público al 100 % exigido para AV2.**
+**Evidencia de desarrollo Platform:** los cambios de Java, Azure y Swagger mostrados corresponden a octubre y se utilizan como antecedentes de implementación. La asignación de Sebastian a la habilitación de Swagger en Sprint 2 se basa en lo informado por el equipo, pero requiere una evidencia de noviembre adicional.
 
-<div align="center" style="break-inside:avoid;page-break-inside:avoid;">
-  <img src="assets/evidencias-github/github-platform-develop.png" alt="Commits de Platform, rama develop" width="740" style="max-width:100%;height:auto;" />
-  <p><em>Figura 4.2.2.3. Antecedentes del backend: commits previos a Sprint 2 sobre Azure, Java 21 y Swagger.</em></p>
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/evidencias-github/github-platform-develop.png" alt="Historial de commits del backend Platform" width="760" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.5. Antecedentes de backend y configuración Azure/Swagger, previos al Sprint 2. Fuente: captura del equipo.</em></p>
 </div>
 
-**Repositorios:** [Android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) · [Flutter/iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) · [Platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) · [Report](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-report).
+**Limitación:** las capturas de los historiales muestran actividad de repositorios, pero no sustituyen las evidencias de compilación, pruebas, ejecución o despliegue. El registro de commits del README debe contrastarse con las páginas individuales de GitHub antes de completar hashes completos.
 
 ##### 4.2.2.5. Testing Suite Evidence for Sprint Review
 
