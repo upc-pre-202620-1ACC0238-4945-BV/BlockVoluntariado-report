@@ -2055,20 +2055,6 @@ Se distinguen dos tipos de registros: **pruebas localizadas en el código fuente
 
 Las evidencias de ejecución del Sprint 2 siguen la misma presentación del **4.2.1.6**: introducción, identificación de la interfaz, **imagen centrada y pie de figura**. La Landing Page es una versión publicada previamente y no tuvo modificaciones durante el Sprint 2. Las evidencias de Android y Flutter/iOS deben proceder de aplicaciones **ejecutadas**, no de los mock-ups de Figma del Capítulo III.
 
-**Evidencia visual de la Landing Page en escritorio:**
-
-<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
-  <img src="assets/capitulo4/landing-escritorio.png" alt="Captura real de la Landing Page BlockVoluntariado en escritorio" width="610" style="max-width: 100%; height: auto;" />
-  <p><em>Figura 4.6. Vista de la Landing Page de BlockVoluntariado en escritorio. Fuente: captura facilitada por el equipo para TB1; producto sin cambios de implementación en Sprint 2.</em></p>
-</div>
-
-**Evidencia visual de la Landing Page en móvil:**
-
-<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
-  <img src="assets/capitulo4/landing-movil.png" alt="Captura de la Landing Page adaptada a dispositivo móvil" width="560" style="max-width: 100%; height: auto;" />
-  <p><em>Figura 4.7. Adaptación móvil de la Landing Page de BlockVoluntariado. Fuente: captura facilitada por el equipo para TB1; se conserva como evidencia de la versión web existente.</em></p>
-</div>
-
 **Evidencia visual de la aplicación Android — inicio de sesión y navegación:**
 
 **[Captura de ejecución pendiente: `assets/capitulo4/sprint2-android-autenticacion.png`]**. Mostrar la aplicación instalada en dispositivo físico o emulador, su pantalla inicial y la navegación a la pantalla principal. Registrar equipo, versión de Android y fecha de prueba.
