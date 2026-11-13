@@ -145,6 +145,7 @@ A lo largo del ciclo correspondiente al Trabajo Parcial (TB1), el equipo registr
 
 ## Student Outcome
 
+
 El curso contribuye al cumplimiento del **Student Outcome ABET: ABET – EAC – Student Outcome 7**:
 > **Criterio General:** *La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.*
 
