@@ -1932,6 +1932,7 @@ La planificación se organizó a partir de los pendientes de la entrega TB1 y de
 | **Meta 5: Videos AV2** | Preparar las primeras versiones del video de validación de la aplicación, About-the-Product y About-the-Team, incorporando enlaces verificables en el informe. |
 | **Meta 6: Landing Page** | Mantener accesible la versión publicada de la Landing Page, sin atribuirle nuevas funcionalidades ni commits en Sprint 2. |
 | **Métrica de cumplimiento** | Android: funcionalidades del alcance acordado **aceptadas y demostradas / funcionalidades comprometidas × 100**; Flutter/iOS: pantallas y rutas efectivamente ejecutadas; Backend: endpoints comprometidos y documentados realmente accesibles; Documentación y videos: entregables completados y enlazados. |
+| **Carga estimada del Sprint 2** | **86 horas propuestas**, distribuidas entre el 07 y el 12/11/2026. No equivalen a Story Points ni a horas efectivamente registradas. |
 | **Sprint 2 Velocity prevista** | **Pendiente**: debe ser acordada con las historias del Sprint 2 y la capacidad real del equipo; no se deduce de los 21 SP previstos para Sprint 1. |
 | **Sum of Story Points comprometidos** | **Pendiente**: suma exclusiva de las User Stories seleccionadas y aprobadas en el Sprint Backlog 2. |
 | **Velocity real** | **Pendiente**: suma de los SP de historias aceptadas como `Done`, con pruebas y criterios de aceptación satisfechos. |
@@ -1942,45 +1943,60 @@ La planificación se organizó a partir de los pendientes de la entrega TB1 y de
 
 ##### 4.2.2.2. Aspect Leaders and Collaborators
 
-La matriz **LACX** distingue al líder de cada frente (`L`), los colaboradores (`C`) y los aspectos cuya responsabilidad todavía debe confirmarse (`P`). La asignación de Android y Flutter/iOS procede de lo informado por el equipo.
+La matriz **LACX** identifica la responsabilidad según el reparto informado para AV2. En esta iteración, Diego concentra la documentación y ajustes finales de Android; Ghorghet desarrolla Flutter/iOS; Sebastian coordina el frente técnico Android y se ocupa de habilitar la documentación Swagger/OpenAPI del backend. Los entregables audiovisuales tienen responsable pendiente de asignación.
 
-| Integrante y GitHub username | Android | Flutter / iOS | Backend / API | README / documentación AV2 | Validación y videos | Landing Page |
+| Integrante y GitHub username | Android | Flutter / iOS | Swagger / API | README / documentación AV2 | Videos / validación | Landing Page |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Cabrejos Chocco, Diego Alexander — `MOTOX-357`** | **C** | **C** | **C** | **C** | **C** | Sin cambios |
-| **Tavara Correa, Sebastian Oswaldo — `SebastianTavara`** | **L** | **C** | **C** | **C** | **C** | Sin cambios |
-| **Tuncar Vila, Ghorghet Saul — `Ghorghet`** | **C** | **L** | **C** | **C** | **C** | Sin cambios |
+| **Cabrejos Chocco, Diego Alexander — `MOTOX-357`** | **C** (retoques finales previos al Sprint) | — | — | **L** | P | **C** (comprobación sin cambios) |
+| **Tavara Correa, Sebastian Oswaldo — `SebastianTavara`** | **L** (responsable general del Android) | — | **L** | C (consulta técnica) | P | — |
+| **Tuncar Vila, Ghorghet Saul — `Ghorghet`** | — | **L** | — | C (evidencias Flutter) | P | — |
 
-**L = Leader; C = Collaborator; P = pendiente de confirmar; — = sin participación asignada en ese frente.** El liderazgo del backend durante Sprint 1 no se extrapola automáticamente al Sprint 2. La edición documental de este borrador se coordinó desde Diego, pero la aprobación de roles transversales corresponde al equipo.
+**L = Leader; C = Collaborator; P = por asignar.** La responsabilidad registrada no prueba por sí sola que una tarea haya sido completada o desplegada.
 
 ##### 4.2.2.3. Sprint Backlog 2
 
-Se utiliza el tablero de Trello del Sprint 2, siguiendo el mismo flujo de Sprint 1: **To Do → In Process → To Review → Done**. Las tareas conservan nomenclatura correlativa `BV-T29` a `BV-T45`. El tablero tenía **10 tarjetas en To Do, 0 en In Process, 7 en To Review y 0 en Done** al momento de la revisión; esto representa estados de seguimiento, **no un porcentaje de ejecución inferido del código**.
+El Sprint Backlog 2 se organiza de forma equivalente al Sprint 1 mediante tareas identificadas como `BV-T29` a `BV-T45`, vinculadas con los resultados esperados del AV2 y el tablero **To Do → In Process → To Review → Done**.
+
+**Periodo de planificación:** del **07/11/2026 al 12/11/2026**. Las fechas asignadas en la tabla constituyen una **distribución propuesta de trabajo**, no registros horarios confirmados. Las horas son **estimaciones retrospectivas de referencia**, sujetas a ratificación del equipo; no acreditan horas realmente trabajadas ni tareas aceptadas.
 
 **Tablero Sprint 2:** [BlockVoluntariado | Sprint 2 – AV2](https://trello.com/b/hnlqzC0C/blockvoluntariado-sprint-2-av2).
 
-| User Story / Alcance | Task ID | Tarea técnica | Descripción y entregable | Estimación (h) | Responsable | Estado Trello |
-|---|---|---|---|:---:|---|---|
-| HU01/HU09/HU21/HU24/HU15/HU45/HU19 — verificar selección | **BV-T29** | Cierre funcional Android | Comprobar los recorridos del alcance Android reportado al 100 % y reunir evidencia de aceptación. | Pendiente | Sebastian (L), Diego (C) | To Review |
-| HU07/HU09/HU01 — candidatas | **BV-T30** | Primera versión Flutter/iOS | Integrar pantallas iniciales y navegación de un primer incremento multiplataforma. | Pendiente | Ghorghet | To Do |
-| Requisito transversal AV2 | **BV-T31** | Backend 100 % y Swagger | Comprobar servicios REST en producción, documentación pública y pruebas HTTP. | Pendiente | Por confirmar | To Do |
-| Documentación académica | **BV-T32** | Actualización del README | Incorporar AV2, Sprint 2, evidencias, Student Outcome, resultados y anexos. | Pendiente | Coordinación Diego; validar | To Do |
-| Validación de usuarios | **BV-T33** | Video de validación de aplicación | Grabar una primera versión de pruebas con usuarios y sus resultados reales. | Pendiente | Por asignar | To Do |
-| Comunicación del producto | **BV-T34** | About-the-Product | Producir una primera versión del video de presentación y demostración. | Pendiente | Por asignar | To Do |
-| Presentación del equipo | **BV-T35** | About-the-Team | Producir una primera versión del video de integrantes y contribuciones. | Pendiente | Por asignar | To Do |
-| HU01/HU09/HU21/HU24/HU15/HU45/HU19 — candidatas | **BV-T36** | Trazabilidad Android | Vincular funcionalidades a historias, pantallas, commits, pruebas y criterios de aceptación. | Pendiente | Sebastian (L), Diego (C) | To Do |
-| HU09/HU01/HU35 — candidatas | **BV-T37** | Trazabilidad Flutter/iOS | Documentar el alcance de la primera versión, limitaciones e historias relacionadas. | Pendiente | Ghorghet | To Do |
-| Mantenimiento del producto publicado | **BV-T38** | Verificar Landing Page | Registrar continuidad y disponibilidad pública **sin nuevos cambios**. | Pendiente | Por confirmar | To Do |
-| Mejora de interfaz (transversal) | **BV-T39** | Navegación Android | Ajustar controles de navegación y botones complementarios. | Pendiente | Diego | To Review |
-| Mejora de interfaz (transversal) | **BV-T40** | Audio Android | Incorporar control para activar o desactivar música de fondo. | Pendiente | Diego | To Review |
-| HU09 — tarea relacionada, sin SP adicional | **BV-T41** | Cierre de sesión Android | Añadir confirmación de logout y comprobar las rutas de cancelación/salida. | Pendiente | Diego | To Review |
-| HU07/HU09 — candidatas | **BV-T42** | Autenticación Flutter/iOS | Revisar onboarding, login y registro, con estados de formulario. | Pendiente | Ghorghet | To Do |
-| HU01/HU24 — candidatas | **BV-T43** | Exploración Flutter/iOS | Implementar descubrimiento de oportunidades y estructura por capas. | Pendiente | Ghorghet | To Review |
-| Funcionalidad transversal | **BV-T44** | Navegación Flutter/iOS | Incorporar pantalla principal con navegación inferior hacia autenticación y discovery. | Pendiente | Ghorghet | To Review |
-| HU35 — candidata | **BV-T45** | Crear voluntariado Flutter/iOS | Preparar formulario de creación en la capa de presentación. | Pendiente | Ghorghet | To Review |
+| User Story / Alcance | Task ID | Tarea técnica | Descripción y entregable | Estimación (h) | Responsable | Fecha prevista | Estado Trello |
+|---|---|---|---|---:|---|---|---|
+| HU01/HU09/HU21/HU24/HU15/HU45/HU19 (trazabilidad) | **BV-T29** | Cierre funcional Android | Comprobar el alcance Android declarado al 100 % y preparar evidencias de aceptación. | **8** | Sebastian (líder Android); Diego (ajustes) | 07–12/11/2026 | To Review |
+| HU07/HU09/HU01 (candidatas) | **BV-T30** | Integración primera versión Flutter/iOS | Integrar pantallas de la primera versión Flutter, rutas y estructura general, sin duplicar la construcción de cada módulo. | **12** | Ghorghet | 07–11/11/2026 | To Do |
+| Requisito transversal AV2 | **BV-T31** | Habilitación y verificación Swagger | Habilitar la documentación Swagger/OpenAPI, revisar acceso público y registrar resultados de prueba de endpoints; backend 100 % sujeto a verificación. | **8** | Sebastian | 09–12/11/2026 | To Do |
+| Documentación académica | **BV-T32** | Actualización del README | Actualizar registro de versiones, Student Outcome, Sprint 2, contribuciones, conclusiones y anexos. | **10** | Diego | 07–12/11/2026 | To Do |
+| Validación de usuarios | **BV-T33** | Primera versión del video de validación | Preparar guion, realizar pruebas con usuarios y recopilar grabación, comentarios y hallazgos reales. | **6** | Equipo (por asignar) | 11–12/11/2026 | To Do |
+| Presentación del producto | **BV-T34** | About-the-Product | Preparar primera versión audiovisual sobre propuesta de valor, públicos y demostración. | **5** | Equipo (por asignar) | 11–12/11/2026 | To Do |
+| Presentación del equipo | **BV-T35** | About-the-Team | Preparar primera versión audiovisual con integrantes, funciones y contribuciones. | **4** | Equipo (por asignar) | 11–12/11/2026 | To Do |
+| HU01/HU09/HU21/HU24/HU15/HU45/HU19 (candidatas) | **BV-T36** | Trazabilidad del Android en README | Documentar relación entre historias, pantallas, commits, pruebas y criterios de aceptación. | **5** | Diego (documentación); Sebastian (revisión técnica) | 09–12/11/2026 | To Do |
+| HU09/HU01/HU35 (candidatas) | **BV-T37** | Trazabilidad Flutter/iOS | Relacionar módulos de la primera versión con historias del Product Backlog y límites funcionales. | **5** | Ghorghet | 10–12/11/2026 | To Do |
+| Continuidad del sitio web | **BV-T38** | Verificación Landing Page | Constatar disponibilidad del sitio ya publicado, sin añadir nuevas funcionalidades. | **2** | Diego | 12/11/2026 | To Do |
+| Mejora UI (transversal) | **BV-T39** | Navegación Android **(antecedente previo al Sprint)** | Ajustes de controles y botones visibles en commits anteriores al Sprint 2. | **3** | Diego | 05–06/11/2026 | To Review |
+| Mejora UI (transversal) | **BV-T40** | Audio Android **(antecedente previo al Sprint)** | Control de activación de música de fondo; commit anterior al Sprint 2. | **2** | Diego | 05/11/2026 | To Review |
+| HU09 (tarea relacionada) | **BV-T41** | Confirmación de cierre de sesión **(antecedente previo al Sprint)** | Diálogo de confirmación y rutas cancelar/salir; commit anterior al Sprint 2. | **2** | Diego | 06/11/2026 | To Review |
+| HU07/HU09 (candidatas) | **BV-T42** | Autenticación Flutter/iOS | Trabajar onboarding, registro, inicio de sesión y estados de formulario en la primera versión. | **6** | Ghorghet | 07–10/11/2026 | To Do |
+| HU01/HU24 (candidatas) | **BV-T43** | Exploración Flutter/iOS | Construir módulo Discovery con capas y presentación de oportunidades. | **6** | Ghorghet | 09–10/11/2026 | To Review |
+| Navegación transversal | **BV-T44** | Navegación Flutter/iOS | Pantalla principal y barra de navegación inferior hacia Auth y Discovery. | **5** | Ghorghet | 10/11/2026 | To Review |
+| HU35 (candidata) | **BV-T45** | Crear voluntariado Flutter/iOS | Formulario inicial de creación en capa de presentación; publicación real por probar. | **4** | Ghorghet | 11/11/2026 | To Review |
 
-**Relación con el Product Backlog.** La versión del informe incluye, entre otras, las estimaciones originales: HU01 = 5 SP; HU07 = 3 SP; HU09 = 3 SP; HU12 = 3 SP; HU15 = 5 SP; HU19 = 5 SP; HU21 = 3 SP; HU24 = 3 SP; HU35 = 5 SP; HU45 = 5 SP. Estos **no son automáticamente los SP comprometidos para Sprint 2**: las tareas pueden referirse a una misma historia en distintos clientes o consistir en pruebas/ajustes de algo desarrollado en Sprint 1. El equipo debe seleccionar las historias pendientes que efectivamente entraron al Sprint, registrar el compromiso y evitar duplicar puntos por plataforma o tarea.
+**Resumen de estimaciones:**
 
-**Trazabilidad temporal.** `BV-T39`, `BV-T40` y `BV-T41` se asocian con commits del 5–6/11, previos al comienzo del Sprint. Mantenerlos como trabajo histórico revisado al cierre o ajustar el intervalo del Sprint **solo si el acta de planificación real lo justifica**. Los nombres y estados del tablero no prueban que las tareas estén aceptadas.
+| Indicador | Total estimado |
+|---|---:|
+| Sprint 1 — suma de tareas TSK-01 a TSK-14 del informe TB1 | **86 h** |
+| **Sprint 2 — tareas planificadas entre 07 y 12/11/2026** | **86 h** |
+| Antecedentes Android del 05–06/11/2026 (BV-T39 a BV-T41; fuera del Sprint 2) | **7 h** |
+| Total de filas en el tablero incluyendo antecedentes | **93 h** |
+
+La comparación de **86 h frente a 86 h** permite una carga de planificación similar entre ambos Sprints. Las 7 horas de los antecedentes se muestran por trazabilidad, **pero no se contabilizan como esfuerzo del Sprint 2**. En particular, los commits de Diego sobre navegación, audio y cierre de sesión son del 5 y 6 de noviembre, anteriores al inicio del Sprint declarado.
+
+**Distribución de responsabilidades:** Diego asume la actualización íntegra del `README.md`, la trazabilidad documental, la verificación de la Landing Page y los ajustes finales Android ya efectuados antes del 07/11; Ghorghet lidera el desarrollo de Flutter/iOS; Sebastian lideró el Android del producto y en esta iteración se enfoca en habilitar y comprobar Swagger/OpenAPI. Los tres videos siguen sin responsable confirmado, por lo que se consignan como tareas de equipo pendientes de asignación.
+
+**Diferencia entre horas y Story Points:** las **86 horas propuestas no son la Sprint Velocity**. Para calcular *Sprint 2 Velocity* y *Sum of Story Points* se requieren las User Stories realmente seleccionadas, su estimación previa y la aceptación de las historias completas. No sumar Story Points por tareas técnicas o duplicarlos entre Android y Flutter/iOS.
+
+**Estados:** se conservaron los estados encontrados en Trello al momento de preparar este borrador; no se marcaron tareas como `Done` sin acta de aceptación ni evidencia de ejecución.
 
 ##### 4.2.2.4. Development Evidence for Sprint Review
 
@@ -2107,6 +2123,7 @@ El equipo empleó ramas y commits en GitHub para organizar los frentes de desarr
 **Revisión de coherencia documental:** en el README del TB1, las 14 tareas del Sprint Backlog 1 aparecen como `Done`, pero el Trello original mostraba numerosas tarjetas en `To Do`, `In Process` y `To Review`. Antes de calcular la velocidad real de Sprint 1 o comprometer Story Points en Sprint 2, se deben conciliar ambos registros y corroborar qué historias fueron aceptadas.
 
 **Conclusión del Sprint 2.** El equipo reportó como resultado el **100 % del alcance Android previsto** y una **primera versión de Flutter/iOS**. El código y las capturas de GitHub respaldan la existencia de trabajo técnico, especialmente en Flutter/iOS durante el periodo declarado. Para afirmar que las metas están completamente verificadas, aún se requiere documentación de pruebas, ejecución, alcance aceptado, backend público y materiales de validación y difusión solicitados en AV2.
+
 
 ### 4.3. Validation Interviews
 
