@@ -1907,11 +1907,6 @@ Durante el Sprint 1, el equipo aplicó un flujo de trabajo altamente sincronizad
 | **Tavara Correa, Sebastian Oswaldo** | Líder de Backend y Arquitectura REST | - Implementación de la capa de seguridad IAM con autenticación JWT y roles.<br>- Desarrollo de controladores y servicios para `Applications`, `Recognition` (certificados SHA-256) y `Communication`.<br>- Configuración del `Dockerfile`, integración continua y despliegue en Azure App Service.<br>- Integración del cliente de red Retrofit y TokenManager en la app Android. | `Blockvoluntariado-platform`, `BlockVoluntariado-android`, `BlockVoluntariado-report` |
 | **Tuncar Vila, Ghorghet Saul** | Líder de Desarrollo Móvil Android | - Configuración del proyecto base Android con Jetpack Compose y Gradle Kotlin DSL.<br>- Implementación de la pantalla de exploración de convocatorias (`DiscoveryScreen`) y filtros.<br>- Construcción del módulo de perfil de voluntario (`ProfileScreen`) y disponibilidad horaria.<br>- Pruebas funcionales de interfaz en emulador y validación de componentes visuales Material 3. | `BlockVoluntariado-android`, `BlockVoluntariado-report` |
 
-
-# 4.2.2. Sprint 2 — Product Implementation & Validation (AV2)
-
-> **Estado documental:** revisión de Sprint 2 basada en los ZIP de Android (`devDiego`) y Flutter/iOS (`develop`), tres capturas proporcionadas por el equipo del historial de GitHub, la URL de Landing Page, la rúbrica y el Product Backlog anterior. Las capturas prueban que GitHub muestra determinadas contribuciones, pero no certifican ejecución de las aplicaciones, pruebas aprobadas ni despliegue del backend. Las tareas y los Story Points deben contrastarse con el tablero del Sprint 2.
-
 ## 4.2.2. Sprint 2
 
 ### 4.2.2.1. Sprint Planning 2
