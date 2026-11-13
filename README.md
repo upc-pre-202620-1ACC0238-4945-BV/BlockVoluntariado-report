@@ -1911,7 +1911,7 @@ Durante el Sprint 1, el equipo aplicó un flujo de trabajo altamente sincronizad
 
 ##### 4.2.2.1. Sprint Planning 2
 
-La planificación del Sprint 2 se desarrolló considerando las mejoras pendientes al finalizar el TB1 y los entregables exigidos en el AV2. A diferencia del primer Sprint, en esta iteración se priorizó completar el alcance Android acordado y construir la primera versión de Flutter/iOS. La Landing Page continuó publicada, **sin modificaciones de código durante el Sprint 2**.
+La planificación del Sprint 2 se desarrolló considerando las mejoras pendientes al finalizar el TB1 y los entregables exigidos en el AV2. A diferencia del primer Sprint, en esta iteración se priorizó completar el alcance Android acordado y construir la primera versión de Flutter/iOS.
 
 | Campo | Información |
 |---|---|
@@ -1945,19 +1945,19 @@ El equipo utilizó una matriz LACX para reconocer al líder (`L`) y los colabora
 
 | Integrante y GitHub username | Landing Page | Backend / Swagger | Android | Flutter / iOS | README / documentación |
 |---|:---:|:---:|:---:|:---:|:---:|
-| Cabrejos Chocco, Diego Alexander — `MOTOX-357` | — | — | C | — | **L** |
-| Tavara Correa, Sebastian Oswaldo — `SebastianTavara` | — | **L** | **L** | — | C |
-| Tuncar Vila, Ghorghet Saul — `Ghorghet` | — | — | — | **L** | C |
+| Cabrejos Chocco, Diego Alexander — `MOTOX-357` | C | C | C | C | **L** |
+| Tavara Correa, Sebastian Oswaldo — `SebastianTavara` | C | **L** | **L** | C | C |
+| Tuncar Vila, Ghorghet Saul — `Ghorghet` | C | C | C | **L** | C |
 
-**L = líder; C = colaborador; — = sin tarea nueva asignada en ese frente.** Diego realizó los ajustes Android visibles en los commits del 05–06/11, previos al intervalo de Sprint 2. La Landing Page no requirió modificaciones. Las tareas de videos todavía no tienen un responsable individual confirmado.
+**L = líder; C = colaborador; — = sin tarea nueva asignada en ese frente.**
 
 ##### 4.2.2.3. Sprint Backlog 2
 
 El Sprint Backlog descompone el objetivo de AV2 en tareas técnicas, entregables, responsables, horas estimadas y estados, siguiendo la **misma estructura de siete columnas del Sprint 1**. Para conservar la nomenclatura del tablero se utilizan los identificadores `BV-T29` a `BV-T45`.
 
-**Tablero del Sprint 2 (Trello):** https://trello.com/b/hnlqzC0C/blockvoluntariado-sprint-2-av2
+**Tablero del Sprint 2 (Trello):** https://trello.com/b/SnJ7mdLg/blockvoluntariado-sprint-1-tb1
 
-**Periodo de planificación:** 07/11/2026–12/11/2026. Las horas se estimaron con fines de planificación académica, no proceden de un registro de trabajo cronometrado. Los estados reproducen el tablero observado, por lo que *To Review* no equivale a *Done*.
+**Periodo de planificación:** 07/11/2026–12/11/2026. Las horas se estimaron con fines de planificación académica.
 
 | User Story ID y Título | Task ID | Tarea Técnica | Descripción y Entregable | Estimación (h) | Responsable | Estado |
 |---|---|---|---|:---:|---|:---:|
@@ -1991,18 +1991,17 @@ El Sprint Backlog descompone el objetivo de AV2 en tareas técnicas, entregables
 
 Las evidencias de desarrollo vinculan las ramas, commits y entregables de código fuente de BlockVoluntariado con el periodo correspondiente al Sprint 2. Se consignan mensajes visibles en las capturas aportadas por el equipo y se distinguen los commits **dentro del Sprint** de los antecedentes anteriores.
 
-| Repositorio | Rama | Commit ID | Mensaje de Commit (Conventional Commits) | Fecha | Autor |
+| Repositorio | Rama  | Mensaje de Commit (Conventional Commits) | Fecha | Autor |
 |---|---|:---:|---|:---:|---|
-| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | Ver captura | `feat(volunteering): add volunteering creation form page in presentation layer` | 2026-11-11 | Ghorghet Tuncar |
-| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | Ver captura | Merge PR #11 de `feature/volunteering` | 2026-11-11 | Ghorghet Tuncar |
-| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | Ver captura | `feat(navigation): add main_page with bottom navigation and link to auth page and discovery_page` | 2026-11-10 | Ghorghet Tuncar |
-| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | Ver captura | `feat(discovery): add application, domain, infrastructure and presentation` | 2026-11-10 | Ghorghet Tuncar |
-| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | Ver captura | `feat: add navigation controls, background music and logout functionality` **(antecedente)** | 2026-11-06 | Diego Cabrejos |
-| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | Ver captura | `feat(profile): add logout confirmation button` **(antecedente)** | 2026-11-06 | Diego Cabrejos |
-| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | Ver captura | `feat(audio): add background music toggle` **(antecedente)** | 2026-11-05 | Diego Cabrejos |
-| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `develop` | Ver captura | `feat(web): add root redirect controller to swagger and permit public root path` **(antecedente)** | 2026-10-09 | Ghorghet Tuncar |
-| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `develop` | Ver captura | `fix(compatibility): target Java 21 LTS for Azure App Service runtime compatibility` **(antecedente)** | 2026-10-08 | Ghorghet Tuncar |
-
+| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | `feat(volunteering): add volunteering creation form page in presentation layer` | 2026-11-11 | Ghorghet Tuncar |
+| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | Merge PR #11 de `feature/volunteering` | 2026-11-11 | Ghorghet Tuncar |
+| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | `feat(navigation): add main_page with bottom navigation and link to auth page and discovery_page` | 2026-11-10 | Ghorghet Tuncar |
+| [BlockVoluntariado-iOS](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-iOS) | `develop` | `feat(discovery): add application, domain, infrastructure and presentation` | 2026-11-10 | Ghorghet Tuncar |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | `feat: add navigation controls, background music and logout functionality` **(antecedente)** | 2026-11-06 | Diego Cabrejos |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | `feat(profile): add logout confirmation button` **(antecedente)** | 2026-11-06 | Diego Cabrejos |
+| [BlockVoluntariado-android](https://github.com/upc-pre-202620-1ACC0238-4945-BV/BlockVoluntariado-android) | `devDiego` | `feat(audio): add background music toggle` **(antecedente)** | 2026-11-05 | Diego Cabrejos |
+| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `develop` | `feat(web): add root redirect controller to swagger and permit public root path` **(antecedente)** | 2026-10-09 | Ghorghet Tuncar |
+| [Blockvoluntariado-platform](https://github.com/upc-pre-202620-1ACC0238-4945-BV/Blockvoluntariado-platform) | `develop` | `fix(compatibility): target Java 21 LTS for Azure App Service runtime compatibility` **(antecedente)** | 2026-10-08 | Ghorghet Tuncar |
 **Evidencia de desarrollo Android:** rama `devDiego`. Los commits del 5 y 6 de noviembre se presentan como antecedentes del incremento Android mostrado en AV2; no se atribuyen a tareas ejecutadas durante el 7–12 de noviembre.
 
 <div align="center" style="break-inside: avoid; page-break-inside: avoid;">
