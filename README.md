@@ -1,4 +1,4 @@
-<div align="center">
+|<div align="center">
 
 <img src="assets/md-images-front-matter/upc-logo-transparente.png" width="52"></img><br>
 
@@ -142,6 +142,7 @@ A lo largo del ciclo correspondiente al Trabajo Parcial (TB1), el equipo registr
 <div style="page-break-before: always;"></div>
 
 ## Student Outcome
+
 
 El curso contribuye al cumplimiento del **Student Outcome ABET: ABET – EAC – Student Outcome 7**:
 > **Criterio General:** *La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.*
