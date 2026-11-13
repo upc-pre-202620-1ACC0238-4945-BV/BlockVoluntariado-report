@@ -1946,9 +1946,9 @@ La matriz **LACX** distingue al líder de cada frente (`L`), los colaboradores (
 
 | Integrante y GitHub username | Android | Flutter / iOS | Backend / API | README / documentación AV2 | Validación y videos | Landing Page |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Cabrejos Chocco, Diego Alexander — `MOTOX-357`** | **C** | — | P | **C** | P | Sin cambios |
-| **Tavara Correa, Sebastian Oswaldo — `SebastianTavara`** | **L** | — | P | P | P | Sin cambios |
-| **Tuncar Vila, Ghorghet Saul — `Ghorghet`** | — | **L** | P | P | P | Sin cambios |
+| **Cabrejos Chocco, Diego Alexander — `MOTOX-357`** | **C** | **C** | **C** | **C** | **C** | Sin cambios |
+| **Tavara Correa, Sebastian Oswaldo — `SebastianTavara`** | **L** | **C** | **C** | **C** | **C** | Sin cambios |
+| **Tuncar Vila, Ghorghet Saul — `Ghorghet`** | **C** | **L** | **C** | **C** | **C** | Sin cambios |
 
 **L = Leader; C = Collaborator; P = pendiente de confirmar; — = sin participación asignada en ese frente.** El liderazgo del backend durante Sprint 1 no se extrapola automáticamente al Sprint 2. La edición documental de este borrador se coordinó desde Diego, pero la aprobación de roles transversales corresponde al equipo.
 
