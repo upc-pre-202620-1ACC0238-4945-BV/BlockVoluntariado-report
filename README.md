@@ -1907,59 +1907,55 @@ Durante el Sprint 1, el equipo aplicó un flujo de trabajo altamente sincronizad
 | **Tavara Correa, Sebastian Oswaldo** | Líder de Backend y Arquitectura REST | - Implementación de la capa de seguridad IAM con autenticación JWT y roles.<br>- Desarrollo de controladores y servicios para `Applications`, `Recognition` (certificados SHA-256) y `Communication`.<br>- Configuración del `Dockerfile`, integración continua y despliegue en Azure App Service.<br>- Integración del cliente de red Retrofit y TokenManager en la app Android. | `Blockvoluntariado-platform`, `BlockVoluntariado-android`, `BlockVoluntariado-report` |
 | **Tuncar Vila, Ghorghet Saul** | Líder de Desarrollo Móvil Android | - Configuración del proyecto base Android con Jetpack Compose y Gradle Kotlin DSL.<br>- Implementación de la pantalla de exploración de convocatorias (`DiscoveryScreen`) y filtros.<br>- Construcción del módulo de perfil de voluntario (`ProfileScreen`) y disponibilidad horaria.<br>- Pruebas funcionales de interfaz en emulador y validación de componentes visuales Material 3. | `BlockVoluntariado-android`, `BlockVoluntariado-report` |
 
-#### 4.2.2. Sprint 2
+### 4.2.2. Sprint 2
 
 ##### 4.2.2.1. Sprint Planning 2
 
-La planificación se organizó a partir de los pendientes de la entrega TB1 y de los requerimientos del hito AV2. El objetivo del Sprint se centró en consolidar la experiencia Android y construir el primer incremento Flutter/iOS, con actividades transversales de documentación y demostración.
+La planificación del Sprint 2 se desarrolló considerando las mejoras pendientes al finalizar el TB1 y los entregables exigidos en el AV2. A diferencia del primer Sprint, en esta iteración se priorizó completar el alcance Android acordado y construir la primera versión de Flutter/iOS.
 
 | Campo | Información |
 |---|---|
-| **Sprint** | Sprint 2 — AV2 Sprint Review |
-| **Fecha de inicio** | 07-11-2026 |
-| **Fecha de cierre** | 12-11-2026 |
-| **Hora de planificación** | Pendiente de confirmar con el equipo. |
-| **Modalidad / lugar** | Pendiente de registrar según la reunión real. |
-| **Preparado por** | Diego Alexander Cabrejos Chocco (preparación documental; validar aprobación del equipo). |
-| **Participantes** | Cabrejos Chocco, Diego Alexander; Tavara Correa, Sebastian Oswaldo; Tuncar Vila, Ghorghet Saul. |
-| **Sprint 1 Review Summary** | En TB1 se presentó la Landing Page publicada, la base Android, los servicios REST y el informe. Para la siguiente iteración se identificó como prioridad **mejorar y completar Android**, además de **actualizar el `README.md`**. Los resultados aceptados del Sprint 1 y la velocidad real deben conciliarse con el tablero original. |
-| **Sprint 1 Retrospective Summary** | Se priorizó concluir funcionalidades móviles y fortalecer la documentación y su trazabilidad. No se recibió un acta de retrospectiva formal; estos puntos se consignan como prioridades de mejora informadas, no como acuerdos adicionales no verificados. |
-| **Sprint Goal** | **Completar al 100 % el alcance funcional acordado de la aplicación Android de BlockVoluntariado y desarrollar la primera versión navegable de Flutter/iOS**, para ofrecer una experiencia móvil más completa a estudiantes universitarios y organizaciones sociales. |
-| **Meta 1: Aplicación Android** | Cerrar el alcance Android definido por el equipo, revisar navegación, autenticación, búsqueda, postulaciones, participación y reconocimientos según sus historias aplicables, y demostrar los recorridos principales en un dispositivo o emulador. |
-| **Meta 2: Flutter / iOS** | Obtener una primera versión del proyecto Flutter con pantallas iniciales, navegación principal, exploración de voluntariados y formulario de creación; especificar cuáles partes usan datos de ejemplo y cuáles consumen servicios reales. |
-| **Meta 3: Backend y servicios REST** | Verificar el requisito **AV2 de backend al 100 % desplegado**, con Swagger/OpenAPI público y pruebas de endpoints; esta meta pertenece a la entrega, pero su resultado todavía necesita evidencia de ejecución. |
-| **Meta 4: Actualización documental** | Mejorar el `README.md`: registro de versiones, Student Outcome 7, capítulo IV/Sprint 2, colaboración, mejoras de artefactos previos, conclusiones, bibliografía y anexos. |
-| **Meta 5: Videos AV2** | Preparar las primeras versiones del video de validación de la aplicación, About-the-Product y About-the-Team, incorporando enlaces verificables en el informe. |
-| **Meta 6: Landing Page** | Mantener accesible la versión publicada de la Landing Page, sin atribuirle nuevas funcionalidades ni commits en Sprint 2. |
-| **Métrica de cumplimiento** | Android: funcionalidades del alcance acordado **aceptadas y demostradas / funcionalidades comprometidas × 100**; Flutter/iOS: pantallas y rutas efectivamente ejecutadas; Backend: endpoints comprometidos y documentados realmente accesibles; Documentación y videos: entregables completados y enlazados. |
-| **Carga estimada del Sprint 2** | **86 horas propuestas**, distribuidas entre el 07 y el 12/11/2026. No equivalen a Story Points ni a horas efectivamente registradas. |
-| **Sprint 2 Velocity prevista** | **Pendiente**: debe ser acordada con las historias del Sprint 2 y la capacidad real del equipo; no se deduce de los 21 SP previstos para Sprint 1. |
-| **Sum of Story Points comprometidos** | **Pendiente**: suma exclusiva de las User Stories seleccionadas y aprobadas en el Sprint Backlog 2. |
-| **Velocity real** | **Pendiente**: suma de los SP de historias aceptadas como `Done`, con pruebas y criterios de aceptación satisfechos. |
+| Sprint | Sprint 2 — AV2 Sprint Review |
+| Fecha | Del 07-11-2026 al 12-11-2026 |
+| Hora | No registrada; pendiente de confirmar en el acta del equipo. |
+| Modalidad / lugar | Coordinación mediante WhatsApp, GitHub y Trello; la modalidad de la reunión de planificación está pendiente de confirmar. |
+| Preparado por | Cabrejos Chocco, Diego Alexander (consolidación del informe). |
+| Participantes | Cabrejos Chocco, Diego Alexander; Tavara Correa, Sebastian Oswaldo; Tuncar Vila, Ghorghet Saul. |
+| Sprint 1 Review Summary | Tras la entrega TB1, el equipo identificó la necesidad de completar y mejorar Android, reforzar las evidencias de funcionamiento y corregir y ampliar el `README.md`. La Landing Page quedó publicada y se contaba con una base de servicios RESTful; los resultados realmente aceptados del Sprint 1 requieren conciliación con el tablero. |
+| Sprint 1 Retrospective Summary | Las prioridades de mejora comunicadas fueron concentrar el trabajo en la experiencia móvil y mantener el informe académico actualizado y consistente. No se dispone de un acta formal con acuerdos adicionales. |
+| Sprint Goal | **Completar el 100 % del alcance Android comprometido por el equipo y presentar la primera versión funcionalmente navegable de Flutter/iOS**, con una documentación técnica actualizada y servicios backend cuya disponibilidad pueda verificarse para AV2. |
+| Meta 1: Aplicación Android | Cerrar los módulos Android comprometidos para esta entrega, revisar autenticación, catálogo, postulaciones, perfil, participación, certificados y notificaciones, y demostrar los flujos pertinentes. Sebastian lideró Android; Diego aportó retoques finales realizados antes del inicio formal de este Sprint. |
+| Meta 2: Flutter / iOS | Construir la primera versión de la aplicación Flutter/iOS, incluyendo pantallas iniciales, autenticación, navegación principal, descubrimiento y formulario de creación de voluntariados. La responsabilidad del frente correspondió a Ghorghet Tuncar. |
+| Meta 3: Backend y Swagger | Cumplir el requisito AV2 del backend desplegado al 100 % de su alcance acordado y habilitar la documentación pública de Swagger/OpenAPI. Sebastian asumió la habilitación de Swagger en esta etapa. El despliegue efectivo requiere comprobación externa. |
+| Meta 4: Documentación | Actualizar íntegramente el `README.md`, el Capítulo IV y las evidencias, además del Registro de Versiones, Student Outcome 7, colaboración, correcciones, conclusiones y anexos. Responsable: Diego Cabrejos. |
+| Meta 5: Videos AV2 | Preparar las primeras versiones del video de validación de aplicación, About-the-Product y About-the-Team; los responsables específicos todavía deben registrarse. |
+| Meta 6: Landing Page | Mantener disponible el sitio de BlockVoluntariado en GitHub Pages. No se realizaron cambios de implementación web durante el Sprint 2. |
+| Métrica de cumplimiento | Android: funcionalidades aceptadas del alcance acordado / funcionalidades comprometidas × 100. Flutter/iOS: flujos de la primera versión efectivamente ejecutados y documentados. Backend: endpoints desplegados y consultables mediante Swagger. Informe y videos: entregables presentados con evidencia verificable. |
+| Carga estimada del Sprint 2 | 86 horas propuestas para las tareas comprendidas entre el 07 y el 12/11/2026, sujetas a validación. No representan horas efectivamente trabajadas. |
+| Sprint 2 Velocity | Pendiente de ratificación de los Story Points que el equipo estimó poder completar. |
+| Sum of Story Points | Pendiente de sumar las User Stories realmente comprometidas y aprobadas para Sprint 2. |
 
-**Criterio de cierre.** El equipo informó que Android alcanzó el 100 % del alcance previsto; el informe debe respaldar esa afirmación mediante APK ejecutado, casos de uso demostrados, criterios de aceptación, pruebas y una lista explícita del alcance. En Flutter/iOS se evalúa la **primera versión**, no la finalización del producto. Los videos y el backend se verifican de forma independiente conforme a los requisitos AV2.
+**Alcance y estado del cierre.** El equipo declaró Android al 100 % del alcance previsto, mientras que Flutter/iOS se encuentra en su **primera versión**, no al 100 %. Para sustentar el cierre de Android hacen falta las pruebas y las capturas de ejecución indicadas en 4.2.2.5 y 4.2.2.6. La *velocity real* solamente podrá calcularse con las historias aceptadas como terminadas.
 
-**Nota cronológica.** Los commits Android del **05 y 06/11/2026** fueron realizados **antes** del intervalo declarado para el Sprint 2 (07–12/11); pueden servir como antecedentes del incremento presentado, pero no deben atribuirse como trabajo realizado dentro de las fechas del Sprint. Los commits Flutter/iOS del **10 y 11/11/2026** sí corresponden a este periodo. Los commits Platform de octubre son históricos.
+**Corte temporal:** los commits Android del 05 y 06/11/2026 y los commits Platform de octubre son antecedentes del proyecto; no se contabilizan como trabajo realizado entre el 07 y el 12/11/2026.
 
 ##### 4.2.2.2. Aspect Leaders and Collaborators
 
-La matriz **LACX** identifica la responsabilidad según el reparto informado para AV2. En esta iteración, Diego concentra la documentación y ajustes finales de Android; Ghorghet desarrolla Flutter/iOS; Sebastian coordina el frente técnico Android y se ocupa de habilitar la documentación Swagger/OpenAPI del backend. Los entregables audiovisuales tienen responsable pendiente de asignación.
+El equipo utilizó una matriz LACX para reconocer al líder (`L`) y los colaboradores (`C`) de cada aspecto del Sprint 2. A diferencia del Sprint anterior, se incorpora un frente independiente de Flutter/iOS y se asigna la actualización del informe directamente a Diego.
 
-| Integrante y GitHub username | Android | Flutter / iOS | Swagger / API | README / documentación AV2 | Videos / validación | Landing Page |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Cabrejos Chocco, Diego Alexander — `MOTOX-357`** | **C** (retoques finales previos al Sprint) | — | — | **L** | P | **C** (comprobación sin cambios) |
-| **Tavara Correa, Sebastian Oswaldo — `SebastianTavara`** | **L** (responsable general del Android) | — | **L** | C (consulta técnica) | P | — |
-| **Tuncar Vila, Ghorghet Saul — `Ghorghet`** | — | **L** | — | C (evidencias Flutter) | P | — |
+| Integrante y GitHub username | Landing Page | Backend / Swagger | Android | Flutter / iOS | README / documentación |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Cabrejos Chocco, Diego Alexander — `MOTOX-357` | C | C | C | C | **L** |
+| Tavara Correa, Sebastian Oswaldo — `SebastianTavara` | C | **L** | **L** | C | C |
+| Tuncar Vila, Ghorghet Saul — `Ghorghet` | C | C | C | **L** | C |
 
-**L = Leader; C = Collaborator; P = por asignar.** La responsabilidad registrada no prueba por sí sola que una tarea haya sido completada o desplegada.
+**L = líder; C = colaborador; — = sin tarea nueva asignada en ese frente.**
 
 ##### 4.2.2.3. Sprint Backlog 2
 
-El Sprint Backlog 2 se organiza de forma equivalente al Sprint 1 mediante tareas identificadas como `BV-T29` a `BV-T45`, vinculadas con los resultados esperados del AV2 y el tablero **To Do → In Process → To Review → Done**.
+El Sprint Backlog descompone el objetivo de AV2 en tareas técnicas, entregables, responsables, horas estimadas y estados, siguiendo la **misma estructura de siete columnas del Sprint 1**. Para conservar la nomenclatura del tablero se utilizan los identificadores `BV-T29` a `BV-T45`.
 
-**Periodo de planificación:** del **07/11/2026 al 12/11/2026**. Las fechas asignadas en la tabla constituyen una **distribución propuesta de trabajo**, no registros horarios confirmados. Las horas son **estimaciones retrospectivas de referencia**, sujetas a ratificación del equipo; no acreditan horas realmente trabajadas ni tareas aceptadas.
-
-**Tablero Sprint 2:** [BlockVoluntariado | Sprint 2 – AV2](https://trello.com/b/hnlqzC0C/blockvoluntariado-sprint-2-av2).
+**Tablero del Sprint 2 (Trello):** https://trello.com/b/SnJ7mdLg/blockvoluntariado-sprint-1-tb1
 
 | User Story / Alcance | Task ID | Tarea técnica | Descripción y entregable | Estimación (h) | Responsable | Fecha prevista | Estado Trello |
 |---|---|---|---|---:|---|---|---|
