@@ -2026,89 +2026,155 @@ Las evidencias de desarrollo vinculan las ramas, commits y entregables de códig
 
 ##### 4.2.2.5. Testing Suite Evidence for Sprint Review
 
-Se inspeccionaron los archivos de prueba **incluidos en los ZIP recibidos**, no se ejecutó una suite de tests durante esta revisión. Android contiene `ExampleUnitTest.kt` y `ExampleInstrumentedTest.kt`, que son pruebas base de plantilla; el backend incluye `BlockVoluntariadoPlatformApplicationTests.java`. Flutter incluye dos pruebas de widget, una para el inicio y otra para el formulario de voluntariado.
+La verificación de calidad del Sprint 2 mantiene el formato utilizado en **4.2.1.5**: una tabla de pruebas con identificador, tipo, componente, User Story, criterio de aceptación y resultado. La trazabilidad se realiza con las **User Stories HU01–HU50 del apartado 2.4.1** y sus identificadores oficiales, sin agregar historias artificiales a un backlog ya definido.
 
-| ID | Tipo | Prueba / archivo | Funcionalidad asociada | Criterio verificable | Resultado documentado |
-|---|---|---|---|---|---|
-| TS2-01 | Unitaria Android | `ExampleUnitTest.kt` | Configuración base | Comprueba una operación aritmética de plantilla; no valida una HU. | Archivo presente; **ejecución no registrada** |
-| TS2-02 | Instrumentada Android | `ExampleInstrumentedTest.kt` | Configuración base | Verifica el contexto/identificador de la app; no valida un flujo funcional. | Archivo presente; **ejecución no registrada** |
-| TS2-03 | Widget Flutter | `test/widget_test.dart` | Onboarding | Comprueba que aparezcan `BlockVoluntariado` y `Empezar`. | Prueba escrita; **ejecución no registrada** |
-| TS2-04 | Widget Flutter | `test/volunteering_page_test.dart` | HU35 — formulario | Comprueba que se rendericen título, descripción, modalidad, vacantes y botón de publicación. | Prueba escrita; **ejecución no registrada** |
-| TS2-05 | Contexto Spring | `BlockVoluntariadoPlatformApplicationTests.java` | Inicio de backend | Verificar que levante el contexto de Spring. | Archivo presente; **ejecución no registrada** |
-| TS2-06 | Aceptación propuesta | Login y registro Android | HU07, HU09 | Credenciales válidas/inválidas, feedback de error y persistencia de sesión. | **Por implementar / documentar** |
-| TS2-07 | Aceptación propuesta | Discovery, detalle y postulación Android | HU01, HU24, HU21 | Listado, filtros, detalle, postulación y estado esperado. | **Por implementar / documentar** |
-| TS2-08 | Integración propuesta | Android/API y Flutter/API | HU01, HU21, HU35 | Comprobar intercambio real con endpoints, no solo datos locales. | **Por implementar / documentar** |
+Se distinguen dos tipos de registros: **pruebas localizadas en el código fuente** y **casos funcionales propuestos para validar el incremento AV2**. En los archivos ZIP recibidos no se adjuntaron reportes de ejecución que permitan registrar resultados `PASS` de estas pruebas. Por esta razón, un caso propuesto no se identifica como prueba ejecutada, y las pruebas genéricas de infraestructura se vinculan de manera **transversal**, sin atribuirles la aceptación de una HU concreta.
 
-Para el informe final se debe adjuntar el comando ejecutado, fecha, captura del resultado (`PASS`/`FAIL` real), archivo o reporte, rama y commit. **No se declaran tests aprobados sin evidencia**.
+| ID de Prueba | Tipo de Prueba | Componente / Endpoint Evaluado | User Story Asociada | Criterio de Aceptación Verificado | Resultado |
+|---|---|---|---|---|:---:|
+| **TS2-01** | Unitaria Android (existente) | `app/src/test/.../ExampleUnitTest.kt` | **No aplica:** prueba de plantilla, soporte transversal | Comprueba únicamente que `2 + 2 = 4`; **no verifica** requisitos de BlockVoluntariado. | Código localizado; sin ejecución acreditada |
+| **TS2-02** | Instrumentada Android (existente) | `app/src/androidTest/.../ExampleInstrumentedTest.kt` | **No aplica:** configuración técnica transversal | Comprueba el `packageName` de la aplicación en un entorno instrumentado; no prueba un flujo de usuario. | Código localizado; sin ejecución acreditada |
+| **TS2-03** | Widget Flutter (existente) | `test/widget_test.dart` — bienvenida | **HU07 (registro) / HU09 (inicio de sesión), soporte visual inicial** | Verifica la presencia de los textos `BlockVoluntariado` y `Empezar` en la pantalla de onboarding; **no valida** la autenticación. | Código localizado; sin ejecución acreditada |
+| **TS2-04** | Widget Flutter (existente) | `test/volunteering_page_test.dart` — formulario de creación | **HU35 — Crear convocatoria** | Comprueba que se rendericen título, descripción, ubicación/modalidad, vacantes y botón `Publicar Voluntariado`; no comprueba persistencia. | Código localizado; sin ejecución acreditada |
+| **TS2-05** | Contexto Spring Boot (existente) | `BlockVoluntariadoPlatformApplicationTests.java` | **No aplica:** infraestructura transversal a las HU que consumen API | Ejecutaría la carga del contexto `@SpringBootTest`; no demuestra por sí sola que Swagger esté publicado ni que los endpoints funcionen. | Código localizado; sin ejecución acreditada |
+| **TS2-06** | Funcional Android (propuesta) | Registro e inicio de sesión — Auth | **HU07 — Registro / HU09 — Inicio de sesión** | Registrar usuario, acceder con credenciales válidas y comprobar errores ante datos inválidos, sesión y retorno a la interfaz. | Pendiente de ejecutar y documentar |
+| **TS2-07** | Funcional Android (propuesta) | Perfil e intereses del voluntario | **HU12 — Perfil del voluntario / HU23 — Horarios flexibles** | Mostrar y actualizar perfil/preferencias y comprobar si los cambios persisten tras volver a abrir la vista. | Pendiente; revisar uso actual de repositorio `InMemory` |
+| **TS2-08** | Funcional Android (propuesta) | Discovery, filtros y detalle de convocatoria | **HU01 — Búsqueda / HU02 — Causa / HU03 — Duración / HU04 — Ubicación / HU24 — Detalle** | Buscar una oportunidad, aplicar filtros y verificar la consistencia de la información en listado y detalle. | Pendiente; datos de catálogo `InMemory` en ZIP recibido |
+| **TS2-09** | Integración Android–Backend (propuesta) | Envío y gestión de postulaciones | **HU21 — Postulación / HU39 — Visualizar postulantes / HU41 — Aceptar / HU42 — Rechazar** | Confirmar creación y cambio de estado de una postulación en la API, incluida su visualización desde los dos roles. | Pendiente de ejecutar y documentar |
+| **TS2-10** | Funcional Android (propuesta) | Participación y registro de asistencia | **HU45 — Registro de asistencia / HU20 — Registro de horas** | Registrar asistencia y comprobar la respuesta, el estado y las horas asociadas a una actividad. | Pendiente de ejecutar y documentar |
+| **TS2-11** | Funcional Android (propuesta) | Certificados, logros e historial | **HU19 — Certificado digital / HU18 — Insignias / HU13 — Historial** | Visualizar certificados, consultar logros y contrastar los registros con una actividad completada. | Pendiente de ejecutar y documentar |
+| **TS2-12** | Funcional Android (propuesta) | Bandeja y preferencias de notificaciones | **HU30 — Cambios / HU31 — Preferencias** | Consultar avisos, marcar mensajes como leídos y verificar cambios en las preferencias de notificación. | Pendiente de ejecutar y documentar |
+| **TS2-13** | Funcional Flutter/iOS (propuesta) | Registro, login y navegación principal | **HU07 — Registro / HU09 — Inicio de sesión** | Ejecutar el flujo inicial en simulador o dispositivo y comprobar navegación y validaciones de campos. | Pendiente; no hay captura de ejecución iOS |
+| **TS2-14** | Funcional Flutter/iOS (propuesta) | Descubrimiento y detalle de oportunidades | **HU01 — Búsqueda / HU24 — Detalle** | Navegar por el catálogo y distinguir explícitamente los datos de demostración de las respuestas obtenidas mediante API. | Pendiente; catálogo con datos de ejemplo en ZIP recibido |
+| **TS2-15** | Funcional Flutter/iOS (propuesta) | Formulario de nueva convocatoria | **HU35 — Crear convocatoria** | Completar campos obligatorios, revisar validaciones y comprobar el comportamiento del botón de publicación. | Pendiente; el widget test solo verifica renderizado |
+| **TS2-16** | Integración de servicios (propuesta) | Swagger/OpenAPI y rutas prioritarias de Auth, Convocatorias y Postulaciones | **HU07 / HU09 / HU01 / HU21 / HU35 (flujos apoyados por la API)** | Consultar documentación pública, enviar peticiones con datos de prueba y registrar código HTTP y JSON reales, sin divulgar tokens o contraseñas. | Pendiente de verificar acceso y ejecución |
 
-**Nota técnica Android:** `RepositoryModule.kt` todavía vincula `ConvocatoriasRepository` con `DiscoveryInMemoryRepository` y `VolunteerRepository` con `VolunteerInMemoryRepository` en el ZIP `devDiego` recibido. Es necesario comprobar qué flujos usan estos datos locales y cuáles consumen servicios reales antes de afirmar integración completa.
+**Criterio para reportar resultados:** completar la columna Resultado con `PASS`, `FAIL` o `BLOCKED` **solo después de ejecutar el caso** y guardar evidencia de fecha, dispositivo/entorno, comando o procedimiento, captura o reporte y commit probado. Los Story Points asociados a las HU corresponden al Product Backlog; **una prueba no constituye una User Story adicional ni incrementa la velocidad del Sprint**.
 
 ##### 4.2.2.6. Execution Evidence for Sprint Review
 
-La evidencia de ejecución debe provenir de aplicaciones **compiladas y ejecutadas** en dispositivos o emuladores, no de mock-ups Figma ni de capturas de commits.
+Las evidencias de ejecución del Sprint 2 siguen la misma presentación del **4.2.1.6**: introducción, identificación de la interfaz, **imagen centrada y pie de figura**. La Landing Page es una versión publicada previamente y no tuvo modificaciones durante el Sprint 2. Las evidencias de Android y Flutter/iOS deben proceder de aplicaciones **ejecutadas**, no de los mock-ups de Figma del Capítulo III.
 
-| Producto | Flujo / pantalla a capturar | Evidencia que debe adjuntarse | Estado |
-|---|---|---|---|
-| Android | Bienvenida, registro e inicio de sesión | Captura del dispositivo, resultado de autenticación y navegación posterior. | Pendiente de adjuntar |
-| Android | Descubrimiento, filtros y detalle | Lista y detalle ejecutados; aclarar origen real o local de los datos. | Pendiente de adjuntar |
-| Android | Postulación y bandeja de solicitudes | Evidencia del envío, estado recibido y respuesta del servicio cuando aplique. | Pendiente de adjuntar |
-| Android | Perfil, preferencias y disponibilidad | Capturas de consulta/edición, guardado y respuesta visual. | Pendiente de adjuntar |
-| Android | Actividades, asistencia y control de participación | Capturas de calendario/lista, registro y feedback. | Pendiente de adjuntar |
-| Android | Reconocimientos, certificados y notificaciones | Capturas de los módulos habilitados; indicar qué funciones están operativas. | Pendiente de adjuntar |
-| Android | Música, navegación y logout | Evidencia de ajustes complementarios de Diego. | Pendiente de adjuntar |
-| Flutter/iOS | Onboarding y autenticación | Captura de ejecución real y versión del dispositivo/simulador. | Pendiente de adjuntar |
-| Flutter/iOS | Navegación principal, discovery y creación | Captura de recorrido entre pantallas; aclarar si se utilizan datos estáticos. | Pendiente de adjuntar |
+**Evidencia visual de la Landing Page en escritorio:**
 
-**Registro recomendado por captura:** `Figura`, dispositivo/emulador y versión de SO, versión/commit de la app, fecha, pasos seguidos, resultado esperado y resultado observado. El ZIP Flutter incluye estructura iOS, pero **no se ha aportado una ejecución verificada en iPhone o simulador iOS**.
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/capitulo4/landing-escritorio.png" alt="Captura real de la Landing Page BlockVoluntariado en escritorio" width="610" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.6. Vista de la Landing Page de BlockVoluntariado en escritorio. Fuente: captura facilitada por el equipo para TB1; producto sin cambios de implementación en Sprint 2.</em></p>
+</div>
+
+**Evidencia visual de la Landing Page en móvil:**
+
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/capitulo4/landing-movil.png" alt="Captura de la Landing Page adaptada a dispositivo móvil" width="560" style="max-width: 100%; height: auto;" />
+  <p><em>Figura 4.7. Adaptación móvil de la Landing Page de BlockVoluntariado. Fuente: captura facilitada por el equipo para TB1; se conserva como evidencia de la versión web existente.</em></p>
+</div>
+
+**Evidencia visual de la aplicación Android — inicio de sesión y navegación:**
+
+**[Captura de ejecución pendiente: `assets/capitulo4/sprint2-android-autenticacion.png`]**. Mostrar la aplicación instalada en dispositivo físico o emulador, su pantalla inicial y la navegación a la pantalla principal. Registrar equipo, versión de Android y fecha de prueba.
+
+<!-- Figura 4.8. Cuando exista la imagen: <div align="center" style="break-inside: avoid;"><img src="assets/capitulo4/sprint2-android-autenticacion.png" alt="Android ejecutándose: autenticación y navegación" width="280"/><p><em>Figura 4.8. Inicio de sesión y navegación Android en ejecución. Fuente: captura del equipo.</em></p></div> -->
+
+**Evidencia visual de la aplicación Android — oportunidades y postulaciones:**
+
+**[Captura de ejecución pendiente: `assets/capitulo4/sprint2-android-convocatorias.png`]**. Mostrar listado, detalle y confirmación de postulación; registrar si los datos provienen de `InMemory` o de la API REST y citar las HU01, HU24 y HU21.
+
+<!-- Figura 4.9. <div align="center"><img src="assets/capitulo4/sprint2-android-convocatorias.png" alt="Android ejecutándose: discovery, detalle y postulación" width="540"/><p><em>Figura 4.9. Exploración y postulación en Android. Fuente: captura del equipo.</em></p></div> -->
+
+**Evidencia visual de la aplicación Android — asistencia, certificados y notificaciones:**
+
+**[Captura de ejecución pendiente: `assets/capitulo4/sprint2-android-participacion.png`]**. Mostrar los módulos en ejecución y especificar los pasos realizados; relacionar HU45, HU19 y HU30.
+
+<!-- Figura 4.10. <div align="center"><img src="assets/capitulo4/sprint2-android-participacion.png" alt="Android ejecutándose: participación, certificados y notificaciones" width="540"/><p><em>Figura 4.10. Módulos de participación y reconocimiento Android. Fuente: captura del equipo.</em></p></div> -->
+
+**Evidencia visual de Flutter/iOS — onboarding y navegación:**
+
+**[Captura de ejecución pendiente: `assets/capitulo4/sprint2-ios-onboarding.png`]**. Demostrar la primera versión de la aplicación Flutter funcionando en un simulador o dispositivo, identificando expresamente la plataforma utilizada (iOS o Android).
+
+<!-- Figura 4.11. <div align="center"><img src="assets/capitulo4/sprint2-ios-onboarding.png" alt="Flutter ejecutándose: onboarding y navegación" width="280"/><p><em>Figura 4.11. Onboarding de la primera versión Flutter/iOS en ejecución. Fuente: captura del equipo.</em></p></div> -->
+
+**Evidencia visual de Flutter/iOS — descubrimiento y creación de voluntariado:**
+
+**[Captura de ejecución pendiente: `assets/capitulo4/sprint2-ios-discovery.png`]**. Mostrar el módulo de descubrimiento y el formulario para crear una convocatoria; indicar si la pantalla está conectada al backend o usa datos de ejemplo. Relacionar HU01 y HU35.
+
+<!-- Figura 4.12. <div align="center"><img src="assets/capitulo4/sprint2-ios-discovery.png" alt="Flutter ejecutándose: discovery y formulario" width="540"/><p><em>Figura 4.12. Descubrimiento y creación en Flutter/iOS. Fuente: captura del equipo.</em></p></div> -->
+
+**Síntesis:** Android tiene un avance del **100 % declarado por el equipo** respecto del alcance comprometido; Flutter/iOS cuenta con una primera versión de código. El cierre del apartado requiere sustituir las cinco marcas de captura pendientes por fotografías o capturas reales de ejecución, con sus respectivos pies de figura. No se debe atribuir una sesión de simulador iOS sin evidencia de que haya ocurrido.
 
 ##### 4.2.2.7. Services Documentation Evidence for Sprint Review
 
-El cliente Android declara los contratos HTTP listados a continuación mediante interfaces Retrofit. Las rutas se presentan como **contratos del código cliente**, no como respuestas comprobadas de un backend público. El prefijo `/api/` corresponde a la URL base configurada en `RemoteModule.kt`, y los servicios usan rutas relativas `v1/...`.
+Se mantiene **la misma tabla de seis columnas del 4.2.1.7**. Para esta revisión se cotejaron las rutas declaradas en las interfaces Retrofit del ZIP Android con los controladores Java del ZIP de **`Blockvoluntariado-platform`**. Las operaciones siguientes aparecen en el código del backend; la columna de códigos HTTP distingue respuestas previstas por el controlador de respuestas realmente observadas en producción, que todavía no se han adjuntado.
 
-| Método HTTP | Endpoint bajo `/api/` | Bounded Context / funcionalidad | Verificación requerida | Estado |
-|:---:|---|---|---|---|
-| `POST` | `/api/v1/auth/login` | IAM — autenticación | Credenciales de prueba, HTTP 200/errores y token de respuesta (sin exponer secretos). | Contrato identificado; respuesta pendiente |
-| `POST` | `/api/v1/auth/register/student` | IAM — registro estudiante | Validaciones y creación de usuario. | Contrato identificado; respuesta pendiente |
-| `POST` | `/api/v1/auth/register/ong` | IAM — registro organización | Validaciones y creación de cuenta ONG. | Contrato identificado; respuesta pendiente |
-| `GET` | `/api/v1/convocatorias` | Volunteering — catálogo | Contenido real y filtros de búsqueda. | Contrato identificado; respuesta pendiente |
-| `GET` | `/api/v1/convocatorias/{convocatoriaId}` | Volunteering — detalle | Estado existente/inexistente y formato JSON. | Contrato identificado; respuesta pendiente |
-| `POST` | `/api/v1/convocatorias/{convocatoriaId}/postulaciones` | Applications — postulación | Solicitud válida, duplicados y código HTTP. | Contrato identificado; respuesta pendiente |
-| `GET` | `/api/v1/volunteers/{volunteerId}/postulaciones` | Applications — mis solicitudes | Resultado filtrado por usuario y estados. | Contrato identificado; respuesta pendiente |
-| `GET` | `/api/v1/actividades/{id}/participantes` | Participation — participantes | Lista de participantes y autorizaciones. | Contrato identificado; respuesta pendiente |
-| `POST` | `/api/v1/actividades/{id}/asistencias` | Participation — asistencia | Registro y respuesta de confirmación. | Contrato identificado; respuesta pendiente |
-| `GET` | `/api/v1/volunteers/{volunteerId}/certificados` | Recognition — certificados | Lista de certificados generados y descarga, si procede. | Contrato identificado; respuesta pendiente |
-| `GET` | `/api/v1/usuarios/{userId}/notificaciones` | Notifications — avisos | Bandeja y estados de lectura. | Contrato identificado; respuesta pendiente |
+| Método HTTP | Endpoint | Bounded Context | Propósito y Parámetros Principales | Código HTTP / Respuesta de Ejemplo | Estado |
+|:---:|---|---|---|---|:---:|
+| `POST` | `/api/v1/auth/register/student` | IAM | **HU07:** registro de estudiante; email y contraseña. | `201 Created` configurado en el controlador; JSON real por capturar. | Controlador y cliente identificados; prueba pública pendiente |
+| `POST` | `/api/v1/auth/register/ong` | IAM | Registro de representantes de organización; email y contraseña. | `201 Created` configurado; JSON real por capturar. | Controlador y cliente identificados; prueba pública pendiente |
+| `POST` | `/api/v1/auth/login` | IAM | **HU09:** autenticación de usuario y generación de sesión. | `200 OK` configurado; token no debe compartirse en capturas. | Controlador y cliente identificados; prueba pública pendiente |
+| `POST` | `/api/v1/auth/password-recovery` | IAM | **HU10:** iniciar recuperación de contraseña. | `200 OK` configurado; respuesta real por capturar. | Controlador y cliente identificados; prueba pública pendiente |
+| `GET` | `/api/v1/convocatorias` | Volunteering | **HU01/HU02/HU03/HU04:** consulta de oportunidades con parámetros `causa`, `distrito`, `estado`, `duracion` (además de alias admitidos). | `200 OK` definido para el listado; JSON real por capturar. | Controlador y cliente identificados; prueba pública pendiente |
+| `GET` | `/api/v1/convocatorias/{convocatoriaId}` | Volunteering | **HU24:** consultar detalle de una oportunidad. | `200 OK` / `404 Not Found`, según el ID. | Controlador y cliente identificados; prueba pública pendiente |
+| `POST` | `/api/v1/convocatorias` | Volunteering | **HU35:** crear convocatoria para una organización autenticada. | `201 Created` configurado; JSON real por capturar. | Controlador identificado; prueba pública pendiente |
+| `PATCH` | `/api/v1/convocatorias/{convocatoriaId}/publicar` | Volunteering | **HU35:** publicar convocatoria existente. | Código y estructura de respuesta por ejecutar y registrar. | Controlador identificado; prueba pública pendiente |
+| `POST` | `/api/v1/convocatorias/{convocatoriaId}/postulaciones` | Applications | **HU21:** registrar postulación. | Código HTTP y estado de la solicitud por capturar. | Controlador y cliente identificados; prueba pública pendiente |
+| `GET` | `/api/v1/convocatorias/{convocatoriaId}/postulantes` | Applications | **HU39:** consultar candidatos de una convocatoria. | Código y lista JSON por capturar. | Controlador y cliente identificados; prueba pública pendiente |
+| `PATCH` | `/api/v1/postulaciones/{postulacionId}/aceptar` | Applications | **HU41:** aceptar postulante. | Código y nuevo estado por capturar. | Controlador y cliente identificados; prueba pública pendiente |
+| `PATCH` | `/api/v1/postulaciones/{postulacionId}/rechazar` | Applications | **HU42:** rechazar postulante. | Código y nuevo estado por capturar. | Controlador y cliente identificados; prueba pública pendiente |
+| `GET` | `/api/v1/volunteers/{volunteerId}/profile` | Volunteer Management | **HU12:** consultar el perfil de un estudiante. | `200 OK` / `404 Not Found` previstos en controlador. | Controlador y cliente identificados; prueba pública pendiente |
+| `PUT` | `/api/v1/volunteers/{volunteerId}/preferences` | Volunteer Management | **HU12/HU23:** actualizar intereses y disponibilidad. | `200 OK` configurado; contenido real por capturar. | Controlador y cliente identificados; prueba pública pendiente |
+| `POST` | `/api/v1/actividades/{actividadId}/asistencias` | Participation | **HU45:** registrar asistencia a una actividad. | Respuesta de registro pendiente de ejecutar. | Controlador y cliente identificados; prueba pública pendiente |
+| `GET` | `/api/v1/volunteers/{volunteerId}/certificados` | Recognition | **HU19:** consultar certificados digitales. | Listado devuelto por controlador; respuesta real por capturar. | Controlador y cliente identificados; prueba pública pendiente |
+| `GET` | `/api/v1/usuarios/{userId}/notificaciones` | Communication | **HU30:** consultar notificaciones. | Respuesta real y condición de autenticación por capturar. | Controlador y cliente identificados; prueba pública pendiente |
+| `PUT` | `/api/v1/usuarios/{userId}/preferencias-notificaciones` | Communication | **HU31:** actualizar preferencias. | Respuesta HTTP por capturar. | Controlador y cliente identificados; prueba pública pendiente |
 
-La URL base literal en Android es `https://api.blockvoluntariado.com/api/`, pero **no se ha comprobado su disponibilidad**. El README del TB1 menciona `https://blockvoluntariado-api.azurewebsites.net/swagger-ui.html`; **no debe darse por válido ninguno de los dos dominios sin abrir Swagger y ejecutar consultas reales**. Incorporar enlace vigente, esquema OpenAPI, capturas de Swagger UI, ejemplo de petición/respuesta y evidencias de autorización.
+**Evidencia documental de Swagger/OpenAPI:** la responsabilidad de habilitarlo se asignó a **Sebastian Tavara**. Para completar este apartado se necesita una **captura del Swagger público**, su **URL real**, la especificación OpenAPI accesible y un ejemplo seguro de petición/respuesta (`GET /api/v1/convocatorias`, por ejemplo). La ruta `https://blockvoluntariado-api.azurewebsites.net/swagger-ui.html` aparece en la documentación anterior, pero **no se consiguió verificar su acceso público en esta revisión**. Ello no equivale a afirmar que el servicio esté caído; el estado de publicación permanece pendiente de comprobación.
+
+**Precisión:** registrar un endpoint en un `@GetMapping`, `@PostMapping`, `@PatchMapping` o en Retrofit **no demuestra un resultado HTTP `200` / `201` en Azure**. Las cifras indicadas como “configurado” o “previsto” describen el código y deben contrastarse con la ejecución real.
 
 ##### 4.2.2.8. Software Deployment Evidence for Sprint Review
 
-El estado de publicación se presenta por producto, diferenciando código, configuración, distribución y ejecución comprobada.
+La infraestructura y el despliegue de BlockVoluntariado se documentan con **las mismas cinco columnas del 4.2.1.8**, indicando la URL o identificador, evidencia operativa y estado comprobable de cada producto.
 
-| Producto | Plataforma / entorno | URL / acceso | Evidencia aportada | Estado verificable |
-|---|---|---|---|---|
-| **Landing Page** | GitHub Pages | [BlockVoluntariado Website](https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/) | Enlace de sitio público informado; sin cambios de implementación en Sprint 2. | Publicación existente; adjuntar captura de acceso actual |
-| **Backend REST** | Azure App Service (configuración histórica) | URL real de Swagger: **por confirmar** | Commits sobre Docker, Java 21, Azure y redirección Swagger del 7–9/10. | **No acreditado 100 % desplegado** con evidencia actual |
-| **Android** | APK / emulador o dispositivo | Archivo APK y versión: **por adjuntar** | ZIP de código `devDiego` y commits de ajustes finales. | Código recibido; prueba de instalación/ejecución por adjuntar |
-| **Flutter/iOS** | Flutter / simulador o dispositivo iOS | Compilación/instalación: **por adjuntar** | ZIP `develop` y commits de navegación, discovery y formulario. | Primera versión en código; ejecución iOS por adjuntar |
+| Producto | Entorno / Plataforma | URL / Identificador de Acceso | Evidencia Operativa y Verificación | Estado |
+|---|---|---|---|:---:|
+| **Landing Page** | GitHub Pages / HTTPS | [BlockVoluntariado — Landing Page](https://upc-pre-202620-1acc0238-4945-bv.github.io/BlockVoluntariado-website/) | **URL pública accesible en la revisión**. Capturas de escritorio y móvil reutilizadas de TB1; el equipo indica que no hubo nuevos cambios durante Sprint 2. | Desplegada; sin cambios en Sprint 2 |
+| **Backend API** | Spring Boot / Azure App Service (configuración de repositorio) | `https://blockvoluntariado-api.azurewebsites.net/swagger-ui.html` **(referencia anterior, pendiente de verificar)** | Existen controladores y archivos de despliegue; falta captura de Swagger público, llamada HTTP satisfactoria, versión desplegada y alcance funcional validado al 100 %. | **100 % no acreditado** con evidencias recibidas |
+| **Aplicación Android** | Android Studio / APK / emulador o dispositivo físico | `BlockVoluntariado-android`, rama `devDiego`; versión de APK por adjuntar | Código con módulos del producto. Se requiere instalar APK, documentar dispositivo, capturas de pantallas principales, pruebas e integración REST, distinguiendo datos locales. | 100 % **declarado por el equipo**; ejecución por documentar |
+| **Primera versión Flutter/iOS** | Flutter/Dart / proyecto con soporte iOS | `BlockVoluntariado-iOS`, rama `develop`; compilación y dispositivo por adjuntar | En ZIP se identifican onboarding, navegación, exploración y formulario de voluntariado; no se adjuntó captura de ejecución iOS ni publicación/TestFlight. | Primera versión en código; ejecución en iOS pendiente de comprobar |
 
-**Evidencias necesarias para cerrar AV2:** captura de Swagger público con endpoints, prueba HTTP exitosa, estado del despliegue en Azure, ejecución de Android en móvil o emulador y recorrido funcional de Flutter/iOS en el entorno disponible. Una configuración de CI/CD o una carpeta `ios/` no demuestra despliegue operativo ni ejecución en iOS.
+**Observación de despliegue:** un ZIP de código, un archivo `Dockerfile`, una rama o un directorio `ios/` no representan por sí mismos una aplicación operativa o publicada. Para cerrar AV2 registrar **fecha, entorno, versión, URL funcional, pantallazo y resultado de prueba**. En Android e iOS, la distribución para pruebas no exige necesariamente una publicación en Play Store/App Store si la rúbrica solo solicita mostrar las funciones core; sin embargo, la demostración de ejecución sí debe estar sustentada.
 
 ##### 4.2.2.9. Team Collaboration Insights during Sprint
 
-El equipo empleó ramas y commits en GitHub para organizar los frentes de desarrollo. En Sprint 2, la distribución de responsabilidades informada fue: **Sebastian lideró Android**, **Diego realizó ajustes finales de Android**, y **Ghorghet estuvo a cargo de Flutter/iOS**. Para el informe se registran contribuciones comprobables en las capturas y sus límites cronológicos.
+El Sprint 2 se organizó en frentes diferenciados: finalización y revisión de Android, primera versión Flutter/iOS, habilitación de Swagger y actualización del informe. Se conserva **la tabla de cuatro columnas utilizada en 4.2.1.9** y se describen contribuciones con base en las responsabilidades comunicadas y el historial GitHub disponible.
 
-| Integrante | Rol principal Sprint 2 | Contribuciones identificadas | Evidencia y observación | Repositorios |
-|---|---|---|---|---|
-| **Cabrejos Chocco, Diego Alexander** | Colaborador Android; actualización documental | Navegación, audio de fondo, confirmación de cierre de sesión; preparación de mejoras del README AV2. | Commits Android del 05–06/11: **anteriores** a la fecha de inicio del Sprint; falta commit o PR de la revisión documental del periodo. | `BlockVoluntariado-android`, `BlockVoluntariado-report` |
-| **Tavara Correa, Sebastian Oswaldo** | **Líder Android** | Coordinación del cierre funcional Android, integración y revisión de los módulos que se declaran completos. | Liderazgo informado por el equipo; la captura muestra commits/merges de octubre, no confirma trabajo de noviembre dentro de Sprint 2; adjuntar evidencia de cierre. | `BlockVoluntariado-android` |
-| **Tuncar Vila, Ghorghet Saul** | **Líder Flutter/iOS** | Navegación principal, discovery, estructura por capas, formulario de creación de voluntariados y PRs de integración. | Commits y merges del **10 y 11/11**, dentro de Sprint 2; agregar capturas de ejecución de la primera versión. | `BlockVoluntariado-iOS` |
+| Integrante | Rol Principal en Sprint 2 | Contribuciones y Entregables Clave | Repositorios Impactados |
+|---|---|---|---|
+| **Cabrejos Chocco, Diego Alexander** | Líder del informe AV2 y README; colaborador Android | Estructuración y corrección del informe, Sprint 2, trazabilidad HU–pruebas, evidencias y preparación de la entrega. Realizó retoques Android (navegación, música y cierre de sesión); sus commits del **5–6/11** son **anteriores** al inicio formal del Sprint 2. | `BlockVoluntariado-report`; `BlockVoluntariado-android` (contribuciones previas al Sprint) |
+| **Tavara Correa, Sebastian Oswaldo** | Líder de Android; responsable de habilitar Swagger | Responsable del cierre del alcance Android definido por el equipo y de la habilitación de Swagger/OpenAPI. Los commits de Platform exhibidos están fechados en **octubre**, por lo que corresponden a antecedentes, no a actividad acreditada del 7–12/11. | `BlockVoluntariado-android`; `Blockvoluntariado-platform` (antecedentes de octubre) |
+| **Tuncar Vila, Ghorghet Saul** | Líder del desarrollo Flutter/iOS | Diseño e implementación de la primera versión Flutter: autenticación inicial, estructura de discovery, navegación principal y formulario de creación de voluntariado; contribuciones visibles los días **10–11/11** en la rama `develop`. | `BlockVoluntariado-iOS` |
 
-**Análisis de colaboración:** Android es un frente liderado por Sebastian con apoyo de Diego, mientras que Flutter/iOS se desarrolló bajo responsabilidad de Ghorghet. El tablero del Sprint 2 mantiene trazabilidad mediante `BV-T29` a `BV-T45`; para obtener métricas de colaboración faltan las capturas de **GitHub Insights → Contributors**, el historial de Pull Requests y los enlaces individuales a commits. No se infieren horas de trabajo ni porcentajes individuales a partir del número de commits.
+**Evidencia de colaboración Android:** historial de la rama `devDiego` con los ajustes del 5–6/11, incluidos únicamente como antecedentes. La incorporación de Android al 100 % fue declarada por el equipo; se requiere evidencia del cierre y la aceptación durante el Sprint.
 
-**Revisión de coherencia documental:** en el README del TB1, las 14 tareas del Sprint Backlog 1 aparecen como `Done`, pero el Trello original mostraba numerosas tarjetas en `To Do`, `In Process` y `To Review`. Antes de calcular la velocidad real de Sprint 1 o comprometer Story Points en Sprint 2, se deben conciliar ambos registros y corroborar qué historias fueron aceptadas.
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/evidencias-github/github-android-devDiego.png" alt="Historial GitHub Android rama devDiego" width="750" style="max-width:100%; height:auto;" />
+  <p><em>Figura 4.13. Contribuciones Android en GitHub, rama devDiego. Fuente: captura facilitada por el equipo.</em></p>
+</div>
 
-**Conclusión del Sprint 2.** El equipo reportó como resultado el **100 % del alcance Android previsto** y una **primera versión de Flutter/iOS**. El código y las capturas de GitHub respaldan la existencia de trabajo técnico, especialmente en Flutter/iOS durante el periodo declarado. Para afirmar que las metas están completamente verificadas, aún se requiere documentación de pruebas, ejecución, alcance aceptado, backend público y materiales de validación y difusión solicitados en AV2.
+**Evidencia de colaboración Flutter/iOS:** historial en `develop` con commits y Pull Requests del 10–11/11 que sí se encuentran dentro del periodo del Sprint 2.
+
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/evidencias-github/github-ios-develop.png" alt="Historial GitHub Flutter iOS rama develop" width="750" style="max-width:100%; height:auto;" />
+  <p><em>Figura 4.14. Contribuciones Flutter/iOS en GitHub, rama develop. Fuente: captura facilitada por el equipo.</em></p>
+</div>
+
+**Evidencia técnica de Platform:** historial de cambios en Swagger, Azure e integración. Los commits visibles en la captura son del **7–9/10** y sirven para contextualizar la configuración, pero **no prueban actividad durante Sprint 2**.
+
+<div align="center" style="break-inside: avoid; page-break-inside: avoid;">
+  <img src="assets/evidencias-github/github-platform-develop.png" alt="Historial de GitHub Platform rama develop" width="750" style="max-width:100%; height:auto;" />
+  <p><em>Figura 4.15. Historial de commits de Platform en GitHub. Fuente: captura facilitada por el equipo; antecedentes de octubre.</em></p>
+</div>
+
+**Interpretación de resultados:** las capturas muestran trabajo y especialización de los integrantes, pero no constituyen por sí mismas un indicador de productividad o de cumplimiento. Para cerrar el *Team Collaboration Insights* se deben relacionar las tareas del [tablero Sprint 2 – AV2](https://trello.com/b/hnlqzC0C/blockvoluntariado-sprint-2-av2), responsables, commits efectivamente fechados entre el 7 y el 12 de noviembre y aceptación de entregables en `Done`. El trabajo de documentación de Diego y habilitación de Swagger de Sebastian requiere enlaces o capturas adicionales de ese periodo.
 
 
 ### 4.3. Validation Interviews
