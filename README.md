@@ -2006,21 +2006,21 @@ Las evidencias de desarrollo vinculan las ramas, commits y entregables de códig
 **Evidencia de desarrollo Android:** rama `devDiego`. Los commits del 5 y 6 de noviembre se presentan como antecedentes del incremento Android mostrado en AV2; no se atribuyen a tareas ejecutadas durante el 7–12 de noviembre.
 
 <div align="center" style="break-inside: avoid; page-break-inside: avoid;">
-  <img src="assets/md-images-chapter3/EvidenciaAndroid.png" alt="Historial de commits Android en la rama devDiego" width="760" style="max-width: 100%; height: auto;" />
+  <img src="assets/md-images-chapter3/evidenciaAndroid.png" alt="Historial de commits Android en la rama devDiego" width="760" style="max-width: 100%; height: auto;" />
   <p><em>Figura 4.3. Historial de Android en GitHub, con ajustes de navegación, audio y cierre de sesión. Fuente: captura del equipo.</em></p>
 </div>
 
 **Evidencia de desarrollo Flutter/iOS:** rama `develop`. Los commits del 10 y 11 de noviembre reflejan avances de navegación, descubrimiento y creación de convocatorias dentro del Sprint.
 
 <div align="center" style="break-inside: avoid; page-break-inside: avoid;">
-  <img src="assets/md-images-chapter3/EvidenciaIOS.png" alt="Historial de commits Flutter/iOS en develop" width="760" style="max-width: 100%; height: auto;" />
+  <img src="assets/md-images-chapter3/evidenciaIOS.png" alt="Historial de commits Flutter/iOS en develop" width="760" style="max-width: 100%; height: auto;" />
   <p><em>Figura 4.4. Commits y Pull Requests de Flutter/iOS correspondientes al Sprint 2. Fuente: captura del equipo.</em></p>
 </div>
 
 **Evidencia de desarrollo Platform:** los cambios de Java, Azure y Swagger mostrados corresponden a octubre y se utilizan como antecedentes de implementación. La asignación de Sebastian a la habilitación de Swagger en Sprint 2 se basa en lo informado por el equipo, pero requiere una evidencia de noviembre adicional.
 
 <div align="center" style="break-inside: avoid; page-break-inside: avoid;">
-  <img src="assets/md-images-chapter3/EvidenciaPlatform.png" alt="Historial de commits del backend Platform" width="760" style="max-width: 100%; height: auto;" />
+  <img src="assets/md-images-chapter3/evidenciaPlatform.png" alt="Historial de commits del backend Platform" width="760" style="max-width: 100%; height: auto;" />
   <p><em>Figura 4.5. Antecedentes de backend y configuración Azure/Swagger, previos al Sprint 2. Fuente: captura del equipo.</em></p>
 </div>
 
